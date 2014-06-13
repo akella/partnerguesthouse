@@ -19,7 +19,11 @@ ul, ol { list-style-type: none; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) { * { -webkit-text-size-adjust: none; } }
 table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
-body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; }
+.logo-header { position: relative; margin-top: -45px; height: 100px; width: 100px; z-index: 30; display: inline-block; background: url('../img/icons-s8a694e72b8.png') 0 0 no-repeat; width: 213px; height: 104px; }
+
+.da-slider { background: transparent url(http://lorempixel.com/1920/425/city) repeat 0% 0%; }
+
+.da-dots { display: none; }
 
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
