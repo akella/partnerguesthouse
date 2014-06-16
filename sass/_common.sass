@@ -48,7 +48,256 @@
 	z-index: 30
 	display: inline-block
 	+s(u32)
+
+.header__block
+	font-style: italic
+	font-size: 14px
+	line-height: 1.2
+	color: #999
+	display: inline-block
+.header__facebook
+	margin-left: 160px
+	text-align: center 
+	cursor: pointer
+	color: #666666
+	text-decoration: none
+	span
+		position: relative
+		padding-left: 25px
+		&:before
+			position: absolute
+			content: ''
+			top: 0
+			left: 0
+			+s(u46)
+	&:hover
+		text-decoration: underline
+
+
 .da-slider
 	background: transparent url(http://lorempixel.com/1920/425/city) repeat 0% 0%
+
 .da-dots
 	display: none
+
+// carousel
+.item__block
+	padding: 15px 15px 0
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	+box
+
+.item__row
+	+clr
+
+.item__left
+	float: left
+
+.item__right
+	float: right
+
+.item__link
+	color: #fff
+	text-decoration: underline
+	display: inline-block
+	&:hover
+		color: #fff
+		text-decoration: none
+
+.item__link_red
+	padding: 0 15px
+	font-size: 18px
+	line-height: 29px
+	text-decoration: none
+	background: rgba(#b95a34, .6)
+.item__link_grey
+	color: #CCCCCC
+	&:hover
+		color: #CCCCCC
+
+//description
+.description
+	padding-bottom: 15px
+	border: 1px solid #eee
+
+.description__row
+	margin-bottom: 5px
+
+.description__top
+	margin-bottom: 10px
+	padding-left: 15px
+	color: #666666
+	line-height: 51px
+	font-size: 25px
+	background: #f5f5f5
+	border-bottom: 2px solid #d9d9d9
+	+box
+
+.description__name, .description__addres
+	padding-left: 24px
+	position: relative
+	color: #1E1E1E
+	font-style: 11px
+	text-decoration: underline
+	&:hover
+		color: #1E1E1E
+		text-decoration: none
+	.name__ico, .addres__ico
+		position: absolute
+		content: ''
+		top: 50%
+		left: 0
+		margin-top: -6.5px
+
+.description__name
+	.name__ico
+		+s(image_u750)
+
+.description__addres
+	.addres__ico
+		+s(image_u752)
+
+// description__list
+.description__list
+	font-size: 0
+	&.list
+		.description__item
+			position: relative
+			margin-top: 15px
+			padding-left: 26px
+			width: 50%
+			line-height: 1
+			font-size: 18px
+			display: inline-block
+		.list__ico
+			position: absolute
+			top: 0
+			left: 0 
+		.list__ico_dg1
+			+s(arr1)
+		.list__ico_oll
+			+s(arr2)
+		.list__ico_con
+			+s(arr3)
+		.list__ico_tv1
+			+s(arr4)
+		.list__ico_dg2
+			+s(arr5)
+		.list__ico_sa
+			+s(arr6)
+		.list__ico_con2
+			+s(arr7)
+		.list__ico_tv2
+			+s(arr8)
+
+.description__bottom
+	padding-top: 15px
+	.btn-u
+		margin-top: 5px
+		font-size: 18px
+	.price
+		margin-left: -10px
+
+.btn-u_mod
+	position: relative
+	line-height: 40px
+	vertical-align: top
+	background: #456e22
+	&:hover
+		background: #456e22
+	&:focus
+		background: #456e22
+	&:active
+		top: -1px
+	&:before
+		position: absolute
+		content: ''
+		top: 0
+		right: -18px
+		+arr(18, 52, #456e22, r)
+//price
+.price
+	width: 62%
+	display: inline-block
+.price__item
+	font-size: 36px
+	line-height: 1
+	display: inline-block
+.price__old, .price__time
+	font-size: 14px
+
+.price__old
+	color: #949494
+	text-decoration: line-through
+
+.price__time
+	padding-bottom: 5px
+
+//step
+.step
+	.step__item
+		position: relative
+		padding-bottom: 60px
+		text-align: center
+		white-space: nowrap
+		overflow: hidden
+	.step__performance
+		&.performance
+			position: absolute
+			bottom: 30px
+			height: 5px
+			width: 100%
+			background: #cccccc
+			&.is-active
+				background: #3d9d06
+				.performance__pic
+					+s(u957)
+					border: none
+		&.step__performance_1
+			left: 50%
+			.performance__pic
+				left: -15px
+		&.step__performance_2
+			left: 0
+			.performance__pic
+				left: 50%
+				margin-left: -15px
+		&.step__performance_3
+			right: 50%
+			.performance__pic
+				right: -15px
+
+	.performance__pic
+		position: absolute
+		bottom: -13px
+		height: 30px
+		width: 30px
+		+border-radius(50% !important)
+		border: 5px solid #cccccc
+		background: #fff
+
+//reviews
+.reviews
+	padding-top: 42px
+	+box
+	img
+		width: 100%
+
+//google-map
+.google-map
+	padding: 10px
+	+box
+	.google-map__wrap
+		padding: 10px 50px
+	.map 
+		height: 830px
+		+box
+@media (max-width: 992px)
+	.step
+		.step__performance
+			&.performance
+				background: none
+				&.is-active
+					background: none
