@@ -74,6 +74,62 @@
 		text-decoration: underline
 
 
+//footer
+.footer
+	h5
+		font-weight: bold
+	.footer__logo
+		display: inline-block 
+		+s(footer-logo)
+	.footer__apart	
+		font-style: italic
+	.collapse
+		padding-right: 0
+	.nav
+		.nav__item
+			padding: 0 0 0 18px
+			&:first-child	
+				padding-left: 0
+		a
+			padding: 0
+			font-size: 15px
+			color: #fff
+			&:hover
+				background: none
+				text-decoration: underline
+	.list-unstyled
+		li
+			&:hover
+				a
+					color: #000
+					text-decoration: underline
+		a
+			color: #000
+			i
+				color: #000
+		.fa-phone
+			color: #333
+	.list-unstyled_right
+		a
+			text-decoration: underline
+			&:hover
+				text-decoration: none !important
+	.btn-group_mod
+		float: right
+		li
+			strong
+				text-transform: uppercase
+		&.open
+			margin-bottom: 222px
+		.dropdown-menu
+			min-width: 210px
+			overflow-y: auto
+			max-height: 250px
+	.btn
+		border: none
+		background: none
+	
+
 .da-slider
 	background: transparent url(http://lorempixel.com/1920/425/city) repeat 0% 0%
 
@@ -119,6 +175,7 @@
 
 //description
 .description
+	margin-left: -15px
 	padding-bottom: 15px
 	border: 1px solid #eee
 
@@ -134,6 +191,8 @@
 	background: #f5f5f5
 	border-bottom: 2px solid #d9d9d9
 	+box
+.description__wrap
+	padding: 0 5px 0 10px
 
 .description__name, .description__addres
 	padding-left: 24px
@@ -198,7 +257,7 @@
 		margin-top: 5px
 		font-size: 18px
 	.price
-		margin-left: -10px
+		margin-left: -8px
 
 .btn-u_mod
 	position: relative
@@ -206,9 +265,9 @@
 	vertical-align: top
 	background: #456e22
 	&:hover
-		background: #456e22
+		background: #2ecc71 !important
 	&:focus
-		background: #456e22
+		background: #2ecc71 !important
 	&:active
 		top: -1px
 	&:before
@@ -216,7 +275,7 @@
 		content: ''
 		top: 0
 		right: -18px
-		+arr(18, 52, #456e22, r)
+		+arr(18, 52, #2ecc71, r)
 //price
 .price
 	width: 62%
@@ -278,9 +337,21 @@
 		border: 5px solid #cccccc
 		background: #fff
 
+//guesthouse
+.guesthouse
+	padding: 10px
+	background: #f5f5f5
+	+clr
+	+box
+.guesthouse__item
+	border: 1px solid #eeeeee
+	background: #fff
+
 //reviews
 .reviews
-	padding-top: 42px
+	margin-top: 42px
+	padding: 10px 20px
+	background: #f5f5f5
 	+box
 	img
 		width: 100%
@@ -294,6 +365,74 @@
 	.map 
 		height: 830px
 		+box
+
+//color-black
+.color-black
+	color: #000
+
+//filter
+.filter
+	input
+		padding-left: 16px
+		height: 52px
+		font-size: 20px
+		line-height: 52px
+		width: 100%
+		+box
+	span
+		cursor: pointer
+	.input-append
+		position: relative
+	.add-on
+		position: absolute
+		top: 0
+		right: 5px
+		font-size: 36px
+	.well
+		float: left
+		width: 100%
+	.input-lg
+		height: 52px
+		line-height: 52px
+		font-size: 20px
+		color: #000
+		border: none
+	.select
+		position: relative
+		.fa-user
+			position: absolute
+			top: 9px
+			right: 28px
+			font-size: 36px
+		.form-control 
+			cursor: pointer
+//.offers
+.offers
+
+.offers__left
+	p
+		span
+			cursor: pointer
+
+//date
+.day, .next, .prev
+	cursor: pointer
+	text-align: center
+	+border-radius(5px !important)
+	&:hover
+		+box-shadow(0 0 1px 1px #ccc)
+.next, .prev
+	padding: 2px 10px 4px !important
+	border: 1px solid #ccc
+	display: inline-block
+.datepicker
+	cursor: pointer
+	.switch
+		text-align: center
+	.datepicker-days
+		padding: 15px
+
+
 @media (max-width: 992px)
 	.step
 		.step__performance
@@ -301,3 +440,9 @@
 				background: none
 				&.is-active
 					background: none
+	.footer, .nav
+		text-align: center
+		.nav
+			li
+				float: none
+				display: inline-block

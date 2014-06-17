@@ -218,6 +218,44 @@
         <!-- END row -->
 
         <!-- BEGIN row -->
+        <div class="filter row">
+            <div class="col-md-12">
+                <div class="well">
+                <div class="col-md-3 col-sm-6">
+                    <div class="input-append date" id="dp1" data-date="" data-date-format="dd.mm.yyyy">
+                        <input class="span2 js-datepicker" size="16" type="text" value="Заезд" readonly="">
+                        <span class="add-on"><i class="icon-calendar"></i></span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="input-append date" id="dp2" data-date="" data-date-format="dd.mm.yyyy">
+                        <input class="span2 js-datepicker" size="16" type="text" value="Выезд" readonly="">
+                        <span class="add-on"><i class="icon-calendar"></i></span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="select">
+                        <select class="form-control input-lg">
+                            <option>1 гость</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6+</option>
+                        </select>
+                        <i class="fa fa-user"></i>
+                    </div>
+                    
+                </div>
+                <div class="col-md-3 col-sm-6"><button class="btn-u btn-u-lg btn-block btn-u-green" type="button">Выбрать апартаменты</button></div>
+            </div>
+            </div>   
+            
+            
+        </div>
+        <!-- END row -->
+
+        <!-- BEGIN row -->
         <div class="row margin-bottom-20">
             <!-- Welcome Block -->
             <div class="col-md-8 md-margin-bottom-40">
@@ -286,32 +324,34 @@
             </div><!--/col-md-8-->        
 
             <!-- Posts -->
-            <div class="description col-md-4 posts">
-                <div class="row">
+            <div class="col-md-4 posts">
+                <div class="description">
                     <div class="description__top">Однокомнатная</div>
-                </div>
-                <div class="description__row"><a href="#" class="description__name name"><i class="name__ico"></i>Гестхаус "Шевченко"</a></div>
-                <div class="description__row"><a href="#" class="description__addres addres"><i class="addres__ico"></i>Шевченко 10, Киев</a></div>
-                <ul class="description__list list">
-                    <li class="description__item"><i class="list__ico list__ico_dg1"></i>Джакузи</li>
-                    <li class="description__item"><i class="list__ico list__ico_dg2"></i>Джакузи</li>
-                    <li class="description__item"><i class="list__ico list__ico_oll"></i>Все для готовки</li>
-                    <li class="description__item"><i class="list__ico list__ico_sa"></i>Сауна</li>
-                    <li class="description__item"><i class="list__ico list__ico_con"></i>Кондиционер</li>
-                    <li class="description__item"><i class="list__ico list__ico_con2"></i>Кондиционер</li>
-                    <li class="description__item"><i class="list__ico list__ico_tv1"></i>Плазменное TV</li>
-                    <li class="description__item"><i class="list__ico list__ico_tv2"></i>Плазменное TV</li>
-                </ul>
-                <div class="description__bottom">
-                    <div class="price">
-                        <div class="price__old">898 грн/сутки</div>
-                        <div class="price__item color-red">1213</div>
-                        <div class="price__item">
-                            <div class="price__time color-red">грн/сутки</div>
-                            <div class="price__time">(8960 грн за 3 ночи)</div>
+                    <div class="description__wrap">
+                            <div class="description__row"><a href="#" class="description__name name"><i class="name__ico"></i>Гестхаус "Шевченко"</a></div>
+                        <div class="description__row"><a href="#" class="description__addres addres"><i class="addres__ico"></i>Шевченко 10, Киев</a></div>
+                        <ul class="description__list list">
+                            <li class="description__item"><i class="list__ico list__ico_dg1"></i>Джакузи</li>
+                            <li class="description__item"><i class="list__ico list__ico_dg2"></i>Джакузи</li>
+                            <li class="description__item"><i class="list__ico list__ico_oll"></i>Все для готовки</li>
+                            <li class="description__item"><i class="list__ico list__ico_sa"></i>Сауна</li>
+                            <li class="description__item"><i class="list__ico list__ico_con"></i>Кондиционер</li>
+                            <li class="description__item"><i class="list__ico list__ico_con2"></i>Кондиционер</li>
+                            <li class="description__item"><i class="list__ico list__ico_tv1"></i>Плазменное TV</li>
+                            <li class="description__item"><i class="list__ico list__ico_tv2"></i>Плазменное TV</li>
+                        </ul>
+                        <div class="description__bottom">
+                            <div class="price">
+                                <div class="price__old">898 грн/сутки</div>
+                                <div class="price__item color-red">1213</div>
+                                <div class="price__item">
+                                    <div class="price__time color-red">грн/сутки</div>
+                                    <div class="price__time">(8960 грн за 3 ночи)</div>
+                                </div>
+                            </div>
+                            <button class="btn-u btn-u_mod btn-u-green" type="button">Подробнее</button>
                         </div>
                     </div>
-                    <button class="btn-u btn-u_mod" type="button">Подробнее</button>
                 </div>
             </div>
         </div>
@@ -386,32 +426,34 @@
             </div><!--/col-md-8-->        
 
             <!-- Posts -->
-            <div class="description col-md-4 posts">
-                <div class="row">
+            <div class="col-md-4 posts">
+                <div class="description">
                     <div class="description__top">Однокомнатная</div>
-                </div>
-                <div class="description__row"><a href="#" class="description__name name"><i class="name__ico"></i>Гестхаус "Шевченко"</a></div>
-                <div class="description__row"><a href="#" class="description__addres addres"><i class="addres__ico"></i>Шевченко 10, Киев</a></div>
-                <ul class="description__list list">
-                    <li class="description__item"><i class="list__ico list__ico_dg1"></i>Джакузи</li>
-                    <li class="description__item"><i class="list__ico list__ico_dg2"></i>Джакузи</li>
-                    <li class="description__item"><i class="list__ico list__ico_oll"></i>Все для готовки</li>
-                    <li class="description__item"><i class="list__ico list__ico_sa"></i>Сауна</li>
-                    <li class="description__item"><i class="list__ico list__ico_con"></i>Кондиционер</li>
-                    <li class="description__item"><i class="list__ico list__ico_con2"></i>Кондиционер</li>
-                    <li class="description__item"><i class="list__ico list__ico_tv1"></i>Плазменное TV</li>
-                    <li class="description__item"><i class="list__ico list__ico_tv2"></i>Плазменное TV</li>
-                </ul>
-                <div class="description__bottom">
-                    <div class="price">
-                        <div class="price__old">898 грн/сутки</div>
-                        <div class="price__item color-red">1213</div>
-                        <div class="price__item">
-                            <div class="price__time color-red">грн/сутки</div>
-                            <div class="price__time">(8960 грн за 3 ночи)</div>
+                    <div class="description__wrap">
+                            <div class="description__row"><a href="#" class="description__name name"><i class="name__ico"></i>Гестхаус "Шевченко"</a></div>
+                        <div class="description__row"><a href="#" class="description__addres addres"><i class="addres__ico"></i>Шевченко 10, Киев</a></div>
+                        <ul class="description__list list">
+                            <li class="description__item"><i class="list__ico list__ico_dg1"></i>Джакузи</li>
+                            <li class="description__item"><i class="list__ico list__ico_dg2"></i>Джакузи</li>
+                            <li class="description__item"><i class="list__ico list__ico_oll"></i>Все для готовки</li>
+                            <li class="description__item"><i class="list__ico list__ico_sa"></i>Сауна</li>
+                            <li class="description__item"><i class="list__ico list__ico_con"></i>Кондиционер</li>
+                            <li class="description__item"><i class="list__ico list__ico_con2"></i>Кондиционер</li>
+                            <li class="description__item"><i class="list__ico list__ico_tv1"></i>Плазменное TV</li>
+                            <li class="description__item"><i class="list__ico list__ico_tv2"></i>Плазменное TV</li>
+                        </ul>
+                        <div class="description__bottom">
+                            <div class="price">
+                                <div class="price__old">898 грн/сутки</div>
+                                <div class="price__item color-red">1213</div>
+                                <div class="price__item">
+                                    <div class="price__time color-red">грн/сутки</div>
+                                    <div class="price__time">(8960 грн за 3 ночи)</div>
+                                </div>
+                            </div>
+                            <button class="btn-u btn-u_mod btn-u-green" type="button">Подробнее</button>
                         </div>
                     </div>
-                    <button class="btn-u btn-u_mod" type="button">Подробнее</button>
                 </div>
             </div>
         </div>
@@ -486,32 +528,34 @@
             </div><!--/col-md-8-->        
 
             <!-- Posts -->
-            <div class="description col-md-4 posts">
-                <div class="row">
+            <div class="col-md-4 posts">
+                <div class="description">
                     <div class="description__top">Однокомнатная</div>
-                </div>
-                <div class="description__row"><a href="#" class="description__name name"><i class="name__ico"></i>Гестхаус "Шевченко"</a></div>
-                <div class="description__row"><a href="#" class="description__addres addres"><i class="addres__ico"></i>Шевченко 10, Киев</a></div>
-                <ul class="description__list list">
-                    <li class="description__item"><i class="list__ico list__ico_dg1"></i>Джакузи</li>
-                    <li class="description__item"><i class="list__ico list__ico_dg2"></i>Джакузи</li>
-                    <li class="description__item"><i class="list__ico list__ico_oll"></i>Все для готовки</li>
-                    <li class="description__item"><i class="list__ico list__ico_sa"></i>Сауна</li>
-                    <li class="description__item"><i class="list__ico list__ico_con"></i>Кондиционер</li>
-                    <li class="description__item"><i class="list__ico list__ico_con2"></i>Кондиционер</li>
-                    <li class="description__item"><i class="list__ico list__ico_tv1"></i>Плазменное TV</li>
-                    <li class="description__item"><i class="list__ico list__ico_tv2"></i>Плазменное TV</li>
-                </ul>
-                <div class="description__bottom">
-                    <div class="price">
-                        <div class="price__old">898 грн/сутки</div>
-                        <div class="price__item color-red">1213</div>
-                        <div class="price__item">
-                            <div class="price__time color-red">грн/сутки</div>
-                            <div class="price__time">(8960 грн за 3 ночи)</div>
+                    <div class="description__wrap">
+                            <div class="description__row"><a href="#" class="description__name name"><i class="name__ico"></i>Гестхаус "Шевченко"</a></div>
+                        <div class="description__row"><a href="#" class="description__addres addres"><i class="addres__ico"></i>Шевченко 10, Киев</a></div>
+                        <ul class="description__list list">
+                            <li class="description__item"><i class="list__ico list__ico_dg1"></i>Джакузи</li>
+                            <li class="description__item"><i class="list__ico list__ico_dg2"></i>Джакузи</li>
+                            <li class="description__item"><i class="list__ico list__ico_oll"></i>Все для готовки</li>
+                            <li class="description__item"><i class="list__ico list__ico_sa"></i>Сауна</li>
+                            <li class="description__item"><i class="list__ico list__ico_con"></i>Кондиционер</li>
+                            <li class="description__item"><i class="list__ico list__ico_con2"></i>Кондиционер</li>
+                            <li class="description__item"><i class="list__ico list__ico_tv1"></i>Плазменное TV</li>
+                            <li class="description__item"><i class="list__ico list__ico_tv2"></i>Плазменное TV</li>
+                        </ul>
+                        <div class="description__bottom">
+                            <div class="price">
+                                <div class="price__old">898 грн/сутки</div>
+                                <div class="price__item color-red">1213</div>
+                                <div class="price__item">
+                                    <div class="price__time color-red">грн/сутки</div>
+                                    <div class="price__time">(8960 грн за 3 ночи)</div>
+                                </div>
+                            </div>
+                            <button class="btn-u btn-u_mod btn-u-green" type="button">Подробнее</button>
                         </div>
                     </div>
-                    <button class="btn-u btn-u_mod" type="button">Подробнее</button>
                 </div>
             </div>
         </div>
@@ -519,66 +563,65 @@
 
         <!-- BEGIN row -->
         <div class="row margin-bottom-20">
-
-            <div class="col-md-3 col-sm-6">
-                <div class="col-md-12 servive-block-default">
-                    <div class="row">
-                        <img class="img-responsive margin-bottom-10" src="http://lorempixel.com/293/58/city" alt="img">
+            <div class="col-md-12">
+                <div class="guesthouse">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="col-md-12 guesthouse__item">
+                            <div class="row">
+                                <img class="img-responsive margin-bottom-10" src="http://lorempixel.com/293/58/city" alt="img">
+                            </div>
+                            <h3 class="color-dark-blue margin-bottom-5"><a href="#"></a>Бассейная</h3>
+                            <h4 class="margin-bottom-5">5 апартаментов</h4>
+                            <p>Тихий спальный район в 5 минутах от крупнейшего стадиона Украины. Вы можете посетить старейший рынок Киева всего в 3 минутах ходьбы. Вы можете посетить старейший рынок Киева всего в 3 минутах ходьбы.</p>
+                            <div class="margin-bottom-15"></div>
+                            <a href="#" class="color-dark-blue margin-top-10"><strong>К квартирам гестхауса >></strong></a>
+                            <div class="margin-bottom-5"></div>
+                        </div>
                     </div>
-                    <h3 class="color-dark-blue margin-bottom-5"><a href="#"></a>Бассейная</h3>
-                    <h4 class="margin-bottom-5">5 апартаментов</h4>
-                    <p>Тихий спальный район в 5 минутах от крупнейшего стадиона Украины. Вы можете посетить старейший рынок Киева всего в 3 минутах ходьбы. Вы можете посетить старейший рынок Киева всего в 3 минутах ходьбы.</p>
-                    <div class="margin-bottom-15"></div>
-                    <a href="#" class="color-dark-blue margin-top-10"><strong>К квартирам гестхауса >></strong></a>
-                    <div class="margin-bottom-5"></div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="col-md-12 guesthouse__item">
+                            <div class="row">
+                                <img class="img-responsive margin-bottom-10" src="http://lorempixel.com/293/58/city" alt="img">
+                            </div>
+                            <h3 class="color-dark-blue margin-bottom-5"><a href="#"></a>Бассейная</h3>
+                            <h4 class="margin-bottom-5">5 апартаментов</h4>
+                            <p>Тихий спальный район в 5 минутах от крупнейшего стадиона Украины. Вы можете посетить старейший рынок Киева всего в 3 минутах ходьбы. Вы можете посетить старейший рынок Киева всего в 3 минутах ходьбы.</p>
+                            <div class="margin-bottom-15"></div>
+                            <a href="#" class="color-dark-blue margin-top-10"><strong>К квартирам гестхауса >></strong></a>
+                            <div class="margin-bottom-5"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="col-md-12 guesthouse__item">
+                            <div class="row">
+                                <img class="img-responsive margin-bottom-10" src="http://lorempixel.com/293/58/city" alt="img">
+                            </div>
+                            <h3 class="color-dark-blue margin-bottom-5"><a href="#"></a>Бассейная</h3>
+                            <h4 class="margin-bottom-5">5 апартаментов</h4>
+                            <p>Тихий спальный район в 5 минутах от крупнейшего стадиона Украины. Вы можете посетить старейший рынок Киева всего в 3 минутах ходьбы. Вы можете посетить старейший рынок Киева всего в 3 минутах ходьбы.</p>
+                            <div class="margin-bottom-15"></div>
+                            <a href="#" class="color-dark-blue margin-top-10"><strong>К квартирам гестхауса >></strong></a>
+                            <div class="margin-bottom-5"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="col-md-12 guesthouse__item">
+                            <div class="row">
+                                <img class="img-responsive margin-bottom-10" src="http://lorempixel.com/293/58/city" alt="img">
+                            </div>
+                            <h3 class="color-dark-blue margin-bottom-5"><a href="#"></a>Бассейная</h3>
+                            <h4 class="margin-bottom-5">5 апартаментов</h4>
+                            <p>Тихий спальный район в 5 минутах от крупнейшего стадиона Украины. Вы можете посетить старейший рынок Киева всего в 3 минутах ходьбы. Вы можете посетить старейший рынок Киева всего в 3 минутах ходьбы.</p>
+                            <div class="margin-bottom-15"></div>
+                            <a href="#" class="color-dark-blue margin-top-10"><strong>К квартирам гестхауса >></strong></a>
+                            <div class="margin-bottom-5"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div class="col-md-3 col-sm-6">
-                <div class="col-md-12 servive-block-default">
-                    <div class="row">
-                        <img class="img-responsive margin-bottom-10" src="http://lorempixel.com/293/58/city" alt="img">
-                    </div>
-                    <h3 class="color-dark-blue margin-bottom-5"><a href="#"></a>Бассейная</h3>
-                    <h4 class="margin-bottom-5">5 апартаментов</h4>
-                    <p>Тихий спальный район в 5 минутах от крупнейшего стадиона Украины. Вы можете посетить старейший рынок Киева всего в 3 минутах ходьбы. Вы можете посетить старейший рынок Киева всего в 3 минутах ходьбы.</p>
-                    <div class="margin-bottom-15"></div>
-                    <a href="#" class="color-dark-blue margin-top-10"><strong>К квартирам гестхауса >></strong></a>
-                    <div class="margin-bottom-5"></div>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6">
-                <div class="col-md-12 servive-block-default">
-                    <div class="row">
-                        <img class="img-responsive margin-bottom-10" src="http://lorempixel.com/293/58/city" alt="img">
-                    </div>
-                    <h3 class="color-dark-blue margin-bottom-5"><a href="#"></a>Бассейная</h3>
-                    <h4 class="margin-bottom-5">5 апартаментов</h4>
-                    <p>Тихий спальный район в 5 минутах от крупнейшего стадиона Украины. Вы можете посетить старейший рынок Киева всего в 3 минутах ходьбы. Вы можете посетить старейший рынок Киева всего в 3 минутах ходьбы.</p>
-                    <div class="margin-bottom-15"></div>
-                    <a href="#" class="color-dark-blue margin-top-10"><strong>К квартирам гестхауса >></strong></a>
-                    <div class="margin-bottom-5"></div>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6">
-                <div class="col-md-12 servive-block-default">
-                    <div class="row">
-                        <img class="img-responsive margin-bottom-10" src="http://lorempixel.com/293/58/city" alt="img">
-                    </div>
-                    <h3 class="color-dark-blue margin-bottom-5"><a href="#"></a>Бассейная</h3>
-                    <h4 class="margin-bottom-5">5 апартаментов</h4>
-                    <p>Тихий спальный район в 5 минутах от крупнейшего стадиона Украины. Вы можете посетить старейший рынок Киева всего в 3 минутах ходьбы. Вы можете посетить старейший рынок Киева всего в 3 минутах ходьбы.</p>
-                    <div class="margin-bottom-15"></div>
-                    <a href="#" class="color-dark-blue margin-top-10"><strong>К квартирам гестхауса >></strong></a>
-                    <div class="margin-bottom-5"></div>
-                </div>
-            </div>
-
-
         </div>
         <!-- END row -->
+
         <!-- BEGIN row -->
         <div class="row margin-bottom-20">
             <div class="col-md-8">
@@ -627,11 +670,51 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 reviews">
-                <img src="img/img1.png" alt="img">
+            <div class="col-md-4">
+                <div class="reviews">
+                    <a href="#"><div class="reviews__top margin-bottom-10"><img src="img/img1.png" alt="img"></div></a>
+                    <a href="#"><div class="reviews__bottom"><img src="img/img2.png" alt="img"></div></a>
+                </div>
             </div>
         </div>
         <!-- END row -->
+
+        <!-- BEGIN  row-->
+        <div class="filter row">
+            <div class="col-md-12">
+                <div class="well">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="input-append date" id="dp3" data-date="" data-date-format="dd.mm.yyyy">
+                            <input class="span2 js-datepicker" size="16" type="text" value="Заезд" readonly="">
+                            <span class="add-on"><i class="icon-calendar"></i></span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="input-append date" id="dp4" data-date="" data-date-format="dd.mm.yyyy">
+                            <input class="span2 js-datepicker" size="16" type="text" value="Выезд" readonly="">
+                            <span class="add-on"><i class="icon-calendar"></i></span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="select">
+                            <select class="form-control input-lg">
+                                <option>1 гость</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6+</option>
+                            </select>
+                            <i class="fa fa-user"></i>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-3 col-sm-6"><button class="btn-u btn-u-lg btn-block btn-u-green" type="button">Выбрать апартаменты</button></div>
+                </div>
+            </div>  
+        </div>
+        <!-- END  row-->
+
         <!-- BEGIN row -->
         <div class="row margin-bottom-20">
             <div class="col-md-12">
@@ -653,65 +736,102 @@
         <div class="container">
                 <!-- BEGIN row -->
                 <div class="row">
-                    <div class="col-md-2">
+                    <div class="col-md-2 col-sm-12">
                         <a href="#" class="footer__logo"></a>
-                        <p>Апартаменты в<br> Киеве посуточно</p>
+                        <div class="footer__apart">Апартаменты в<br> Киеве посуточно</div>
                     </div>
-                    <div class="col-md-10">
+                    <div class="col-md-10 col-sm-12">
                         <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse navbar-responsive-collapse">
+                        <div class="collapse navbar-collapse navbar-responsive-collapse margin-bottom-20">
                             <ul class="nav navbar-nav">
                                 <!-- Home -->
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle">
-                                        ГЛАВНАЯ
-                                    </a>
-                                </li>
+                                <li class="nav__item"><a href="#">ГЛАВНАЯ</a></li>
                                 <!-- End Home -->
 
+                                <!-- Features -->
+                                <li class="nav__item"><a href="#">О НАС</a></li>
+                                <!-- End Features -->
+
                                 <!-- Pages -->                        
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle">
-                                        КВАРТИРЫ
-                                    </a>
-                                    
-                                </li>
+                                <li class="nav__item"><a href="#">КВАРТИРЫ</a></li>
                                 <!-- End Pages -->
 
                                 <!-- Features -->
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle">
-                                        ГЕСТХАУСЫ
-                                    </a>
-                                </li>
+                                <li class="nav__item"><a href="#">ГЕСТХАУСЫ</a></li>
                                 <!-- End Features -->
 
                                 <!-- Portfolio -->
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle">
-                                        ТРАНСФЕР
-                                    </a>
-                                </li>
+                                <li class="nav__item"><a href="#">ТРАНСФЕР</a></li>
                                 <!-- Ens Portfolio -->
 
-                                <!-- Blog -->
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle">
-                                        КОНТАКТЫ
-                                    </a>
-                                </li>
-                                <!-- End Blog -->
-
                                 <!-- Contacts -->
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle">
-                                        АКЦИИ
-                                    </a>
-                                </li>                    
+                                <li class="nav__item"><a href="#">АКЦИИ</a></li>                    
                                 <!-- End Contacts -->
 
+                                <!-- Portfolio -->
+                                <li class="nav__item"><a href="#">ДОЛГОСРОЧНО</a></li>
+                                <!-- Ens Portfolio -->
+                                
+                                <!-- Blog -->
+                                <li class="nav__item"><a href="#">КОНТАКТЫ </a></li>
+                                <!-- End Blog -->
+
+                                <!-- Portfolio -->
+                                <li class="nav__item"><a href="#">НОВОСТИ</a></li>
+                                <!-- Ens Portfolio -->
+                                
+                                <!-- Portfolio -->
+                                <li class="nav__item"><a href="#">ПОМОЩЬ</a></li>
+                                <!-- Ens Portfolio -->
+                                
                             </ul>
                         </div><!--/navbar-collapse-->
+                        <div class="col-md-4 col-sm-12">
+                            <h5 class="color-black margin-bottom-10">Our Office Details</h5>
+                            <ul class="list-unstyled who">
+                                <li><a href="#"><i class="fa fa-phone"></i>+38 044 228 55 11</a></li>
+                                <li><a href="#"><i class="fa fa-skype"></i>reservation.partnerguesthouse</a></li>
+                                <li><a href="#"><i class="fa fa-calendar"></i>Пн-Вс: 9:00 - 21:00</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <h5 class="color-black margin-bottom-10">Our Office Details</h5>
+                            <ul class="list-unstyled who">
+                                <li><a href="#"><i class="fa fa-phone"></i>+38 044 228 55 11</a></li>
+                                <li><a href="#"><i class="fa fa-skype"></i>reservation.partnerguesthouse</a></li>
+                                <li><a href="#"><i class="fa fa-calendar"></i>Пн-Вс: 9:00 - 21:00</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <h5 class="color-black margin-bottom-10">Our Office Details</h5>
+                            <ul class="list-unstyled list-unstyled_right who">
+                                <li><a href="#">Политика конфиденциальности</a></li>
+                                <li><a href="#">Условия использования сервиса</a></li>
+                                <li><a href="#">Изменение условий бронирвоания</a></li>
+                                <li><a href="#">Безопасность кредитных карт</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="btn-group btn-group_mod">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">id <i class="fa fa-angle-down"></i>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#"><strong>1s2x - </strong> бронирвоания</a></li>
+                                <li><a href="#"><strong>1s2x - </strong> бронирвоания</a></li>
+                                <li><a href="#"><strong>1s2x - </strong> бронирвоания</a></li>
+                                <li><a href="#"><strong>1s2x - </strong> бронирвоания</a></li>
+                                <li><a href="#"><strong>1s2x - </strong> бронирвоания</a></li>
+                                <li><a href="#"><strong>1s2x - </strong> бронирвоания</a></li>
+                                <li><a href="#"><strong>1s2x - </strong> бронирвоания</a></li>
+                                <li><a href="#"><strong>1s2x - </strong> бронирвоания</a></li>
+                                <li><a href="#"><strong>1s2x - </strong> бронирвоания</a></li>
+                                <li><a href="#"><strong>1s2x - </strong> бронирвоания</a></li>
+                                <li><a href="#"><strong>1s2x - </strong> бронирвоания</a></li>
+                                <li><a href="#"><strong>1s2x - </strong> бронирвоания</a></li>
+                                <li><a href="#"><strong>1s2x - </strong> бронирвоания</a></li>
+                            </ul>
+                        </div>
+
                     </div>
                 </div>
                 <!-- END row -->
