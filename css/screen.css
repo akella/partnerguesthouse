@@ -48,6 +48,12 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 .footer .btn-group_mod .dropdown-menu { min-width: 210px; overflow-y: auto; max-height: 250px; }
 .footer .btn { border: none; background: none; }
 
+.btn-u-lg_mod { padding: 5.5px 25px; }
+.btn-u-lg_mod span { line-height: 1; display: inline-block; }
+
+.breadcrumbs { padding: 0; }
+.breadcrumbs .breadcrumb { padding: 0; }
+
 .da-slider { background: transparent url(http://lorempixel.com/1920/425/city) repeat 0% 0%; }
 
 .da-dots { display: none; }
@@ -152,6 +158,8 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 .filter .select { position: relative; }
 .filter .select .fa-user { position: absolute; top: 9px; right: 28px; font-size: 36px; }
 .filter .select .form-control { cursor: pointer; }
+
+.filter_text a, .filter_text strong { font-size: 18px; }
 
 .offers__left p span { cursor: pointer; }
 
