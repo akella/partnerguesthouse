@@ -150,7 +150,7 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 .google-map .google-map__wrap { padding: 10px 50px; }
 .google-map .map { height: 830px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
-.google-map_mod { width: 598px; height: 598px; }
+.google-map_mod { width: 558px; height: 598px; }
 .google-map_mod .map { width: 100% !important; height: 100% !important; }
 
 .color-black { color: black; }

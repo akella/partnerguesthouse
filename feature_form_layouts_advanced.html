@@ -246,34 +246,46 @@
                 </div>
                 <!-- Checkout-Form -->
                 <form action="" id="sky-form" class="sky-form">
+                    <header>1. Личные данные гостя</header>
                     
                     <fieldset>                  
                         <div class="row">
-                            <div class="col-md-12 headline">
-                                <div class="color-green margin-bottom-20">Все поля необходимо заполнить</div>
-                                <h3>1. Личные данные гостя</h3>
-                            </div>
-
                             <section class="col col-6">
                                 <label class="input">
                                     <i class="icon-prepend fa fa-user"></i>
-                                    <input type="text" name="fname" placeholder="Имя...">
+                                    <input type="text" name="fname" placeholder="First name">
                                 </label>
                             </section>
                             <section class="col col-6">
                                 <label class="input">
                                     <i class="icon-prepend fa fa-user"></i>
-                                    <input type="text" name="lname" placeholder="Фамилия...">
+                                    <input type="text" name="lname" placeholder="Last name">
                                 </label>
                             </section>
                         </div>
-
+                        
+                        <div class="row">
+                            <section class="col col-6">
+                                <label class="input">
+                                    <i class="icon-prepend fa fa-envelope"></i>
+                                    <input type="email" name="email" placeholder="E-mail">
+                                </label>
+                            </section>
+                            <section class="col col-6">
+                                <label class="input">
+                                    <i class="icon-prepend fa fa-phone"></i>
+                                    <input type="tel" name="phone" placeholder="Phone">
+                                </label>
+                            </section>
+                        </div>
+                    </fieldset>
+                    
+                    <fieldset>
                         <div class="row">
                             <section class="col col-5">
-                                <div class="margin-bottom-10">Страна проживания:</div>
                                 <label class="select">
                                     <select name="country">
-                                        <option value="0" selected disabled>Украина</option>
+                                        <option value="0" selected disabled>Country</option>
                                         <option value="244">Aaland Islands</option>
                                         <option value="1">Afghanistan</option>
                                         <option value="2">Albania</option>
@@ -527,47 +539,104 @@
                                     <i></i>
                                 </label>
                             </section>
+                            
+                            <section class="col col-4">
+                                <label class="input">
+                                    <input type="text" name="city" placeholder="City">
+                                </label>
+                            </section>
+                            
+                            <section class="col col-3">
+                                <label class="input">
+                                    <input type="text" name="code" placeholder="Post code">
+                                </label>
+                            </section>
                         </div>
                         
+                        <section>
+                            <label for="file" class="input">
+                                <input type="text" name="address" placeholder="Address">
+                            </label>
+                        </section>
+                        
+                        <section>
+                            <label class="textarea">
+                                <textarea rows="3" name="info" placeholder="Additional info"></textarea>
+                            </label>
+                        </section>
                     </fieldset>
                     
                     <fieldset>
-                        <div class="row">
-                            <div class="col-md-12 headline">
-                                <h3>2. Контактная информация</h3>
+                        <section>
+                            <div class="inline-group">
+                                <label class="radio"><input type="radio" name="radio-inline" checked><i class="rounded-x"></i>Visa</label>
+                                <label class="radio"><input type="radio" name="radio-inline"><i class="rounded-x"></i>MasterCard</label>
+                                <label class="radio"><input type="radio" name="radio-inline"><i class="rounded-x"></i>PayPal</label>
                             </div>
-                            <section class="col col-6">
+                        </section>                  
+                        
+                        <section>
+                            <label class="input">
+                                <input type="text" name="name" placeholder="Name on card">
+                            </label>
+                        </section>
+                        
+                        <div class="row">
+                            <section class="col col-10">
                                 <label class="input">
-                                    <i class="icon-prepend fa fa-phone"></i>
-                                    <input type="tel" name="phone" placeholder="Номер телефона...">
+                                    <input type="text" name="card" id="card" placeholder="Card number">
                                 </label>
                             </section>
-                            <section class="col col-6">
+                            <section class="col col-2">
                                 <label class="input">
-                                    <i class="icon-prepend fa fa-envelope"></i>
-                                    <input type="email" name="email" placeholder="E-mail">
+                                    <input type="text" name="cvv" id="cvv" placeholder="CVV2">
                                 </label>
                             </section>
                         </div>
                         
+                        <div class="row">
+                            <label class="label col col-4">Expiration date</label>
+                            <section class="col col-5">
+                                <label class="select">
+                                    <select name="month">
+                                        <option value="0" selected disabled>Month</option>
+                                        <option value="1">January</option>
+                                        <option value="1">February</option>
+                                        <option value="3">March</option>
+                                        <option value="4">April</option>
+                                        <option value="5">May</option>
+                                        <option value="6">June</option>
+                                        <option value="7">July</option>
+                                        <option value="8">August</option>
+                                        <option value="9">September</option>
+                                        <option value="10">October</option>
+                                        <option value="11">November</option>
+                                        <option value="12">December</option>
+                                    </select>
+                                    <i></i>
+                                </label>
+                            </section>
+                            <section class="col col-3">
+                                <label class="input">
+                                    <input type="text" name="year" id="year" placeholder="Year">
+                                </label>
+                            </section>
+                        </div>
                     </fieldset>
                     
                     <footer>
-                        <button class="btn-u btn-u-lg btn-u-red" type="button">Забронировать</button>
+                        <button type="submit" class="btn-u">Continue</button>
                     </footer>
                 </form>         
                 <!-- End Checkout-Form -->
 
             </div>
             <div class="col-md-4">
-                <div class="filter_text">
-                    <p class="margin-bottom-5">Остались вопросы? Свяжитесь с менеджером:</p>
-                    <p><strong>+380 44 228 5511</strong></p>
-                    <a href="#" class="color-dark-blue">info@partnerguesthouse.com</a>
-                    <div class="margin-bottom-30"></div>
-                </div>
-                <div class="headline"><h2>Условия бронирования</h2></div>
-                
+                <p class="margin-bottom-5">Остались вопросы? Свяжитесь с менеджером:</p>
+                <p><strong>+380 44 228 5511</strong></p>
+                <a href="#" class="color-dark-blue">info@partnerguesthouse.com</a>
+                <div class="margin-bottom-30"></div>
+                <h2 class="margin-bottom-10">Условия бронирования</h2>
                 <h5 class="margin-bottom-5"><strong>Процесс бронирования</strong></h5>
                 <p class="margin-bottom-20">Квартиры посуточно Parnter Guest House бронируются так же как и любой отельный номер – просто заполните и отправьте форму бронирования. Для подтверждения бронирования система запросит у Вас данные кредитной карты (Вы можете выбрать другой вид гарантированной предоплаты). Это два необходимых шага для успешного бронирования квартиры.</p>
                 <h5 class="margin-bottom-5"><strong>Сумма предоплаты</strong></h5>
@@ -723,23 +792,12 @@
 <script type="text/javascript" src="assets/js/forms/order.js"></script>
 <script type="text/javascript" src="assets/js/forms/review.js"></script>
 <script type="text/javascript" src="assets/js/forms/checkout.js"></script>
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
-<script type="text/javascript" src="assets/plugins/gmap/gmap.js"></script>
 <script type="text/javascript">
     jQuery(document).ready(function() {
         App.init();
         OrderForm.initOrderForm();        
         ReviewForm.initReviewForm();        
         CheckoutForm.initCheckoutForm();        
-    });
-</script>
-<!-- JS Page Level -->           
-<script type="text/javascript" src="assets/js/pages/page_contacts.js"></script>
-<script type="text/javascript">
-    jQuery(document).ready(function() {
-        App.init();
-        ContactPage.initMap();
-        ContactPage.initPanorama();
     });
 </script>
 <!--[if lt IE 9]>
