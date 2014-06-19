@@ -126,9 +126,10 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 .price__time { padding-bottom: 5px; }
 
 .step .step__item { position: relative; padding-bottom: 60px; text-align: center; white-space: nowrap; overflow: hidden; }
+.step .step__item.is-active h3 { color: #585f69; }
+.step .step__item.is-active .performance { background: #3d9d06; }
+.step .step__item.is-active .performance .performance__pic { background: url('../img/icons-s17b3d39952.png') 0 -176px no-repeat; width: 35px; height: 35px; border: none; }
 .step .step__performance.performance { position: absolute; bottom: 30px; height: 5px; width: 100%; background: #cccccc; }
-.step .step__performance.performance.is-active { background: #3d9d06; }
-.step .step__performance.performance.is-active .performance__pic { background: url('../img/icons-s17b3d39952.png') 0 -176px no-repeat; width: 35px; height: 35px; border: none; }
 .step .step__performance.step__performance_1 { left: 50%; }
 .step .step__performance.step__performance_1 .performance__pic { left: -15px; }
 .step .step__performance.step__performance_2 { left: 0; }
@@ -148,6 +149,9 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 .google-map { padding: 10px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .google-map .google-map__wrap { padding: 10px 50px; }
 .google-map .map { height: 830px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+.google-map_mod { width: 598px; height: 598px; }
+.google-map_mod .map { width: 100% !important; height: 100% !important; }
 
 .color-black { color: black; }
 
@@ -174,6 +178,10 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 .datepicker { cursor: pointer; }
 .datepicker .switch { text-align: center; }
 .datepicker .datepicker-days { padding: 15px; }
+
+.padding-left-20 { padding-left: 20px; }
+
+.pointer { cursor: pointer; }
 
 @media (max-width: 992px) { .step .step__performance.performance { background: none; }
   .step .step__performance.performance.is-active { background: none; }

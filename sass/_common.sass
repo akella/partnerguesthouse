@@ -315,6 +315,14 @@
 		text-align: center
 		white-space: nowrap
 		overflow: hidden
+		&.is-active
+			h3
+				color: #585f69
+			.performance
+				background: #3d9d06
+				.performance__pic
+					+s(u957)
+					border: none
 	.step__performance
 		&.performance
 			position: absolute
@@ -322,11 +330,6 @@
 			height: 5px
 			width: 100%
 			background: #cccccc
-			&.is-active
-				background: #3d9d06
-				.performance__pic
-					+s(u957)
-					border: none
 		&.step__performance_1
 			left: 50%
 			.performance__pic
@@ -378,6 +381,12 @@
 	.map 
 		height: 830px
 		+box
+.google-map_mod
+	width: 598px
+	height: 598px
+	.map 
+		width: 100% !important
+		height: 100% !important
 
 //color-black
 .color-black
@@ -440,10 +449,13 @@
 	+border-radius(5px !important)
 	&:hover
 		+box-shadow(0 0 1px 1px #ccc)
+
 .next, .prev
 	padding: 2px 10px 4px !important
 	border: 1px solid #ccc
 	display: inline-block
+
+//datepicker
 .datepicker
 	cursor: pointer
 	.switch
@@ -451,6 +463,13 @@
 	.datepicker-days
 		padding: 15px
 
+//padding-left-2	
+.padding-left-20
+	padding-left: 20px
+
+//pointer
+.pointer
+	cursor: pointer
 
 @media (max-width: 992px)
 	.step

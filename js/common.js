@@ -45,6 +45,13 @@ head.ready(function() {
 		$('.datepicker').slideTogle();
 	});
 
+// $('#myModal').on('loaded.bs.modal', function (e) {
+//   alert();
+// })
+
+	$(".js-map").click(function(){
+        ContactPage.initMap();
+	})
 	console.log($('body').html());
 });
 
