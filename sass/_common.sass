@@ -40,7 +40,7 @@
 // =book
 // 	font-family: "book", Arial, sans-serif 
 	
-.logo-header
+.logo
 	position: relative
 	margin-top: -45px
 	height: 100px
@@ -49,12 +49,16 @@
 	display: inline-block
 	+s(u32)
 
+.logo_mod
+	margin-top: 0
+
 .header__block
 	font-style: italic
 	font-size: 14px
 	line-height: 1.2
 	color: #999
 	display: inline-block
+
 .header__facebook
 	margin-left: 160px
 	text-align: center 
@@ -128,6 +132,7 @@
 	.btn
 		border: none
 		background: none
+
 .btn-u-lg_mod
 	padding: 5.5px 0
 	span
@@ -204,6 +209,13 @@
 	background: #f5f5f5
 	border-bottom: 2px solid #d9d9d9
 	+box
+
+.description__top_mod
+	font-size: 13px
+	line-height: 1.2
+	h1, h2, h3, h4, h5, h6
+		margin-top: 0
+
 .description__wrap
 	padding: 0 5px 0 10px
 
@@ -211,7 +223,7 @@
 	padding-left: 24px
 	position: relative
 	color: #1E1E1E
-	font-style: 11px
+	font-size: 11px
 	text-decoration: underline
 	&:hover
 		color: #1E1E1E
@@ -230,6 +242,7 @@
 .description__addres
 	.addres__ico
 		+s(image_u752)
+.description_flat
 
 // description__list
 .description__list
@@ -263,6 +276,12 @@
 			+s(arr7)
 		.list__ico_tv2
 			+s(arr8)
+	&.description__list_mod
+		.description__item_top
+			margin-bottom: 5px
+			padding-left: 0
+		.description__item
+			margin-top: 8px
 
 .description__bottom
 	padding-top: 15px
@@ -293,10 +312,12 @@
 .price
 	width: 62%
 	display: inline-block
+
 .price__item
 	font-size: 36px
 	line-height: 1
 	display: inline-block
+
 .price__old, .price__time
 	font-size: 14px
 
@@ -359,6 +380,7 @@
 	background: #f5f5f5
 	+clr
 	+box
+
 .guesthouse__item
 	border: 1px solid #eeeeee
 	background: #fff
@@ -381,66 +403,59 @@
 	.map 
 		height: 830px
 		+box
+
 .google-map_mod
 	width: 558px
 	height: 598px
 	.map 
 		width: 100% !important
 		height: 100% !important
+.map_835
+	height: 835px
+
+.border
+	border: 1px solid #eee
 
 //color-black
 .color-black
 	color: #000
 
-//filter
-.filter
-	input
-		padding-left: 16px
-		height: 52px
-		font-size: 20px
-		line-height: 52px
-		width: 100%
-		+box
-	span
-		cursor: pointer
-	.input-append
-		position: relative
-	.add-on
-		position: absolute
-		top: 0
-		right: 5px
-		font-size: 36px
-	.well
-		float: left
-		width: 100%
-	.input-lg
-		height: 52px
-		line-height: 52px
-		font-size: 20px
-		color: #000
-		border: none
-	.select
-		position: relative
-		.fa-user
-			position: absolute
-			top: 9px
-			right: 28px
-			font-size: 36px
-		.form-control 
-			cursor: pointer
-.filter_text
+.filter-text
 	a, strong
 		font-size: 18px
 	p
 		margin-bottom: 0
 
+.btn-u_small
+	line-height: 1
+	font-size: 11px
+
+.select_people
+	select
+		color: #bbb !important
+	.fa
+		background: #fff !important
+
+//cont-top
+.cont-top
+	padding: 15px 15px 30px
+	background: url('http://lorempixel.com/1200/280/city') no-repeat 0 0
+	background-size: cover
+	.cont-top__text, h1, h2, h3
+		color: #fff
+	.cont-top__text
+		padding-left: 5px
+		font-size: 22px
+		background: rgba(#000, .6)
+
 //.offers
 .offers
+	padding-top: 20px
 
 .offers__left
-	p
-		span
-			cursor: pointer
+	float: left
+.offers__right
+	float: right	
 
 //date
 .day, .next, .prev
@@ -470,6 +485,9 @@
 //pointer
 .pointer
 	cursor: pointer
+
+.is-bold
+	font-weight: bold
 
 @media (max-width: 992px)
 	.step

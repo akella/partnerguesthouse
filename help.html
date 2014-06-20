@@ -11,9 +11,6 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="favicon.ico">
-
     <!-- CSS Global Compulsory -->
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -24,6 +21,7 @@
     <link rel="stylesheet" href="assets/plugins/flexslider/flexslider.css">     
     <link rel="stylesheet" href="assets/plugins/parallax-slider/css/parallax-slider.css">
     <link rel="stylesheet" href="assets/css/pages/z_feature_google_map.css">
+    <link rel="stylesheet" href="assets/plugins/sky-forms/version-2.0.1/css/custom-sky-forms.css">
 
     <!-- CSS Theme -->    
     <link rel="stylesheet" href="assets/css/themes/default.css" id="style_color">
@@ -102,7 +100,7 @@
                         <span class="sr-only">Toggle navigation</span>
                         <span class="fa fa-bars"></span>
                     </button>
-                    <a href="#" class="logo-header"></a>
+                    <a href="#" class="logo"></a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -592,24 +590,24 @@
         </div>
         <!-- END row -->
 
-        <!-- BEGIN filter -->
-        <div class="filter row">
-            <div class="col-md-12">
-                <div class="well margin-bottom-">
+        <!-- BEGIN form -->
+        <form action="" id="sky-form" class="sky-form"> 
+            <fieldset> 
+                <div class="row">   
+                    <section class="col col-3">
+                        <label class="input">
+                            <i class="icon-append fa fa-calendar"></i>
+                            <input type="text" name="start" id="start" placeholder="Заезд">
+                        </label>
+                    </section>
+                    <section class="col col-3">
+                        <label class="input">
+                            <i class="icon-append fa fa-calendar"></i>
+                            <input type="text" name="finish" id="finish" placeholder="Выезд">
+                        </label>
+                    </section>
                     <div class="col-md-3 col-sm-6">
-                        <div class="input-append date" id="dp1" data-date="" data-date-format="dd.mm.yyyy">
-                            <input class="span2 js-datepicker" size="16" type="text" value="Заезд" readonly="">
-                            <span class="add-on"><i class="icon-calendar"></i></span>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="input-append date" id="dp2" data-date="" data-date-format="dd.mm.yyyy">
-                            <input class="span2 js-datepicker" size="16" type="text" value="Выезд" readonly="">
-                            <span class="add-on"><i class="icon-calendar"></i></span>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="select">
+                        <div class="select select_people">
                             <select class="form-control input-lg">
                                 <option>1 гость</option>
                                 <option>2</option>
@@ -618,15 +616,15 @@
                                 <option>5</option>
                                 <option>6+</option>
                             </select>
-                            <i class="fa fa-user"></i>
+                            <span class="icon-append fa fa-user"></span>
                         </div>
-                        
                     </div>
-                    <div class="col-md-3 col-sm-6"><button class="btn-u btn-u-lg btn-block btn-u-green" type="button">Выбрать апартаменты</button></div>
-                </div>
-            </div>  
-        </div>
-        <!-- END filter -->
+                    <div class="col-md-3 col-sm-6"><button class="btn-u btn-block btn-u-green" type="button">Выбрать апартаменты</button></div>
+                </div>                  
+            </fieldset>
+        </form> 
+        <!-- END form -->
+        <div class="margin-bottom-40"></div>
 
     </div>
     <!-- END container -->
@@ -742,7 +740,7 @@
 
 </div><!--/wrapper-->
 
-<!-- JS Global Compulsory -->			
+<!-- JS Global Compulsory -->           
 <script type="text/javascript" src="assets/plugins/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="assets/plugins/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
@@ -751,16 +749,26 @@
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
 <script type="text/javascript" src="assets/plugins/gmap/gmap.js"></script>
 <script type="text/javascript" src="assets/plugins/flexslider/jquery.flexslider-min.js"></script>
-<script type="text/javascript" src="assets/plugins/parallax-slider/js/modernizr.js"></script>
-<script type="text/javascript" src="assets/plugins/parallax-slider/js/jquery.cslider.js"></script>
-<!-- JS Page Level -->           
+
+<!-- JS Page Level -->                  
+<script type="text/javascript" src="assets/js/plugins/masking.js"></script>
+<script type="text/javascript" src="assets/js/plugins/datepicker.js"></script>
+<script type="text/javascript" src="assets/js/plugins/validation.js"></script>
 <script type="text/javascript" src="assets/js/app.js"></script>
 <script type="text/javascript" src="assets/js/pages/index.js"></script>
+<!-- Masking Form -->
+<script src="assets/plugins/sky-forms/version-2.0.1/js/jquery.maskedinput.min.js"></script>
+<!-- Datepicker Form -->
+<script src="assets/plugins/sky-forms/version-2.0.1/js/jquery-ui.min.js"></script>
+<!-- Validation Form -->
+<script src="assets/plugins/sky-forms/version-2.0.1/js/jquery.validate.min.js"></script>
+<!-- JS Page Level -->    
 <script type="text/javascript">
     jQuery(document).ready(function() {
-      	App.init();
-        App.initSliders();
-        Index.initParallaxSlider();        
+        App.init();
+        Masking.initMasking();
+        Datepicker.initDatepicker();
+        Validation.initValidation();
     });
 </script>
 <!-- JS Page Level -->           

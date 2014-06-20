@@ -14,6 +14,7 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="favicon.ico">
 
+   
     <!-- CSS Global Compulsory -->
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -180,138 +181,114 @@
     <!-- END breadcrumbs -->   
     
     <!-- BEGIN container -->
-    <div class="container margin-bottom-40">
-
+    <div class="container">
         <!-- BEGIN row -->
         <div class="row">
+            <div class="col-md-12">
+                <h1 class="margin-bottom-20">Апартаменты успешно забронированы</h1>
+            </div> 
+        </div>
+        <!-- END row -->
+        
+        <!-- BEGIN row -->
+        <div class="row step margin-bottom-20">
+            <div class="step__item col-md-4 col-sm-12 is-active">
+                <h3 class="color-green">Найди квартиру</h3>
+                <p>Введи даты и выбери квартиру</p>
+                <div class="step__performance step__performance_1 performance"><i class="performance__pic"></i></div>
+            </div>
+            <div class="step__item col-md-4 col-sm-12 is-active">
+                <h3 class="color-green">Квартира забронирована</h3>
+                <p>Вы внесли предоплату за день проживания</p>
+                <div class="step__performance step__performance_2 performance"><i class="performance__pic"></i></div>
+            </div>
+            <div class="step__item col-md-4 col-sm-12">
+                <h3 class="color-green">Забери ключи</h3>
+                <p>У нас в офисе и оплати остаток суммы на ресепшене</p>
+                <div class="step__performance step__performance_3 performance"><i class="performance__pic"></i></div>
+            </div>
+        </div>
+        <!-- END row -->
+
+        <!-- BEGIN row -->
+        <div class="row margin-bottom-20">
+            <div class="col-md-2"><button class="btn btn-block btn-default" type="button"><i class="fa fa-download"></i> Загрузить</button></div>
+
+            <div class="col-md-2"><button class="btn btn-block btn-default" type="button"><i class="fa fa-print"></i> Распечатать</button></div>
+        </div>
+        <!-- END row -->
+
+        <!-- BEGIN row -->
+        <div class="row margin-bottom-20">
             <div class="col-md-8">
-                <!--Blog Post-->
-                <div class="margin-bottom-20"></div>
-                <div class="row blog blog-medium margin-bottom-40">
-                    <div class="col-md-5">
-                        <img class="img-responsive" src="assets/img/main/11.jpg" alt="">
-                    </div>    
-                    <div class="col-md-7">
-                        <h2>Pellentesque Habitant Morbi Tristique</h2>
-                        <ul class="list-unstyled list-inline blog-info">
-                            <li><i class="fa fa-calendar"></i> November 02, 2013</li>
+                <div class="col-md-12 border margin-bottom-20">
+                    <div class="col-md-12">
+                        <div class="row margin-bottom-20">
+                            <div class="col-md-4"><a href="#" class="logo logo_mod"></a></div>
+                            <div class="col-md-8">
+                                <h2>Спасибо, Иван Петрушка!</h2>
+                                <h4>Апартаменты успешно забронированы</h4>
+                                <p><strong>Имя: </strong>Константин Костюченко-Егоров</p>
+                                <p><strong>Контактные данные: </strong>Украина. 8067-456-45-45, ekostuchenko@gmail.com</p>
+                                <p><strong>Дополнительно: </strong>Трансфер в квартиру из аэропорта</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="row margin-bottom-20">
+                            <div class="col-md-6">
+                                <img class="img-responsive" src="http://lorempixel.com/380/280/city" alt="img">
+                            </div>
+                            <div class="col-md-6">
+                                <p><strong>Апартаменты:</strong> Шевченко 10, Киев - KV202, гестхаус "Крещатик"</p>
+                                <p><strong>Ресепшн:</strong> ул. Бассейная 19, оф 12</p>
+                                <p><strong>Заезд:</strong> 19.03.14 (14:00)  <strong class="padding-left-20">Выезд:</strong> 21.03.14 (12:00)</p>
+                                <p>
+                                <strong>Адрес:</strong> ул. Шевченко 10, Киев 
+                                </p>
+                                <p><strong>Кровать: </strong>1 двуспальная кровать</p>
+                                <p><strong>Сумма: </strong>900 грн, из них 100 грн по предоплате</p>
+                                <p><strong>+380 44 228 5511</strong></p>
+                                <a href="#" class="color-dark-blue">info@partnerguesthouse.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 margin-bottom-30">
+                        <h2 class="margin-bottom-20">Апартаменты на карте</h2>
+                        <div id="map" class="map"></div>
+                    </div>
+                </div>
+                <div class="col-md-12 border margin-bottom-40">
+                    <div class="margin-bottom-30"></div>
+                    <div class="col-md-12">
+                        <div class="headline"><h3>Что дальше?</h3></div>
+                        <p>После получения ваучера Вы должны появиться в день заезда для регистрации. Для регистрации просто скажите Ваше имя и покажите удостоверение личности. Вы можете спросить счет за проживание как в день регистрации, так и в любой другой день проживания. К оплате мы принимаем кредитные карты (Visa, MasterCard and American Express) и наличные деньги.</p>
+                        <div class="headline"><h3>Порядок отмены бронирования</h3></div>
+                        <h6><strong>Депозит за имущество</strong></h6>
+                        <p><strong>Никакой депозит за имущество в квартире не требуется.</strong>Но,в случае порчи имущества Вам будет выставлен счет на причиненный ущерб.</p> 
+                        <h6><strong>Отмена бронирования</strong></h6>
+                        <p>Отмена бронирования без штрафных санкций возможна в период, не менее, чем за 7 дней до даты заезда.
+                        Сумма предоплаты не подлежит возврату, в случае, если отмена бронирования произошла в период, равный менее 7 дней до даты заезда.</p>
+                        <p><strong>Внимание:</strong>Отмена бронирования без штрафных санкций должна быть не менее, чем за 3 месяца до даты заселения в следующие дни:</p> 
+                        <ul class="margin-bottom-40">
+                            <li>- с 30 Декабря по 3 Января</li>
+                            <li>- 7 Января</li>
+                            <li>- 14 Февраля</li>
+                            <li>- 8 Марта</li>
+                            <li>- с 1 по 4 Мая</li>
                         </ul>
-                        <p>At vero eos et accusamus et iusto odiomolestias dignis simos ducimus qui blandit occaeca bais praesentium voluptatum deleniti atque corrupti quos dolores.</p>
-                        <p><a class="btn-u btn-u-small" href="blog_item.html"><i class="fa fa-location-arrow"></i> Read More</a></p>
-                    </div>    
+                    </div>
                 </div>
-                <!--End Blog Post-->        
-
-                <hr class="margin-bottom-40">
-
-                <!--Blog Post-->
-                <div class="row blog blog-medium margin-bottom-40">
-                    <div class="col-md-5">
-                        <img class="img-responsive" src="assets/img/main/11.jpg" alt="">
-                    </div>    
-                    <div class="col-md-7">
-                        <h2>Pellentesque Habitant Morbi Tristique</h2>
-                        <ul class="list-unstyled list-inline blog-info">
-                            <li><i class="fa fa-calendar"></i> November 02, 2013</li>
-                        </ul>
-                        <p>At vero eos et accusamus et iusto odiomolestias dignis simos ducimus qui blandit occaeca bais praesentium voluptatum deleniti atque corrupti quos dolores.</p>
-                        <p><a class="btn-u btn-u-small" href="blog_item.html"><i class="fa fa-location-arrow"></i> Read More</a></p>
-                    </div>    
-                </div>
-                <!--End Blog Post-->        
-
-                <hr class="margin-bottom-40">
-
-                <!--Blog Post-->
-                <div class="row blog blog-medium margin-bottom-40">
-                    <div class="col-md-5">
-                        <img class="img-responsive" src="assets/img/main/11.jpg" alt="">
-                    </div>    
-                    <div class="col-md-7">
-                        <h2>Pellentesque Habitant Morbi Tristique</h2>
-                        <ul class="list-unstyled list-inline blog-info">
-                            <li><i class="fa fa-calendar"></i> November 02, 2013</li>
-                        </ul>
-                        <p>At vero eos et accusamus et iusto odiomolestias dignis simos ducimus qui blandit occaeca bais praesentium voluptatum deleniti atque corrupti quos dolores.</p>
-                        <p><a class="btn-u btn-u-small" href="blog_item.html"><i class="fa fa-location-arrow"></i> Read More</a></p>
-                    </div>    
-                </div>
-                <!--End Blog Post-->        
-
-                <hr class="margin-bottom-40">
-
-                <!--Blog Post-->
-                <div class="row blog blog-medium margin-bottom-40">
-                    <div class="col-md-5">
-                        <img class="img-responsive" src="assets/img/main/12.jpg" alt="">
-                    </div>    
-                    <div class="col-md-7">
-                        <h2>Pellentesque Habitant Morbi Tristique</h2>
-                        <ul class="list-unstyled list-inline blog-info">
-                            <li><i class="fa fa-calendar"></i> November 02, 2013</li>
-                        </ul>
-                        <p>At vero eos et accusamus et iusto odiomolestias dignis simos ducimus qui blandit occaeca bais praesentium voluptatum deleniti atque corrupti quos dolores.</p>
-                        <p><a class="btn-u btn-u-small" href="blog_item.html"><i class="fa fa-location-arrow"></i> Read More</a></p>
-                    </div>    
-                </div>
-                <!--End Blog Post--> 
-
-                <!--Pagination-->
-                <div class="text-center">
-                    <ul class="pagination">
-                        <li><a href="#">«</a></li>
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li class="active"><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li><a href="#">6</a></li>
-                        <li><a href="#">7</a></li>
-                        <li><a href="#">8</a></li>
-                        <li><a href="#">»</a></li>
-                    </ul>                                                            
-                </div>
-                <!--End Pagination-->
             </div>
             <div class="col-md-4">
-               
-                <div class="headline"><h2>Подберите квартиру</h2></div>
-                
-                <!-- BEGIN form -->
-                <form action="" id="sky-form" class="sky-form"> 
-                    <fieldset> 
-                        <div class="row">   
-                            <section class="col col-6">
-                                <label class="input">
-                                    <i class="icon-append fa fa-calendar"></i>
-                                    <input type="text" name="start" id="start" placeholder="Заезд">
-                                </label>
-                            </section>
-                            <section class="col col-6">
-                                <label class="input">
-                                    <i class="icon-append fa fa-calendar"></i>
-                                    <input type="text" name="finish" id="finish" placeholder="Выезд">
-                                </label>
-                            </section>
-                            <div class="col-md-6">
-                                <div class="select select_people">
-                                    <select class="form-control input-lg">
-                                        <option>1 гость</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                        <option>6+</option>
-                                    </select>
-                                    <span class="icon-append fa fa-user"></span>
-                                </div>
-                            </div>
-                            <div class="col-md-6"><button class="btn-u btn-u_small btn-block btn-u-green" type="button">Выбрать апартаменты</button></div>
-                        </div>                  
-                    </fieldset>
-                    <div class="margin-bottom-25"></div>
-                </form> 
-                <!-- END form -->
+                <p class="margin-bottom-5">Остались вопросы? Свяжитесь с менеджером:</p>
+                <p><strong>+380 44 228 5511</strong></p>
+                <a href="#" class="color-dark-blue">info@partnerguesthouse.com</a>
+                <div class="margin-bottom-30"></div>
+                <p>Присоединяйтесь к нам на Facebook</p>
+                <a class="col-md-12 border" href="#">
+                    <img src="img/u125.png" alt="img">
+                </a>
             </div>
         </div>
         <!-- END row -->
