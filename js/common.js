@@ -7,6 +7,24 @@ head.ready(function() {
 		$(".js-popup").hide();
 	});
 
+	$(document).on('click', function(){
+		$(".js-price").removeClass("is-active");
+	});
+
+	$(".js-price").each(function(){
+		$(".js-open-price").click(function() {
+			$(this).parent().addClass('is-active');
+		});
+	});
+	
+	$(".js-price-close").click(function(){
+		$(".js-price-block").slideUp();
+		$(".js-price").removeClass("is-active");
+	});
+	$("body").on("click", ".js-price", function(event){
+		event.stopPropagation();
+	});
+
 	// 	$(function(){
 	// 		window.prettyPrint && prettyPrint();
 	// 		$('#dp1').datepicker();
@@ -52,6 +70,5 @@ head.ready(function() {
 	$(".js-map").click(function(){
         ContactPage.initMap();
 	})
-	console.log($('body').html());
 });
 
