@@ -159,7 +159,53 @@
 .line-height-1_3
 	line-height: 1.3 !important
 
+//topic
+.topic
+	padding: 0 0 10px
+	font-size: 0
+	.topic__quantity, .btn-u
+		width: 50%
+		display: inline-block
+	.topic__quantity
+		font-size: 18px
+		color: #333333
+
+//data
+.data
+	padding-top: 5px
+	.data__top
+		+clr
+		h1, h2, h3, h4, h5
+			margin: 0
+	.data__right, .data__left
+		width: 50%
+	.data__left
+		float: left
+	.data__right
+		float: right
+		img
+			float: right
+	.data__text
+		padding: 5px 0 10px
+	.lead
+		padding-bottom: 12px
+	.tag-box
+		margin-bottom: 0
+		+clr
+	ul
+		padding-left: 16px
+		float: left
+		width: 50%
+
+//hesthaus
+.hesthaus
+	padding: 15px 0
+	border: 1px solid #eeeeee
+	+clr
+
 // carousel
+.item
+	+clr
 .item__block
 	padding: 15px 15px 0
 	position: absolute
@@ -167,7 +213,32 @@
 	left: 0
 	width: 100%
 	+box
-
+.item__img
+	position: relative
+	width: 70%
+	height: 200px
+	float: left
+	img
+		width: 100%
+.item__info
+	width: 30%
+	float: right
+	.description
+		margin: 0
+	.description__top
+		padding-left: 8px
+		margin-bottom: 0
+		font-size: 18px
+		line-height: 28px
+	.description__list.list .description__item
+		margin-top: 12px
+		width: 100%
+		font-size: 15px
+	.description__bottom .price
+		margin-left: 0
+		width: 100%
+	.price__item
+		font-size: 32px
 .item__row
 	+clr
 
@@ -223,6 +294,7 @@
 
 .description__wrap
 	padding: 0 5px 0 10px
+	+box
 
 .description__name, .description__addres
 	padding-left: 24px
