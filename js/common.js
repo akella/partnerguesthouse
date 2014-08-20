@@ -25,6 +25,38 @@ head.ready(function() {
 		event.stopPropagation();
 	});
 
+	//slick
+	$('.slider__for').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		fade: true,
+		asNavFor: '.slider__nav'
+	});
+	$('.slider__nav').slick({
+		slidesToShow: 5,
+		slidesToScroll: 1,
+		asNavFor: '.slider__for',
+		dots: true,
+		centerMode: true,
+		focusOnSelect: true,
+		responsive: [
+			{
+				breakpoint: 1200,
+				settings: {
+					centerMode: false
+				}
+			},
+			{
+				breakpoint: 400,
+				settings: {
+					centerMode: false,
+					slidesToShow: 2
+				}
+			}
+		]
+	});
+
 	// 	$(function(){
 	// 		window.prettyPrint && prettyPrint();
 	// 		$('#dp1').datepicker();

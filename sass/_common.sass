@@ -155,6 +155,75 @@
 .da-dots
 	display: none
 
+//slider
+.slider
+	position: relative
+	overflow: hidden
+	+clr
+	.slick-slide
+		img
+			width: 100%
+	.slider__for
+		.slick-slide
+			padding: 0
+	.slider__nav
+		vertical-align: middle
+		+box
+		.slick-track
+			height: 92px
+		.slick-slide
+			cursor: pointer
+			height: 92px
+			line-height: 89px
+			img
+				width: 95%
+				vertical-align: middle
+				display: inline-block
+		.slick-prev, .slick-next
+			top: 50%
+			margin-top: -17px
+			&:before
+				display: none
+		.slick-prev
+			left: -38px
+			+s(slider-pref)
+		.slick-next
+			right: -38px
+			+s(slider-next)
+	.slider__pag
+		position: absolute
+		left: 0
+		bottom: 0
+		right: 0
+		padding: 0 62px
+		background-color: #454b59
+		background: rgba(#454b59, .58)
+	.slick-slider
+		margin-bottom: 0
+//card
+.card
+	.card__top
+		+clr
+		.card__left, .card__right
+			display: inline-block
+			vertical-align: top
+		.card__left
+			a
+				padding-right: 10px
+		.card__right
+			padding-top: 3px
+			padding-left: 30px
+			a
+				text-decoration: underline
+				color: #585f69
+				&:hover
+					text-decoration: none
+	.card__right
+		.sky-form
+			border: none
+			fieldset
+				padding: 0
+
 //line-height
 .line-height-1_3
 	line-height: 1.3 !important
@@ -202,7 +271,6 @@
 	padding: 15px 0
 	border: 1px solid #eeeeee
 	+clr
-
 // carousel
 .item
 	+clr
