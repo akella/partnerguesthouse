@@ -187,64 +187,674 @@
                     <div class="card__left">
                         <h2>Шевченко 10, Киев</h2>
                         <p>
-                            <a class="color-blue" href="#">Смотреть на карту</a>
-                            <a class="color-blue" href="#">График загруженности</a>
+                            <a class="color-blue js-scroll" href="#card__map">Смотреть на карту</a>
+                            <a class="color-blue js-scroll" href="#graph">График загруженности</a>
                         </p>
                     </div>
-                    <div class="card__right">
+                    <div class="card__top-right">
                         <a href="#" class="color-black"><h3>Гестхаус "Крещатик"</h3></a>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-8">
-                    <div class="slider">
-                        <div class="slider__for">
-                            <div><img src="http://lorempixel.com/750/510/city" alt="img"></div>
-                            <div><img src="http://lorempixel.com/750/510/transport" alt="img"></div>
-                            <div><img src="http://lorempixel.com/750/510/sports" alt="img"></div>
-                            <div><img src="http://lorempixel.com/750/510/city" alt="img"></div>
-                            <div><img src="http://lorempixel.com/750/510/technics" alt="img"></div>
-                            <div><img src="http://lorempixel.com/750/510/city" alt="img"></div>
-                        </div>
-                        <div class="slider__pag">
-                            <div class="slider__nav">
-                                <div><img src="http://lorempixel.com/121/101/city" alt="img"></div>
-                                <div><img src="http://lorempixel.com/121/101/transport" alt="img"></div>
-                                <div><img src="http://lorempixel.com/121/101/sports" alt="img"></div>
-                                <div><img src="http://lorempixel.com/121/101/city" alt="img"></div>
-                                <div><img src="http://lorempixel.com/121/101/technics" alt="img"></div>
-                                <div><img src="http://lorempixel.com/121/101/city" alt="img"></div>
+                <div class="card__row">
+                    <div class="card__slider">
+                        <div class="slider">
+                            <div class="slider__for">
+                                <div class="slider__item" style="background: url(http://lorempixel.com/750/510/city) no-repeat 50% 0;"><img src="http://lorempixel.com/750/510/city" alt="img"></div>
+                                <div class="slider__item" style="background: url(http://lorempixel.com/750/510/transport) no-repeat 50% 0;"><img src="http://lorempixel.com/750/510/transport" alt="img"></div>
+                                <div class="slider__item" style="background: url(http://lorempixel.com/750/510/sports) no-repeat 50% 0;"><img src="http://lorempixel.com/750/510/sports" alt="img"></div>
+                                <div class="slider__item" style="background: url(http://lorempixel.com/750/510/city) no-repeat 50% 0;"><img src="http://lorempixel.com/750/510/city" alt="img"></div>
+                                <div class="slider__item" style="background: url(http://lorempixel.com/750/510/technics) no-repeat 50% 0;"><img src="http://lorempixel.com/750/510/technics" alt="img"></div>
+                                <div class="slider__item" style="background: url(http://lorempixel.com/750/510/city) no-repeat 50% 0;"><img src="http://lorempixel.com/750/510/city" alt="img"></div>
+                            </div>
+                            <div class="slider__pag">
+                                <div class="slider__nav">
+                                    <div><img src="http://lorempixel.com/121/101/city" alt="img"></div>
+                                    <div><img src="http://lorempixel.com/121/101/transport" alt="img"></div>
+                                    <div><img src="http://lorempixel.com/121/101/sports" alt="img"></div>
+                                    <div><img src="http://lorempixel.com/121/101/city" alt="img"></div>
+                                    <div><img src="http://lorempixel.com/121/101/technics" alt="img"></div>
+                                    <div><img src="http://lorempixel.com/121/101/city" alt="img"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 card__right">
-                    <div class="lead">Забронировать</div>
-                    <form action="" id="sky-form" class="sky-form"> 
-                        <fieldset> 
-                            <div class="row">   
-                                <section class="col col-6">
-                                    <label class="input">
-                                        <i class="icon-append fa fa-calendar"></i>
-                                        <input type="text" name="start" id="start" placeholder="Заезд" class="hasDatepicker">
-                                    </label>
-                                </section>
-                                <section class="col col-6">
-                                    <label class="input">
-                                        <i class="icon-append fa fa-calendar"></i>
-                                        <input type="text" name="finish" id="finish" placeholder="Выезд" class="hasDatepicker">
-                                    </label>
-                                </section>
-                                
-                                <div class="col-md-6"><button class="btn-u btn-block btn-u-green" type="button">Забронировать</button></div>
-                            </div>                  
-                        </fieldset>
-                        <div class="margin-bottom-25"></div>
-                    </form>
+                    <div class="col-md-4 col-sm-12 pull-right">
+                        <div class="card__right margin-bottom-20">
+                            <div class="lead">Забронировать</div>
+                            <form action="" id="sky-form" class="sky-form"> 
+                                <fieldset> 
+                                    <div class="row">   
+                                        <section class="col col-6">
+                                            <label class="input">
+                                                <i class="icon-append fa fa-calendar"></i>
+                                                <input type="text" name="start" id="start" placeholder="Заезд" class="hasDatepicker">
+                                            </label>
+                                        </section>
+                                        <section class="col col-6">
+                                            <label class="input">
+                                                <i class="icon-append fa fa-calendar"></i>
+                                                <input type="text" name="finish" id="finish" placeholder="Выезд" class="hasDatepicker">
+                                            </label>
+                                        </section>
+                                        <section class="col-md-12">
+                                           <div class="price">
+                                               <div class="price__old">898 грн/сутки</div>
+                                               <div class="price__item color-red">1213</div>
+                                               <div class="price__item">
+                                                   <div class="price__time color-red">грн/сутки</div>
+                                                   <div class="price__time">(8960 грн за 3 ночи)</div>
+                                               </div>
+                                           </div>
+                                        </section>
+                                        <section class="col-md-12">
+                                            <div class="promocode">
+                                                <div class="promocode__text js-promocode-text">Указать промо-код</div>
+                                                <div class="promocode__block js-promocode-block">
+                                                    <div class="promocode__input">
+                                                        <input type="text" placeholder="xxxxxx">
+                                                    </div>
+                                                    <button class="promocode__btn js-promocode-btn" type="button">Применить</button>
+                                                </div>
+                                                <div class="promocode__discount js-promocode-discount">
+                                                    Учтена скидка 10% (промо-код <span>123456</span>)
+                                                    <button class="promocode__close js-promocode-close" type="button">x</button>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <section class="col-md-7 col-sm-7">
+                                            <button class="btn-u btn-block btn-u-red" type="button">Забронировать</button>
+                                        </section>
+                                        <section class="col-md-12 col-sm-12 booking">
+                                            <p>У вас будет 72 часа на внесение предоплаты 100 грн</p>
+                                            <div class="booking__block">
+                                                <button class="booking__text js-booking-text" type="button">Можно ли забронировать без предоплаты?</button>
+                                                <div class="booking__conditions js-booking-conditions">
+                                                    <div class="lead">Текст про условия бронирования без предоплаты</div>
+                                                    <p>Плюсы бронирования с предоплатой.</p>
+                                                    <p>Плюсы бронирования с предоплатой.</p>
+                                                    <p>Плюсы бронирования с предоплатой.</p>
+                                                    <button class="booking__close js-booking-close" type="button">x</button>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>                  
+                                </fieldset>
+                            </form>
+                        </div>
+                        <div class="alert alert_mob alert-warning fade in">
+                            <div class="margin-bottom-10">Остались вопросы? Свяжитесь с менеджером:</div>
+                            <div class="margin-bottom-10"><strong>+380 44 228 5511</strong></div>
+                            <p><a href="#" class="color-blue">info@partnerguesthouse.com</a></p>
+                        </div>
+                    </div>
                 </div>
             </div>
-
+            <div class="funny-boxes funny-boxes-top-sea">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="alert alert-warning fade in">
+                                    <div class="alert__col">
+                                        <div class="alert__item">
+                                            <i class="alert__ico alert__ico_1"></i>
+                                            5 этаж из 9 (лифт)
+                                        </div>
+                                        <div class="alert__item">
+                                            <i class="alert__ico alert__ico_2"></i>
+                                            2 спальных места
+                                        </div>
+                                    </div>
+                                    <div class="alert__col">
+                                        <div class="alert__item">
+                                            <i class="alert__ico alert__ico_3"></i>
+                                            Поселение: 14:00
+                                        </div>
+                                        <div class="alert__item">
+                                            <i class="alert__ico alert__ico_4"></i>
+                                            Выселение: 12:00
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="convenience">
+                                    <li class="convenience__ico convenience__ico_1"></li>
+                                    <li class="convenience__ico convenience__ico_2"></li>
+                                    <li class="convenience__ico convenience__ico_3"></li>
+                                    <li class="convenience__ico convenience__ico_4"></li>
+                                    <li class="convenience__ico convenience__ico_5"></li>
+                                    <li class="convenience__ico convenience__ico_6"></li>
+                                    <li class="convenience__ico convenience__ico_7"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>Отличная квартира с гидромассажной ванной в центре столицы. Просторная и уютная квартира с кондиционером. Барная стойка отделяет кухню, интерьер которой дополняет плитка в в стиле</p>
+                                <p>Мексикана. Для Ваших гостей в квартире предусмотрен темнокрасный мягкий диван, который легко раскладывается в кровать на одного человека. </p>
+                                <p><strong>Расположение</strong></p>
+                                <p>В самом центре, в новом районе.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                       <div class="carousel slide carousel-v1 box-shadow shadow-effect-2" id="myCarousel1">
+                           <div class="carousel-inner">
+                               <div class="item active">
+                                   <div class="item__block item__block_mod">
+                                    <h2>Приятные мелочи в квартире</h2>
+                                       <ul class="item__list">
+                                           <li>item</li>
+                                           <li>item</li>
+                                           <li>item</li>
+                                           <li>item</li>
+                                       </ul>
+                                   </div>
+                                   <img class="img-responsive" src="http://lorempixel.com/347/280/city" alt="img">
+                               </div>
+                               <div class="item">
+                                   <div class="item__block item__block_mod">
+                                    <h2>Приятные мелочи в квартире</h2>
+                                      <ul class="item__list">
+                                          <li>item</li>
+                                          <li>item</li>
+                                          <li>item</li>
+                                          <li>item</li>
+                                      </ul>
+                                   </div>
+                                   <img class="img-responsive" src="http://lorempixel.com/347/280/city" alt="img">
+                               </div>
+                               <div class="item">
+                                   <div class="item__block item__block_mod">
+                                    <h2>Приятные мелочи в квартире</h2>
+                                       <ul class="item__list">
+                                           <li>item</li>
+                                           <li>item</li>
+                                           <li>item</li>
+                                           <li>item</li>
+                                       </ul>
+                                   </div>
+                                   <img class="img-responsive" src="http://lorempixel.com/347/280/city" alt="img">
+                               </div>
+                           </div>
+                           <div class="carousel-arrow">
+                               <a data-slide="prev" href="#myCarousel1" class="left carousel-control">
+                                   <i class="fa fa-angle-left"></i>
+                               </a>
+                               <a data-slide="next" href="#myCarousel1" class="right carousel-control">
+                                   <i class="fa fa-angle-right"></i>
+                               </a>
+                           </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="headline"><h3>Удобства</h3></div>
+                </div>
+                <div class="col-md-12">
+                    <table class="card__table table table-striped">
+                        <tbody>
+                            <tr>
+                                <td>Всегда в номере</td>
+                                <td>Бесплатные услуги горничных</td>
+                                <td>
+                                    <div>Wi-Fi</div>
+                                    <div>Одноразовые тапочки</div>
+                                </td>
+                                <td>
+                                    <div>Чай</div>
+                                    <div>Кофе</div>
+                                </td>
+                                <td>
+                                    <div>Соль</div>
+                                    <div>Перец</div>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Кухня</td>
+                                <td>
+                                    <div>Плита</div>
+                                    <div>Микроволновая печь</div>
+                                </td>
+                                <td>
+                                    <div>Холодильник</div>
+                                    <div>Электрочайник</div>
+                                </td>
+                                <td>
+                                    <div>Кухонная посуда</div>
+                                    <div>Стаканы</div>
+                                </td>
+                                <td>
+                                    <div>Столовые приборы</div>
+                                    <div>Нож</div>
+                                </td>
+                                <td><a href="#">Подробнее</a></td>
+                            </tr>
+                            <tr>
+                                <td>Жилая комната</td>
+                                <td>
+                                    <div>Кондиционер</div>
+                                    <div>Телевизор</div>
+                                </td>
+                                <td>
+                                    <div>DVD</div>
+                                    <div>Двуспальная кровать</div>
+                                </td>
+                                <td>
+                                    <div>Диван-кровать для 2 чел</div>
+                                    <div>Кофейный столик</div>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Спальня</td>
+                                <td>
+                                    <div>Плита</div>
+                                    <div>Микроволновая печь</div>
+                                </td>
+                                <td>
+                                    <div>Холодильник</div>
+                                    <div>Электрочайник</div>
+                                </td>
+                                <td>
+                                    <div>Кухонная посуда</div>
+                                    <div>Стаканы</div>
+                                </td>
+                                <td>
+                                    <div>Столовые приборы</div>
+                                    <div>Нож</div>
+                                </td>
+                                <td><a href="#">Подробнее</a></td>
+                            </tr>
+                            <tr>
+                                <td>Ванная</td>
+                                <td>
+                                    <div>Кондиционер</div>
+                                    <div>Телевизор</div>
+                                </td>
+                                <td>
+                                    <div>DVD</div>
+                                    <div>Двуспальная кровать</div>
+                                </td>
+                                <td>
+                                    <div>Диван-кровать для 2 чел</div>
+                                    <div>Кофейный столик</div>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="headline"><h3>Квартира на карте</h3></div>
+                </div>
+            </div>
+            <div class="card__map row margin-bottom-20" id="card__map">
+                <div class="col-md-8">
+                    <div class="google-map">
+                            <div id="map" class="map"></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card__places places">
+                        <h3 class="places__title">Поблизости:</h3>
+                        <div class="places__item">
+                            <i class="fa fa-cutlery"></i>
+                            <span class="places__but">Рестораны (6)</span>
+                        </div>
+                        <div class="places__item">
+                            <i class="fa fa-coffee"></i>
+                            <span class="places__but">Кафе (6)</span>
+                        </div>
+                        <div class="places__item">
+                            <i class="fa fa-university"></i>
+                            <span class="places__but">Памятники архитектуры (6)</span>
+                        </div>
+                        <div class="places__item">
+                            <i class="fa fa-university"></i>
+                            <span class="places__but">Памятники истории (9)</span>
+                        </div>
+                        <div class="places__item">
+                            <i class="fa fa-weixin"></i>
+                            <span class="places__but">Театр (1)</span>
+                        </div>
+                        <div class="places__item">
+                            <i class="fa fa-music"></i>
+                            <span class="places__but">Опера (1)</span>
+                        </div>
+                        <div class="places__item">
+                            <i class="fa fa-plus"></i>
+                            <span class="places__but">Аптека (2)</span>
+                        </div>
+                        <div class="places__item">
+                            <i class="fa fa-coffee"></i>
+                            <span class="places__but">Кафе (6)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="headline" id="graph"><h3>График загруженности</h3></div>
+                </div>
+            </div>
+           <div class="row">   
+                <div class="col-md-4">
+                    <h3>Июнь</h3>
+                    <div class="calendar">
+                        <div class="calendar__block">
+                            <table class="calendar__table">
+                                <tr>
+                                    <th>пн</th>
+                                    <th>вт</th>
+                                    <th>ср</th>
+                                    <th>чт</th>
+                                    <th>пт</th>
+                                    <th>сб</th>
+                                    <th>вс</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>9</td>
+                                    <td>10</td>
+                                    <td>
+                                        <span class="calender__booking js-open-popupcal">11</span>
+                                        <div class="calendar__popup js-calendar-popup">
+                                            Чтобы забронировать квартиру на эти даты, выберите их в форме cверху страницы
+                                            <button class="calendar__closepopup js-closepopup" type="button"></button>
+                                            <button class="calendar__choose">Выбрать даты</button>
+                                        </div>
+                                    </td>
+                                    <td>12</td>
+                                    <td>13</td>
+                                    <td>14</td>
+                                </tr>
+                                <tr>
+                                    <td>15</td>
+                                    <td>16</td>
+                                    <td>
+                                        <span class="calender__booking js-open-popupcal">17</span>
+                                        <div class="calendar__popup js-calendar-popup">
+                                            Чтобы забронировать квартиру на эти даты, выберите их в форме cверху страницы
+                                            <button class="calendar__closepopup js-closepopup" type="button"></button>
+                                            <button class="calendar__choose">Выбрать даты</button>
+                                        </div>
+                                    </td>
+                                    <td>18</td>
+                                    <td>
+                                        <span class="calender__booking js-open-popupcal">19</span>
+                                        <div class="calendar__popup js-calendar-popup">
+                                            Чтобы забронировать квартиру на эти даты, выберите их в форме cверху страницы
+                                            <button class="calendar__closepopup js-closepopup" type="button"></button>
+                                            <button class="calendar__choose">Выбрать даты</button>
+                                        </div>
+                                    </td>
+                                    <td>20</td>
+                                    <td>21</td>
+                                </tr>
+                                <tr>
+                                    <td>22</td>
+                                    <td>23</td>
+                                    <td>24</td>
+                                    <td>25</td>
+                                    <td>26</td>
+                                    <td>27</td>
+                                    <td>28</td>
+                                </tr>
+                                <tr>
+                                    <td>29</td>
+                                    <td>30</td>
+                                    <td>31</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h3>Июль</h3>
+                    <div class="calendar">
+                        <div class="calendar__block">
+                            <table class="calendar__table">
+                                <tr>
+                                    <th>пн</th>
+                                    <th>вт</th>
+                                    <th>ср</th>
+                                    <th>чт</th>
+                                    <th>пт</th>
+                                    <th>сб</th>
+                                    <th>вс</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>9</td>
+                                    <td>10</td>
+                                    <td>
+                                        <span class="calender__booking js-open-popupcal">11</span>
+                                        <div class="calendar__popup js-calendar-popup">
+                                            Чтобы забронировать квартиру на эти даты, выберите их в форме cверху страницы
+                                            <button class="calendar__closepopup js-closepopup" type="button"></button>
+                                            <button class="calendar__choose">Выбрать даты</button>
+                                        </div>
+                                    </td>
+                                    <td>12</td>
+                                    <td>13</td>
+                                    <td>14</td>
+                                </tr>
+                                <tr>
+                                    <td>15</td>
+                                    <td>16</td>
+                                    <td>
+                                        <span class="calender__booking js-open-popupcal">17</span>
+                                        <div class="calendar__popup js-calendar-popup">
+                                            Чтобы забронировать квартиру на эти даты, выберите их в форме cверху страницы
+                                            <button class="calendar__closepopup js-closepopup" type="button"></button>
+                                            <button class="calendar__choose">Выбрать даты</button>
+                                        </div>
+                                    </td>
+                                    <td>18</td>
+                                    <td>
+                                        <span class="calender__booking js-open-popupcal">19</span>
+                                        <div class="calendar__popup js-calendar-popup">
+                                            Чтобы забронировать квартиру на эти даты, выберите их в форме cверху страницы
+                                            <button class="calendar__closepopup js-closepopup" type="button"></button>
+                                            <button class="calendar__choose">Выбрать даты</button>
+                                        </div>
+                                    </td>
+                                    <td>20</td>
+                                    <td>21</td>
+                                </tr>
+                                <tr>
+                                    <td>22</td>
+                                    <td>23</td>
+                                    <td>24</td>
+                                    <td>25</td>
+                                    <td>26</td>
+                                    <td>27</td>
+                                    <td>28</td>
+                                </tr>
+                                <tr>
+                                    <td>29</td>
+                                    <td>30</td>
+                                    <td>31</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h3>Август</h3>
+                    <div class="calendar">
+                        <div class="calendar__block">
+                            <table class="calendar__table">
+                                <tr>
+                                    <th>пн</th>
+                                    <th>вт</th>
+                                    <th>ср</th>
+                                    <th>чт</th>
+                                    <th>пт</th>
+                                    <th>сб</th>
+                                    <th>вс</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>9</td>
+                                    <td>10</td>
+                                    <td>
+                                        <span class="calender__booking js-open-popupcal">11</span>
+                                        <div class="calendar__popup js-calendar-popup">
+                                            Чтобы забронировать квартиру на эти даты, выберите их в форме cверху страницы
+                                            <button class="calendar__closepopup js-closepopup" type="button"></button>
+                                            <button class="calendar__choose">Выбрать даты</button>
+                                        </div>
+                                    </td>
+                                    <td>12</td>
+                                    <td>13</td>
+                                    <td>14</td>
+                                </tr>
+                                <tr>
+                                    <td>15</td>
+                                    <td>16</td>
+                                    <td>
+                                        <span class="calender__booking js-open-popupcal">17</span>
+                                        <div class="calendar__popup js-calendar-popup">
+                                            Чтобы забронировать квартиру на эти даты, выберите их в форме cверху страницы
+                                            <button class="calendar__closepopup js-closepopup" type="button"></button>
+                                            <button class="calendar__choose">Выбрать даты</button>
+                                        </div>
+                                    </td>
+                                    <td>18</td>
+                                    <td>
+                                        <span class="calender__booking js-open-popupcal">19</span>
+                                        <div class="calendar__popup js-calendar-popup">
+                                            Чтобы забронировать квартиру на эти даты, выберите их в форме cверху страницы
+                                            <button class="calendar__closepopup js-closepopup" type="button"></button>
+                                            <button class="calendar__choose">Выбрать даты</button>
+                                        </div>
+                                    </td>
+                                    <td>20</td>
+                                    <td>21</td>
+                                </tr>
+                                <tr>
+                                    <td>22</td>
+                                    <td>23</td>
+                                    <td>24</td>
+                                    <td>25</td>
+                                    <td>26</td>
+                                    <td>27</td>
+                                    <td>28</td>
+                                </tr>
+                                <tr>
+                                    <td>29</td>
+                                    <td>30</td>
+                                    <td>31</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="headline" id="graph"><h3>Отзывы наших клиентов</h3></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="rating">
+                    <div class="rating__left col-md-2">
+                        <div class="rating__title">Оценка</div>
+                        <div class="rating__evaluation"> 8.5</div>
+                    </div>
+                    <div class="rating__right col-md-10">
+                        <div class="rating__top">
+                            <h4 class="rating__title pull-left">Оксана, Украина</h4>
+                            <div class="rating__date pull-right">16 июля 2014</div>
+                        </div>
+                        <div class="rating__text rating__text_plus">
+                            <i class="fa fa-plus"></i>
+                            Мне с супругой нужен был ранний заезд, о чем мы и сообщили при бронировании. Одновременно, для бронирования квартиры была указана необходимость оплаты в течении часа, что мы сразу и сделали. А затем началось самое интересное: ранний заезд в эту квартиру был не возможен, а возврат денег не положен, ибо политика компании такова... Вобщем пришлось гулять по Киеву до двух часов дня, что было не совсем удобно. А так в целом, все очень даже ничего.
+                        </div>
+                        <div class="rating__text rating__text_minus">
+                            <i class="fa fa-minus"></i>
+                            Всё было хорошо кроме одного момента
+                        </div>
+                    </div>
+                </div>
+                <div class="rating">
+                    <div class="rating__left col-md-2">
+                        <div class="rating__title">Оценка</div>
+                        <div class="rating__evaluation"> 8.5</div>
+                    </div>
+                    <div class="rating__right col-md-10">
+                        <div class="rating__top">
+                            <h4 class="rating__title pull-left">Оксана, Украина</h4>
+                            <div class="rating__date pull-right">16 июля 2014</div>
+                        </div>
+                        <div class="rating__text rating__text_plus">
+                            <i class="fa fa-plus"></i>
+                            Мне с супругой нужен был ранний заезд, о чем мы и сообщили при бронировании. Одновременно, для бронирования квартиры была указана необходимость оплаты в течении часа, что мы сразу и сделали. А затем началось самое интересное: ранний заезд в эту квартиру был не возможен, а возврат денег не положен, ибо политика компании такова... Вобщем пришлось гулять по Киеву до двух часов дня, что было не совсем удобно. А так в целом, все очень даже ничего.
+                        </div>
+                        <div class="rating__text rating__text_minus">
+                            <i class="fa fa-minus"></i>
+                            Всё было хорошо кроме одного момента
+                        </div>
+                    </div>
+                </div>
+                <div class="rating">
+                    <div class="rating__left col-md-2">
+                        <div class="rating__title">Оценка</div>
+                        <div class="rating__evaluation"> 8.5</div>
+                    </div>
+                    <div class="rating__right col-md-10">
+                        <div class="rating__top">
+                            <h4 class="rating__title pull-left">Оксана, Украина</h4>
+                            <div class="rating__date pull-right">16 июля 2014</div>
+                        </div>
+                        <div class="rating__text rating__text_plus">
+                            <i class="fa fa-plus"></i>
+                            Мне с супругой нужен был ранний заезд, о чем мы и сообщили при бронировании. Одновременно, для бронирования квартиры была указана необходимость оплаты в течении часа, что мы сразу и сделали. А затем началось самое интересное: ранний заезд в эту квартиру был не возможен, а возврат денег не положен, ибо политика компании такова... Вобщем пришлось гулять по Киеву до двух часов дня, что было не совсем удобно. А так в целом, все очень даже ничего.
+                        </div>
+                        <div class="rating__text rating__text_minus">
+                            <i class="fa fa-minus"></i>
+                            Всё было хорошо кроме одного момента
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- END container -->

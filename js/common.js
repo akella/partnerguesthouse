@@ -9,6 +9,8 @@ head.ready(function() {
 
 	$(document).on('click', function(){
 		$(".js-price").removeClass("is-active");
+		$(".js-booking-conditions").hide();
+		$(".js-calendar-popup").removeClass('is-active');
 	});
 
 	$(".js-price").each(function(){
@@ -17,11 +19,19 @@ head.ready(function() {
 		});
 	});
 	
+	$(".js-open-popupcal").click(function() {
+		$(this).next(".js-calendar-popup").addClass('is-active');
+	});
+
+	$(".js-closepopup").click(function(){
+		$(".js-calendar-popup").removeClass('is-active');
+	});
+		
 	$(".js-price-close").click(function(){
 		$(".js-price-block").slideUp();
 		$(".js-price").removeClass("is-active");
 	});
-	$("body").on("click", ".js-price", function(event){
+	$("body").on("click", ".js-price, .js-booking-text, .js-open-popupcal, .js-calendar-popup", function(event){
 		event.stopPropagation();
 	});
 
@@ -55,6 +65,39 @@ head.ready(function() {
 				}
 			}
 		]
+	});
+
+
+	$(".js-promocode-text").click(function(){
+		$(".js-promocode-text").hide();
+		$(".js-promocode-block").show();
+	});
+	$(".js-promocode-btn").click(function(){
+		$(".js-promocode-block").hide();
+		$(".js-promocode-discount").show();
+	});
+	$(".js-promocode-close").click(function(){
+		$(".js-promocode-discount").hide();
+		$(".js-promocode-text").show();
+	});
+	
+	$(".js-booking-text").click(function(){
+		$(".js-booking-conditions").show();
+	});
+
+	$(".js-booking-close").click(function(){
+		$(".js-booking-conditions").hide();
+	})
+
+
+	// scroll
+	$(".js-scroll").click(function (){
+		var page = $(this).attr("href");
+
+		$('html, body').animate({
+			scrollTop: $(page).offset().top - 110
+		}, 600);
+		return false;
 	});
 
 	// 	$(function(){

@@ -158,6 +158,7 @@
 //slider
 .slider
 	position: relative
+	min-height: 100%
 	overflow: hidden
 	+clr
 	.slick-slide
@@ -166,6 +167,12 @@
 	.slider__for
 		.slick-slide
 			padding: 0
+		.slider__item
+			background-size: cover !important
+			img
+				height: 100%
+				width: auto
+				opacity: 0
 	.slider__nav
 		vertical-align: middle
 		+box
@@ -207,22 +214,226 @@
 		.card__left, .card__right
 			display: inline-block
 			vertical-align: top
-		.card__left
+		.card__left 
 			a
 				padding-right: 10px
-		.card__right
-			padding-top: 3px
+		.card__top-right
+			padding-top: 3px 
 			padding-left: 30px
+			display: inline-block
 			a
 				text-decoration: underline
 				color: #585f69
 				&:hover
 					text-decoration: none
+	.card__row
+		position: relative
+		+clr
+	.card__slider
+		position: absolute
+		top: 0
+		bottom: 20px
+		left: 15px
+		width: 65%
 	.card__right
+		padding: 15px
+		color: #fff
+		background: #5cb0fb
+		border: 1px solid #eee
+		+clr
 		.sky-form
 			border: none
+			color: #fff
 			fieldset
+				background: #5cb0fb
 				padding: 0
+			p
+				color: #fff
+			.booking__conditions
+				color: #333
+				p
+					color: #333
+		// .lead
+		// 	color: #fff
+		.price
+			width: 100%
+			color: #fff 
+	.card__table
+		td
+			&:first-child
+				font-weight: bold
+	.card__map
+		.google-map
+			padding: 0
+			.map
+				height: 445px
+
+//calendar
+.calendar
+	.calendar__block
+		padding: 18px
+		border: 1px solid #eeeeee
+	.calendar__table
+		color: #666
+		font-size: 14px
+		th, td
+			height: 35px
+			line-height: 35px
+			text-align: center
+		th
+			font-weight: normal
+			&:first-letter
+				text-transform: uppercase
+		td
+			position: relative
+			border: 1px solid #eee
+			&:nth-child(6),
+			&:nth-child(7)
+				color: #b50404
+	.calender__booking
+		cursor: pointer
+		width: 100%
+		height: 100%
+		background: #c6f1d9
+		display: block
+	.calendar__popup
+		position: absolute
+		top: 100%
+		left: -130px
+		margin-top: 6px
+		padding: 20px 45px 20px 20px
+		text-align: left
+		line-height: 1.4
+		width: 416px
+		background: #ffffff
+		cursor: default
+		z-index: 2
+		display: none
+		+box-shadow(0 0 6px rgba(10,5,6,.31))
+		+box
+		&:before
+			position: absolute
+			content: ""
+			top: -21px
+			left: 148px
+			+s(arr-calendar)
+		&.is-active
+			display: block
+	.calendar__closepopup
+		position: absolute
+		top: 9px
+		right: 12px
+		+s(close_popup_cal)
+	.calendar__choose
+		margin-top: 12px
+		height: 20px
+		line-height: 20px
+		color: #4c6c8a
+		border-bottom: 1px dashed #4c6c8a
+		background: none
+		+box
+		&:hover
+			border: none
+
+//places
+.places
+	.places__item
+		padding-top: 10px
+	.fa
+		color: #2ecc71
+	.places__but
+		margin-left: 10px
+		height: 21px
+		line-height: 21px
+		color: #4c6c8a
+		border-bottom: 1px dashed #4c6c8a
+		cursor: pointer
+		background: none
+		display: inline-block
+		+box
+		&:hover
+			border: none
+
+//promocode
+.promocode
+	.promocode__text
+		cursor: pointer
+		height: 18px
+		line-height: 18px
+		border-bottom: 1px dotted #fff
+		display: inline-block
+		+box
+		&:hover
+			border: none
+	.promocode__text, .promocode__discount
+		color: #fff
+	.promocode__block, .promocode__discount
+		display: none
+	.promocode__btn, .promocode__input
+		vertical-align: top
+	.promocode__input
+		margin-right: 10px
+		display: inline-block
+		input
+			padding: 0 5px
+			height: 30px
+			color: #666
+			border: 1px solid #eee
+			background: #fff
+			+box
+	.promocode__btn
+		width: 90px
+		height: 30px
+		text-align: center
+		color: #000
+		border: 1px solid #eee
+		background: #fff
+	.promocode__discount
+		position: relative
+	.promocode__close
+		position: absolute
+		top: 0
+		right: 0
+		color: #000
+		background: none
+//booking
+.booking
+	.booking__block
+		position: relative
+	.booking__text
+		height: 20px
+		line-height: 20px
+		border-bottom: 1px dotted #fff
+		background: none
+		+box
+		&:hover
+			border: none
+	.booking__conditions 
+		position: absolute
+		top: 100%
+		left: 0
+		margin-top: 30px
+		padding: 15px
+		width: 270px
+		z-index: 2
+		border: 1px solid #eee
+		background: #fff
+		display: none
+		+box
+		&:before
+			position: absolute
+			content: ''
+			top: -29px
+			left: 45px
+			+s(arr-top-price)
+		.booking__close
+			position: absolute
+			top: 0
+			right: 5px
+			color: #000
+			background: none
+	.lead
+		font-size: 15px
 
 //line-height
 .line-height-1_3
@@ -238,6 +449,58 @@
 	.topic__quantity
 		font-size: 18px
 		color: #333333
+
+//convenience
+.convenience
+	padding: 0 10px
+	height: 80px
+	text-align: center
+	line-height: 80px
+	background: #fff
+	.convenience__ico
+		margin-left: 4px
+		vertical-align: middle
+		display: inline-block
+		&:first-child
+			margin-left: 0
+		&.convenience__ico_1
+			+s(arr9) 
+		&.convenience__ico_2
+			+s(arr10)
+		&.convenience__ico_3
+			+s(arr11)
+		&.convenience__ico_4
+			+s(arr12)
+		&.convenience__ico_5
+			+s(arr13)
+		&.convenience__ico_6
+			+s(arr14)
+		&.convenience__ico_7
+			+s(arr15)
+ 
+//alert
+.alert
+	font-size: 0 
+	.alert__col
+		width: 50%
+		font-size: 15px
+		display: inline-block
+	// .alert__item
+	// 	+clr
+	.alert__ico
+		display: inline-block
+		vertical-align: middle
+		&.alert__ico_1
+			+sr(arr17)
+		&.alert__ico_2
+			+sr(arr18)
+		&.alert__ico_3
+			+sr(arr16)
+		&.alert__ico_4
+			+sr(arr16)
+			+rotate(180)
+	&.alert_mob
+		font-size: 13px
 
 //data
 .data
@@ -281,6 +544,32 @@
 	left: 0
 	width: 100%
 	+box
+	&:hover
+		.item__list
+			visibility: visible
+			z-index: 1
+	.item__list
+		position: absolute
+		padding: 10px 10px 10px 30px
+		top: 45px
+		right: 40px
+		bottom: 15px
+		left: 40px
+		z-index: -1
+		visibility: hidden
+		background: rgba(#fff, 0.8)
+		+transition(all 0.2s linear)
+		+box
+		li
+			font-size: 16px
+			&:first-letter
+				text-transform: uppercase
+.item__block_mod
+	width: auto
+	bottom: 0
+	right: 0
+	h2
+		color: #fff
 .item__img
 	position: relative
 	width: 70%
@@ -591,6 +880,46 @@
 	img
 		width: 100%
 
+//rating
+.rating
+	margin: 0 15px 15px 
+	padding: 10px
+	background: #f7f7f7
+	+border-radius(5px !important)
+	+clr
+	.rating__title, .rating__date
+		padding: 0
+		margin: 0
+		line-height: 1.4
+		color: #585f69
+		font-weight: normal
+		font-size: 18px
+		font-family: 'Open Sans', sans-serif
+	.rating__top
+		+clr
+	.rating__left
+		text-align: center
+	.rating__right
+		.rating__title
+			margin-bottom: 10px
+	.rating__evaluation
+		font-size: 26px
+		color: #333333
+	.rating__text
+		position: relative
+		margin-top: 10px
+		padding-left: 30px
+		.fa
+			position: absolute
+			top: 5px
+			left: 0
+		&.rating__text_plus	
+			.fa
+				color: #b50404
+		&.rating__text_minus
+			.fa	
+				color: #c6f1d9
+
 //google-map
 .google-map
 	padding: 10px
@@ -693,9 +1022,17 @@
 				background: none
 				&.is-active
 					background: none
+	.card
+		.card__slider
+			position: relative
+			left: 0
+			margin-bottom: 20px
+			padding: 0 15px
+			width: 100%
 	.footer, .nav
 		text-align: center
 		.nav
 			li
 				float: none
 				display: inline-block
+
