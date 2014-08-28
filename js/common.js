@@ -11,6 +11,7 @@ head.ready(function() {
 		$(".js-price").removeClass("is-active");
 		$(".js-booking-conditions").hide();
 		$(".js-calendar-popup").removeClass('is-active');
+		$(".js-filter-list").hide();
 	});
 
 	$(".js-price").each(function(){
@@ -99,6 +100,15 @@ head.ready(function() {
 		}, 600);
 		return false;
 	});
+
+	$(".js-filter-btn").click(function(){
+		$(".js-filter-list").hide();
+		$(this).next(".js-filter-list").show();
+	});
+	$("body").on("click", ".js-filter-btn, .js-filter-list", function(event){
+		event.stopPropagation();
+	});
+
 
 	// 	$(function(){
 	// 		window.prettyPrint && prettyPrint();

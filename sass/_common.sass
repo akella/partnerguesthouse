@@ -267,6 +267,8 @@
 			padding: 0
 			.map
 				height: 445px
+	.card__item
+		overflow: hidden
 
 //calendar
 .calendar
@@ -537,6 +539,10 @@
 // carousel
 .item
 	+clr
+.carousel_228
+	height: 228px
+	.carousel-inner
+		height: 100%
 .item__block
 	padding: 15px 15px 0
 	position: absolute
@@ -882,6 +888,7 @@
 
 //rating
 .rating
+	float: left
 	margin: 0 15px 15px 
 	padding: 10px
 	background: #f7f7f7
@@ -919,6 +926,207 @@
 		&.rating__text_minus
 			.fa	
 				color: #c6f1d9
+.funny-boxes_mod
+	font-size: 14px
+
+//
+.placement
+	.placement__block
+		margin-bottom: 20px
+		padding: 0 15px 10px
+		background: #fff
+	.placement__item
+		padding-top: 10px
+		font-size: 18px
+	.placement__ico
+		position: relative
+		margin-right: 10px
+		vertical-align: middle
+		display: inline-block
+		&.placement__ico_1
+			+s(image_u889)
+		&.placement__ico_2
+			+s(u1342)
+		&.placement__ico_3
+			+s(u1336)
+		.placement__amount
+			position: absolute
+			top: -10px
+			right: -10px
+			height: 20px
+			width: 20px
+			color: #fff
+			line-height: 20px
+			font-size: 13px
+			text-align: center
+			border: 1px solid #f9f9f9
+			background: blue
+			+border-radius(50% !important)
+	.placement__img
+		width: 100%
+
+
+//sky-form_booking
+.sky-form_booking
+	padding: 5px 15px
+	fieldset
+		padding: 5px 0
+	.promocode__text, .promocode__discount
+		color: #666
+		border-color: #666
+	.promocode__input
+		width: 55%
+	.price
+		width: 100%
+	.input, .btn-u
+		margin-top: 25px
+	.sky-title
+		margin: 20px 0 0 0 
+		font-size: 22px
+		font-weight: normal
+		color: #666
+
+//more
+.more
+	padding: 20px 0
+	text-align: center
+	.more__btn
+		position: relative
+		padding: 15px 84px 15px 72px
+		height: 57px
+		font-size: 16px
+		border: 1px solid #e5e5e5
+		background-color: #fff
+		display: inline-block
+		+box-shadow(0 0 6px rgba(10,5,6,.08))
+		+box 
+		&:active
+			top: -1px
+		&:before
+			position: absolute
+			content: ''
+			top: 50%
+			margin-top: -4px
+			left: 21px
+			+arr(10, 8, #848484, b)
+		&:after
+			position: absolute
+			content: ''
+			top: 50%
+			margin-top: -4px
+			right: 24px
+			+arr(10, 8, #848484, b)
+
+//showmore
+.showmore
+	padding: 20px 0 0
+	text-align: center
+	.showmore__btn
+		position: relative
+		padding: 10px 60px 10px 45px
+		height: 50px
+		color: #fff
+		font-size: 16px
+		border: 1px solid #e5e5e5
+		background-color: #2fcb71
+		display: inline-block
+		+box-shadow(0 0 6px rgba(10,5,6,.08))
+		+box
+		&:before
+			position: absolute
+			content: ''
+			top: 50%
+			right: 22px
+			margin-top: -4px
+			+arr(10, 8, #fff, b)
+		&:active
+			top: -1px
+
+//filter-rating			
+.filter-rating
+	padding-bottom: 15px
+	+clr
+	.filter-rating__left
+		padding-top: 10px
+	span
+		height: 34px
+		line-height: 34px
+		display: inline-block
+	.sky-form
+		position: absolute
+		right: 0
+		left: 80px
+		top: 10px
+		border: none
+		display: inline-block
+		fieldset
+			padding: 0 !important
+		section
+			margin-bottom: 0
+
+//filter
+.filter
+	padding: 18px 30px
+	+clr
+	.filter__select
+		position: relative
+		display: inline-block
+		.btn-link
+			position: relative
+			margin-left: 18px
+			padding: 0
+			vertical-align: baseline
+			&:before
+				position: absolute
+				content: ''
+				bottom: 0
+				padding-left-20
+				width: 100%
+				height: 1px
+				border-bottom: 1px dashed #2a6496
+			&:hover
+				text-decoration: none
+				&:before
+					border: none
+		&:first-child
+			margin-right: 30px
+	.checkbox
+		margin: 10px 0
+		&:first-child
+			margin-top: 0
+	.filter__btn
+		position: relative
+		margin-right: 17px
+		font-size: 18px
+		color: #666666
+		z-index: 4
+		border-bottom: 1px dashed #666666
+		background: none
+		&:before
+			position: absolute
+			content: ''
+			top: 50%
+			right: -17px
+			margin-top: -3px
+			+arr(8, 6, #666666, b)
+	.filter__list
+		position: absolute
+		padding: 50px 18px 18px
+		top: -10px
+		left: -18px
+		min-width: 212px
+		z-index: 2
+		background-color: #fff
+		display: none
+		+box-shadow(0 0 6px rgba(10,5,6,.16))
+		&.filter__list_234
+			width: 234px
+
+//banner
+.banner
+	border: 1px solid #c9c9c9
+	vertical-align: top
+	display: inline-block
 
 //google-map
 .google-map
