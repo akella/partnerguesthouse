@@ -212,6 +212,7 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 .item__row:after { content: " "; display: table; clear: both; }
 
 .item__left { float: left; }
+.item__left h2 { margin: 0; }
 
 .item__right { float: right; }
 
@@ -307,8 +308,9 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 .step .step__performance.step__performance_3 .performance__pic { right: -15px; }
 .step .performance__pic { position: absolute; bottom: -13px; height: 30px; width: 30px; -moz-border-radius: 50% !important; -webkit-border-radius: 50%; border-radius: 50% !important; border: 5px solid #cccccc; background: white; }
 
-.guesthouse { padding: 10px; background: whitesmoke; *zoom: 1; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.guesthouse { padding: 10px 10px 25px; background: whitesmoke; *zoom: 1; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .guesthouse:after { content: " "; display: table; clear: both; }
+.guesthouse .guesthouse__title { padding-left: 15px; }
 
 .guesthouse__item { border: 1px solid #eeeeee; background: white; }
 
