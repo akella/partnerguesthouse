@@ -630,12 +630,28 @@
 	&:hover
 		color: #CCCCCC
 
+//complete-description
+.complete-description
+	padding: 15px 0
+	margin-bottom: 20px
+	border: 1px solid #eee
+	+clr
+	// &:last-child
+	// 	margin-bottom: 0
+
 //description
 .description
 	margin-left: -15px
 	padding-bottom: 15px
 	border: 1px solid #eee
-
+	.description__text
+		padding-left: 25px 
+		font-size: 18px
+	&.description__mod
+		border: none
+	&.description_borl
+		border: none
+		border-left: 1px solid #eee
 .description__row
 	margin-bottom: 5px
 
@@ -814,6 +830,7 @@
 	font-size: 14px
 
 .price__old
+	padding-left: 6px
 	color: #949494
 	text-decoration: line-through
 
@@ -985,6 +1002,8 @@
 		font-size: 22px
 		font-weight: normal
 		color: #666
+.sky-form_mod
+	padding-bottom: 20px
 
 //more
 .more
@@ -1066,8 +1085,17 @@
 
 //filter
 .filter
-	padding: 18px 30px
+	margin: 0 15px
+	padding: 18px 15px 3px
+	border: 1px solid #eeeeee
+	border-top: none
 	+clr
+	&.is-active
+		.filter__convenience
+			color: #a9a9a9
+			background: #fff
+		.filter__closebtn
+			display: none
 	.filter__select
 		position: relative
 		display: inline-block
@@ -1080,7 +1108,7 @@
 				position: absolute
 				content: ''
 				bottom: 0
-				padding-left-20
+				padding-left: 20px
 				width: 100%
 				height: 1px
 				border-bottom: 1px dashed #2a6496
@@ -1121,7 +1149,21 @@
 		+box-shadow(0 0 6px rgba(10,5,6,.16))
 		&.filter__list_234
 			width: 234px
-
+	.filter__convenience
+		position: relative
+		margin-bottom: 15px
+		padding: 0 12px
+		height: 30px
+		line-height: 30px
+		font-size: 12px
+		color: #666666
+		border: 1px solid #bbbbbb
+		background: #f4f4f4
+	.filter__closebtn
+		position: absolute
+		top: 10px
+		right: 8px
+		+s(filter-closebtn)
 //banner
 .banner
 	border: 1px solid #c9c9c9
@@ -1181,6 +1223,18 @@
 		padding-left: 5px
 		font-size: 22px
 		background: rgba(#000, .6)
+	a
+		height: 20px
+		line-height: 20px
+		font-size: 15px
+		color: #fff
+		border-bottom: 1px dashed
+		vertical-align: middle
+		display: inline-block
+		+box
+		&:hover
+			text-decoration: none
+			border: none
 
 //.offers
 .offers
