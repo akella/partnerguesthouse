@@ -109,9 +109,13 @@ head.ready(function() {
 	});
 	$(".js-close-convenience").click(function(){
 		$(this).parent().parent().remove();
-	})
+	});
 	$("body").on("click", ".js-filter-btn, .js-filter-list", function(event){
 		event.stopPropagation();
+	});
+
+	$(".js-open-services").click(function(){
+		$(".js-services").slideToggle();
 	});
 
 

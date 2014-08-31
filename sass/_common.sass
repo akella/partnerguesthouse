@@ -43,8 +43,15 @@
 .wrapper_error
 	background: url(http://lorempixel.com/1920/1920/business) no-repeat 0 0
 	background-size: cover 
+	p
+		font-size: 18px
 	.header
 		background: #fff
+
+.container
+	.ul
+		padding-left: 20px
+
 .logo
 	position: relative
 	margin-top: -45px
@@ -56,7 +63,8 @@
 
 .logo_mod
 	margin-top: 0
-
+.header
+	+clr
 .header__block
 	font-style: italic
 	font-size: 14px
@@ -82,6 +90,10 @@
 	&:hover
 		text-decoration: underline
 
+//collapse 
+
+.collapse 
+	+clr
 
 //footer
 .footer
@@ -143,6 +155,12 @@
 	span
 		line-height: 1
 		display: inline-block
+
+.text-border
+	background: none
+
+.js-services
+	display: none
 
 .breadcrumbs
 	padding: 0
@@ -525,11 +543,13 @@
 		padding-bottom: 12px
 	.tag-box
 		margin-bottom: 0
-		+clr
 	ul
 		padding-left: 16px
 		float: left
 		width: 50%
+
+.tag-box
+	+clr
 
 //hesthaus
 .hesthaus
@@ -671,6 +691,7 @@
 	line-height: 1.2
 	h1, h2, h3, h4, h5, h6
 		margin-top: 0
+		padding-top: 5px
 
 .description__wrap
 	padding: 0 5px 0 10px
@@ -746,6 +767,9 @@
 		font-size: 18px
 	.price
 		margin-left: -8px
+
+.posts
+	+clr
 
 .btn-u_mod
 	position: relative
@@ -967,7 +991,11 @@
 		&.placement__ico_2
 			+s(u1342)
 		&.placement__ico_3
-			+s(u1336)
+			+s(u1336) 
+		&.placement__ico_4
+			+s(u1340)
+			.placement__amount
+				top: -14px
 		.placement__amount
 			position: absolute
 			top: -10px
@@ -975,7 +1003,7 @@
 			height: 20px
 			width: 20px
 			color: #fff
-			line-height: 20px
+			line-height: 18px
 			font-size: 13px
 			text-align: center
 			border: 1px solid #f9f9f9
@@ -983,6 +1011,15 @@
 			+border-radius(50% !important)
 	.placement__img
 		width: 100%
+	&.placement_mod
+		.placement__block
+			margin: 0
+			padding: 0
+		.placement__item
+			margin-left: 10px
+			display: inline-block
+			&:first-child
+				margin-left: 0
 
 
 //sky-form_booking
@@ -1126,7 +1163,7 @@
 			margin-top: 0
 	.filter__btn
 		position: relative
-		margin-right: 17px
+		margin: 0 17px 20px 0
 		font-size: 18px
 		color: #666666
 		z-index: 4
@@ -1241,7 +1278,7 @@
 //.offers
 .offers
 	padding-top: 20px
-
+	+clr
 .offers__left
 	float: left
 .offers__right
@@ -1279,6 +1316,18 @@
 .is-bold
 	font-weight: bold
 
+@media (max-width: 1200px)
+	.description
+		.description__list.list .description__item
+			font-size: 12px
+		.description__bottom .price
+			margin-left: 0
+			width: 48%
+		.price__item
+			font-size: 30px
+	.carousel-inner>.item>img, .carousel-inner>.item>a>img
+		height: 100%
+
 @media (max-width: 992px)
 	.step
 		.step__performance
@@ -1293,6 +1342,11 @@
 			margin-bottom: 20px
 			padding: 0 15px
 			width: 100%
+	.navbar-nav
+		a
+			padding: 9px 25px 9px 20px !important
+	.description
+		margin-left: 0
 	.footer, .nav
 		text-align: center
 		.nav
@@ -1300,3 +1354,9 @@
 				float: none
 				display: inline-block
 
+@media (max-width: 768px)
+	.offers
+		.offers__right
+			float: left
+	.carousel-inner>.item>img, .carousel-inner>.item>a>img
+		height: auto
