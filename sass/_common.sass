@@ -40,6 +40,9 @@
 // =book
 // 	font-family: "book", Arial, sans-serif 
 	
+p 
+	+clr
+
 .wrapper_error
 	background: url(http://lorempixel.com/1920/1920/business) no-repeat 0 0
 	background-size: cover 
@@ -721,6 +724,24 @@
 	.addres__ico
 		+s(image_u752)
 
+.text-border-blue
+	&:hover
+		text-decoration: none
+
+.modal-header
+	.close
+		position: absolute
+		top: 15px
+		right: 15px
+
+.modal-wrap
+	visibility: hidden
+	z-index: -100
+	+opacity(0)
+	&.is-active
+		visibility: visible
+		+opacity(1)
+		z-index: 1000
 // description__list
 .description__list
 	font-size: 0
@@ -736,7 +757,8 @@
 		.list__ico
 			position: absolute
 			top: 0
-			left: 0 
+			left: 0
+			color: #72c02c
 		.list__ico_dg1
 			+s(arr1)
 		.list__ico_oll
@@ -919,6 +941,8 @@
 .guesthouse__item
 	border: 1px solid #eeeeee
 	background: #fff
+	img
+		width: 100%
 
 //reviews
 .reviews
@@ -1041,8 +1065,10 @@
 		font-size: 22px
 		font-weight: normal
 		color: #666
-.sky-form_mod
-	padding-bottom: 20px
+
+.sky-form
+	.sky-form-footer
+		padding: 20px 15px 0
 
 //more
 .more
@@ -1135,6 +1161,8 @@
 			background: #fff
 		.filter__closebtn
 			display: none
+		.filter__list
+			z-index: 7
 	.filter__select
 		position: relative
 		display: inline-block
@@ -1176,6 +1204,8 @@
 			right: -17px
 			margin-top: -3px
 			+arr(8, 6, #666666, b)
+		&.is-active
+			z-index: 9
 	.filter__list
 		position: absolute
 		padding: 50px 18px 18px
@@ -1230,6 +1260,7 @@
 
 .border
 	border: 1px solid #eee
+	+clr
 
 //color-black
 .color-black
@@ -1246,8 +1277,8 @@
 	font-size: 11px
 
 .select_people
-	select
-		color: #bbb !important
+	// select
+	// 	color: #bbb !important
 	.fa
 		background: #fff !important
 
@@ -1327,6 +1358,21 @@
 			font-size: 30px
 	.carousel-inner>.item>img, .carousel-inner>.item>a>img
 		height: 100%
+	.card__item
+		.item__img, .item__info
+			width: 100%
+			height: auto
+	.headline
+		+clr
+	.hesthaus
+		.item__img, .item__info
+			width: 100%
+			height: auto
+		.description__top
+			text-align: center
+	.topic .topic__quantity, .topic .btn-u
+		margin-top: 5px
+		width: 100%
 
 @media (max-width: 992px)
 	.step
@@ -1342,6 +1388,10 @@
 			margin-bottom: 20px
 			padding: 0 15px
 			width: 100%
+		.carousel
+			img
+				height: auto
+				width: 100%
 	.navbar-nav
 		a
 			padding: 9px 25px 9px 20px !important
@@ -1353,10 +1403,95 @@
 			li
 				float: none
 				display: inline-block
-
+	.img-responsive_mob
+		display: none
+	.btn-u_small
+		line-height: 1.4
+		font-size: 16px
+	.description.description_borl
+		padding-top: 15px
+		border-left: none
+		border-top: 1px solid #eeeeee
 @media (max-width: 768px)
 	.offers
 		.offers__right
 			float: left
+
 	.carousel-inner>.item>img, .carousel-inner>.item>a>img
 		height: auto
+
+	.funny-boxes
+		img
+			width: 100%
+	.step .step__item
+		white-space: inherit
+	.border
+		display: block
+	.btn-field
+		.btn
+			margin-top: 15px
+	.item__row
+		padding-left: 25px
+	.item__right
+		float: left
+		margin-top: 5px
+	.item__link 
+		font-size: 13px
+	.filter .filter__convenience
+		white-space: nowrap
+		overflow: hidden
+		text-overflow: ellipsis
+	.google-map .google-map__wrap
+		padding: 10px 0
+	.description__bottom .btn-u
+		font-size: 16px
+	.padding-left-20
+		padding-left: 10px
+	.header__facebook, .header__block
+		display: none
+	.convenience
+		margin-bottom: 15px
+		height: auto
+	.alert .alert__col
+		font-size: 14px
+	.card__table-wrap
+		font-size: 10px
+		overflow: auto
+	.slick-slide
+		height: auto
+	.banner
+		float: none !important
+		margin-top: 15px
+		display: block
+		img
+			width: 100%
+	.filter-rating__left
+		position: relative
+		padding-right: 15px
+		+clr
+	.more
+		padding: 15px
+		.more__btn
+			padding: 15px 0
+			width: 100%
+			font-size: 13px
+	.data .data__right, .data .data__left
+		width: 100%
+		img
+			margin-top: 8px
+			width: 100%
+	.data ul
+		margin-left: 5px
+	.complete-description
+		.carousel-inner > .item > img, .carousel-inner > .item > a > img
+			width: 100%
+@media (max-width: 431px)
+	.js-open-services
+		position: absolute
+		top: 30px
+		right: 18px
+	h1
+		font-size: 24px
+	.hesthaus
+		.description__bottom .btn-u
+			font-size: 13px

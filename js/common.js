@@ -1,5 +1,9 @@
 head.ready(function() {
 
+	$(".js-map").click(function(){
+		$(".js-modal").addClass("is-active");
+	});
+	
 	var agent = navigator.userAgent,
 	event = (agent.match(/iPad/i)) ? "touchstart" : "click";
 
@@ -13,6 +17,7 @@ head.ready(function() {
 		$(".js-calendar-popup").removeClass('is-active');
 		$(".js-filter-list").hide();
 		$(".js-filter").removeClass('is-active');
+		$(".js-filter-btn").removeClass('is-active');
 	});
 
 	$(".js-price").each(function(){
@@ -103,6 +108,7 @@ head.ready(function() {
 	});
 
 	$(".js-filter-btn").click(function(){
+		$(this).addClass('is-active');
 		$(".js-filter-list").hide();
 		$(this).next(".js-filter-list").show();
 		$(".js-filter").addClass('is-active');
@@ -161,8 +167,5 @@ head.ready(function() {
 //   alert();
 // })
 
-	$(".js-map").click(function(){
-        ContactPage.initMap();
-	})
 });
 

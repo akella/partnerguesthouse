@@ -213,10 +213,10 @@
             <div class="col-md-8">
                 <div class="funny-boxes funny-boxes-left-orange margin-bottom-20">
                     <div class="row">
-                        <div class="col-md-4 funny-boxes-img">
+                        <div class="col-md-4 col-sm-4 funny-boxes-img">
                             <img class="img-responsive" src="assets/img/new/img11.jpg" alt="img">
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-8 col-sm-8">
                             <h2><a href="#">Orange Bordered Box</a></h2>
                             <p><strong>Апартаменты:</strong> Шевченко 10, Киев - KV202, гестхаус "Крещатик"</p>
                             <p><strong>Заезд:</strong> 19.03.14 (14:00)  <strong class="padding-left-20">Выезд:</strong> 21.03.14 (12:00)</p>
@@ -225,18 +225,21 @@
                                 <span class="padding-left-20"></span>
                                 <span class="text-border text-border-blue pointer color-blue js-map" data-toggle="modal" data-target="#myModal">Карта</span>
                             </p>
-                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="google-map google-map_mod servive-block-default">
-                                                <div id="map" class="map"></div>
+                            <div class="modal-wrap js-modal">
+                                <div class="modal fade in" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false" style="display: block;">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h3>Апартаменты на карте</h3>
+                                                <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
                                             </div>
-                                        </div>
-                                      </div>
+                                            <div class="modal-body">
+                                                <div class="google-map google-map_mod servive-block-default">
+                                                    <div id="map" class="map"></div>
+                                                </div>
+                                            </div>
+                                          </div>
+                                    </div>
                                 </div>
                             </div>
                             <p><strong>Кровать:</strong> 1 двуспальная кровать</p>
@@ -289,9 +292,9 @@
                         
                     </fieldset>
                     
-                    <footer>
-                        <div class="col-md-4"><button class="btn-u btn-u-lg btn-u-red" type="button">Забронировать</button></div>
-                        <div class="col-md-8">Остаток в размере 800 грн вы сможете оплатить во время заселения наличными или банковской картой</div>
+                    <footer class="sky-form-footer">
+                        <section class="col-md-4 col-sm-4"><button class="btn-u btn-u-lg btn-u-red" type="button">Забронировать</button></section>
+                        <section class="col-md-8 col-sm-8">Остаток в размере 800 грн вы сможете оплатить во время заселения наличными или банковской картой</section>
                     </footer>
                 </form>         
                 <!-- End Checkout-Form -->
@@ -322,12 +325,12 @@
                 <p class="margin-bottom-20">Отмена бронирования без штрафных санкций возможна в период, не менее, чем за 7 дней до даты заезда.
                 Сумма предоплаты не подлежит возврату, в случае, если отмена бронирования произошла в период, равный менее 7 дней до даты заезда.</p>
                 <p><strong>Внимание:</strong> Отмена бронирования без штрафных санкций должна быть не менее, чем за 3 месяца до даты заселения в следующие дни:</p>
-                <ul class="margin-bottom-40">
-                    <li>- с 30 Декабря по 3 Января</li>
-                    <li>- 7 Января</li>
-                    <li>- 14 Февраля</li>
-                    <li>- 8 Марта</li>
-                    <li>- с 1 по 4 Мая</li>
+                <ul class="ul margin-bottom-40">
+                    <li>с 30 Декабря по 3 Января</li>
+                    <li>7 Января</li>
+                    <li>14 Февраля</li>
+                    <li>8 Марта</li>
+                    <li>с 1 по 4 Мая</li>
                 </ul>
             </div>
 
@@ -489,6 +492,7 @@
 <!--[if lt IE 10]>
     <script src="assets/plugins/sky-forms/version-2.0.1/js/jquery.placeholder.min.js"></script>
 <![endif]-->
+<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
 
 </body>
 </html>
