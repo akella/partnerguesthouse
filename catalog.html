@@ -194,19 +194,19 @@
         <form action="" id="sky-form" class="sky-form"> 
             <fieldset> 
                 <div class="row">   
-                    <section class="col col-3">
+                   <section class="col-md-3 col-sm-6">
                         <label class="input">
                             <i class="icon-append fa fa-calendar"></i>
                             <input type="text" name="start" id="start" placeholder="Заезд">
                         </label>
                     </section>
-                    <section class="col col-3">
+                    <section class="col-md-3 col-sm-6">
                         <label class="input">
                             <i class="icon-append fa fa-calendar"></i>
                             <input type="text" name="finish" id="finish" placeholder="Выезд">
                         </label>
                     </section>
-                    <div class="col-md-3 col-sm-6">
+                    <section class="col-md-3 col-sm-6">
                         <div class="select select_people">
                             <select class="form-control input-lg">
                                 <option>1 гость</option>
@@ -218,19 +218,160 @@
                             </select>
                             <span class="icon-append fa fa-user"></span>
                         </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6"><button class="btn-u btn-block btn-u-green" type="button">Выбрать апартаменты</button></div>
+                    </section>
+                    <section class="col-md-3 col-sm-6"><button class="btn-u btn-block btn-u-green" type="button">Выбрать апартаменты</button></section>
                 </div>                  
             </fieldset>
         </form> 
         <!-- END form -->
-
+        <div class="row">
+            <div class="filter js-filter">
+                <div class="col-md-4">
+                    <div class="filter__select">
+                        <button class="filter__btn js-filter-btn" type="button">Количество комнат</button>
+                        <div class="filter__list js-filter-list">
+                            <div class="checkbox">
+                                <label>
+                                <input type="checkbox" value="" checked="checked">
+                                    Однокомнатная
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                <input type="checkbox" value="">
+                                    2х-комнатная
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                <input type="checkbox" value="">
+                                    3х-комнатная (+)
+                                </label>
+                            </div>
+                            <div class="filter__row">
+                                <button class="btn-u btn-u-green" type="button">Выбрать</button>
+                                <button class="btn btn-link" type="button">Отменить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter__select">
+                        <button class="filter__btn js-filter-btn" type="button">Удобства</button>
+                        <div class="filter__list filter__list_234 js-filter-list">
+                            <div class="checkbox">
+                                <label>
+                                <input type="checkbox" value="" checked="checked">
+                                    Wi-Fi (10)
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                <input type="checkbox" value="">
+                                    Доставка еды в номер (11)
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                <input type="checkbox" value="">
+                                    Джакузи (11)
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                <input type="checkbox" value="">
+                                    Всё для готовки (11)
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                <input type="checkbox" value="">
+                                    Трансфер от/до аэропорта (5)
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                <input type="checkbox" value="">
+                                    Факс/Ксерокопирование (5)
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                <input type="checkbox" value="">
+                                    Лифт (14)
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                <input type="checkbox" value="">
+                                    Кондиционер (14)
+                                </label>
+                            </div>
+                            <div class="filter__row">
+                                <button class="btn-u btn-u-green" type="button">Выбрать</button>
+                                <button class="btn btn-link" type="button">Отменить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-4 col-xs-6">
+                            <div class="filter__convenience js-convenience">
+                                Вседля готовки
+                                <button class="filter__closebtn js-close-convenience" type="button"></button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-xs-6">
+                            <div class="filter__convenience js-convenience">
+                                Вседля готовки
+                                <button class="filter__closebtn js-close-convenience" type="button"></button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-xs-6">
+                            <div class="filter__convenience js-convenience">
+                                Вседля готовки
+                                <button class="filter__closebtn js-close-convenience" type="button"></button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-xs-6">
+                            <div class="filter__convenience js-convenience">
+                                Вседля готовки
+                                <button class="filter__closebtn js-close-convenience" type="button"></button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-xs-6">
+                            <div class="filter__convenience js-convenience">
+                                Вседля готовки
+                                <button class="filter__closebtn js-close-convenience" type="button"></button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-xs-6">
+                            <div class="filter__convenience js-convenience">
+                                Вседля готовки
+                                <button class="filter__closebtn js-close-convenience" type="button"></button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-xs-6">
+                            <div class="filter__convenience js-convenience">
+                                Вседля готовки
+                                <button class="filter__closebtn js-close-convenience" type="button"></button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-xs-6">
+                            <div class="filter__convenience js-convenience">
+                                Вседля готовки
+                                <button class="filter__closebtn js-close-convenience" type="button"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- BEGIN row -->
         <div class="row margin-bottom-20">
             <div class="col-md-12 margin-bottom-10">
                 <div class="offers">
                     <div class="offers__left">
-                        <p>Всего 36 предложений <span class="text-border text-border-blue color-blue pointer js-map" data-toggle="modal" data-target="#myModal">Показать на карте</span></p>
+                        <p>Всего 36 предложений <span href="#map-bot" class="text-border text-border-blue color-blue pointer js-scroll">Показать на карте</span></p>
                     </div>
                     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
@@ -260,14 +401,14 @@
                             <div class="item__block">
                                 <div class="item__row">
                                     <div class="item__left">
-                                        <h2><a class="item__link" href="#">Шевченко 10, Киев - KV202</a></h2>
+                                        <h2><a class="item__link item__link_red" href="#">Шевченко 10, Киев - KV202</a></h2>
                                     </div>
                                     <div class="item__right">
                                         <a class="item__link item__link_red" href="#">01/03 - 02/03  1 ночь</a>
                                     </div>
                                 </div>
                                 <div class="item__row">
-                                    <h4><a class="item__link item__link_grey" href="#">Гестхаус "Крещатик"</a></h4>
+                                    <h4><a class="item__link item__link_grey item__link_red" href="#">Гестхаус "Крещатик"</a></h4>
                                 </div>
                             </div>
                             <img class="img-responsive" src="http://lorempixel.com/800/358/city" alt="img">
@@ -276,14 +417,14 @@
                             <div class="item__block">
                                 <div class="item__row">
                                     <div class="item__left">
-                                        <h2><a class="item__link" href="#">Шевченко 10, Киев - KV202</a></h2>
+                                        <h2><a class="item__link item__link_red" href="#">Шевченко 10, Киев - KV202</a></h2>
                                     </div>
                                     <div class="item__right">
                                         <a class="item__link item__link_red" href="#">01/03 - 02/03  1 ночь</a>
                                     </div>
                                 </div>
                                 <div class="item__row">
-                                    <h4><a class="item__link item__link_grey" href="#">Гестхаус "Крещатик"</a></h4>
+                                    <h4><a class="item__link item__link_grey item__link_red" href="#">Гестхаус "Крещатик"</a></h4>
                                 </div>
                             </div>
                             <img class="img-responsive" src="http://lorempixel.com/800/358/city" alt="img">
@@ -292,14 +433,14 @@
                             <div class="item__block">
                                 <div class="item__row">
                                     <div class="item__left">
-                                        <h2><a class="item__link" href="#">Шевченко 10, Киев - KV202</a></h2>
+                                        <h2><a class="item__link item__link_red" href="#">Шевченко 10, Киев - KV202</a></h2>
                                     </div>
                                     <div class="item__right">
                                         <a class="item__link item__link_red" href="#">01/03 - 02/03  1 ночь</a>
                                     </div>
                                 </div>
                                 <div class="item__row">
-                                    <h4><a class="item__link item__link_grey" href="#">Гестхаус "Крещатик"</a></h4>
+                                    <h4><a class="item__link item__link_grey item__link_red" href="#">Гестхаус "Крещатик"</a></h4>
                                 </div>
                             </div>
                             <img class="img-responsive" src="http://lorempixel.com/800/358/city" alt="img">
@@ -325,14 +466,14 @@
                             <div class="description__row"><a href="#" class="description__name name"><i class="name__ico"></i>Гестхаус "Шевченко"</a></div>
                         <div class="description__row"><a href="#" class="description__addres addres"><i class="addres__ico"></i>Шевченко 10, Киев</a></div>
                         <ul class="description__list list">
-                            <li class="description__item"><i class="list__ico list__ico_dg1"></i>Джакузи</li>
-                            <li class="description__item"><i class="list__ico list__ico_dg2"></i>Джакузи</li>
-                            <li class="description__item"><i class="list__ico list__ico_oll"></i>Все для готовки</li>
-                            <li class="description__item"><i class="list__ico list__ico_sa"></i>Сауна</li>
-                            <li class="description__item"><i class="list__ico list__ico_con"></i>Кондиционер</li>
-                            <li class="description__item"><i class="list__ico list__ico_con2"></i>Кондиционер</li>
-                            <li class="description__item"><i class="list__ico list__ico_tv1"></i>Плазменное TV</li>
-                            <li class="description__item"><i class="list__ico list__ico_tv2"></i>Плазменное TV</li>
+                            <li class="description__item"><i class="list__ico glyphicon glyphicon-tint"></i>Джакузи</li>
+                            <li class="description__item"><i class="list__ico glyphicon glyphicon-tint"></i>Джакузи</li>
+                            <li class="description__item"><i class="list__ico fa fa-cutlery"></i>Все для готовки</li>
+                            <li class="description__item"><i class="list__ico glyphicon glyphicon-fire"></i>Сауна</li>
+                            <li class="description__item"><i class="list__ico icon-shuffle"></i>Кондиционер</li>
+                            <li class="description__item"><i class="list__ico icon-shuffle"></i>Кондиционер</li>
+                            <li class="description__item"><i class="list__ico fa fa-desktop"></i>Плазменное TV</li>
+                            <li class="description__item"><i class="list__ico fa fa-desktop"></i>Плазменное TV</li>
                         </ul>
                         <div class="description__bottom">
                             <div class="price">
@@ -362,14 +503,14 @@
                             <div class="item__block">
                                 <div class="item__row">
                                     <div class="item__left">
-                                        <h2><a class="item__link" href="#">Шевченко 10, Киев - KV202</a></h2>
+                                        <h2><a class="item__link item__link_red" href="#">Шевченко 10, Киев - KV202</a></h2>
                                     </div>
                                     <div class="item__right">
                                         <a class="item__link item__link_red" href="#">01/03 - 02/03  1 ночь</a>
                                     </div>
                                 </div>
                                 <div class="item__row">
-                                    <h4><a class="item__link item__link_grey" href="#">Гестхаус "Крещатик"</a></h4>
+                                    <h4><a class="item__link item__link_grey item__link_red" href="#">Гестхаус "Крещатик"</a></h4>
                                 </div>
                             </div>
                             <img class="img-responsive" src="http://lorempixel.com/800/358/city" alt="img">
@@ -378,14 +519,14 @@
                             <div class="item__block">
                                 <div class="item__row">
                                     <div class="item__left">
-                                        <h2><a class="item__link" href="#">Шевченко 10, Киев - KV202</a></h2>
+                                        <h2><a class="item__link item__link_red" href="#">Шевченко 10, Киев - KV202</a></h2>
                                     </div>
                                     <div class="item__right">
                                         <a class="item__link item__link_red" href="#">01/03 - 02/03  1 ночь</a>
                                     </div>
                                 </div>
                                 <div class="item__row">
-                                    <h4><a class="item__link item__link_grey" href="#">Гестхаус "Крещатик"</a></h4>
+                                    <h4><a class="item__link item__link_grey item__link_red" href="#">Гестхаус "Крещатик"</a></h4>
                                 </div>
                             </div>
                             <img class="img-responsive" src="http://lorempixel.com/800/358/city" alt="img">
@@ -394,14 +535,14 @@
                             <div class="item__block">
                                 <div class="item__row">
                                     <div class="item__left">
-                                        <h2><a class="item__link" href="#">Шевченко 10, Киев - KV202</a></h2>
+                                        <h2><a class="item__link item__link_red" href="#">Шевченко 10, Киев - KV202</a></h2>
                                     </div>
                                     <div class="item__right">
                                         <a class="item__link item__link_red" href="#">01/03 - 02/03  1 ночь</a>
                                     </div>
                                 </div>
                                 <div class="item__row">
-                                    <h4><a class="item__link item__link_grey" href="#">Гестхаус "Крещатик"</a></h4>
+                                    <h4><a class="item__link item__link_grey item__link_red" href="#">Гестхаус "Крещатик"</a></h4>
                                 </div>
                             </div>
                             <img class="img-responsive" src="http://lorempixel.com/800/358/city" alt="img">
@@ -427,14 +568,14 @@
                             <div class="description__row"><a href="#" class="description__name name"><i class="name__ico"></i>Гестхаус "Шевченко"</a></div>
                         <div class="description__row"><a href="#" class="description__addres addres"><i class="addres__ico"></i>Шевченко 10, Киев</a></div>
                         <ul class="description__list list">
-                            <li class="description__item"><i class="list__ico list__ico_dg1"></i>Джакузи</li>
-                            <li class="description__item"><i class="list__ico list__ico_dg2"></i>Джакузи</li>
-                            <li class="description__item"><i class="list__ico list__ico_oll"></i>Все для готовки</li>
-                            <li class="description__item"><i class="list__ico list__ico_sa"></i>Сауна</li>
-                            <li class="description__item"><i class="list__ico list__ico_con"></i>Кондиционер</li>
-                            <li class="description__item"><i class="list__ico list__ico_con2"></i>Кондиционер</li>
-                            <li class="description__item"><i class="list__ico list__ico_tv1"></i>Плазменное TV</li>
-                            <li class="description__item"><i class="list__ico list__ico_tv2"></i>Плазменное TV</li>
+                            <li class="description__item"><i class="list__ico glyphicon glyphicon-tint"></i>Джакузи</li>
+                            <li class="description__item"><i class="list__ico glyphicon glyphicon-tint"></i>Джакузи</li>
+                            <li class="description__item"><i class="list__ico fa fa-cutlery"></i>Все для готовки</li>
+                            <li class="description__item"><i class="list__ico glyphicon glyphicon-fire"></i>Сауна</li>
+                            <li class="description__item"><i class="list__ico icon-shuffle"></i>Кондиционер</li>
+                            <li class="description__item"><i class="list__ico icon-shuffle"></i>Кондиционер</li>
+                            <li class="description__item"><i class="list__ico fa fa-desktop"></i>Плазменное TV</li>
+                            <li class="description__item"><i class="list__ico fa fa-desktop"></i>Плазменное TV</li>
                         </ul>
                         <div class="description__bottom">
                             <div class="price">
@@ -484,14 +625,14 @@
                             <div class="item__block">
                                 <div class="item__row">
                                     <div class="item__left">
-                                        <h2><a class="item__link" href="#">Шевченко 10, Киев - KV202</a></h2>
+                                        <h2><a class="item__link item__link_red" href="#">Шевченко 10, Киев - KV202</a></h2>
                                     </div>
                                     <div class="item__right">
                                         <a class="item__link item__link_red" href="#">01/03 - 02/03  1 ночь</a>
                                     </div>
                                 </div>
                                 <div class="item__row">
-                                    <h4><a class="item__link item__link_grey" href="#">Гестхаус "Крещатик"</a></h4>
+                                    <h4><a class="item__link item__link_grey item__link_red" href="#">Гестхаус "Крещатик"</a></h4>
                                 </div>
                             </div>
                             <img class="img-responsive" src="http://lorempixel.com/800/358/city" alt="img">
@@ -500,14 +641,14 @@
                             <div class="item__block">
                                 <div class="item__row">
                                     <div class="item__left">
-                                        <h2><a class="item__link" href="#">Шевченко 10, Киев - KV202</a></h2>
+                                        <h2><a class="item__link item__link_red" href="#">Шевченко 10, Киев - KV202</a></h2>
                                     </div>
                                     <div class="item__right">
                                         <a class="item__link item__link_red" href="#">01/03 - 02/03  1 ночь</a>
                                     </div>
                                 </div>
                                 <div class="item__row">
-                                    <h4><a class="item__link item__link_grey" href="#">Гестхаус "Крещатик"</a></h4>
+                                    <h4><a class="item__link item__link_grey item__link_red" href="#">Гестхаус "Крещатик"</a></h4>
                                 </div>
                             </div>
                             <img class="img-responsive" src="http://lorempixel.com/800/358/city" alt="img">
@@ -516,14 +657,14 @@
                             <div class="item__block">
                                 <div class="item__row">
                                     <div class="item__left">
-                                        <h2><a class="item__link" href="#">Шевченко 10, Киев - KV202</a></h2>
+                                        <h2><a class="item__link item__link_red" href="#">Шевченко 10, Киев - KV202</a></h2>
                                     </div>
                                     <div class="item__right">
                                         <a class="item__link item__link_red" href="#">01/03 - 02/03  1 ночь</a>
                                     </div>
                                 </div>
                                 <div class="item__row">
-                                    <h4><a class="item__link item__link_grey" href="#">Гестхаус "Крещатик"</a></h4>
+                                    <h4><a class="item__link item__link_grey item__link_red" href="#">Гестхаус "Крещатик"</a></h4>
                                 </div>
                             </div>
                             <img class="img-responsive" src="http://lorempixel.com/800/358/city" alt="img">
@@ -549,14 +690,14 @@
                             <div class="description__row"><a href="#" class="description__name name"><i class="name__ico"></i>Гестхаус "Шевченко"</a></div>
                         <div class="description__row"><a href="#" class="description__addres addres"><i class="addres__ico"></i>Шевченко 10, Киев</a></div>
                         <ul class="description__list list">
-                            <li class="description__item"><i class="list__ico list__ico_dg1"></i>Джакузи</li>
-                            <li class="description__item"><i class="list__ico list__ico_dg2"></i>Джакузи</li>
-                            <li class="description__item"><i class="list__ico list__ico_oll"></i>Все для готовки</li>
-                            <li class="description__item"><i class="list__ico list__ico_sa"></i>Сауна</li>
-                            <li class="description__item"><i class="list__ico list__ico_con"></i>Кондиционер</li>
-                            <li class="description__item"><i class="list__ico list__ico_con2"></i>Кондиционер</li>
-                            <li class="description__item"><i class="list__ico list__ico_tv1"></i>Плазменное TV</li>
-                            <li class="description__item"><i class="list__ico list__ico_tv2"></i>Плазменное TV</li>
+                            <li class="description__item"><i class="list__ico glyphicon glyphicon-tint"></i>Джакузи</li>
+                            <li class="description__item"><i class="list__ico glyphicon glyphicon-tint"></i>Джакузи</li>
+                            <li class="description__item"><i class="list__ico fa fa-cutlery"></i>Все для готовки</li>
+                            <li class="description__item"><i class="list__ico glyphicon glyphicon-fire"></i>Сауна</li>
+                            <li class="description__item"><i class="list__ico icon-shuffle"></i>Кондиционер</li>
+                            <li class="description__item"><i class="list__ico icon-shuffle"></i>Кондиционер</li>
+                            <li class="description__item"><i class="list__ico fa fa-desktop"></i>Плазменное TV</li>
+                            <li class="description__item"><i class="list__ico fa fa-desktop"></i>Плазменное TV</li>
                         </ul>
                         <div class="description__bottom">
                             <div class="price">
@@ -578,7 +719,7 @@
         <!-- BEGIN row -->
         <div class="row margin-bottom-20">
             <div class="col-md-12">
-                <div class="google-map servive-block-default">
+                <div class="google-map servive-block-default" id="map-bot">
                     <h2>Апартаменты на карте</h2>
                     <div class="google-map__wrap">
                         <div id="map" class="map"></div>

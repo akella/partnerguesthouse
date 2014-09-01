@@ -368,7 +368,7 @@
 
 	/*Navbar*/
 	.header .navbar-nav {
-		top: 20px;
+		top: 0;
 		position: relative;
 	}
 

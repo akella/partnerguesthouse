@@ -16,21 +16,22 @@ var Datepicker = function () {
 	            dateFormat: 'dd.mm.yy',
 	            prevText: '<i class="fa fa-angle-left"></i>',
 	            nextText: '<i class="fa fa-angle-right"></i>',
-	            onSelect: function( selectedDate )
+	            onClose: function( selectedDate )
 	            {
-	                $('#finish').datepicker('option', 'minDate', selectedDate);
+	                $('#finish').focus();
 	            }
 	        });
 	        $('#finish').datepicker({
 	            dateFormat: 'dd.mm.yy',
 	            prevText: '<i class="fa fa-angle-left"></i>',
 	            nextText: '<i class="fa fa-angle-right"></i>',
-	            onSelect: function( selectedDate )
-	            {
-	                $('#start').datepicker('option', 'maxDate', selectedDate);
-	            }
+	            // onClose: function( selectedDate )
+	            // {
+	            //     $('#start').focus();
+	            // }
 	        });
-	        
+
+
 	        // Inline datepicker
 	        $('#inline').datepicker({
 	            dateFormat: 'dd.mm.yy',
