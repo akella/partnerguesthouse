@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/plugins/flexslider/flexslider.css">     
     <link rel="stylesheet" href="assets/plugins/parallax-slider/css/parallax-slider.css">
+    <link rel="stylesheet" href="assets/css/pages/z_feature_google_map.css">
     <link rel="stylesheet" href="assets/plugins/sky-forms/version-2.0.1/css/custom-sky-forms.css">
 
     <!-- CSS Theme -->    
@@ -221,20 +222,20 @@
         <form action="" id="sky-form" class="sky-form"> 
             <fieldset> 
                 <div class="row">   
-                    <section class="col-md-3 col-sm-6">
-                        <label class="input">
-                            <i class="icon-append fa fa-calendar"></i>
-                            <input type="text" name="finish" id="finish" placeholder="Выезд">
-                        </label>
-                    </section>
-                    <section class="col-md-3 col-sm-6">
+                    <section class="col col-3">
                         <label class="input">
                             <i class="icon-append fa fa-calendar"></i>
                             <input type="text" name="start" id="start" placeholder="Заезд">
                         </label>
                     </section>
-                    <section class="col-md-3 col-sm-6">
-                        <div class="select">
+                    <section class="col col-3">
+                        <label class="input">
+                            <i class="icon-append fa fa-calendar"></i>
+                            <input type="text" name="finish" id="finish" placeholder="Выезд">
+                        </label>
+                    </section>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="select select_people">
                             <select class="form-control input-lg">
                                 <option>1 гость</option>
                                 <option>2</option>
@@ -245,8 +246,8 @@
                             </select>
                             <span class="icon-append fa fa-user"></span>
                         </div>
-                    </section>
-                    <section class="col-md-3 col-sm-6"><button class="btn-u btn-block btn-u-green" type="button">Выбрать апартаменты</button></section>
+                    </div>
+                    <div class="col-md-3 col-sm-6"><button class="btn-u btn-block btn-u-green" type="button">Выбрать апартаменты</button></div>
                 </div>                  
             </fieldset>
         </form> 
@@ -265,14 +266,14 @@
                             <div class="item__block">
                                 <div class="item__row">
                                     <div class="item__left">
-                                        <h2><a class="item__link item__link_red" href="#">Шевченко 10, Киев - KV202</a></h2>
+                                        <h2><a class="item__link" href="#">Шевченко 10, Киев - KV202</a></h2>
                                     </div>
                                     <div class="item__right">
-                                        <h4 class="pull-left"><a class="item__link item__link_red" href="#">01/03 - 02/03  1 ночь</a></h4>
+                                        <a class="item__link item__link_red" href="#">01/03 - 02/03  1 ночь</a>
                                     </div>
                                 </div>
                                 <div class="item__row">
-                                    <a class="item__link item__link_grey item__link_red pull-left" href="#">Гестхаус "Крещатик"</a>
+                                    <h4><a class="item__link item__link_grey" href="#">Гестхаус "Крещатик"</a></h4>
                                 </div>
                             </div>
                             <img class="img-responsive" src="http://lorempixel.com/800/358/city" alt="img">
@@ -281,14 +282,14 @@
                             <div class="item__block">
                                 <div class="item__row">
                                     <div class="item__left">
-                                        <h2><a class="item__link item__link_red" href="#">Шевченко 10, Киев - KV202</a></h2>
+                                        <h2><a class="item__link" href="#">Шевченко 10, Киев - KV202</a></h2>
                                     </div>
                                     <div class="item__right">
-                                        <h4 class="pull-left"><a class="item__link item__link_red" href="#">01/03 - 02/03  1 ночь</a></h4>
+                                        <a class="item__link item__link_red" href="#">01/03 - 02/03  1 ночь</a>
                                     </div>
                                 </div>
                                 <div class="item__row">
-                                    <a class="item__link item__link_grey item__link_red pull-left" href="#">Гестхаус "Крещатик"</a>
+                                    <h4><a class="item__link item__link_grey" href="#">Гестхаус "Крещатик"</a></h4>
                                 </div>
                             </div>
                             <img class="img-responsive" src="http://lorempixel.com/800/358/city" alt="img">
@@ -297,14 +298,14 @@
                             <div class="item__block">
                                 <div class="item__row">
                                     <div class="item__left">
-                                        <h2><a class="item__link item__link_red" href="#">Шевченко 10, Киев - KV202</a></h2>
+                                        <h2><a class="item__link" href="#">Шевченко 10, Киев - KV202</a></h2>
                                     </div>
                                     <div class="item__right">
-                                        <h4 class="pull-left"><a class="item__link item__link_red" href="#">01/03 - 02/03  1 ночь</a></h4>
+                                        <a class="item__link item__link_red" href="#">01/03 - 02/03  1 ночь</a>
                                     </div>
                                 </div>
                                 <div class="item__row">
-                                    <a class="item__link item__link_grey item__link_red pull-left" href="#">Гестхаус "Крещатик"</a>
+                                    <h4><a class="item__link item__link_grey" href="#">Гестхаус "Крещатик"</a></h4>
                                 </div>
                             </div>
                             <img class="img-responsive" src="http://lorempixel.com/800/358/city" alt="img">
@@ -330,14 +331,14 @@
                             <div class="description__row"><a href="#" class="description__name name"><i class="name__ico"></i>Гестхаус "Шевченко"</a></div>
                         <div class="description__row"><a href="#" class="description__addres addres"><i class="addres__ico"></i>Шевченко 10, Киев</a></div>
                         <ul class="description__list list">
-                            <li class="description__item"><i class="list__ico glyphicon glyphicon-tint"></i>Джакузи</li>
-                            <li class="description__item"><i class="list__ico glyphicon glyphicon-tint"></i>Джакузи</li>
-                            <li class="description__item"><i class="list__ico fa fa-cutlery"></i>Все для готовки</li>
-                            <li class="description__item"><i class="list__ico glyphicon glyphicon-fire"></i>Сауна</li>
-                            <li class="description__item"><i class="list__ico icon-shuffle"></i>Кондиционер</li>
-                            <li class="description__item"><i class="list__ico icon-shuffle"></i>Кондиционер</li>
-                            <li class="description__item"><i class="list__ico fa fa-desktop"></i>Плазменное TV</li>
-                            <li class="description__item"><i class="list__ico fa fa-desktop"></i>Плазменное TV</li>
+                            <li class="description__item"><i class="list__ico list__ico_dg1"></i>Джакузи</li>
+                            <li class="description__item"><i class="list__ico list__ico_dg2"></i>Джакузи</li>
+                            <li class="description__item"><i class="list__ico list__ico_oll"></i>Все для готовки</li>
+                            <li class="description__item"><i class="list__ico list__ico_sa"></i>Сауна</li>
+                            <li class="description__item"><i class="list__ico list__ico_con"></i>Кондиционер</li>
+                            <li class="description__item"><i class="list__ico list__ico_con2"></i>Кондиционер</li>
+                            <li class="description__item"><i class="list__ico list__ico_tv1"></i>Плазменное TV</li>
+                            <li class="description__item"><i class="list__ico list__ico_tv2"></i>Плазменное TV</li>
                         </ul>
                         <div class="description__bottom">
                             <div class="price">
@@ -367,14 +368,14 @@
                             <div class="item__block">
                                 <div class="item__row">
                                     <div class="item__left">
-                                        <h2><a class="item__link item__link_red" href="#">Шевченко 10, Киев - KV202</a></h2>
+                                        <h2><a class="item__link" href="#">Шевченко 10, Киев - KV202</a></h2>
                                     </div>
                                     <div class="item__right">
-                                        <h4 class="pull-left"><a class="item__link item__link_red" href="#">01/03 - 02/03  1 ночь</a></h4>
+                                        <a class="item__link item__link_red" href="#">01/03 - 02/03  1 ночь</a>
                                     </div>
                                 </div>
                                 <div class="item__row">
-                                    <a class="item__link item__link_grey item__link_red pull-left" href="#">Гестхаус "Крещатик"</a>
+                                    <h4><a class="item__link item__link_grey" href="#">Гестхаус "Крещатик"</a></h4>
                                 </div>
                             </div>
                             <img class="img-responsive" src="http://lorempixel.com/800/358/city" alt="img">
@@ -383,14 +384,14 @@
                             <div class="item__block">
                                 <div class="item__row">
                                     <div class="item__left">
-                                        <h2><a class="item__link item__link_red" href="#">Шевченко 10, Киев - KV202</a></h2>
+                                        <h2><a class="item__link" href="#">Шевченко 10, Киев - KV202</a></h2>
                                     </div>
                                     <div class="item__right">
-                                        <h4 class="pull-left"><a class="item__link item__link_red" href="#">01/03 - 02/03  1 ночь</a></h4>
+                                        <a class="item__link item__link_red" href="#">01/03 - 02/03  1 ночь</a>
                                     </div>
                                 </div>
                                 <div class="item__row">
-                                    <a class="item__link item__link_grey item__link_red pull-left" href="#">Гестхаус "Крещатик"</a>
+                                    <h4><a class="item__link item__link_grey" href="#">Гестхаус "Крещатик"</a></h4>
                                 </div>
                             </div>
                             <img class="img-responsive" src="http://lorempixel.com/800/358/city" alt="img">
@@ -399,14 +400,14 @@
                             <div class="item__block">
                                 <div class="item__row">
                                     <div class="item__left">
-                                        <h2><a class="item__link item__link_red" href="#">Шевченко 10, Киев - KV202</a></h2>
+                                        <h2><a class="item__link" href="#">Шевченко 10, Киев - KV202</a></h2>
                                     </div>
                                     <div class="item__right">
-                                        <h4 class="pull-left"><a class="item__link item__link_red" href="#">01/03 - 02/03  1 ночь</a></h4>
+                                        <a class="item__link item__link_red" href="#">01/03 - 02/03  1 ночь</a>
                                     </div>
                                 </div>
                                 <div class="item__row">
-                                    <a class="item__link item__link_grey item__link_red pull-left" href="#">Гестхаус "Крещатик"</a>
+                                    <h4><a class="item__link item__link_grey" href="#">Гестхаус "Крещатик"</a></h4>
                                 </div>
                             </div>
                             <img class="img-responsive" src="http://lorempixel.com/800/358/city" alt="img">
@@ -432,14 +433,14 @@
                             <div class="description__row"><a href="#" class="description__name name"><i class="name__ico"></i>Гестхаус "Шевченко"</a></div>
                         <div class="description__row"><a href="#" class="description__addres addres"><i class="addres__ico"></i>Шевченко 10, Киев</a></div>
                         <ul class="description__list list">
-                            <li class="description__item"><i class="list__ico glyphicon glyphicon-tint"></i>Джакузи</li>
-                            <li class="description__item"><i class="list__ico glyphicon glyphicon-tint"></i>Джакузи</li>
-                            <li class="description__item"><i class="list__ico fa fa-cutlery"></i>Все для готовки</li>
-                            <li class="description__item"><i class="list__ico glyphicon glyphicon-fire"></i>Сауна</li>
-                            <li class="description__item"><i class="list__ico icon-shuffle"></i>Кондиционер</li>
-                            <li class="description__item"><i class="list__ico icon-shuffle"></i>Кондиционер</li>
-                            <li class="description__item"><i class="list__ico fa fa-desktop"></i>Плазменное TV</li>
-                            <li class="description__item"><i class="list__ico fa fa-desktop"></i>Плазменное TV</li>
+                            <li class="description__item"><i class="list__ico list__ico_dg1"></i>Джакузи</li>
+                            <li class="description__item"><i class="list__ico list__ico_dg2"></i>Джакузи</li>
+                            <li class="description__item"><i class="list__ico list__ico_oll"></i>Все для готовки</li>
+                            <li class="description__item"><i class="list__ico list__ico_sa"></i>Сауна</li>
+                            <li class="description__item"><i class="list__ico list__ico_con"></i>Кондиционер</li>
+                            <li class="description__item"><i class="list__ico list__ico_con2"></i>Кондиционер</li>
+                            <li class="description__item"><i class="list__ico list__ico_tv1"></i>Плазменное TV</li>
+                            <li class="description__item"><i class="list__ico list__ico_tv2"></i>Плазменное TV</li>
                         </ul>
                         <div class="description__bottom">
                             <div class="price">
@@ -469,14 +470,14 @@
                             <div class="item__block">
                                 <div class="item__row">
                                     <div class="item__left">
-                                        <h2><a class="item__link item__link_red" href="#">Шевченко 10, Киев - KV202</a></h2>
+                                        <h2><a class="item__link" href="#">Шевченко 10, Киев - KV202</a></h2>
                                     </div>
                                     <div class="item__right">
-                                        <h4 class="pull-left"><a class="item__link item__link_red" href="#">01/03 - 02/03  1 ночь</a></h4>
+                                        <a class="item__link item__link_red" href="#">01/03 - 02/03  1 ночь</a>
                                     </div>
                                 </div>
                                 <div class="item__row">
-                                    <a class="item__link item__link_grey item__link_red pull-left" href="#">Гестхаус "Крещатик"</a>
+                                    <h4><a class="item__link item__link_grey" href="#">Гестхаус "Крещатик"</a></h4>
                                 </div>
                             </div>
                             <img class="img-responsive" src="http://lorempixel.com/800/358/city" alt="img">
@@ -485,14 +486,14 @@
                             <div class="item__block">
                                 <div class="item__row">
                                     <div class="item__left">
-                                        <h2><a class="item__link item__link_red" href="#">Шевченко 10, Киев - KV202</a></h2>
+                                        <h2><a class="item__link" href="#">Шевченко 10, Киев - KV202</a></h2>
                                     </div>
                                     <div class="item__right">
-                                        <h4 class="pull-left"><a class="item__link item__link_red" href="#">01/03 - 02/03  1 ночь</a></h4>
+                                        <a class="item__link item__link_red" href="#">01/03 - 02/03  1 ночь</a>
                                     </div>
                                 </div>
                                 <div class="item__row">
-                                    <a class="item__link item__link_grey item__link_red pull-left" href="#">Гестхаус "Крещатик"</a>
+                                    <h4><a class="item__link item__link_grey" href="#">Гестхаус "Крещатик"</a></h4>
                                 </div>
                             </div>
                             <img class="img-responsive" src="http://lorempixel.com/800/358/city" alt="img">
@@ -501,14 +502,14 @@
                             <div class="item__block">
                                 <div class="item__row">
                                     <div class="item__left">
-                                        <h2><a class="item__link item__link_red" href="#">Шевченко 10, Киев - KV202</a></h2>
+                                        <h2><a class="item__link" href="#">Шевченко 10, Киев - KV202</a></h2>
                                     </div>
                                     <div class="item__right">
-                                        <h4 class="pull-left"><a class="item__link item__link_red" href="#">01/03 - 02/03  1 ночь</a></h4>
+                                        <a class="item__link item__link_red" href="#">01/03 - 02/03  1 ночь</a>
                                     </div>
                                 </div>
                                 <div class="item__row">
-                                    <a class="item__link item__link_grey item__link_red pull-left" href="#">Гестхаус "Крещатик"</a>
+                                    <h4><a class="item__link item__link_grey" href="#">Гестхаус "Крещатик"</a></h4>
                                 </div>
                             </div>
                             <img class="img-responsive" src="http://lorempixel.com/800/358/city" alt="img">
@@ -534,14 +535,14 @@
                             <div class="description__row"><a href="#" class="description__name name"><i class="name__ico"></i>Гестхаус "Шевченко"</a></div>
                         <div class="description__row"><a href="#" class="description__addres addres"><i class="addres__ico"></i>Шевченко 10, Киев</a></div>
                         <ul class="description__list list">
-                            <li class="description__item"><i class="list__ico glyphicon glyphicon-tint"></i>Джакузи</li>
-                            <li class="description__item"><i class="list__ico glyphicon glyphicon-tint"></i>Джакузи</li>
-                            <li class="description__item"><i class="list__ico fa fa-cutlery"></i>Все для готовки</li>
-                            <li class="description__item"><i class="list__ico glyphicon glyphicon-fire"></i>Сауна</li>
-                            <li class="description__item"><i class="list__ico icon-shuffle"></i>Кондиционер</li>
-                            <li class="description__item"><i class="list__ico icon-shuffle"></i>Кондиционер</li>
-                            <li class="description__item"><i class="list__ico fa fa-desktop"></i>Плазменное TV</li>
-                            <li class="description__item"><i class="list__ico fa fa-desktop"></i>Плазменное TV</li>
+                            <li class="description__item"><i class="list__ico list__ico_dg1"></i>Джакузи</li>
+                            <li class="description__item"><i class="list__ico list__ico_dg2"></i>Джакузи</li>
+                            <li class="description__item"><i class="list__ico list__ico_oll"></i>Все для готовки</li>
+                            <li class="description__item"><i class="list__ico list__ico_sa"></i>Сауна</li>
+                            <li class="description__item"><i class="list__ico list__ico_con"></i>Кондиционер</li>
+                            <li class="description__item"><i class="list__ico list__ico_con2"></i>Кондиционер</li>
+                            <li class="description__item"><i class="list__ico list__ico_tv1"></i>Плазменное TV</li>
+                            <li class="description__item"><i class="list__ico list__ico_tv2"></i>Плазменное TV</li>
                         </ul>
                         <div class="description__bottom">
                             <div class="price">
@@ -564,7 +565,6 @@
         <div class="row margin-bottom-20">
             <div class="col-md-12">
                 <div class="guesthouse">
-                    <h2 class="guesthouse__title margin-bottom-10">Гестхаусы</h2>
                     <div class="col-md-3 col-sm-6">
                         <div class="col-md-12 guesthouse__item">
                             <div class="row">
@@ -683,19 +683,19 @@
         <form action="" id="sky-form1" class="sky-form"> 
             <fieldset> 
                 <div class="row">   
-                    <section class="col-md-3 col-sm-6"">
+                    <section class="col col-3">
                         <label class="input">
                             <i class="icon-append fa fa-calendar"></i>
                             <input type="text" name="start" id="start1" placeholder="Заезд">
                         </label>
                     </section>
-                    <section class="col-md-3 col-sm-6"">
+                    <section class="col col-3">
                         <label class="input">
                             <i class="icon-append fa fa-calendar"></i>
                             <input type="text" name="finish1" id="finish" placeholder="Выезд">
                         </label>
                     </section>
-                    <section class="col-md-3 col-sm-6">
+                    <div class="col-md-3 col-sm-6">
                         <div class="select select_people">
                             <select class="form-control input-lg">
                                 <option>1 гость</option>
@@ -707,8 +707,8 @@
                             </select>
                             <span class="icon-append fa fa-user"></span>
                         </div>
-                    </section>
-                    <section class="col-md-3 col-sm-6"><button class="btn-u btn-block btn-u-green" type="button">Выбрать апартаменты</button></section>
+                    </div>
+                    <div class="col-md-3 col-sm-6"><button class="btn-u btn-block btn-u-green" type="button">Выбрать апартаменты</button></div>
                 </div>                  
             </fieldset>
         </form> 
