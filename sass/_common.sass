@@ -937,7 +937,37 @@ p
 	+clr
 	+box
 	.guesthouse__title
-		padding-left: 15px 
+		padding: 0 0 0 15px
+	.guesthouse__ico
+		position: absolute
+		top: 8px
+		left: 15px
+		display: inline-block
+		+sr(image_u584)
+	.guesthouse__top
+		padding: 5px 15px
+		text-align: right
+		background: #fafafa
+		+clr
+	.guesthouse__title2
+		margin: 0
+		padding: 0 
+		font-size: 16px
+		font-weight: bold
+		line-height: 1.2
+	.guesthouse__title2, .guesthouse__rating
+		color: #3498db
+	.guesthouse__rating
+		font-size: 16px
+		line-height: 1
+		font-weight: bold
+		span
+			font-weight: normal
+			font-size: 12px
+	.guesthouse__reviews
+		font-size: 10px
+		color: #4765a0
+		line-height: 1
 .guesthouse__item
 	border: 1px solid #eeeeee
 	background: #fff
@@ -1284,15 +1314,22 @@ p
 
 //cont-top
 .cont-top
+	position: relative
 	padding: 15px 15px 30px
 	background: url('http://lorempixel.com/1200/280/city') no-repeat 0 0
 	background-size: cover
+	&.cont-top_mod
+		padding-bottom: 70px
 	.cont-top__text, h1, h2, h3
 		color: #fff
-	.cont-top__text
+	.cont-top__text, .cont-top__title
 		padding-left: 5px
 		font-size: 22px
-		background: rgba(#000, .6)
+		background: rgba(#000, .6) 
+	.cont-top__title
+		padding: 0 10px
+		font-size: 28px
+		display: inline-block
 	a
 		height: 20px
 		line-height: 20px
@@ -1305,7 +1342,19 @@ p
 		&:hover
 			text-decoration: none
 			border: none
-
+	.ul
+		width: 65%
+		font-size: 22px
+		background: rgba(#000, .6)
+		li
+			margin-left: 10px
+			padding-right: 10px
+			color: #fff
+	.cont-top__img
+		position: absolute
+		top: 20px
+		right: 20px
+		display: inline-block
 //.offers
 .offers
 	padding-top: 20px
@@ -1373,7 +1422,10 @@ p
 	.topic .topic__quantity, .topic .btn-u
 		margin-top: 5px
 		width: 100%
-
+	.footer .nav a
+		font-size: 13px
+	.footer .nav .nav__item
+		padding: 0 0 0 10px
 @media (max-width: 992px)
 	.step
 		.step__performance
