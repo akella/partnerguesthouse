@@ -206,10 +206,10 @@
             <div class="row">
                 <div class="card__top col-md-12">
                     <div class="card__left">
-                        <h2>Шевченко 10, Киев</h2>
+                        <h2 class="card__title">Шевченко 10, Киев <sup>ID202</sup></h2>
                         <p>
-                            <a class="color-blue js-scroll" href="#card__map">Смотреть на карту</a>
-                            <a class="color-blue js-scroll" href="#graph">График загруженности</a>
+                            <a class="color-blue text-border text-border-blue pointer js-scroll" href="#card__map">Смотреть на карту</a>
+                            <a class="color-blue text-border text-border-blue pointer js-scroll" href="#graph">График загруженности</a>
                         </p>
                     </div>
                     <div class="card__top-right">
@@ -241,37 +241,40 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-12 pull-right">
+                    <div class="col-md-4 col-sm-12 col-xs-12 pull-right">
                         <div class="card__right margin-bottom-20">
                             <div class="lead">Забронировать</div>
                             <form action="" id="sky-form" class="sky-form"> 
                                 <fieldset> 
                                     <div class="row">   
                                         <section class="col col-6">
-                                            <label class="input">
-                                                <i class="icon-append fa fa-calendar"></i>
-                                                <input type="text" name="start" id="start" placeholder="Заезд" class="hasDatepicker">
-                                            </label>
-                                        </section>
-                                        <section class="col col-6">
-                                            <label class="input">
-                                                <i class="icon-append fa fa-calendar"></i>
-                                                <input type="text" name="finish" id="finish" placeholder="Выезд" class="hasDatepicker">
-                                            </label>
-                                        </section>
+                                           <label class="input">
+                                               <i class="icon-append fa fa-calendar"></i>
+                                               <input type="text" name="start" id="start" placeholder="Заезд">
+                                           </label>
+                                       </section>
+                                       <section class="col col-6">
+                                           <label class="input">
+                                               <i class="icon-append fa fa-calendar"></i>
+                                               <input type="text" name="finish" id="finish" placeholder="Выезд">
+                                           </label>
+                                       </section>
                                         <section class="col-md-12">
                                            <div class="price">
                                                <div class="price__old">898 грн/сутки</div>
-                                               <div class="price__item color-red">1213</div>
+                                               <div class="price__item color-yellow">1213</div>
                                                <div class="price__item">
-                                                   <div class="price__time color-red">грн/сутки</div>
+                                                   <div class="price__time color-yellow">грн/сутки</div>
                                                    <div class="price__time">(8960 грн за 3 ночи)</div>
                                                </div>
                                            </div>
                                         </section>
                                         <section class="col-md-12">
                                             <div class="promocode">
-                                                <div class="promocode__text js-promocode-text">Указать промо-код</div>
+                                                <div class="promocode__error js-promocode-text">
+                                                    <span>Извините, этот код не действителен.</span>
+                                                    <div class="promocode__text">Указать другой</div>
+                                                </div>
                                                 <div class="promocode__block js-promocode-block">
                                                     <div class="promocode__input">
                                                         <input type="text" placeholder="xxxxxx">
@@ -305,6 +308,9 @@
                             </form>
                         </div>
                         <div class="alert alert_mob alert-warning fade in">
+                            <p>Долгосрочная аренда <strong>2 000 грн/мес</strong> <a href="#terms" class="text-border text-border-blue color-blue pointer js-scroll">Подробнее</a></p>
+                        </div>
+                        <div class="alert alert_mob alert-warning fade in">
                             <div class="margin-bottom-10">Остались вопросы? Свяжитесь с менеджером:</div>
                             <div class="margin-bottom-10"><strong>+380 44 228 5511</strong></div>
                             <p><a href="#" class="color-blue">info@partnerguesthouse.com</a></p>
@@ -315,26 +321,8 @@
             <div class="funny-boxes funny-boxes_mod funny-boxes-top-sea">
                 <div class="row">
                     <div class="col-md-8">
-                        <div class="headline"><h3>Описание</h3></div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="headline"><h3>Размещение</h3></div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
                         <div class="row">
-                            <div class="col-md-12">
-                                <p>Современные и удобные апартаменты в черно-белой контрастной гамме типа студио с ремонтом 2010-го года на известной улице Бассейная. Уникальные дизайнерские идеи совмещаются с необходимыми потребностями в уютном интерьере. Большая двуспальная кровать и стильная раскладывающая софа с одной стороны, стол для еды с компактной кухней ( где вы можете найти все необходимое для приготовления ваших любимых блюд) с другой стороны - является очень удачным решением как для работы, так и для отдыха.</p>
-                                <p><strong>Расположение</strong></p>
-                                <p>В самом центре, в новом районе.</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Proin sodales pulvinar tempor.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-6">
                                 <div class="alert alert-warning fade in">
                                     <div class="alert__col">
                                         <div class="alert__item">
@@ -358,7 +346,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-12 margin-bottom-20">
+                            <div class="col-md-6">
                                 <ul class="convenience">
                                     <li class="convenience__ico convenience__ico_1"></li>
                                     <li class="convenience__ico convenience__ico_2"></li>
@@ -369,80 +357,65 @@
                                     <li class="convenience__ico convenience__ico_7"></li>
                                 </ul>
                             </div>
+                        </div>
+                        <div class="row">
                             <div class="col-md-12">
-                                <div class="carousel carousel_228 slide carousel-v1 box-shadow shadow-effect-2" id="myCarousel1">
-                                    <div class="carousel-inner">
-                                        <div class="item active">
-                                            <div class="item__block item__block_mod">
-                                             <h2>Приятные мелочи в квартире</h2>
-                                                <ul class="item__list">
-                                                    <li>item</li>
-                                                    <li>item</li>
-                                                    <li>item</li>
-                                                    <li>item</li>
-                                                </ul>
-                                            </div>
-                                            <img class="img-responsive" src="http://lorempixel.com/347/280/city" alt="img">
-                                        </div>
-                                        <div class="item">
-                                            <div class="item__block item__block_mod">
-                                             <h2>Приятные мелочи в квартире</h2>
-                                               <ul class="item__list">
-                                                   <li>item</li>
-                                                   <li>item</li>
-                                                   <li>item</li>
-                                                   <li>item</li>
-                                               </ul>
-                                            </div>
-                                            <img class="img-responsive" src="http://lorempixel.com/347/280/city" alt="img">
-                                        </div>
-                                        <div class="item">
-                                            <div class="item__block item__block_mod">
-                                             <h2>Приятные мелочи в квартире</h2>
-                                                <ul class="item__list">
-                                                    <li>item</li>
-                                                    <li>item</li>
-                                                    <li>item</li>
-                                                    <li>item</li>
-                                                </ul>
-                                            </div>
-                                            <img class="img-responsive" src="http://lorempixel.com/347/280/city" alt="img">
-                                        </div>
-                                    </div>
-                                    <div class="carousel-arrow">
-                                        <a data-slide="prev" href="#myCarousel1" class="left carousel-control">
-                                            <i class="fa fa-angle-left"></i>
-                                        </a>
-                                        <a data-slide="next" href="#myCarousel1" class="right carousel-control">
-                                            <i class="fa fa-angle-right"></i>
-                                        </a>
-                                    </div>
-                                </div>
+                                <p>Отличная квартира с гидромассажной ванной в центре столицы. Просторная и уютная квартира с кондиционером. Барная стойка отделяет кухню, интерьер которой дополняет плитка в в стиле</p>
+                                <p>Мексикана. Для Ваших гостей в квартире предусмотрен темнокрасный мягкий диван, который легко раскладывается в кровать на одного человека. </p>
+                                <p><strong>Расположение</strong></p>
+                                <p>В самом центре, в новом районе.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 placement">
-                        <div class="placement__block">
-                            <div class="placement__item">
-                                <div class="placement__ico placement__ico_1">
-                                    <div class="placement__amount">3</div>
-                                </div>
-                                <span>Три санузла</span>
-                            </div>
-                            <div class="placement__item">
-                                <div class="placement__ico placement__ico_2">
-                                    <div class="placement__amount">2</div>
-                                </div>
-                                <span>Два односпальных дивана</span>
-                            </div>
-                            <div class="placement__item">
-                                <div class="placement__ico placement__ico_3">
-                                    <div class="placement__amount">3</div>
-                                </div>
-                                <span>Три двуспальных кровати</span>
-                            </div>
-                        </div>
-                       <img class="placement__img" src="img/u363.png" alt="img">
+                    <div class="col-md-4">
+                       <div class="carousel slide carousel-v1 box-shadow shadow-effect-2" id="myCarousel1">
+                           <div class="carousel-inner">
+                               <div class="item active">
+                                   <div class="item__block item__block_mod">
+                                    <h2>Приятные мелочи в квартире</h2>
+                                       <ul class="item__list">
+                                           <li>item</li>
+                                           <li>item</li>
+                                           <li>item</li>
+                                           <li>item</li>
+                                       </ul>
+                                   </div>
+                                   <img class="img-responsive" src="http://lorempixel.com/347/280/city" alt="img">
+                               </div>
+                               <div class="item">
+                                   <div class="item__block item__block_mod">
+                                    <h2>Приятные мелочи в квартире</h2>
+                                      <ul class="item__list">
+                                          <li>item</li>
+                                          <li>item</li>
+                                          <li>item</li>
+                                          <li>item</li>
+                                      </ul>
+                                   </div>
+                                   <img class="img-responsive" src="http://lorempixel.com/347/280/city" alt="img">
+                               </div>
+                               <div class="item">
+                                   <div class="item__block item__block_mod">
+                                    <h2>Приятные мелочи в квартире</h2>
+                                       <ul class="item__list">
+                                           <li>item</li>
+                                           <li>item</li>
+                                           <li>item</li>
+                                           <li>item</li>
+                                       </ul>
+                                   </div>
+                                   <img class="img-responsive" src="http://lorempixel.com/347/280/city" alt="img">
+                               </div>
+                           </div>
+                           <div class="carousel-arrow">
+                               <a data-slide="prev" href="#myCarousel1" class="left carousel-control">
+                                   <i class="fa fa-angle-left"></i>
+                               </a>
+                               <a data-slide="next" href="#myCarousel1" class="right carousel-control">
+                                   <i class="fa fa-angle-right"></i>
+                               </a>
+                           </div>
+                       </div>
                     </div>
                 </div>
             </div>
@@ -451,101 +424,103 @@
                     <div class="headline"><h3>Удобства</h3></div>
                 </div>
                 <div class="col-md-12">
-                    <table class="card__table table table-striped">
-                        <tbody>
-                            <tr>
-                                <td>Всегда в номере</td>
-                                <td>Бесплатные услуги горничных</td>
-                                <td>
-                                    <div>Wi-Fi</div>
-                                    <div>Одноразовые тапочки</div>
-                                </td>
-                                <td>
-                                    <div>Чай</div>
-                                    <div>Кофе</div>
-                                </td>
-                                <td>
-                                    <div>Соль</div>
-                                    <div>Перец</div>
-                                </td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Кухня</td>
-                                <td>
-                                    <div>Плита</div>
-                                    <div>Микроволновая печь</div>
-                                </td>
-                                <td>
-                                    <div>Холодильник</div>
-                                    <div>Электрочайник</div>
-                                </td>
-                                <td>
-                                    <div>Кухонная посуда</div>
-                                    <div>Стаканы</div>
-                                </td>
-                                <td>
-                                    <div>Столовые приборы</div>
-                                    <div>Нож</div>
-                                </td>
-                                <td><a href="#">Подробнее</a></td>
-                            </tr>
-                            <tr>
-                                <td>Жилая комната</td>
-                                <td>
-                                    <div>Кондиционер</div>
-                                    <div>Телевизор</div>
-                                </td>
-                                <td>
-                                    <div>DVD</div>
-                                    <div>Двуспальная кровать</div>
-                                </td>
-                                <td>
-                                    <div>Диван-кровать для 2 чел</div>
-                                    <div>Кофейный столик</div>
-                                </td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Спальня</td>
-                                <td>
-                                    <div>Плита</div>
-                                    <div>Микроволновая печь</div>
-                                </td>
-                                <td>
-                                    <div>Холодильник</div>
-                                    <div>Электрочайник</div>
-                                </td>
-                                <td>
-                                    <div>Кухонная посуда</div>
-                                    <div>Стаканы</div>
-                                </td>
-                                <td>
-                                    <div>Столовые приборы</div>
-                                    <div>Нож</div>
-                                </td>
-                                <td><a href="#">Подробнее</a></td>
-                            </tr>
-                            <tr>
-                                <td>Ванная</td>
-                                <td>
-                                    <div>Кондиционер</div>
-                                    <div>Телевизор</div>
-                                </td>
-                                <td>
-                                    <div>DVD</div>
-                                    <div>Двуспальная кровать</div>
-                                </td>
-                                <td>
-                                    <div>Диван-кровать для 2 чел</div>
-                                    <div>Кофейный столик</div>
-                                </td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="card__table-wrap">
+                        <table class="card__table table table-striped">
+                            <tbody>
+                                <tr>
+                                    <td>Всегда в номере</td>
+                                    <td>Бесплатные услуги горничных</td>
+                                    <td>
+                                        <div>Wi-Fi</div>
+                                        <div>Одноразовые тапочки</div>
+                                    </td>
+                                    <td>
+                                        <div>Чай</div>
+                                        <div>Кофе</div>
+                                    </td>
+                                    <td>
+                                        <div>Соль</div>
+                                        <div>Перец</div>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Кухня</td>
+                                    <td>
+                                        <div>Плита</div>
+                                        <div>Микроволновая печь</div>
+                                    </td>
+                                    <td>
+                                        <div>Холодильник</div>
+                                        <div>Электрочайник</div>
+                                    </td>
+                                    <td>
+                                        <div>Кухонная посуда</div>
+                                        <div>Стаканы</div>
+                                    </td>
+                                    <td>
+                                        <div>Столовые приборы</div>
+                                        <div>Нож</div>
+                                    </td>
+                                    <td><a href="#">Подробнее</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Жилая комната</td>
+                                    <td>
+                                        <div>Кондиционер</div>
+                                        <div>Телевизор</div>
+                                    </td>
+                                    <td>
+                                        <div>DVD</div>
+                                        <div>Двуспальная кровать</div>
+                                    </td>
+                                    <td>
+                                        <div>Диван-кровать для 2 чел</div>
+                                        <div>Кофейный столик</div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Спальня</td>
+                                    <td>
+                                        <div>Плита</div>
+                                        <div>Микроволновая печь</div>
+                                    </td>
+                                    <td>
+                                        <div>Холодильник</div>
+                                        <div>Электрочайник</div>
+                                    </td>
+                                    <td>
+                                        <div>Кухонная посуда</div>
+                                        <div>Стаканы</div>
+                                    </td>
+                                    <td>
+                                        <div>Столовые приборы</div>
+                                        <div>Нож</div>
+                                    </td>
+                                    <td><a href="#">Подробнее</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Ванная</td>
+                                    <td>
+                                        <div>Кондиционер</div>
+                                        <div>Телевизор</div>
+                                    </td>
+                                    <td>
+                                        <div>DVD</div>
+                                        <div>Двуспальная кровать</div>
+                                    </td>
+                                    <td>
+                                        <div>Диван-кровать для 2 чел</div>
+                                        <div>Кофейный столик</div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
             <div class="row">
@@ -602,7 +577,7 @@
                     <div class="headline" id="graph"><h3>График загруженности</h3></div>
                 </div>
             </div>
-           <div class="row">   
+            <div class="row">   
                 <div class="col-md-4">
                     <h3>Июнь</h3>
                     <div class="calendar">
@@ -844,7 +819,7 @@
                     </div>
                 </div>
                 <div class="col-md-12">
-                    <div class="headline" id="graph"><h3>Отзывы наших клиентов</h3></div>
+                    <div class="headline"><h3>Отзывы наших клиентов</h3></div>
                 </div>
             </div>
             <div class="row">
@@ -936,6 +911,80 @@
                      <button class="more__btn">Показать больше отзывов</button>
                 </div>
             </div>
+            <div class="row margin-bottom-30">
+                <div class="col-md-12">
+                    <div class="headline"><h2>Долгосрочная аренда</h2></div>
+                </div>
+                <div class="col-md-4 monthprices">
+                    <div class="monthprices__top">
+                        <h3 class="monthprices__title">Цены</h3>
+                        <button class="monthprices__btn monthprices__btn_1 js-monthprices-btn1">Следующие 6 месяцев &raquo;</button>
+                        <button class="monthprices__btn monthprices__btn_2 js-monthprices-btn2">&laquo; Предыдущие 6 месяцев</button>
+                    </div>
+                    <table class="monthprices__table monthprices__table_1 js-monthprices-table1">
+                        <tr>
+                            <td><span>Июль</span></td>
+                            <td>2 300 грн/мес</td>
+                        </tr>
+                        <tr>
+                            <td><span>Август</span></td>
+                            <td>2 300 грн/мес</td>
+                        </tr>
+                        <tr>
+                            <td><span>Сентябрь</span></td>
+                            <td>2 300 грн/мес</td>
+                        </tr>
+                        <tr>
+                            <td><span>Октябрь</span></td>
+                            <td>2 000 грн/мес</td>
+                        </tr>
+                        <tr>
+                            <td><span>Ноябрь</span></td>
+                            <td>2 000 грн/мес</td>
+                        </tr>
+                        <tr>
+                            <td><span>Декабрь</span></td>
+                            <td>2 000 грн/мес</td>
+                        </tr>
+                    </table>
+                    <table class="monthprices__table monthprices__table_2 js-monthprices-table2">
+                        <tr>
+                            <td><span>Январь</span></td>
+                            <td>2 000 грн/мес</td>
+                        </tr>
+                        <tr>
+                            <td><span>Февраль</span></td>
+                            <td>2 000 грн/мес</td>
+                        </tr>
+                        <tr>
+                            <td><span>Март</span></td>
+                            <td>2 000 грн/мес</td>
+                        </tr>
+                        <tr>
+                            <td><span>Апрель</span></td>
+                            <td>2 000 грн/мес</td>
+                        </tr>
+                        <tr>
+                            <td><span>Мая</span></td>
+                            <td>2 000 грн/мес</td>
+                        </tr>
+                        <tr>
+                            <td><span>Июнь</span></td>
+                            <td>2 000 грн/мес</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-md-4">
+                    <h3>Что мы предлагаем</h3>
+                    <p>Аренда квартир в центре Киева долгосрочно. Partner Guest House предлагает все свои квартиры в долгосрочную аренду без комиссионых от 1-го месяца. Стоимость проживания зависит от конкретного месяца в году. </p>
+                    <p>Вы самостоятельно можете просчитать стоимость аренды квартиры долгосрочно используя таблицу ниже. Каждая квартира в списке ниже имеет актуальный график наличия, используя который вы можете посмотреть свободна ли квартира на ваши даты проживания.</p>
+                </div>
+                <div class="col-md-4" id="terms">
+                    <h3>Правила проживания</h3>
+                    <p>В стоимость проживания включена только оплата коммунальных услуг и воды. Дополнительные услуги - ТВ, интернет, телефон и электричество - оплачиваются арендодателем. Услуги горничной и стирка постельного и полотенец также не входит в стоимость проживания при длительной аренде. </p>
+                    <p>Оплата производится в гривнах по курсу Национального Банка на момент заключения договора в любой удобной для вас форме (наличный и безналичный расчет, кредитная карта)</p>
+                </div>
+            </div>
             <div class="row step">
                 <div class="step__item col-md-4 col-sm-12 is-active">
                     <h3 class="color-green">Найди квартиру</h3>
@@ -961,24 +1010,24 @@
                             <h4 class="sky-title">Шевченко 10, Киев</h4>
                             <a href="#">Гестхаус "Крещатик</a>
                         </div>  
-                        <section class="col col-2">
-                            <label class="input">
-                                <i class="icon-append fa fa-calendar"></i>
-                                <input type="text" name="start" id="start" placeholder="Заезд" class="hasDatepicker">
-                            </label>
-                        </section>
-                        <section class="col col-2">
-                            <label class="input">
-                                <i class="icon-append fa fa-calendar"></i>
-                                <input type="text" name="finish" id="finish" placeholder="Выезд" class="hasDatepicker">
-                            </label>
-                        </section>
+                       <section class="col col-2">
+                           <label class="input">
+                               <i class="icon-append fa fa-calendar"></i>
+                               <input type="text" name="start1" id="start1" placeholder="Заезд">
+                           </label>
+                       </section>
+                       <section class="col col-2">
+                           <label class="input">
+                               <i class="icon-append fa fa-calendar"></i>
+                               <input type="text" name="finish1" id="finish1" placeholder="Выезд">
+                           </label>
+                       </section>
                         <div class="col col-3">
                            <div class="price">
                                <div class="price__old">898 грн/сутки</div>
-                               <div class="price__item color-red">1213</div>
+                               <div class="price__item color-yellow">1213</div>
                                <div class="price__item">
-                                   <div class="price__time color-red">грн/сутки</div>
+                                   <div class="price__time color-yellow">грн/сутки</div>
                                    <div class="price__time">(8960 грн за 3 ночи)</div>
                                </div>
                            </div>
@@ -1003,7 +1052,7 @@
             <div class="margin-bottom-20"></div>
             <div class="row">
                 <div class="col-md-12">
-                    <div class="headline" id="graph"><h3>Акционные предложения на квартиры с 28 мая по 4 июня</h3></div>
+                    <div class="headline"><h3>Акционные предложения на квартиры с 28 мая по 4 июня</h3></div>
                 </div>
                 <div class="col-md-6">
                     <div class="card__item item">

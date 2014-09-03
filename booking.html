@@ -67,7 +67,7 @@
     <!--=== Header ===-->    
     <div class="header">
         <!-- Topbar -->
-        <div class="topbar">
+       <div class="topbar">
             <div class="container">
                 <!-- Topbar Navigation -->
                 <ul class="loginbar pull-right">
@@ -86,7 +86,28 @@
                     <li class="topbar-devider"></li>   
                     <li><a href="page_faq.html">Help</a></li>  
                     <li class="topbar-devider"></li>   
-                    <li><a href="page_login.html">Login</a></li>   
+                    <li>
+                        <div class="btn-group btn-group_top">
+                           <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">id <i class="fa fa-angle-down"></i>
+                           </button>
+                           <ul class="dropdown-menu" role="menu">
+                               <li><a href="#"><strong>1s2x - </strong> бронирвоания</a></li>
+                               <li><a href="#"><strong>1s2x - </strong> бронирвоания</a></li>
+                               <li><a href="#"><strong>1s2x - </strong> бронирвоания</a></li>
+                               <li><a href="#"><strong>1s2x - </strong> бронирвоания</a></li>
+                               <li><a href="#"><strong>1s2x - </strong> бронирвоания</a></li>
+                               <li><a href="#"><strong>1s2x - </strong> бронирвоания</a></li>
+                               <li><a href="#"><strong>1s2x - </strong> бронирвоания</a></li>
+                               <li><a href="#"><strong>1s2x - </strong> бронирвоания</a></li>
+                               <li><a href="#"><strong>1s2x - </strong> бронирвоания</a></li>
+                               <li><a href="#"><strong>1s2x - </strong> бронирвоания</a></li>
+                               <li><a href="#"><strong>1s2x - </strong> бронирвоания</a></li>
+                               <li><a href="#"><strong>1s2x - </strong> бронирвоания</a></li>
+                               <li><a href="#"><strong>1s2x - </strong> бронирвоания</a></li>
+                           </ul>
+                       </div>
+
+                    </li>   
                 </ul> 
                 <!-- End Topbar Navigation -->
                 <div class="header__facebook"><span>Присоединяйтесь к нам на Facebook</span></div>
@@ -240,7 +261,9 @@
                                 </div>
                             </div>
                             <p><strong>Кровать:</strong> 1 двуспальная кровать</p>
-                            <p><strong>Сумма:</strong> 900 грн (учтена скидка 10% по промо-коду) <i class="fa fa-info-circle pointer"></i></p>
+                            <div class="hint">
+                                <strong>Сумма:</strong> 900 грн (учтена скидка 10% по промо-коду) <i class="fa fa-info-circle pointer"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -273,7 +296,7 @@
                                 <div class="margin-bottom-10">Страна проживания:</div>
                                 <label class="select">
                                     <select name="country">
-                                        <option value="0" selected disabled>Украина</option>
+                                        <option value="0" selected>Украина</option>
                                         <option value="244">Aaland Islands</option>
                                         <option value="1">Afghanistan</option>
                                         <option value="2">Albania</option>
@@ -557,6 +580,7 @@
                             <div class="col-md-12 headline">
                                 <h3 class="pull-left">3. Дополнительные услуги </h3>
                                 <button class="text-border text-border-blue color-blue js-open-services pull-right" type="button">Раскрыть</button>
+                                <button class="text-border text-border-blue color-blue js-close-services pull-right" type="button">Cкрыть</button>
                             </div>
                             <div class="js-services">
                                 <section class="col col-6">

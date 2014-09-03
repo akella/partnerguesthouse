@@ -43,6 +43,9 @@
 p 
 	+clr
 
+.color-yellow
+	color: #FAEE38
+
 .wrapper_error
 	background: url(http://lorempixel.com/1920/1920/business) no-repeat 0 0
 	background-size: cover 
@@ -159,10 +162,37 @@ p
 		line-height: 1
 		display: inline-block
 
+.btn-group_top
+	&.open
+		.dropdown-menu
+			min-width: 210px
+			overflow-y: auto
+			max-height: 250px
+			display: block
+		.btn
+			text-decoration: underline
+			background: none
+			+box-shadow(none)
+	.dropdown-menu
+		left: auto
+		right: 0
+	.btn
+		padding: 0
+		color: #7c8082
+		font-size: 11px
+		text-transform: uppercase
+		line-height: 1.4
+		border: none
+		&:hover
+			text-decoration: underline
+			background: none
+
 .text-border
 	background: none
+	&:hover
+		border: none
 
-.js-services
+.js-services, .js-close-services
 	display: none
 
 .breadcrumbs
@@ -235,9 +265,9 @@ p
 		.card__left, .card__right
 			display: inline-block
 			vertical-align: top
-		.card__left 
+		.card__left
 			a
-				padding-right: 10px
+				margin-right: 10px
 		.card__top-right
 			padding-top: 3px 
 			padding-left: 30px
@@ -247,6 +277,10 @@ p
 				color: #585f69
 				&:hover
 					text-decoration: none
+	.card__titl
+		sup
+			color: #999
+			margin-left: 5px
 	.card__row
 		position: relative
 		+clr
@@ -278,7 +312,20 @@ p
 		// 	color: #fff
 		.price
 			width: 100%
-			color: #fff 
+			color: #fff
+			.price__min
+				color: #333333
+			.price__button
+				font-size: 18px
+				color: #E4E4E4
+				border-color: #E4E4E4
+			.price__old
+				color: #E4E4E4
+		.btn-u
+			font-size: 18px
+	.card__error
+		color: #990000
+		font-size: 18px
 	.card__table
 		td
 			&:first-child
@@ -290,6 +337,28 @@ p
 				height: 445px
 	.card__item
 		overflow: hidden
+	.card__btn-graph
+		font-size: 18px
+		color: #666
+		border-color: #666
+		&:hover
+			text-decoration: none
+
+.btn-u_select
+	position: relative
+	&:before
+		position: absolute
+		content: ''
+		top: 0
+		bottom: 0
+		right: -10px
+		+arr(10, 39, #72c02c, r)
+	&:hover,
+	&:focus,
+	&:active
+		&:before
+			+transition(all 0.3s linear)
+			+arr(10, 39, #5fb611, r)
 
 //calendar
 .calendar
@@ -388,6 +457,11 @@ p
 		+box
 		&:hover
 			border: none
+	.promocode__error
+		span
+			color: #990000
+		.promocode__text
+			display: inline-block
 	.promocode__text, .promocode__discount
 		color: #fff
 	.promocode__block, .promocode__discount
@@ -650,6 +724,7 @@ p
 	text-decoration: none
 	background: rgba(#b95a34, .6)
 .item__link_grey
+	float: left
 	color: #CCCCCC
 	&:hover
 		color: #CCCCCC
@@ -690,10 +765,13 @@ p
 	+box
 
 .description__top_mod
+	padding-top: 5px
+	padding-bottom: 5px
 	font-size: 13px
 	line-height: 1.2
 	h1, h2, h3, h4, h5, h6
 		margin-top: 0
+		margin-bottom: 0
 		padding-top: 5px
 
 .description__wrap
@@ -868,10 +946,56 @@ p
 		cursor: pointer
 	.price__row
 		font-size: 0
+	.price__min
+		position: relative
+		line-height: 1
+		vertical-align: top
+		display: inline-block
+	.price__button
+		color: #666666
+		font-size: 14px
+		height: 20px
+		line-height: 20px
+		border-bottom: 1px dashed #666666
+		cursor: pointer
+		vertical-align: top
+		display: inline-block
+		background: none
+		&:hover
+			border: none
+	.price__date
+		position: absolute
+		left: 0
+		top: 100%
+		padding: 15px 
+		width: 215px
+		margin-top: 18px
+		font-size: 16px
+		z-index: 1
+		background: #fff
+		cursor: pointer
+		border: 1px solid #eee
+		display: none
+		+box
+		&:before
+			position: absolute
+			content: ''
+			top: -18px
+			left: 27%
+			+s(arr-top-price2)
+		i
+			position: absolute
+			top: 14px
+			right: 15px
+			color: #3498db
+			font-style: normal
 .price__item
 	font-size: 36px
-	line-height: 1
+	line-height: 1.05
+	vertical-align: top
 	display: inline-block
+	&.price__item_bot
+		font-size: 0
 
 .price__old, .price__time
 	font-size: 14px
@@ -883,6 +1007,8 @@ p
 
 .price__time
 	padding-bottom: 5px
+	&.price__time_mod
+		padding-bottom: 0
 
 //step
 .step
@@ -1022,7 +1148,7 @@ p
 				color: #b50404
 		&.rating__text_minus
 			.fa	
-				color: #c6f1d9
+				color: #2ecc71
 .funny-boxes_mod
 	font-size: 14px
 
@@ -1048,8 +1174,6 @@ p
 			+s(u1336) 
 		&.placement__ico_4
 			+s(u1340)
-			.placement__amount
-				top: -14px
 		.placement__amount
 			position: absolute
 			top: -10px
@@ -1058,10 +1182,10 @@ p
 			width: 20px
 			color: #fff
 			line-height: 18px
-			font-size: 13px
+			font-size: 13px 
 			text-align: center
 			border: 1px solid #f9f9f9
-			background: blue
+			background: #3498db 
 			+border-radius(50% !important)
 	.placement__img
 		width: 100%
@@ -1079,26 +1203,75 @@ p
 //sky-form_booking
 .sky-form_booking
 	padding: 5px 15px
+	background: #5cb0fb
 	fieldset
 		padding: 5px 0
+		background: none
+		color: #fff
 	.promocode__text, .promocode__discount
-		color: #666
-		border-color: #666
+		color: #fff
+		border-color: #fff
 	.promocode__input
 		width: 55%
 	.price
 		width: 100%
+		.price__old
+			color: #E4E4E4
 	.input, .btn-u
 		margin-top: 25px
 	.sky-title
 		margin: 20px 0 0 0 
 		font-size: 22px
 		font-weight: normal
-		color: #666
+		color: #fff
 
 .sky-form
 	.sky-form-footer
 		padding: 20px 15px 0
+
+.monthprices
+	.monthprices__top
+		+clr
+	.monthprices__btn, .monthprices__title
+		display: inline-block
+	.monthprices__title
+		float: left
+	.monthprices__btn
+		float: right
+		margin-top: 8px
+		color: #005599
+		height: 20px
+		line-height: 20px
+		font-size: 14px
+		border-bottom: 1px dashed #005599
+		background: none
+		+box
+		&:hover
+			border: none
+		&.monthprices__btn_2
+			display: none
+	.monthprices__table
+		font-size: 16px
+		td
+			padding: 5px 0 5px 5px
+			span
+				position: relative
+				&:before
+					position: absolute
+					content: ''
+					left: 100%
+					bottom: 2px
+					margin-left: 4px
+					height: 1px
+					width: 1000px
+					border-bottom: 1px dotted grey
+			&:first-child
+				padding-left: 0
+				width: 71%
+				overflow: hidden
+		// .monthprices__table_1
+		&.monthprices__table_2
+			display: none
 
 //more
 .more
@@ -1187,11 +1360,11 @@ p
 	+clr
 	&.is-active
 		.filter__convenience
-			color: #a9a9a9
-			background: #fff
+			color: #666666
+			background: #f4f4f4
 		.filter__closebtn
-			display: none
-		.filter__list
+			display: block
+		.filter__wrapper
 			z-index: 7
 	.filter__select
 		position: relative
@@ -1224,7 +1397,7 @@ p
 		margin: 0 17px 20px 0
 		font-size: 18px
 		color: #666666
-		z-index: 4
+		z-index: 1
 		border-bottom: 1px dashed #666666
 		background: none
 		&:before
@@ -1236,9 +1409,9 @@ p
 			+arr(8, 6, #666666, b)
 		&.is-active
 			z-index: 9
-	.filter__list
+	.filter__wrapper
 		position: absolute
-		padding: 50px 18px 18px
+		padding: 50px 0 18px
 		top: -10px
 		left: -18px
 		min-width: 212px
@@ -1246,8 +1419,12 @@ p
 		background-color: #fff
 		display: none
 		+box-shadow(0 0 6px rgba(10,5,6,.16))
+	.filter__list
+		padding: 0 18px
+		max-height: 342px
+		overflow-y: auto
 		&.filter__list_234
-			width: 234px
+			width: 255px
 	.filter__convenience
 		position: relative
 		margin-bottom: 15px
@@ -1255,14 +1432,15 @@ p
 		height: 30px
 		line-height: 30px
 		font-size: 12px
-		color: #666666
+		color: #a9a9a9
 		border: 1px solid #bbbbbb
-		background: #f4f4f4
+		background: #fff
 	.filter__closebtn
 		position: absolute
 		top: 10px
 		right: 8px
 		+s(filter-closebtn)
+		display: none
 //banner
 .banner
 	border: 1px solid #c9c9c9

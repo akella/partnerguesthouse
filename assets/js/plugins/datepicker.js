@@ -12,16 +12,16 @@ var Datepicker = function () {
 	        });
 	        
 	        // Date range
-	        $('#start, #start1').datepicker({
+	        $('#start').datepicker({
 	            dateFormat: 'dd.mm.yy',
 	            prevText: '<i class="fa fa-angle-left"></i>',
 	            nextText: '<i class="fa fa-angle-right"></i>',
 	            onClose: function( selectedDate )
 	            {
-	                $('#finish, #finish1').focus();
+	                $('#finish').focus();
 	            }
 	        });
-	        $('#finish, #finish1').datepicker({
+	        $('#finish').datepicker({
 	            dateFormat: 'dd.mm.yy',
 	            prevText: '<i class="fa fa-angle-left"></i>',
 	            nextText: '<i class="fa fa-angle-right"></i>',
@@ -31,6 +31,26 @@ var Datepicker = function () {
 	            // }
 	        });
 
+
+	        // Date range
+	        $('#start1').datepicker({
+	            dateFormat: 'dd.mm.yy',
+	            prevText: '<i class="fa fa-angle-left"></i>',
+	            nextText: '<i class="fa fa-angle-right"></i>',
+	            onClose: function( selectedDate )
+	            {
+	                $('#finish1').focus();
+	            }
+	        });
+	        $('#finish1').datepicker({
+	            dateFormat: 'dd.mm.yy',
+	            prevText: '<i class="fa fa-angle-left"></i>',
+	            nextText: '<i class="fa fa-angle-right"></i>',
+	            // onClose: function( selectedDate )
+	            // {
+	            //     $('#start').focus();
+	            // }
+	        });
 
 	        // Inline datepicker
 	        $('#inline').datepicker({

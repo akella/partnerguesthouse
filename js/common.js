@@ -18,6 +18,7 @@ head.ready(function() {
 		$(".js-filter-list").hide();
 		$(".js-filter").removeClass('is-active');
 		$(".js-filter-btn").removeClass('is-active');
+		$(".js-price-date").fadeOut();
 	});
 
 	$(".js-price").each(function(){
@@ -116,15 +117,39 @@ head.ready(function() {
 	$(".js-close-convenience").click(function(){
 		$(this).parent().parent().remove();
 	});
-	$("body").on("click", ".js-filter-btn, .js-filter-list", function(event){
+	$("body").on("click", ".js-filter-btn, .js-filter-list, .js-price-min", function(event){
 		event.stopPropagation();
 	});
 
 	$(".js-open-services").click(function(){
-		$(".js-services").slideToggle();
+		$(this).hide();
+		$(".js-close-services").show();
+		$(".js-services").fadeIn();
 	});
 
+	$(".js-close-services").click(function(){
+		$(this).hide();
+		$(".js-open-services").show();
+		$(".js-services").fadeOut();
+	});
 
+	$(".js-price-min").click(function(){
+		$(".js-price-date").fadeIn();
+	});
+	
+	$(".js-monthprices-btn1").click(function(){
+		$(this).hide();
+		$(".js-monthprices-btn2").show();
+		$(".js-monthprices-table1").hide();
+		$(".js-monthprices-table2").show();
+	})
+	$(".js-monthprices-btn2").click(function(){
+		$(this).hide();
+		$(".js-monthprices-btn1").show();
+		$(".js-monthprices-table2").hide();
+		$(".js-monthprices-table1").show();
+	})
+	
 		// $(function(){
 		// 	window.prettyPrint && prettyPrint();
 		// 	$('#dp1').datepicker();

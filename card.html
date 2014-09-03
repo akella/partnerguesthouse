@@ -67,7 +67,7 @@
     <!--=== Header ===-->    
     <div class="header">
         <!-- Topbar -->
-        <div class="topbar">
+       <div class="topbar">
             <div class="container">
                 <!-- Topbar Navigation -->
                 <ul class="loginbar pull-right">
@@ -86,7 +86,28 @@
                     <li class="topbar-devider"></li>   
                     <li><a href="page_faq.html">Help</a></li>  
                     <li class="topbar-devider"></li>   
-                    <li><a href="page_login.html">Login</a></li>   
+                    <li>
+                        <div class="btn-group btn-group_top">
+                           <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">id <i class="fa fa-angle-down"></i>
+                           </button>
+                           <ul class="dropdown-menu" role="menu">
+                               <li><a href="#"><strong>1s2x - </strong> бронирвоания</a></li>
+                               <li><a href="#"><strong>1s2x - </strong> бронирвоания</a></li>
+                               <li><a href="#"><strong>1s2x - </strong> бронирвоания</a></li>
+                               <li><a href="#"><strong>1s2x - </strong> бронирвоания</a></li>
+                               <li><a href="#"><strong>1s2x - </strong> бронирвоания</a></li>
+                               <li><a href="#"><strong>1s2x - </strong> бронирвоания</a></li>
+                               <li><a href="#"><strong>1s2x - </strong> бронирвоания</a></li>
+                               <li><a href="#"><strong>1s2x - </strong> бронирвоания</a></li>
+                               <li><a href="#"><strong>1s2x - </strong> бронирвоания</a></li>
+                               <li><a href="#"><strong>1s2x - </strong> бронирвоания</a></li>
+                               <li><a href="#"><strong>1s2x - </strong> бронирвоания</a></li>
+                               <li><a href="#"><strong>1s2x - </strong> бронирвоания</a></li>
+                               <li><a href="#"><strong>1s2x - </strong> бронирвоания</a></li>
+                           </ul>
+                       </div>
+
+                    </li>   
                 </ul> 
                 <!-- End Topbar Navigation -->
                 <div class="header__facebook"><span>Присоединяйтесь к нам на Facebook</span></div>
@@ -185,10 +206,10 @@
             <div class="row">
                 <div class="card__top col-md-12">
                     <div class="card__left">
-                        <h2>Шевченко 10, Киев</h2>
+                        <h2 class="card__title">Шевченко 10, Киев <sup>ID202</sup></h2>
                         <p>
-                            <a class="color-blue js-scroll" href="#card__map">Смотреть на карту</a>
-                            <a class="color-blue js-scroll" href="#graph">График загруженности</a>
+                            <a class="color-blue text-border text-border-blue pointer js-scroll" href="#card__map">Смотреть на карту</a>
+                            <a class="color-blue text-border text-border-blue pointer js-scroll" href="#graph">График загруженности</a>
                         </p>
                     </div>
                     <div class="card__top-right">
@@ -220,30 +241,30 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-12 pull-right">
+                    <div class="col-md-4 col-sm-12 col-xs-12 pull-right">
                         <div class="card__right margin-bottom-20">
                             <div class="lead">Забронировать</div>
                             <form action="" id="sky-form" class="sky-form"> 
                                 <fieldset> 
                                     <div class="row">   
                                         <section class="col col-6">
-                                            <label class="input">
-                                                <i class="icon-append fa fa-calendar"></i>
-                                                <input type="text" name="start" id="start" placeholder="Заезд" class="hasDatepicker">
-                                            </label>
-                                        </section>
-                                        <section class="col col-6">
-                                            <label class="input">
-                                                <i class="icon-append fa fa-calendar"></i>
-                                                <input type="text" name="finish" id="finish" placeholder="Выезд" class="hasDatepicker">
-                                            </label>
-                                        </section>
+                                           <label class="input">
+                                               <i class="icon-append fa fa-calendar"></i>
+                                               <input type="text" name="start" id="start" placeholder="Заезд">
+                                           </label>
+                                       </section>
+                                       <section class="col col-6">
+                                           <label class="input">
+                                               <i class="icon-append fa fa-calendar"></i>
+                                               <input type="text" name="finish" id="finish" placeholder="Выезд">
+                                           </label>
+                                       </section>
                                         <section class="col-md-12">
                                            <div class="price">
                                                <div class="price__old">898 грн/сутки</div>
-                                               <div class="price__item color-red">1213</div>
+                                               <div class="price__item color-yellow">1213</div>
                                                <div class="price__item">
-                                                   <div class="price__time color-red">грн/сутки</div>
+                                                   <div class="price__time color-yellow">грн/сутки</div>
                                                    <div class="price__time">(8960 грн за 3 ночи)</div>
                                                </div>
                                            </div>
@@ -282,6 +303,9 @@
                                     </div>                  
                                 </fieldset>
                             </form>
+                        </div>
+                        <div class="alert alert_mob alert-warning fade in">
+                            <p>Долгосрочная аренда <strong>2 000 грн/мес</strong> <a href="#terms" class="text-border text-border-blue color-blue pointer js-scroll">Подробнее</a></p>
                         </div>
                         <div class="alert alert_mob alert-warning fade in">
                             <div class="margin-bottom-10">Остались вопросы? Свяжитесь с менеджером:</div>
@@ -550,7 +574,7 @@
                     <div class="headline" id="graph"><h3>График загруженности</h3></div>
                 </div>
             </div>
-           <div class="row">   
+            <div class="row">   
                 <div class="col-md-4">
                     <h3>Июнь</h3>
                     <div class="calendar">
@@ -884,6 +908,80 @@
                      <button class="more__btn">Показать больше отзывов</button>
                 </div>
             </div>
+            <div class="row margin-bottom-30">
+                <div class="col-md-12">
+                    <div class="headline"><h2>Долгосрочная аренда</h2></div>
+                </div>
+                <div class="col-md-4 monthprices">
+                    <div class="monthprices__top">
+                        <h3 class="monthprices__title">Цены</h3>
+                        <button class="monthprices__btn monthprices__btn_1 js-monthprices-btn1">Следующие 6 месяцев &raquo;</button>
+                        <button class="monthprices__btn monthprices__btn_2 js-monthprices-btn2">&laquo; Предыдущие 6 месяцев</button>
+                    </div>
+                    <table class="monthprices__table monthprices__table_1 js-monthprices-table1">
+                        <tr>
+                            <td><span>Июль</span></td>
+                            <td>2 300 грн/мес</td>
+                        </tr>
+                        <tr>
+                            <td><span>Август</span></td>
+                            <td>2 300 грн/мес</td>
+                        </tr>
+                        <tr>
+                            <td><span>Сентябрь</span></td>
+                            <td>2 300 грн/мес</td>
+                        </tr>
+                        <tr>
+                            <td><span>Октябрь</span></td>
+                            <td>2 000 грн/мес</td>
+                        </tr>
+                        <tr>
+                            <td><span>Ноябрь</span></td>
+                            <td>2 000 грн/мес</td>
+                        </tr>
+                        <tr>
+                            <td><span>Декабрь</span></td>
+                            <td>2 000 грн/мес</td>
+                        </tr>
+                    </table>
+                    <table class="monthprices__table monthprices__table_2 js-monthprices-table2">
+                        <tr>
+                            <td><span>Январь</span></td>
+                            <td>2 000 грн/мес</td>
+                        </tr>
+                        <tr>
+                            <td><span>Февраль</span></td>
+                            <td>2 000 грн/мес</td>
+                        </tr>
+                        <tr>
+                            <td><span>Март</span></td>
+                            <td>2 000 грн/мес</td>
+                        </tr>
+                        <tr>
+                            <td><span>Апрель</span></td>
+                            <td>2 000 грн/мес</td>
+                        </tr>
+                        <tr>
+                            <td><span>Мая</span></td>
+                            <td>2 000 грн/мес</td>
+                        </tr>
+                        <tr>
+                            <td><span>Июнь</span></td>
+                            <td>2 000 грн/мес</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-md-4">
+                    <h3>Что мы предлагаем</h3>
+                    <p>Аренда квартир в центре Киева долгосрочно. Partner Guest House предлагает все свои квартиры в долгосрочную аренду без комиссионых от 1-го месяца. Стоимость проживания зависит от конкретного месяца в году. </p>
+                    <p>Вы самостоятельно можете просчитать стоимость аренды квартиры долгосрочно используя таблицу ниже. Каждая квартира в списке ниже имеет актуальный график наличия, используя который вы можете посмотреть свободна ли квартира на ваши даты проживания.</p>
+                </div>
+                <div class="col-md-4" id="terms">
+                    <h3>Правила проживания</h3>
+                    <p>В стоимость проживания включена только оплата коммунальных услуг и воды. Дополнительные услуги - ТВ, интернет, телефон и электричество - оплачиваются арендодателем. Услуги горничной и стирка постельного и полотенец также не входит в стоимость проживания при длительной аренде. </p>
+                    <p>Оплата производится в гривнах по курсу Национального Банка на момент заключения договора в любой удобной для вас форме (наличный и безналичный расчет, кредитная карта)</p>
+                </div>
+            </div>
             <div class="row step">
                 <div class="step__item col-md-4 col-sm-12 is-active">
                     <h3 class="color-green">Найди квартиру</h3>
@@ -909,24 +1007,24 @@
                             <h4 class="sky-title">Шевченко 10, Киев</h4>
                             <a href="#">Гестхаус "Крещатик</a>
                         </div>  
-                        <section class="col col-2">
-                            <label class="input">
-                                <i class="icon-append fa fa-calendar"></i>
-                                <input type="text" name="start" id="start" placeholder="Заезд" class="hasDatepicker">
-                            </label>
-                        </section>
-                        <section class="col col-2">
-                            <label class="input">
-                                <i class="icon-append fa fa-calendar"></i>
-                                <input type="text" name="finish" id="finish" placeholder="Выезд" class="hasDatepicker">
-                            </label>
-                        </section>
+                       <section class="col col-2">
+                           <label class="input">
+                               <i class="icon-append fa fa-calendar"></i>
+                               <input type="text" name="start1" id="start1" placeholder="Заезд">
+                           </label>
+                       </section>
+                       <section class="col col-2">
+                           <label class="input">
+                               <i class="icon-append fa fa-calendar"></i>
+                               <input type="text" name="finish1" id="finish1" placeholder="Выезд">
+                           </label>
+                       </section>
                         <div class="col col-3">
                            <div class="price">
                                <div class="price__old">898 грн/сутки</div>
-                               <div class="price__item color-red">1213</div>
+                               <div class="price__item color-yellow">1213</div>
                                <div class="price__item">
-                                   <div class="price__time color-red">грн/сутки</div>
+                                   <div class="price__time color-yellow">грн/сутки</div>
                                    <div class="price__time">(8960 грн за 3 ночи)</div>
                                </div>
                            </div>
