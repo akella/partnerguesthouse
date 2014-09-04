@@ -19,14 +19,16 @@ head.ready(function() {
 		$(".js-filter").removeClass('is-active');
 		$(".js-filter-btn").removeClass('is-active');
 		$(".js-price-date").fadeOut();
+		$(".js-hint-info").fadeOut(); 
+		$(".js-complete-description").removeClass('is-active');
 	});
 
-	$(".js-price").each(function(){
-		$(".js-open-price").click(function() {
-			$(this).parent().addClass('is-active');
-		});
+
+	$(".js-open-price").click(function() {
+		$(".js-complete-description").removeClass('is-active');
+		$(this).parent().parent().parent().parent().parent().parent().parent().addClass('is-active');
 	});
-	
+
 	$(".js-open-popupcal").click(function() {
 		$(this).next(".js-calendar-popup").addClass('is-active');
 	});
@@ -36,10 +38,9 @@ head.ready(function() {
 	});
 		
 	$(".js-price-close").click(function(){
-		$(".js-price-block").slideUp();
-		$(".js-price").removeClass("is-active");
+		$(".js-complete-description").removeClass("is-active");
 	});
-	$("body").on("click", ".js-price, .js-booking-text, .js-open-popupcal, .js-calendar-popup", function(event){
+	$("body").on("click", ".js-price, .js-booking-text, .js-open-popupcal, .js-calendar-popup, .js-price-block", function(event){
 		event.stopPropagation();
 	});
 
@@ -117,7 +118,7 @@ head.ready(function() {
 	$(".js-close-convenience").click(function(){
 		$(this).parent().parent().remove();
 	});
-	$("body").on("click", ".js-filter-btn, .js-filter-list, .js-price-min", function(event){
+	$("body").on("click", ".js-filter-btn, .js-filter-list, .js-price-min, .js-open-hint", function(event){
 		event.stopPropagation();
 	});
 
@@ -150,6 +151,15 @@ head.ready(function() {
 		$(".js-monthprices-table1").show();
 	})
 	
+	$(".js-open-hint").click(function(){
+	$(".js-hint-info").fadeIn();
+	});
+
+	$(".js-hint-close").click(function(){
+		$(".js-hint-info").fadeOut();
+	});
+	
+
 		// $(function(){
 		// 	window.prettyPrint && prettyPrint();
 		// 	$('#dp1').datepicker();

@@ -57,6 +57,8 @@ p
 .container
 	.ul
 		padding-left: 20px
+	.ul-fs16
+		font-size: 16px
 
 .logo
 	position: relative
@@ -162,6 +164,15 @@ p
 		line-height: 1
 		display: inline-block
 
+.list-unstyled_fs16
+	font-size: 16px
+
+//panel
+.acc-v1 .panel-heading a
+	font-size: 22px
+.tab-v3 .nav-pills li a
+	font-size: 22px
+
 .btn-group_top
 	&.open
 		.dropdown-menu
@@ -205,6 +216,38 @@ p
 
 .da-dots
 	display: none
+
+.funny-boxes_nhid
+	overflow: inherit
+
+//hint
+.hint
+	position: relative
+	display: inline-block
+	.hint__info
+		position: absolute
+		top: 100%
+		left: 78%
+		margin-top: 20px
+		padding: 10px
+		color: #000
+		width: 480px
+		z-index: 2
+		border: 1px solid #eee
+		background: #fff
+		display: none
+		+clr
+		&:before
+			position: absolute
+			content: ''
+			left: 56px
+			top: -18px
+			+s(arr-top-price2)
+	.hint__close
+		position: absolute
+		top: 15px
+		right: 15px
+		+s(close_popup_cal)
 
 //slider
 .slider
@@ -447,7 +490,19 @@ p
 			border: none
 
 //promocode
-.promocode
+.promocode 
+	&.promocode_blue
+		display: inline-block
+		.promocode__text
+			color: #3498db
+			border-color: #3498db
+		.promocode__discount
+			padding-right: 20px
+			color: #555
+		.promocode__close
+			top: 50%
+			margin-top: -5px
+			+s(filter-closebtn)
 	.promocode__text
 		cursor: pointer
 		height: 18px
@@ -893,57 +948,13 @@ p
 	position: relative
 	width: 62%
 	display: inline-block
-	&.is-active
-		.price__block
-			display: block
-	.price__block
-		position: absolute
-		top: 144% 
-		left: -346%
-		padding: 20px
-		width: 514%
-		z-index: 3
-		background: #fff
-		border: 1px solid #d9d9d9
-		display: none
-		+box
-		&:before
-			position: absolute
-			content: ''
-			top: -29px
-			right: 27%
-			+s(arr-top-price)
-		.price__close
-			position: absolute
-			top: 12px
-			right: 14px
-			+s(arr-close-price)
-		.price__left
-			float: left
-			width: 66.66666666666666%
-		.price__right
-			float: right
-			padding-left: 20px
-			width: 33.33333333333333%
-		.price__table
-			width: 50%
-			font-size: 15px
-			background: #f4f4f4
-			display: inline-block
-			td
-				padding: 0 10px
-				height: 34px
-				line-height: 34px
-				border: 1px solid #fff
-				+box
-				&:first-child
-					width: 69.5%
-					border-left: none
-				.color-red
-					font-family: Arial, sans-serif
-					font-weight: bold
+	&.price_grey
+		.price__old
+			color: #fff
 	.price__wrap
+		padding-left: 10px
 		cursor: pointer
+		+box
 	.price__row
 		font-size: 0
 	.price__min
@@ -989,6 +1000,55 @@ p
 			right: 15px
 			color: #3498db
 			font-style: normal
+.js-complete-description
+	&.is-active
+		.price__block
+			display: block
+		.complete-description
+			margin-bottom: 5px
+.price__block 
+	margin-bottom: 20px
+	position: relative
+	padding: 20px
+	background: #fff
+	border: 1px solid #eeeeee
+	display: none
+	+clr
+	+box
+	&:before
+		position: absolute
+		content: ''
+		top: -29px
+		right: 23%
+		z-index: 3
+		+s(arr-top-price)
+	.price__close
+		position: absolute
+		top: 12px
+		right: 14px
+		+s(arr-close-price)
+	// .price__left
+	// 	float: left
+	// 	width: 66.66666666666666%
+	// .price__right
+	// 	float: right
+	// 	padding-left: 20px
+	// 	width: 33.33333333333333%
+	.price__table
+		font-size: 15px
+		td
+			padding: 0 10px
+			height: 34px
+			line-height: 34px
+			border: 1px solid #fff
+			+box
+			&:first-child
+				width: 66%
+				border-left: none
+			.color-red
+				font-family: Arial, sans-serif
+				font-weight: bold
+
 .price__item
 	font-size: 36px
 	line-height: 1.05
@@ -999,6 +1059,9 @@ p
 
 .price__old, .price__time
 	font-size: 14px
+	height: 20px
+	line-height: 20px
+	+box
 
 .price__old
 	padding-left: 6px
@@ -1064,41 +1127,53 @@ p
 	+box
 	.guesthouse__title
 		padding: 0 0 0 15px
-	.guesthouse__ico
-		position: absolute
-		top: 8px
-		left: 15px
-		display: inline-block
-		+sr(image_u584)
-	.guesthouse__top
-		padding: 5px 15px
-		text-align: right
-		background: #fafafa
-		+clr
-	.guesthouse__title2
-		margin: 0
-		padding: 0 
-		font-size: 16px
-		font-weight: bold
-		line-height: 1.2
-	.guesthouse__title2, .guesthouse__rating
-		color: #3498db
-	.guesthouse__rating
-		font-size: 16px
-		line-height: 1
-		font-weight: bold
-		span
-			font-weight: normal
-			font-size: 12px
-	.guesthouse__reviews
-		font-size: 10px
-		color: #4765a0
-		line-height: 1
 .guesthouse__item
 	border: 1px solid #eeeeee
 	background: #fff
 	img
 		width: 100%
+		
+//booking-com
+.booking-com, .guesthouse__top
+	padding: 5px 15px
+	text-align: right
+	background: #fafafa
+	+clr
+	&.booking-com_rel
+		position: absolute
+		padding: 5px
+		top: 15px
+		right: 15px
+		width: 200px
+		+box
+		.booking-com__title
+			color: #3498db
+		.booking-com__ico
+			left: 5px
+.booking-com__ico, .guesthouse__ico
+	position: absolute
+	top: 8px
+	left: 15px
+	display: inline-block
+	+sr(image_u584)
+.booking-com__title, .guesthouse__title2
+	margin: 0
+	padding: 0 
+	font-size: 16px
+	font-weight: bold
+	line-height: 1.2
+.booking-com__rating, .guesthouse__rating
+	font-size: 16px
+	line-height: 1
+	font-weight: bold
+	color: #3498db
+	span
+		font-weight: normal
+		font-size: 12px
+.booking-com__reviews, .guesthouse__reviews
+	font-size: 10px
+	color: #4765a0
+	line-height: 1
 
 //reviews
 .reviews
@@ -1358,6 +1433,37 @@ p
 	border: 1px solid #eeeeee
 	border-top: none
 	+clr
+	&.filter_mod
+		border: none
+		.checkbox
+			position: relative
+			input
+				left: auto
+				top: 4px
+		.filter__btn
+			margin: 0
+			width: 100%
+			padding: 6px 10px
+			color: #404040
+			text-align: left
+			font: 15px/19px 'Open Sans', Helvetica, Arial, sans-serif
+			border: none
+			+box
+			&:before
+				display: none
+		.select_filder
+			height: 34px
+			line-height: 34px
+			border: 1px solid #999
+			.icon-append
+				top: 0
+		.filter__select
+			display: block
+		.filter__wrap
+			padding: 20px 15px 5px
+			border: 1px solid #eee
+			border-top: none
+			+clr
 	&.is-active
 		.filter__convenience
 			color: #666666
@@ -1498,6 +1604,8 @@ p
 	background-size: cover
 	&.cont-top_mod
 		padding-bottom: 70px
+	&.cont-top_rel
+		position: relative
 	.cont-top__text, h1, h2, h3
 		color: #fff
 	.cont-top__text, .cont-top__title
@@ -1528,11 +1636,15 @@ p
 			margin-left: 10px
 			padding-right: 10px
 			color: #fff
+		&.ul_80
+			width: 80% 
 	.cont-top__img
 		position: absolute
 		top: 20px
 		right: 20px
 		display: inline-block
+
+
 //.offers
 .offers
 	padding-top: 20px
@@ -1604,6 +1716,8 @@ p
 		font-size: 13px
 	.footer .nav .nav__item
 		padding: 0 0 0 10px
+	.price__block .price__table td:first-child
+		width: 60%
 @media (max-width: 992px)
 	.step
 		.step__performance

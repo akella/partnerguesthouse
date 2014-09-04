@@ -27,6 +27,7 @@ p:after { content: " "; display: table; clear: both; }
 .wrapper_error .header { background: white; }
 
 .container .ul { padding-left: 20px; }
+.container .ul-fs16 { font-size: 16px; }
 
 .logo { position: relative; margin-top: -45px; height: 100px; width: 100px; z-index: 30; display: inline-block; background: url('../img/icons-s900a0b249c.png') 0 -1267px no-repeat; width: 213px; height: 104px; }
 
@@ -68,6 +69,12 @@ p:after { content: " "; display: table; clear: both; }
 .btn-u-lg_mod { padding: 5.5px 0; }
 .btn-u-lg_mod span { line-height: 1; display: inline-block; }
 
+.list-unstyled_fs16 { font-size: 16px; }
+
+.acc-v1 .panel-heading a { font-size: 22px; }
+
+.tab-v3 .nav-pills li a { font-size: 22px; }
+
 .btn-group_top.open .dropdown-menu { min-width: 210px; overflow-y: auto; max-height: 250px; display: block; }
 .btn-group_top.open .btn { text-decoration: underline; background: none; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
 .btn-group_top .dropdown-menu { left: auto; right: 0; }
@@ -85,6 +92,14 @@ p:after { content: " "; display: table; clear: both; }
 .da-slider { background: transparent url(http://lorempixel.com/1920/425/city) repeat 0% 0%; }
 
 .da-dots { display: none; }
+
+.funny-boxes_nhid { overflow: inherit; }
+
+.hint { position: relative; display: inline-block; }
+.hint .hint__info { position: absolute; top: 100%; left: 78%; margin-top: 20px; padding: 10px; color: black; width: 480px; z-index: 2; border: 1px solid #eeeeee; background: white; display: none; *zoom: 1; }
+.hint .hint__info:after { content: " "; display: table; clear: both; }
+.hint .hint__info:before { position: absolute; content: ""; left: 56px; top: -18px; background: url('../img/icons-s900a0b249c.png') 0 -93px no-repeat; width: 21px; height: 18px; }
+.hint .hint__close { position: absolute; top: 15px; right: 15px; background: url('../img/icons-s900a0b249c.png') 0 -754px no-repeat; width: 13px; height: 13px; }
 
 .slider { position: relative; min-height: 100%; overflow: hidden; *zoom: 1; }
 .slider:after { content: " "; display: table; clear: both; }
@@ -158,6 +173,10 @@ p:after { content: " "; display: table; clear: both; }
 .places .places__but { margin-left: 10px; height: 21px; line-height: 21px; color: #4c6c8a; border-bottom: 1px dashed #4c6c8a; cursor: pointer; background: none; display: inline-block; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .places .places__but:hover { border: none; }
 
+.promocode.promocode_blue { display: inline-block; }
+.promocode.promocode_blue .promocode__text { color: #3498db; border-color: #3498db; }
+.promocode.promocode_blue .promocode__discount { padding-right: 20px; color: #555555; }
+.promocode.promocode_blue .promocode__close { top: 50%; margin-top: -5px; background: url('../img/icons-s900a0b249c.png') 0 -807px no-repeat; width: 11px; height: 11px; }
 .promocode .promocode__text { cursor: pointer; height: 18px; line-height: 18px; border-bottom: 1px dotted white; display: inline-block; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .promocode .promocode__text:hover { border: none; }
 .promocode .promocode__error span { color: #990000; }
@@ -325,17 +344,8 @@ p:after { content: " "; display: table; clear: both; }
 .btn-u_mod:before { position: absolute; content: ""; top: 0; right: -18px; width: 0px; height: 0px; border-style: solid; border-width: 26px 0 26px 18px; border-color: transparent transparent transparent #2ecc71; }
 
 .price { position: relative; width: 62%; display: inline-block; }
-.price.is-active .price__block { display: block; }
-.price .price__block { position: absolute; top: 144%; left: -346%; padding: 20px; width: 514%; z-index: 3; background: white; border: 1px solid #d9d9d9; display: none; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-.price .price__block:before { position: absolute; content: ""; top: -29px; right: 27%; background: url('../img/icons-s900a0b249c.png') 0 -54px no-repeat; width: 33px; height: 29px; }
-.price .price__block .price__close { position: absolute; top: 12px; right: 14px; background: url('../img/icons-s900a0b249c.png') 0 -31px no-repeat; width: 13px; height: 13px; }
-.price .price__block .price__left { float: left; width: 66.66667%; }
-.price .price__block .price__right { float: right; padding-left: 20px; width: 33.33333%; }
-.price .price__block .price__table { width: 50%; font-size: 15px; background: #f4f4f4; display: inline-block; }
-.price .price__block .price__table td { padding: 0 10px; height: 34px; line-height: 34px; border: 1px solid white; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-.price .price__block .price__table td:first-child { width: 69.5%; border-left: none; }
-.price .price__block .price__table td .color-red { font-family: Arial, sans-serif; font-weight: bold; }
-.price .price__wrap { cursor: pointer; }
+.price.price_grey .price__old { color: white; }
+.price .price__wrap { padding-left: 10px; cursor: pointer; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .price .price__row { font-size: 0; }
 .price .price__min { position: relative; line-height: 1; vertical-align: top; display: inline-block; }
 .price .price__button { color: #666666; font-size: 14px; height: 20px; line-height: 20px; border-bottom: 1px dashed #666666; cursor: pointer; vertical-align: top; display: inline-block; background: none; }
@@ -344,10 +354,22 @@ p:after { content: " "; display: table; clear: both; }
 .price .price__date:before { position: absolute; content: ""; top: -18px; left: 27%; background: url('../img/icons-s900a0b249c.png') 0 -93px no-repeat; width: 21px; height: 18px; }
 .price .price__date i { position: absolute; top: 14px; right: 15px; color: #3498db; font-style: normal; }
 
+.js-complete-description.is-active .price__block { display: block; }
+.js-complete-description.is-active .complete-description { margin-bottom: 5px; }
+
+.price__block { margin-bottom: 20px; position: relative; padding: 20px; background: white; border: 1px solid #eeeeee; display: none; *zoom: 1; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.price__block:after { content: " "; display: table; clear: both; }
+.price__block:before { position: absolute; content: ""; top: -29px; right: 23%; z-index: 3; background: url('../img/icons-s900a0b249c.png') 0 -54px no-repeat; width: 33px; height: 29px; }
+.price__block .price__close { position: absolute; top: 12px; right: 14px; background: url('../img/icons-s900a0b249c.png') 0 -31px no-repeat; width: 13px; height: 13px; }
+.price__block .price__table { font-size: 15px; }
+.price__block .price__table td { padding: 0 10px; height: 34px; line-height: 34px; border: 1px solid white; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.price__block .price__table td:first-child { width: 66%; border-left: none; }
+.price__block .price__table td .color-red { font-family: Arial, sans-serif; font-weight: bold; }
+
 .price__item { font-size: 36px; line-height: 1.05; vertical-align: top; display: inline-block; }
 .price__item.price__item_bot { font-size: 0; }
 
-.price__old, .price__time { font-size: 14px; }
+.price__old, .price__time { font-size: 14px; height: 20px; line-height: 20px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .price__old { padding-left: 6px; color: #949494; text-decoration: line-through; }
 
@@ -370,17 +392,24 @@ p:after { content: " "; display: table; clear: both; }
 .guesthouse { padding: 10px 10px 25px; background: whitesmoke; *zoom: 1; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .guesthouse:after { content: " "; display: table; clear: both; }
 .guesthouse .guesthouse__title { padding: 0 0 0 15px; }
-.guesthouse .guesthouse__ico { position: absolute; top: 8px; left: 15px; display: inline-block; background: url('../img/icons-s900a0b249c.png') 0 -890px no-repeat; background-position: 0 -445px; width: 88px; height: 17.5px; -moz-background-size: 107px 721px; -webkit-background-size: 107px 721px; background-size: 107px 721px; }
-.guesthouse .guesthouse__top { padding: 5px 15px; text-align: right; background: #fafafa; *zoom: 1; }
-.guesthouse .guesthouse__top:after { content: " "; display: table; clear: both; }
-.guesthouse .guesthouse__title2 { margin: 0; padding: 0; font-size: 16px; font-weight: bold; line-height: 1.2; }
-.guesthouse .guesthouse__title2, .guesthouse .guesthouse__rating { color: #3498db; }
-.guesthouse .guesthouse__rating { font-size: 16px; line-height: 1; font-weight: bold; }
-.guesthouse .guesthouse__rating span { font-weight: normal; font-size: 12px; }
-.guesthouse .guesthouse__reviews { font-size: 10px; color: #4765a0; line-height: 1; }
 
 .guesthouse__item { border: 1px solid #eeeeee; background: white; }
 .guesthouse__item img { width: 100%; }
+
+.booking-com, .guesthouse__top { padding: 5px 15px; text-align: right; background: #fafafa; *zoom: 1; }
+.booking-com:after, .guesthouse__top:after { content: " "; display: table; clear: both; }
+.booking-com.booking-com_rel, .guesthouse__top.booking-com_rel { position: absolute; padding: 5px; top: 15px; right: 15px; width: 200px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.booking-com.booking-com_rel .booking-com__title, .guesthouse__top.booking-com_rel .booking-com__title { color: #3498db; }
+.booking-com.booking-com_rel .booking-com__ico, .guesthouse__top.booking-com_rel .booking-com__ico { left: 5px; }
+
+.booking-com__ico, .guesthouse__ico { position: absolute; top: 8px; left: 15px; display: inline-block; background: url('../img/icons-s900a0b249c.png') 0 -890px no-repeat; background-position: 0 -445px; width: 88px; height: 17.5px; -moz-background-size: 107px 721px; -webkit-background-size: 107px 721px; background-size: 107px 721px; }
+
+.booking-com__title, .guesthouse__title2 { margin: 0; padding: 0; font-size: 16px; font-weight: bold; line-height: 1.2; }
+
+.booking-com__rating, .guesthouse__rating { font-size: 16px; line-height: 1; font-weight: bold; color: #3498db; }
+.booking-com__rating span, .guesthouse__rating span { font-weight: normal; font-size: 12px; }
+
+.booking-com__reviews, .guesthouse__reviews { font-size: 10px; color: #4765a0; line-height: 1; }
 
 .reviews { margin-top: 42px; padding: 10px 20px; background: whitesmoke; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .reviews img { width: 100%; }
@@ -459,6 +488,16 @@ p:after { content: " "; display: table; clear: both; }
 
 .filter { margin: 0 15px; padding: 18px 15px 3px; border: 1px solid #eeeeee; border-top: none; *zoom: 1; }
 .filter:after { content: " "; display: table; clear: both; }
+.filter.filter_mod { border: none; }
+.filter.filter_mod .checkbox { position: relative; }
+.filter.filter_mod .checkbox input { left: auto; top: 4px; }
+.filter.filter_mod .filter__btn { margin: 0; width: 100%; padding: 6px 10px; color: #404040; text-align: left; font: 15px/19px "Open Sans", Helvetica, Arial, sans-serif; border: none; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.filter.filter_mod .filter__btn:before { display: none; }
+.filter.filter_mod .select_filder { height: 34px; line-height: 34px; border: 1px solid #999999; }
+.filter.filter_mod .select_filder .icon-append { top: 0; }
+.filter.filter_mod .filter__select { display: block; }
+.filter.filter_mod .filter__wrap { padding: 20px 15px 5px; border: 1px solid #eeeeee; border-top: none; *zoom: 1; }
+.filter.filter_mod .filter__wrap:after { content: " "; display: table; clear: both; }
 .filter.is-active .filter__convenience { color: #666666; background: #f4f4f4; }
 .filter.is-active .filter__closebtn { display: block; }
 .filter.is-active .filter__wrapper { z-index: 7; }
@@ -504,6 +543,7 @@ p:after { content: " "; display: table; clear: both; }
 
 .cont-top { position: relative; padding: 15px 15px 30px; background: url("http://lorempixel.com/1200/280/city") no-repeat 0 0; background-size: cover; }
 .cont-top.cont-top_mod { padding-bottom: 70px; }
+.cont-top.cont-top_rel { position: relative; }
 .cont-top .cont-top__text, .cont-top h1, .cont-top h2, .cont-top h3 { color: white; }
 .cont-top .cont-top__text, .cont-top .cont-top__title { padding-left: 5px; font-size: 22px; background: rgba(0, 0, 0, 0.6); }
 .cont-top .cont-top__title { padding: 0 10px; font-size: 28px; display: inline-block; }
@@ -511,6 +551,7 @@ p:after { content: " "; display: table; clear: both; }
 .cont-top a:hover { text-decoration: none; border: none; }
 .cont-top .ul { width: 65%; font-size: 22px; background: rgba(0, 0, 0, 0.6); }
 .cont-top .ul li { margin-left: 10px; padding-right: 10px; color: white; }
+.cont-top .ul.ul_80 { width: 80%; }
 .cont-top .cont-top__img { position: absolute; top: 20px; right: 20px; display: inline-block; }
 
 .offers { padding-top: 20px; *zoom: 1; }
@@ -546,7 +587,8 @@ p:after { content: " "; display: table; clear: both; }
   .hesthaus .description__top { text-align: center; }
   .topic .topic__quantity, .topic .btn-u { margin-top: 5px; width: 100%; }
   .footer .nav a { font-size: 13px; }
-  .footer .nav .nav__item { padding: 0 0 0 10px; } }
+  .footer .nav .nav__item { padding: 0 0 0 10px; }
+  .price__block .price__table td:first-child { width: 60%; } }
 @media (max-width: 992px) { .step .step__performance.performance { background: none; }
   .step .step__performance.performance.is-active { background: none; }
   .card .card__slider { position: relative; left: 0; margin-bottom: 20px; padding: 0 15px; width: 100%; }

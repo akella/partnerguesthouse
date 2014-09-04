@@ -206,7 +206,7 @@
                 <div class="cont-top__text">• Оренда квартир в центре города по приемлевой цене <a href="#">Подробнее</a></div>
             </div>
         </div>
-        <div class="row">
+        <div class="row filter filter_mod js-filter">
             <!-- BEGIN form -->
             <form action="" id="sky-form" class="sky-form sky-form_mod"> 
                 <fieldset> 
@@ -238,15 +238,90 @@
                             </div>
                         </section>
                         <section class="col-md-3 col-sm-6">
-                            <div class="select select_people">
-                                <select class="form-control input-lg">
-                                    <option>Удобства</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                    <option>6+</option>
-                                </select>
+                            <div class="select select_filder select_people">
+                                <div class="filter__select">
+                                    <button class="filter__btn js-filter-btn" type="button">Удобства</button>
+                                    <div class="filter__wrapper js-filter-list" style="display: none;">
+                                       <div class="filter__list filter__list_234">
+                                           <div class="checkbox">
+                                               <label>
+                                               <input type="checkbox" value="" checked="checked">
+                                                   Wi-Fi (10)
+                                               </label>
+                                           </div>
+                                           <div class="checkbox">
+                                               <label>
+                                               <input type="checkbox" value="">
+                                                   Доставка еды в номер (11)
+                                               </label>
+                                           </div>
+                                           <div class="checkbox">
+                                               <label>
+                                               <input type="checkbox" value="">
+                                                   Джакузи (11)
+                                               </label>
+                                           </div>
+                                           <div class="checkbox">
+                                               <label>
+                                               <input type="checkbox" value="">
+                                                   Всё для готовки (11)
+                                               </label>
+                                           </div>
+                                           <div class="checkbox">
+                                               <label>
+                                               <input type="checkbox" value="">
+                                                   Трансфер от/до аэропорта (5)
+                                               </label>
+                                           </div>
+                                           <div class="checkbox">
+                                               <label>
+                                               <input type="checkbox" value="">
+                                                   Факс/Ксерокопирование (5)
+                                               </label>
+                                           </div>
+                                           <div class="checkbox">
+                                               <label>
+                                               <input type="checkbox" value="">
+                                                   Лифт (14)
+                                               </label>
+                                           </div>
+                                           <div class="checkbox">
+                                               <label>
+                                               <input type="checkbox" value="">
+                                                   Кондиционер (14)
+                                               </label>
+                                           </div>
+                                           <div class="checkbox">
+                                               <label>
+                                               <input type="checkbox" value="">
+                                                   Кондиционер (14)
+                                               </label>
+                                           </div>
+                                           <div class="checkbox">
+                                               <label>
+                                               <input type="checkbox" value="">
+                                                   Кондиционер (14)
+                                               </label>
+                                           </div>
+                                           <div class="checkbox">
+                                               <label>
+                                               <input type="checkbox" value="">
+                                                   Кондиционер (14)
+                                               </label>
+                                           </div>
+                                           <div class="checkbox">
+                                               <label>
+                                               <input type="checkbox" value="">
+                                                   Кондиционер (14)
+                                               </label>
+                                           </div>
+                                           <div class="filter__row">
+                                               <button class="btn-u btn-u-green" type="button">Выбрать</button>
+                                               <button class="btn btn-link" type="button">Отменить</button>
+                                           </div>
+                                       </div>
+                                    </div>
+                                </div>
                                 <span class="icon-append fa fa-signal"></span>
                             </div>
                         </section>
@@ -255,6 +330,36 @@
                 </fieldset>
             </form> 
             <!-- END form -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="filter__wrap">
+                        <div class="col-md-3 col-sm-4 col-xs-6">
+                            <div class="filter__convenience js-convenience">
+                                Вседля готовки
+                                <button class="filter__closebtn js-close-convenience" type="button"></button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-xs-6">
+                            <div class="filter__convenience js-convenience">
+                                Вседля готовки
+                                <button class="filter__closebtn js-close-convenience" type="button"></button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-xs-6">
+                            <div class="filter__convenience js-convenience">
+                                Вседля готовки
+                                <button class="filter__closebtn js-close-convenience" type="button"></button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-xs-6">
+                            <div class="filter__convenience js-convenience">
+                                Вседля готовки
+                                <button class="filter__closebtn js-close-convenience" type="button"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="row">
@@ -286,423 +391,441 @@
 
         <!-- BEGIN row -->
         <div class="row">
-            <div class="complete-description">
-                <!-- Welcome Block -->
-                <div class="col-md-4 col-sm-6 col-xs-12 md-margin-bottom-40">
-                    <div class="carousel slide carousel-v1 box-shadow shadow-effect-2" id="myCarousel1">
+            <div class="js-complete-description">
+                <div class="complete-description">
+                    <!-- Welcome Block -->
+                    <div class="col-md-4 col-sm-6 col-xs-12 md-margin-bottom-40">
+                        <div class="carousel slide carousel-v1 box-shadow shadow-effect-2" id="myCarousel1">
 
-                        <div class="carousel-inner">
-                            <div class="item active">
-                                <img class="img-responsive" src="http://lorempixel.com/360/306/city" alt="img">
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img class="img-responsive" src="http://lorempixel.com/360/306/city" alt="img">
+                                </div>
+                                <div class="item">
+                                    <img class="img-responsive" src="http://lorempixel.com/360/306/city" alt="img">
+                                </div>
+                                <div class="item">
+                                    <img class="img-responsive" src="http://lorempixel.com/360/306/city" alt="img">
+                                </div>
                             </div>
-                            <div class="item">
-                                <img class="img-responsive" src="http://lorempixel.com/360/306/city" alt="img">
-                            </div>
-                            <div class="item">
-                                <img class="img-responsive" src="http://lorempixel.com/360/306/city" alt="img">
+
+                            <div class="carousel-arrow">
+                                <a data-slide="prev" href="#myCarousel1" class="left carousel-control">
+                                    <i class="fa fa-angle-left"></i>
+                                </a>
+                                <a data-slide="next" href="#myCarousel1" class="right carousel-control">
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
                             </div>
                         </div>
-
-                        <div class="carousel-arrow">
-                            <a data-slide="prev" href="#myCarousel1" class="left carousel-control">
-                                <i class="fa fa-angle-left"></i>
-                            </a>
-                            <a data-slide="next" href="#myCarousel1" class="right carousel-control">
-                                <i class="fa fa-angle-right"></i>
-                            </a>
+                    </div><!--/col-md-4-->        
+                    <div class="col-md-4 col-sm-6 col-xs-12 description description__mod">
+                        <h4>Однокомнатная <sup>ID202</sup></h4>
+                        <div class="description__row">
+                            <a href="#" class="description__name name"><i class="name__ico"></i>Гестхаус "Шевченко"</a> 
+                            <span class="text-border text-border-blue color-blue pointer js-map" data-toggle="modal" data-target="#myModal">картa</span>
                         </div>
+                        <div class="description__row"><a href="#" class="description__addres addres"><i class="addres__ico"></i>Шевченко 10, Киев</a></div>
+                        <p>
+                            Отличная квартира с гидромассажной ванной в центре столицы. Просторная и уютная квартира с кондиционером. Барная стойка отделяет кухню, интерьер которой дополняет плитка в стиле Мексикана. Для Ваших гостей в квартире предусмотрен темнокрасный мягкий диван, который легко раскладывается в кровать на одного человека <a href="#">>>></a>
+                        </p>
                     </div>
-                </div><!--/col-md-4-->        
-                <div class="col-md-4 col-sm-6 col-xs-12 description description__mod">
-                    <h4>Однокомнатная <sup>ID202</sup></h4>
-                    <div class="description__row">
-                        <a href="#" class="description__name name"><i class="name__ico"></i>Гестхаус "Шевченко"</a> 
-                        <span class="text-border text-border-blue color-blue pointer js-map" data-toggle="modal" data-target="#myModal">картa</span>
-                    </div>
-                    <div class="description__row"><a href="#" class="description__addres addres"><i class="addres__ico"></i>Шевченко 10, Киев</a></div>
-                    <p>
-                        Отличная квартира с гидромассажной ванной в центре столицы. Просторная и уютная квартира с кондиционером. Барная стойка отделяет кухню, интерьер которой дополняет плитка в стиле Мексикана. Для Ваших гостей в квартире предусмотрен темнокрасный мягкий диван, который легко раскладывается в кровать на одного человека <a href="#">>>></a>
-                    </p>
-                </div>
-                <!-- Posts -->
-                <div class="col-md-4 col-sm-12 col-xs-12 posts">
-                    <div class="description description_borl">
-                        <div class="description__wrap">
-                           <div class="description__text">
-                                <ul>
-                                    <li>Комнат: 1</li>
-                                    <li>Площадь: 38 м. кв.</li>
-                                    <li>Этаж:  4/5 (есть лифт)</li>
+                    <!-- Posts -->
+                    <div class="col-md-4 col-sm-12 col-xs-12 posts">
+                        <div class="description description_borl">
+                            <div class="description__wrap">
+                               <div class="description__text">
+                                    <ul>
+                                        <li>Комнат: 1</li>
+                                        <li>Площадь: 38 м. кв.</li>
+                                        <li>Этаж:  4/5 (есть лифт)</li>
+                                    </ul>
+                               </div>
+                                <ul class="description__list list">
+                                    <li class="description__item"><i class="list__ico glyphicon glyphicon-tint"></i>Джакузи</li>
+                                    <li class="description__item"><i class="list__ico glyphicon glyphicon-tint"></i>Джакузи</li>
+                                    <li class="description__item"><i class="list__ico fa fa-cutlery"></i>Все для готовки</li>
+                                    <li class="description__item"><i class="list__ico glyphicon glyphicon-fire"></i>Сауна</li>
+                                    <li class="description__item"><i class="list__ico icon-shuffle"></i>Кондиционер</li>
+                                    <li class="description__item"><i class="list__ico icon-shuffle"></i>Кондиционер</li>
+                                    <li class="description__item"><i class="list__ico fa fa-desktop"></i>Плазменное TV</li>
+                                    <li class="description__item"><i class="list__ico fa fa-desktop"></i>Плазменное TV</li>
                                 </ul>
-                           </div>
-                            <ul class="description__list list">
-                                <li class="description__item"><i class="list__ico glyphicon glyphicon-tint"></i>Джакузи</li>
-                                <li class="description__item"><i class="list__ico glyphicon glyphicon-tint"></i>Джакузи</li>
-                                <li class="description__item"><i class="list__ico fa fa-cutlery"></i>Все для готовки</li>
-                                <li class="description__item"><i class="list__ico glyphicon glyphicon-fire"></i>Сауна</li>
-                                <li class="description__item"><i class="list__ico icon-shuffle"></i>Кондиционер</li>
-                                <li class="description__item"><i class="list__ico icon-shuffle"></i>Кондиционер</li>
-                                <li class="description__item"><i class="list__ico fa fa-desktop"></i>Плазменное TV</li>
-                                <li class="description__item"><i class="list__ico fa fa-desktop"></i>Плазменное TV</li>
-                            </ul>
-                            <div class="description__bottom">
-                                <div class="price js-price">
-                                    <div class="price__wrap js-open-price">
-                                        <div class="price__old">898 грн/сутки</div>
-                                        <div class="price__item color-red">1213</div>
-                                        <div class="price__item">
-                                            <div class="price__time color-red">грн/сутки</div>
-                                            <div class="price__time">(8960 грн за 3 ночи)</div>
-                                        </div>
-                                    </div>
-                                    <div class="price__block js-price-block">
-                                        <button class="price__close js-price-close"></button>
-                                        <div class="price__left">
-                                            <div class="headline"><h2>Цены на проживание в этой квартире на ближайший год</h2></div>
-                                            <div class="price__row">
-                                                <table class="price__table">
-                                                    <tr>
-                                                        <td>Июль 2014</td>
-                                                        <td><span class="color-red">2000</span> грн./мес</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Август 2014</td>
-                                                        <td><span class="color-red">2300</span> грн./мес</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Сентябрь 2014</td>
-                                                        <td><span class="color-red">2200</span> грн./мес</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Октябрь 2014</td>
-                                                        <td><span class="color-red">2000</span> грн./мес</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Ноябрь 2014 </td>
-                                                        <td><span class="color-red">2000</span> грн./мес</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Декабрь 2014</td>
-                                                        <td><span class="color-red">2000</span> грн./мес</td>
-                                                    </tr>
-                                                </table>
-                                                <table class="price__table">
-                                                    <tr>
-                                                        <td>Январь 2014</td>
-                                                        <td><span class="color-red">2000</span> грн./мес</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Февраль 2014</td>
-                                                        <td><span class="color-red">2300</span> грн./мес</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Март 2014</td>
-                                                        <td><span class="color-red">2200</span> грн./мес</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Апрель 2014</td>
-                                                        <td><span class="color-red">2000</span> грн./мес</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Май 2014</td>
-                                                        <td><span class="color-red">2000</span> грн./мес</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Июнь 2014</td>
-                                                        <td><span class="color-red">2000</span> грн./мес</td>
-                                                    </tr>
-                                                </table>
+                                <div class="description__bottom">
+                                    <div class="price js-price">
+                                        <div class="price__wrap js-open-price">
+                                            <div class="price__old">898 грн/сутки</div>
+                                            <div class="price__item color-red">1213</div>
+                                            <div class="price__item">
+                                                <div class="price__time color-red">грн/сутки</div>
+                                                <div class="price__time text-border">цена в июне</div>
                                             </div>
                                         </div>
-                                        <div class="price__right">
-                                            <div class="headline"><h2>Обратите внимание</h2></div>
-                                            <p>В стоимость проживания включена только оплата коммунальных услуг и воды. Дополнительные услуги ТВ, Интернет, телефон и электричество оплачиваются арендодателем. Услуги горничной и стирка постельного и полотенец также не входит в стоимость проживания при длительной аренде.   </p>
-                                        </div>
                                     </div>
+                                    <button class="btn-u btn-u_mod btn-u-green" type="button">Подробнее</button>
                                 </div>
-                                <button class="btn-u btn-u_mod btn-u-green" type="button">Подробнее</button>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="price__block js-price-block">
+                    <button class="price__close js-price-close"></button>
+                    <div class="price__left col-md-8">
+                        <div class="headline"><h2>Цены на проживание в этой квартире на ближайший год</h2></div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                                <table class="price__table table table-striped">
+                                    <tr>
+                                        <td>Июль 2014</td>
+                                        <td><span class="color-red">2000</span> грн./мес</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Август 2014</td>
+                                        <td><span class="color-red">2300</span> грн./мес</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Сентябрь 2014</td>
+                                        <td><span class="color-red">2200</span> грн./мес</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Октябрь 2014</td>
+                                        <td><span class="color-red">2000</span> грн./мес</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ноябрь 2014 </td>
+                                        <td><span class="color-red">2000</span> грн./мес</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Декабрь 2014</td>
+                                        <td><span class="color-red">2000</span> грн./мес</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <table class="price__table table table-striped">
+                                    <tr>
+                                        <td>Январь 2014</td>
+                                        <td><span class="color-red">2000</span> грн./мес</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Февраль 2014</td>
+                                        <td><span class="color-red">2300</span> грн./мес</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Март 2014</td>
+                                        <td><span class="color-red">2200</span> грн./мес</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Апрель 2014</td>
+                                        <td><span class="color-red">2000</span> грн./мес</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Май 2014</td>
+                                        <td><span class="color-red">2000</span> грн./мес</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Июнь 2014</td>
+                                        <td><span class="color-red">2000</span> грн./мес</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price__right col-md-4">
+                        <div class="headline"><h2>Обратите внимание</h2></div>
+                        <p>В стоимость проживания включена только оплата коммунальных услуг и воды. Дополнительные услуги ТВ, Интернет, телефон и электричество оплачиваются арендодателем. Услуги горничной и стирка постельного и полотенец также не входит в стоимость проживания при длительной аренде.   </p>
                     </div>
                 </div>
             </div>
-            <div class="complete-description">
-                <!-- Welcome Block -->
-                <div class="col-md-4 col-sm-6 col-xs-12 md-margin-bottom-40">
-                    <div class="carousel slide carousel-v1 box-shadow shadow-effect-2" id="myCarousel2">
+            <div class="js-complete-description">
+                <div class="complete-description">
+                    <!-- Welcome Block -->
+                    <div class="col-md-4 col-sm-6 col-xs-12 md-margin-bottom-40">
+                        <div class="carousel slide carousel-v1 box-shadow shadow-effect-2" id="myCarousel2">
 
-                        <div class="carousel-inner">
-                            <div class="item active">
-                                <img class="img-responsive" src="http://lorempixel.com/360/306/city" alt="img">
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img class="img-responsive" src="http://lorempixel.com/360/306/city" alt="img">
+                                </div>
+                                <div class="item">
+                                    <img class="img-responsive" src="http://lorempixel.com/360/306/city" alt="img">
+                                </div>
+                                <div class="item">
+                                    <img class="img-responsive" src="http://lorempixel.com/360/306/city" alt="img">
+                                </div>
                             </div>
-                            <div class="item">
-                                <img class="img-responsive" src="http://lorempixel.com/360/306/city" alt="img">
-                            </div>
-                            <div class="item">
-                                <img class="img-responsive" src="http://lorempixel.com/360/306/city" alt="img">
+
+                            <div class="carousel-arrow">
+                                <a data-slide="prev" href="#myCarousel2" class="left carousel-control">
+                                    <i class="fa fa-angle-left"></i>
+                                </a>
+                                <a data-slide="next" href="#myCarousel2" class="right carousel-control">
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
                             </div>
                         </div>
-
-                        <div class="carousel-arrow">
-                            <a data-slide="prev" href="#myCarousel2" class="left carousel-control">
-                                <i class="fa fa-angle-left"></i>
-                            </a>
-                            <a data-slide="next" href="#myCarousel2" class="right carousel-control">
-                                <i class="fa fa-angle-right"></i>
-                            </a>
+                    </div><!--/col-md-4-->        
+                    <div class="col-md-4 col-sm-6 col-xs-12 description description__mod">
+                        <h4>Однокомнатная <sup>ID202</sup></h4>
+                        <div class="description__row">
+                            <a href="#" class="description__name name"><i class="name__ico"></i>Гестхаус "Шевченко"</a> 
+                            <span class="text-border text-border-blue color-blue pointer js-map" data-toggle="modal" data-target="#myModal">картa</span>
                         </div>
+                        <div class="description__row"><a href="#" class="description__addres addres"><i class="addres__ico"></i>Шевченко 10, Киев</a></div>
+                        <p>
+                            Отличная квартира с гидромассажной ванной в центре столицы. Просторная и уютная квартира с кондиционером. Барная стойка отделяет кухню, интерьер которой дополняет плитка в стиле Мексикана. Для Ваших гостей в квартире предусмотрен темнокрасный мягкий диван, который легко раскладывается в кровать на одного человека <a href="#">>>></a>
+                        </p>
                     </div>
-                </div><!--/col-md-4-->        
-                <div class="col-md-4 col-sm-6 col-xs-12 description description__mod">
-                    <h4>Однокомнатная <sup>ID202</sup></h4>
-                    <div class="description__row">
-                        <a href="#" class="description__name name"><i class="name__ico"></i>Гестхаус "Шевченко"</a> 
-                        <span class="text-border text-border-blue color-blue pointer js-map" data-toggle="modal" data-target="#myModal">картa</span>
-                    </div>
-                    <div class="description__row"><a href="#" class="description__addres addres"><i class="addres__ico"></i>Шевченко 10, Киев</a></div>
-                    <p>
-                        Отличная квартира с гидромассажной ванной в центре столицы. Просторная и уютная квартира с кондиционером. Барная стойка отделяет кухню, интерьер которой дополняет плитка в стиле Мексикана. Для Ваших гостей в квартире предусмотрен темнокрасный мягкий диван, который легко раскладывается в кровать на одного человека <a href="#">>>></a>
-                    </p>
-                </div>
-                <!-- Posts -->
-                <div class="col-md-4 col-sm-12 col-xs-12 posts">
-                    <div class="description description_borl">
-                        <div class="description__wrap">
-                           <div class="description__text">
-                                <ul>
-                                    <li>Комнат: 1</li>
-                                    <li>Площадь: 38 м. кв.</li>
-                                    <li>Этаж:  4/5 (есть лифт)</li>
+                    <!-- Posts -->
+                    <div class="col-md-4 col-sm-12 col-xs-12 posts">
+                        <div class="description description_borl">
+                            <div class="description__wrap">
+                               <div class="description__text">
+                                    <ul>
+                                        <li>Комнат: 1</li>
+                                        <li>Площадь: 38 м. кв.</li>
+                                        <li>Этаж:  4/5 (есть лифт)</li>
+                                    </ul>
+                               </div>
+                                <ul class="description__list list">
+                                    <li class="description__item"><i class="list__ico glyphicon glyphicon-tint"></i>Джакузи</li>
+                                    <li class="description__item"><i class="list__ico glyphicon glyphicon-tint"></i>Джакузи</li>
+                                    <li class="description__item"><i class="list__ico fa fa-cutlery"></i>Все для готовки</li>
+                                    <li class="description__item"><i class="list__ico glyphicon glyphicon-fire"></i>Сауна</li>
+                                    <li class="description__item"><i class="list__ico icon-shuffle"></i>Кондиционер</li>
+                                    <li class="description__item"><i class="list__ico icon-shuffle"></i>Кондиционер</li>
+                                    <li class="description__item"><i class="list__ico fa fa-desktop"></i>Плазменное TV</li>
+                                    <li class="description__item"><i class="list__ico fa fa-desktop"></i>Плазменное TV</li>
                                 </ul>
-                           </div>
-                            <ul class="description__list list">
-                                <li class="description__item"><i class="list__ico glyphicon glyphicon-tint"></i>Джакузи</li>
-                                <li class="description__item"><i class="list__ico glyphicon glyphicon-tint"></i>Джакузи</li>
-                                <li class="description__item"><i class="list__ico fa fa-cutlery"></i>Все для готовки</li>
-                                <li class="description__item"><i class="list__ico glyphicon glyphicon-fire"></i>Сауна</li>
-                                <li class="description__item"><i class="list__ico icon-shuffle"></i>Кондиционер</li>
-                                <li class="description__item"><i class="list__ico icon-shuffle"></i>Кондиционер</li>
-                                <li class="description__item"><i class="list__ico fa fa-desktop"></i>Плазменное TV</li>
-                                <li class="description__item"><i class="list__ico fa fa-desktop"></i>Плазменное TV</li>
-                            </ul>
-                            <div class="description__bottom">
-                                <div class="price js-price">
-                                    <div class="price__wrap js-open-price">
-                                        <div class="price__old">898 грн/сутки</div>
-                                        <div class="price__item color-red">1213</div>
-                                        <div class="price__item">
-                                            <div class="price__time color-red">грн/сутки</div>
-                                            <div class="price__time">(8960 грн за 3 ночи)</div>
-                                        </div>
-                                    </div>
-                                    <div class="price__block js-price-block">
-                                        <button class="price__close js-price-close"></button>
-                                        <div class="price__left">
-                                            <div class="headline"><h2>Цены на проживание в этой квартире на ближайший год</h2></div>
-                                            <div class="price__row">
-                                                <table class="price__table">
-                                                    <tr>
-                                                        <td>Июль 2014</td>
-                                                        <td><span class="color-red">2000</span> грн./мес</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Август 2014</td>
-                                                        <td><span class="color-red">2300</span> грн./мес</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Сентябрь 2014</td>
-                                                        <td><span class="color-red">2200</span> грн./мес</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Октябрь 2014</td>
-                                                        <td><span class="color-red">2000</span> грн./мес</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Ноябрь 2014 </td>
-                                                        <td><span class="color-red">2000</span> грн./мес</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Декабрь 2014</td>
-                                                        <td><span class="color-red">2000</span> грн./мес</td>
-                                                    </tr>
-                                                </table>
-                                                <table class="price__table">
-                                                    <tr>
-                                                        <td>Январь 2014</td>
-                                                        <td><span class="color-red">2000</span> грн./мес</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Февраль 2014</td>
-                                                        <td><span class="color-red">2300</span> грн./мес</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Март 2014</td>
-                                                        <td><span class="color-red">2200</span> грн./мес</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Апрель 2014</td>
-                                                        <td><span class="color-red">2000</span> грн./мес</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Май 2014</td>
-                                                        <td><span class="color-red">2000</span> грн./мес</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Июнь 2014</td>
-                                                        <td><span class="color-red">2000</span> грн./мес</td>
-                                                    </tr>
-                                                </table>
+                                <div class="description__bottom">
+                                    <div class="price js-price">
+                                        <div class="price__wrap js-open-price">
+                                            <div class="price__old">898 грн/сутки</div>
+                                            <div class="price__item color-red">1213</div>
+                                            <div class="price__item">
+                                                <div class="price__time color-red">грн/сутки</div>
+                                                <div class="price__time text-border">цена в июне</div>
                                             </div>
                                         </div>
-                                        <div class="price__right">
-                                            <div class="headline"><h2>Обратите внимание</h2></div>
-                                            <p>В стоимость проживания включена только оплата коммунальных услуг и воды. Дополнительные услуги ТВ, Интернет, телефон и электричество оплачиваются арендодателем. Услуги горничной и стирка постельного и полотенец также не входит в стоимость проживания при длительной аренде.   </p>
-                                        </div>
                                     </div>
+                                    <button class="btn-u btn-u_mod btn-u-green" type="button">Подробнее</button>
                                 </div>
-                                <button class="btn-u btn-u_mod btn-u-green" type="button">Подробнее</button>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="price__block js-price-block">
+                    <button class="price__close js-price-close"></button>
+                    <div class="price__left col-md-8">
+                        <div class="headline"><h2>Цены на проживание в этой квартире на ближайший год</h2></div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                                <table class="price__table table table-striped">
+                                    <tr>
+                                        <td>Июль 2014</td>
+                                        <td><span class="color-red">2000</span> грн./мес</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Август 2014</td>
+                                        <td><span class="color-red">2300</span> грн./мес</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Сентябрь 2014</td>
+                                        <td><span class="color-red">2200</span> грн./мес</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Октябрь 2014</td>
+                                        <td><span class="color-red">2000</span> грн./мес</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ноябрь 2014 </td>
+                                        <td><span class="color-red">2000</span> грн./мес</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Декабрь 2014</td>
+                                        <td><span class="color-red">2000</span> грн./мес</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <table class="price__table table table-striped">
+                                    <tr>
+                                        <td>Январь 2014</td>
+                                        <td><span class="color-red">2000</span> грн./мес</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Февраль 2014</td>
+                                        <td><span class="color-red">2300</span> грн./мес</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Март 2014</td>
+                                        <td><span class="color-red">2200</span> грн./мес</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Апрель 2014</td>
+                                        <td><span class="color-red">2000</span> грн./мес</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Май 2014</td>
+                                        <td><span class="color-red">2000</span> грн./мес</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Июнь 2014</td>
+                                        <td><span class="color-red">2000</span> грн./мес</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price__right col-md-4">
+                        <div class="headline"><h2>Обратите внимание</h2></div>
+                        <p>В стоимость проживания включена только оплата коммунальных услуг и воды. Дополнительные услуги ТВ, Интернет, телефон и электричество оплачиваются арендодателем. Услуги горничной и стирка постельного и полотенец также не входит в стоимость проживания при длительной аренде.   </p>
                     </div>
                 </div>
             </div>
-            <div class="complete-description">
-                <!-- Welcome Block -->
-                <div class="col-md-4 col-sm-6 col-xs-12 md-margin-bottom-40">
-                    <div class="carousel slide carousel-v1 box-shadow shadow-effect-2" id="myCarousel3">
+            <div class="js-complete-description">
+                <div class="complete-description">
+                    <!-- Welcome Block -->
+                    <div class="col-md-4 col-sm-6 col-xs-12 md-margin-bottom-40">
+                        <div class="carousel slide carousel-v1 box-shadow shadow-effect-2" id="myCarousel3">
 
-                        <div class="carousel-inner">
-                            <div class="item active">
-                                <img class="img-responsive" src="http://lorempixel.com/360/306/city" alt="img">
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img class="img-responsive" src="http://lorempixel.com/360/306/city" alt="img">
+                                </div>
+                                <div class="item">
+                                    <img class="img-responsive" src="http://lorempixel.com/360/306/city" alt="img">
+                                </div>
+                                <div class="item">
+                                    <img class="img-responsive" src="http://lorempixel.com/360/306/city" alt="img">
+                                </div>
                             </div>
-                            <div class="item">
-                                <img class="img-responsive" src="http://lorempixel.com/360/306/city" alt="img">
-                            </div>
-                            <div class="item">
-                                <img class="img-responsive" src="http://lorempixel.com/360/306/city" alt="img">
+
+                            <div class="carousel-arrow">
+                                <a data-slide="prev" href="#myCarousel3" class="left carousel-control">
+                                    <i class="fa fa-angle-left"></i>
+                                </a>
+                                <a data-slide="next" href="#myCarousel3" class="right carousel-control">
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
                             </div>
                         </div>
-
-                        <div class="carousel-arrow">
-                            <a data-slide="prev" href="#myCarousel3" class="left carousel-control">
-                                <i class="fa fa-angle-left"></i>
-                            </a>
-                            <a data-slide="next" href="#myCarousel3" class="right carousel-control">
-                                <i class="fa fa-angle-right"></i>
-                            </a>
+                    </div><!--/col-md-4-->        
+                    <div class="col-md-4 col-sm-6 col-xs-12 description description__mod">
+                        <h4>Однокомнатная <sup>ID202</sup></h4>
+                        <div class="description__row">
+                            <a href="#" class="description__name name"><i class="name__ico"></i>Гестхаус "Шевченко"</a> 
+                            <span class="text-border text-border-blue color-blue pointer js-map" data-toggle="modal" data-target="#myModal">картa</span>
                         </div>
+                        <div class="description__row"><a href="#" class="description__addres addres"><i class="addres__ico"></i>Шевченко 10, Киев</a></div>
+                        <p>
+                            Отличная квартира с гидромассажной ванной в центре столицы. Просторная и уютная квартира с кондиционером. Барная стойка отделяет кухню, интерьер которой дополняет плитка в стиле Мексикана. Для Ваших гостей в квартире предусмотрен темнокрасный мягкий диван, который легко раскладывается в кровать на одного человека <a href="#">>>></a>
+                        </p>
                     </div>
-                </div><!--/col-md-4-->        
-                <div class="col-md-4 col-sm-6 col-xs-12 description description__mod">
-                    <h4>Однокомнатная <sup>ID202</sup></h4>
-                    <div class="description__row">
-                        <a href="#" class="description__name name"><i class="name__ico"></i>Гестхаус "Шевченко"</a> 
-                        <span class="text-border text-border-blue color-blue pointer js-map" data-toggle="modal" data-target="#myModal">картa</span>
-                    </div>
-                    <div class="description__row"><a href="#" class="description__addres addres"><i class="addres__ico"></i>Шевченко 10, Киев</a></div>
-                    <p>
-                        Отличная квартира с гидромассажной ванной в центре столицы. Просторная и уютная квартира с кондиционером. Барная стойка отделяет кухню, интерьер которой дополняет плитка в стиле Мексикана. Для Ваших гостей в квартире предусмотрен темнокрасный мягкий диван, который легко раскладывается в кровать на одного человека <a href="#">>>></a>
-                    </p>
-                </div>
-                <!-- Posts -->
-                <div class="col-md-4 col-sm-12 col-xs-12 posts">
-                    <div class="description description_borl">
-                        <div class="description__wrap">
-                           <div class="description__text">
-                                <ul>
-                                    <li>Комнат: 1</li>
-                                    <li>Площадь: 38 м. кв.</li>
-                                    <li>Этаж:  4/5 (есть лифт)</li>
+                    <!-- Posts -->
+                    <div class="col-md-4 col-sm-12 col-xs-12 posts">
+                        <div class="description description_borl">
+                            <div class="description__wrap">
+                               <div class="description__text">
+                                    <ul>
+                                        <li>Комнат: 1</li>
+                                        <li>Площадь: 38 м. кв.</li>
+                                        <li>Этаж:  4/5 (есть лифт)</li>
+                                    </ul>
+                               </div>
+                                <ul class="description__list list">
+                                    <li class="description__item"><i class="list__ico glyphicon glyphicon-tint"></i>Джакузи</li>
+                                    <li class="description__item"><i class="list__ico glyphicon glyphicon-tint"></i>Джакузи</li>
+                                    <li class="description__item"><i class="list__ico fa fa-cutlery"></i>Все для готовки</li>
+                                    <li class="description__item"><i class="list__ico glyphicon glyphicon-fire"></i>Сауна</li>
+                                    <li class="description__item"><i class="list__ico icon-shuffle"></i>Кондиционер</li>
+                                    <li class="description__item"><i class="list__ico icon-shuffle"></i>Кондиционер</li>
+                                    <li class="description__item"><i class="list__ico fa fa-desktop"></i>Плазменное TV</li>
+                                    <li class="description__item"><i class="list__ico fa fa-desktop"></i>Плазменное TV</li>
                                 </ul>
-                           </div>
-                            <ul class="description__list list">
-                                <li class="description__item"><i class="list__ico glyphicon glyphicon-tint"></i>Джакузи</li>
-                                <li class="description__item"><i class="list__ico glyphicon glyphicon-tint"></i>Джакузи</li>
-                                <li class="description__item"><i class="list__ico fa fa-cutlery"></i>Все для готовки</li>
-                                <li class="description__item"><i class="list__ico glyphicon glyphicon-fire"></i>Сауна</li>
-                                <li class="description__item"><i class="list__ico icon-shuffle"></i>Кондиционер</li>
-                                <li class="description__item"><i class="list__ico icon-shuffle"></i>Кондиционер</li>
-                                <li class="description__item"><i class="list__ico fa fa-desktop"></i>Плазменное TV</li>
-                                <li class="description__item"><i class="list__ico fa fa-desktop"></i>Плазменное TV</li>
-                            </ul>
-                            <div class="description__bottom">
-                                <div class="price js-price">
-                                    <div class="price__wrap js-open-price">
-                                        <div class="price__old">898 грн/сутки</div>
-                                        <div class="price__item color-red">1213</div>
-                                        <div class="price__item">
-                                            <div class="price__time color-red">грн/сутки</div>
-                                            <div class="price__time">(8960 грн за 3 ночи)</div>
-                                        </div>
-                                    </div>
-                                    <div class="price__block js-price-block">
-                                        <button class="price__close js-price-close"></button>
-                                        <div class="price__left">
-                                            <div class="headline"><h2>Цены на проживание в этой квартире на ближайший год</h2></div>
-                                            <div class="price__row">
-                                                <table class="price__table">
-                                                    <tr>
-                                                        <td>Июль 2014</td>
-                                                        <td><span class="color-red">2000</span> грн./мес</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Август 2014</td>
-                                                        <td><span class="color-red">2300</span> грн./мес</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Сентябрь 2014</td>
-                                                        <td><span class="color-red">2200</span> грн./мес</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Октябрь 2014</td>
-                                                        <td><span class="color-red">2000</span> грн./мес</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Ноябрь 2014 </td>
-                                                        <td><span class="color-red">2000</span> грн./мес</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Декабрь 2014</td>
-                                                        <td><span class="color-red">2000</span> грн./мес</td>
-                                                    </tr>
-                                                </table>
-                                                <table class="price__table">
-                                                    <tr>
-                                                        <td>Январь 2014</td>
-                                                        <td><span class="color-red">2000</span> грн./мес</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Февраль 2014</td>
-                                                        <td><span class="color-red">2300</span> грн./мес</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Март 2014</td>
-                                                        <td><span class="color-red">2200</span> грн./мес</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Апрель 2014</td>
-                                                        <td><span class="color-red">2000</span> грн./мес</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Май 2014</td>
-                                                        <td><span class="color-red">2000</span> грн./мес</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Июнь 2014</td>
-                                                        <td><span class="color-red">2000</span> грн./мес</td>
-                                                    </tr>
-                                                </table>
+                                <div class="description__bottom">
+                                    <div class="price js-price">
+                                        <div class="price__wrap js-open-price">
+                                            <div class="price__old">898 грн/сутки</div>
+                                            <div class="price__item color-red">1213</div>
+                                            <div class="price__item">
+                                                <div class="price__time color-red">грн/сутки</div>
+                                                <div class="price__time text-border">цена в июне</div>
                                             </div>
                                         </div>
-                                        <div class="price__right">
-                                            <div class="headline"><h2>Обратите внимание</h2></div>
-                                            <p>В стоимость проживания включена только оплата коммунальных услуг и воды. Дополнительные услуги ТВ, Интернет, телефон и электричество оплачиваются арендодателем. Услуги горничной и стирка постельного и полотенец также не входит в стоимость проживания при длительной аренде.   </p>
-                                        </div>
                                     </div>
+                                    <button class="btn-u btn-u_mod btn-u-green" type="button">Подробнее</button>
                                 </div>
-                                <button class="btn-u btn-u_mod btn-u-green" type="button">Подробнее</button>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="price__block js-price-block">
+                    <button class="price__close js-price-close"></button>
+                    <div class="price__left col-md-8">
+                        <div class="headline"><h2>Цены на проживание в этой квартире на ближайший год</h2></div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                                <table class="price__table table table-striped">
+                                    <tr>
+                                        <td>Июль 2014</td>
+                                        <td><span class="color-red">2000</span> грн./мес</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Август 2014</td>
+                                        <td><span class="color-red">2300</span> грн./мес</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Сентябрь 2014</td>
+                                        <td><span class="color-red">2200</span> грн./мес</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Октябрь 2014</td>
+                                        <td><span class="color-red">2000</span> грн./мес</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ноябрь 2014 </td>
+                                        <td><span class="color-red">2000</span> грн./мес</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Декабрь 2014</td>
+                                        <td><span class="color-red">2000</span> грн./мес</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <table class="price__table table table-striped">
+                                    <tr>
+                                        <td>Январь 2014</td>
+                                        <td><span class="color-red">2000</span> грн./мес</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Февраль 2014</td>
+                                        <td><span class="color-red">2300</span> грн./мес</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Март 2014</td>
+                                        <td><span class="color-red">2200</span> грн./мес</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Апрель 2014</td>
+                                        <td><span class="color-red">2000</span> грн./мес</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Май 2014</td>
+                                        <td><span class="color-red">2000</span> грн./мес</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Июнь 2014</td>
+                                        <td><span class="color-red">2000</span> грн./мес</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price__right col-md-4">
+                        <div class="headline"><h2>Обратите внимание</h2></div>
+                        <p>В стоимость проживания включена только оплата коммунальных услуг и воды. Дополнительные услуги ТВ, Интернет, телефон и электричество оплачиваются арендодателем. Услуги горничной и стирка постельного и полотенец также не входит в стоимость проживания при длительной аренде.   </p>
                     </div>
                 </div>
             </div>
