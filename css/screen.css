@@ -600,7 +600,8 @@ p:after { content: " "; display: table; clear: both; }
   .img-responsive_mob { display: none; }
   .btn-u_small { line-height: 1.4; font-size: 16px; }
   .description.description_borl { padding-top: 15px; border-left: none; border-top: 1px solid #eeeeee; } }
-@media (max-width: 768px) { .offers .offers__right { float: left; }
+@media (max-width: 768px) { body { font-size: 13px; }
+  .offers .offers__right { float: left; }
   .carousel-inner > .item > img, .carousel-inner > .item > a > img { height: auto; }
   .funny-boxes img { width: 100%; }
   .step .step__item { white-space: inherit; }
@@ -627,8 +628,14 @@ p:after { content: " "; display: table; clear: both; }
   .data .data__right, .data .data__left { width: 100%; }
   .data .data__right img, .data .data__left img { margin-top: 8px; width: 100%; }
   .data ul { margin-left: 5px; }
-  .complete-description .carousel-inner > .item > img, .complete-description .carousel-inner > .item > a > img { width: 100%; } }
-@media (max-width: 431px) { .js-open-services { position: absolute; top: 30px; right: 18px; }
+  .complete-description .carousel-inner > .item > img, .complete-description .carousel-inner > .item > a > img { width: 100%; }
+  .booking-com.booking-com_rel { position: relative; top: auto; right: auto; }
+  .guesthouse__item { margin-top: 15px; }
+  .price__old, .price__time { height: auto; }
+  .cont-top .cont-top__img { position: relative; right: auto; }
+  .rating__date { float: left !important; }
+  .monthprices .monthprices__table td:first-child { width: 62%; } }
+@media (max-width: 431px) { .js-open-services, .js-close-services { position: absolute; top: 30px; right: 18px; }
   h1 { font-size: 24px; }
   .hesthaus .description__bottom .btn-u { font-size: 13px; } }
 .l { *zoom: 1; }
