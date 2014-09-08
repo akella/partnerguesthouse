@@ -18,12 +18,39 @@ head.ready(function() {
 		$(".js-filter-list").hide();
 		$(".js-filter").removeClass('is-active');
 		$(".js-filter-btn").removeClass('is-active');
-		$(".js-price-date").fadeOut();
+		$(".js-price-date").removeClass('is-active');
 		$(".js-hint-info").fadeOut(); 
 		$(".js-complete-description").removeClass('is-active');
 	});
 
+	$(".js-filter-select").click(function(){
+		$(".js-filter-list").hide();
+		$(".js-filter").removeClass('is-active');
+		$(".js-filter-btn").removeClass('is-active');
+		alert("Комнаты выбраны");
+	});
 
+	$(".js-filter-selectcon").click(function(){
+		$(".js-filter-list").hide();
+		$(".js-filter").removeClass('is-active');
+		$(".js-filter-btn").removeClass('is-active');
+		alert("Удобства выбраны");
+	});
+
+	$(".js-convenience").click(function(){
+		$(this).toggleClass("is-active");
+	})
+
+	$(".js-show-td").click(function(){
+		$(".js-show-td").remove();
+		$(".js-td-hidden").show();
+	});
+	
+
+	$(".js-change-input").click(function(){
+		$(this).parents(".filter__list").find('.checkbox__input').removeAttr('checked');
+	});
+		
 	$(".js-open-price").click(function() {
 		$(".js-complete-description").removeClass('is-active');
 		$(this).parent().parent().parent().parent().parent().parent().parent().addClass('is-active');
@@ -40,7 +67,7 @@ head.ready(function() {
 	$(".js-price-close").click(function(){
 		$(".js-complete-description").removeClass("is-active");
 	});
-	$("body").on("click", ".js-price, .js-booking-text, .js-open-popupcal, .js-calendar-popup, .js-price-block", function(event){
+	$("body").on("click", ".js-price, .js-booking-text, .js-open-popupcal, .js-calendar-popup, .js-price-block, .js-price-date", function(event){
 		event.stopPropagation();
 	});
 
@@ -135,7 +162,7 @@ head.ready(function() {
 	});
 
 	$(".js-price-min").click(function(){
-		$(".js-price-date").fadeIn();
+		$(".js-price-date").toggleClass("is-active");
 	});
 	
 	$(".js-monthprices-btn1").click(function(){

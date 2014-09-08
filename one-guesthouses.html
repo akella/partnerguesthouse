@@ -254,112 +254,112 @@
                 <div class="col-md-4">
                     <div class="filter__select">
                         <button class="filter__btn js-filter-btn" type="button">Количество комнат</button>
-                        <div class="filter__wrapper js-filter-list" style="display: none;">
+                        <div class="filter__wrapper js-filter-list">
                             <div class="filter__list">
                                 <div class="checkbox">
                                     <label>
-                                    <input type="checkbox" value="" checked="checked">
+                                    <input class="checkbox__input" type="checkbox" value="" checked="checked">
                                         Однокомнатная
                                     </label>
                                 </div>
                                 <div class="checkbox">
                                     <label>
-                                    <input type="checkbox" value="">
+                                    <input class="checkbox__input" type="checkbox" value="">
                                         2х-комнатная
                                     </label>
                                 </div>
                                 <div class="checkbox">
                                     <label>
-                                    <input type="checkbox" value="">
+                                    <input class="checkbox__input" type="checkbox" value="">
                                         3х-комнатная (+)
                                     </label>
                                 </div>
                                 <div class="filter__row">
-                                    <button class="btn-u btn-u-green" type="button">Выбрать</button>
-                                    <button class="btn btn-link" type="button">Отменить</button>
+                                    <button class="btn-u btn-u-green js-filter-select" type="button">Выбрать</button>
+                                    <button class="btn btn-link js-change-input" type="button">Отменить</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="filter__select">
                         <button class="filter__btn js-filter-btn" type="button">Удобства</button>
-                        <div class="filter__wrapper js-filter-list" style="display: none;">
+                        <div class="filter__wrapper js-filter-list">
                            <div class="filter__list filter__list_234">
                                <div class="checkbox">
                                    <label>
-                                   <input type="checkbox" value="" checked="checked">
+                                   <input class="checkbox__input" type="checkbox" value="" checked="checked">
                                        Wi-Fi (10)
                                    </label>
                                </div>
                                <div class="checkbox">
                                    <label>
-                                   <input type="checkbox" value="">
+                                   <input class="checkbox__input" type="checkbox" value="">
                                        Доставка еды в номер (11)
                                    </label>
                                </div>
                                <div class="checkbox">
                                    <label>
-                                   <input type="checkbox" value="">
+                                   <input class="checkbox__input" type="checkbox" value="">
                                        Джакузи (11)
                                    </label>
                                </div>
                                <div class="checkbox">
                                    <label>
-                                   <input type="checkbox" value="">
+                                   <input class="checkbox__input" type="checkbox" value="">
                                        Всё для готовки (11)
                                    </label>
                                </div>
                                <div class="checkbox">
                                    <label>
-                                   <input type="checkbox" value="">
+                                   <input class="checkbox__input" type="checkbox" value="">
                                        Трансфер от/до аэропорта (5)
                                    </label>
                                </div>
                                <div class="checkbox">
                                    <label>
-                                   <input type="checkbox" value="">
+                                   <input class="checkbox__input" type="checkbox" value="">
                                        Факс/Ксерокопирование (5)
                                    </label>
                                </div>
                                <div class="checkbox">
                                    <label>
-                                   <input type="checkbox" value="">
+                                   <input class="checkbox__input" type="checkbox" value="">
                                        Лифт (14)
                                    </label>
                                </div>
                                <div class="checkbox">
                                    <label>
-                                   <input type="checkbox" value="">
+                                   <input class="checkbox__input" type="checkbox" value="">
                                        Кондиционер (14)
                                    </label>
                                </div>
                                <div class="checkbox">
                                    <label>
-                                   <input type="checkbox" value="">
+                                   <input class="checkbox__input" type="checkbox" value="">
                                        Кондиционер (14)
                                    </label>
                                </div>
                                <div class="checkbox">
                                    <label>
-                                   <input type="checkbox" value="">
+                                   <input class="checkbox__input" type="checkbox" value="">
                                        Кондиционер (14)
                                    </label>
                                </div>
                                <div class="checkbox">
                                    <label>
-                                   <input type="checkbox" value="">
+                                   <input class="checkbox__input" type="checkbox" value="">
                                        Кондиционер (14)
                                    </label>
                                </div>
                                <div class="checkbox">
                                    <label>
-                                   <input type="checkbox" value="">
+                                   <input class="checkbox__input" type="checkbox" value="">
                                        Кондиционер (14)
                                    </label>
                                </div>
                                <div class="filter__row">
-                                   <button class="btn-u btn-u-green" type="button">Выбрать</button>
-                                   <button class="btn btn-link" type="button">Отменить</button>
+                                   <button class="btn-u btn-u-green js-filter-selectcon" type="button">Выбрать</button>
+                                   <button class="btn btn-link js-change-input" type="button">Отменить</button>
                                </div>
                            </div>
                         </div>
@@ -626,7 +626,7 @@
         </div>
         <!-- END row -->
         <!-- BEGIN row -->
-        <div class="row margin-bottom-20">
+        <div class="row">
             <!-- Welcome Block -->
             <div class="col-md-8 md-margin-bottom-40">
                 <div class="carousel slide carousel-v1 box-shadow shadow-effect-2" id="myCarousel3">
@@ -726,6 +726,24 @@
             </div>
         </div>
         <!-- END row -->
+
+        <div class="more">
+            <button class="more__btn">Показать больше квартир</button>
+        </div>
+        
+        <!-- BEGIN row -->
+        <div class="row margin-bottom-20">
+          <div class="col-md-12">
+            <div class="google-map servive-block-default" id="map-bot">
+                <h2>Апартаменты на карте</h2>
+                <div class="google-map__wrap">
+                    <div id="map" class="map" style="height: 400px;"></div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- END row -->
+
         <div class="row margin-bottom-20">
           <div class="col-md-12">
               <div class="guesthouse">
@@ -797,18 +815,7 @@
               </div>
           </div>
         </div>
-        <!-- BEGIN row -->
-        <div class="row margin-bottom-20">
-          <div class="col-md-12">
-            <div class="google-map servive-block-default" id="map-bot">
-                <h2>Апартаменты на карте</h2>
-                <div class="google-map__wrap">
-                    <div id="map" class="map"></div>
-                </div>
-            </div>
-          </div>
-        </div>
-        <!-- END row -->
+
     </div>
     <!-- END container -->
 

@@ -116,7 +116,7 @@ p
 		padding-right: 0
 	.nav
 		.nav__item
-			padding: 0 0 0 18px
+			padding: 0 0 0 16px
 			&:first-child	
 				padding-left: 0
 		a
@@ -373,6 +373,14 @@ p
 		td
 			&:first-child
 				font-weight: bold
+		.js-td-hidden
+			display: none
+		.js-show-td
+			color: #3498db
+			text-decoration: underline
+			cursor: pointer
+			&:hover
+				text-decoration: none
 	.card__map
 		.google-map
 			padding: 0
@@ -491,6 +499,7 @@ p
 
 //promocode
 .promocode 
+	display: inline-block
 	&.promocode_blue
 		display: inline-block
 		.promocode__text
@@ -542,6 +551,7 @@ p
 		background: #fff
 	.promocode__discount
 		position: relative
+		padding-right: 15px
 	.promocode__close
 		position: absolute
 		top: 0
@@ -807,7 +817,9 @@ p
 		border: none
 		border-left: 1px solid #eee
 .description__row
-	margin-bottom: 5px
+	&:first-child
+		margin-bottom: 5px
+
 
 .description__top
 	margin-bottom: 10px
@@ -994,6 +1006,8 @@ p
 			top: -18px
 			left: 27%
 			+s(arr-top-price2)
+		&.is-active
+			display: block
 		i
 			position: absolute
 			top: 14px
@@ -1342,7 +1356,7 @@ p
 					border-bottom: 1px dotted grey
 			&:first-child
 				padding-left: 0
-				width: 71%
+				width: 69%
 				overflow: hidden
 		// .monthprices__table_1
 		&.monthprices__table_2
@@ -1479,6 +1493,7 @@ p
 			position: relative
 			margin-left: 18px
 			padding: 0
+			text-decoration: none
 			vertical-align: baseline
 			&:before
 				position: absolute
@@ -1492,6 +1507,9 @@ p
 				text-decoration: none
 				&:before
 					border: none
+			&:focus
+				text-decoration: none
+				outline: none
 		&:first-child
 			margin-right: 30px
 	.checkbox
@@ -1530,7 +1548,7 @@ p
 		max-height: 342px
 		overflow-y: auto
 		&.filter__list_234
-			width: 255px
+			width: 275px
 	.filter__convenience
 		position: relative
 		margin-bottom: 15px
@@ -1539,8 +1557,14 @@ p
 		line-height: 30px
 		font-size: 12px
 		color: #a9a9a9
+		cursor: pointer
 		border: 1px solid #bbbbbb
 		background: #fff
+		&.is-active
+			color: #666666
+			background: #f4f4f4
+			.filter__closebtn
+				display: block
 	.filter__closebtn
 		position: absolute
 		top: 10px
@@ -1718,6 +1742,8 @@ p
 		padding: 0 0 0 10px
 	.price__block .price__table td:first-child
 		width: 60%
+	.monthprices .monthprices__table td:first-child
+		width: 63%
 @media (max-width: 992px)
 	.step
 		.step__performance
