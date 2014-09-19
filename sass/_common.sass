@@ -370,6 +370,10 @@ p
 		color: #990000
 		font-size: 18px
 	.card__table
+		tr
+			&.is-active
+				.js-td-hidden
+					display: block
 		td
 			&:first-child
 				font-weight: bold
@@ -1488,6 +1492,7 @@ p
 			z-index: 7
 	.filter__select
 		position: relative
+		margin-bottom: 20px
 		display: inline-block
 		.btn-link
 			position: relative
@@ -1518,7 +1523,7 @@ p
 			margin-top: 0
 	.filter__btn
 		position: relative
-		margin: 0 17px 20px 0
+		margin: 0 17px 0 0
 		font-size: 18px
 		color: #666666
 		z-index: 1
@@ -1535,18 +1540,24 @@ p
 			z-index: 9
 	.filter__wrapper
 		position: absolute
-		padding: 50px 0 18px
+		padding: 50px 0 60px
 		top: -10px
 		left: -18px
+		max-height: 355px
 		min-width: 212px
 		z-index: 2
 		background-color: #fff
 		display: none
 		+box-shadow(0 0 6px rgba(10,5,6,.16))
+		+box
+		.filter__row
+			position: absolute
+			bottom: 18px
 	.filter__list
 		padding: 0 18px
-		max-height: 342px
+		max-height: 248px
 		overflow-y: auto
+		+box
 		&.filter__list_234
 			width: 275px
 	.filter__convenience

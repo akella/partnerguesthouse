@@ -42,13 +42,15 @@ head.ready(function() {
 	})
 
 	$(".js-show-td").click(function(){
-		$(".js-show-td").remove();
-		$(".js-td-hidden").show();
+		$(this).parent().parent().addClass("is-active");
+		$(this).hide();
+		// $(".js-td-hidden").show();
 	});
 	
 
 	$(".js-change-input").click(function(){
-		$(this).parents(".filter__list").find('.checkbox__input').removeAttr('checked');
+		// $(this).parents(".filter__list").find('.checkbox__input').removeAttr('checked');
+		$(".js-filter-list").hide();
 	});
 		
 	$(".js-open-price").click(function() {

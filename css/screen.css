@@ -142,6 +142,7 @@ p:after { content: " "; display: table; clear: both; }
 .card .card__right .price .price__old { color: #e4e4e4; }
 .card .card__right .btn-u { font-size: 18px; }
 .card .card__error { color: #990000; font-size: 18px; }
+.card .card__table tr.is-active .js-td-hidden { display: block; }
 .card .card__table td:first-child { font-weight: bold; }
 .card .card__table .js-td-hidden { display: none; }
 .card .card__table .js-show-td { color: #3498db; text-decoration: underline; cursor: pointer; }
@@ -506,7 +507,7 @@ p:after { content: " "; display: table; clear: both; }
 .filter.is-active .filter__convenience { color: #666666; background: #f4f4f4; }
 .filter.is-active .filter__closebtn { display: block; }
 .filter.is-active .filter__wrapper { z-index: 7; }
-.filter .filter__select { position: relative; display: inline-block; }
+.filter .filter__select { position: relative; margin-bottom: 20px; display: inline-block; }
 .filter .filter__select .btn-link { position: relative; margin-left: 18px; padding: 0; text-decoration: none; vertical-align: baseline; }
 .filter .filter__select .btn-link:before { position: absolute; content: ""; bottom: 0; padding-left: 20px; width: 100%; height: 1px; border-bottom: 1px dashed #2a6496; }
 .filter .filter__select .btn-link:hover { text-decoration: none; }
@@ -515,11 +516,12 @@ p:after { content: " "; display: table; clear: both; }
 .filter .filter__select:first-child { margin-right: 30px; }
 .filter .checkbox { margin: 10px 0; }
 .filter .checkbox:first-child { margin-top: 0; }
-.filter .filter__btn { position: relative; margin: 0 17px 20px 0; font-size: 18px; color: #666666; z-index: 1; border-bottom: 1px dashed #666666; background: none; }
+.filter .filter__btn { position: relative; margin: 0 17px 0 0; font-size: 18px; color: #666666; z-index: 1; border-bottom: 1px dashed #666666; background: none; }
 .filter .filter__btn:before { position: absolute; content: ""; top: 50%; right: -17px; margin-top: -3px; width: 0px; height: 0px; border-style: solid; border-width: 6px 4px 0 4px; border-color: #666666 transparent transparent transparent; }
 .filter .filter__btn.is-active { z-index: 9; }
-.filter .filter__wrapper { position: absolute; padding: 50px 0 18px; top: -10px; left: -18px; min-width: 212px; z-index: 2; background-color: white; display: none; -moz-box-shadow: 0 0 6px rgba(10, 5, 6, 0.16); -webkit-box-shadow: 0 0 6px rgba(10, 5, 6, 0.16); box-shadow: 0 0 6px rgba(10, 5, 6, 0.16); }
-.filter .filter__list { padding: 0 18px; max-height: 342px; overflow-y: auto; }
+.filter .filter__wrapper { position: absolute; padding: 50px 0 60px; top: -10px; left: -18px; max-height: 355px; min-width: 212px; z-index: 2; background-color: white; display: none; -moz-box-shadow: 0 0 6px rgba(10, 5, 6, 0.16); -webkit-box-shadow: 0 0 6px rgba(10, 5, 6, 0.16); box-shadow: 0 0 6px rgba(10, 5, 6, 0.16); -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.filter .filter__wrapper .filter__row { position: absolute; bottom: 18px; }
+.filter .filter__list { padding: 0 18px; max-height: 248px; overflow-y: auto; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .filter .filter__list.filter__list_234 { width: 275px; }
 .filter .filter__convenience { position: relative; margin-bottom: 15px; padding: 0 12px; height: 30px; line-height: 30px; font-size: 12px; color: darkgray; cursor: pointer; border: 1px solid #bbbbbb; background: white; }
 .filter .filter__convenience.is-active { color: #666666; background: #f4f4f4; }
