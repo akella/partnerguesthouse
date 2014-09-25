@@ -590,6 +590,8 @@ p:after { content: " "; display: table; clear: both; }
   .description .description__bottom .price { margin-left: 0; width: 48%; }
   .description .price__item { font-size: 30px; }
   .carousel-inner > .item > img, .carousel-inner > .item > a > img { height: 100%; }
+  .card .card__right .btn-u { font-size: 14px; }
+  .card .card__right .booking .booking__text { font-size: 12px; text-align: left; }
   .card__item .item__img, .card__item .item__info { width: 100%; height: auto; }
   .headline { *zoom: 1; }
   .headline:after { content: " "; display: table; clear: both; }
