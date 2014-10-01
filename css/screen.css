@@ -418,8 +418,16 @@ p:after { content: " "; display: table; clear: both; }
 
 .booking-com__reviews, .guesthouse__reviews { font-size: 10px; color: #4765a0; line-height: 1; }
 
-.reviews { margin-top: 42px; padding: 10px 20px; background: whitesmoke; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-.reviews img { width: 100%; }
+.reviews .carousel.slide.testimonials.testimonials-v1 { overflow: hidden; }
+
+.review { margin-left: 30px; width: 280px; float: right; padding: 10px 20px; background: whitesmoke; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.dobovo { padding: 5px; width: 240px; height: 58px; color: #1e1e1e; font-size: 13px; background: white; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.dobovo img { margin-right: 20px; }
+.dobovo .dobovo__left { float: left; }
+.dobovo .dobovo__right { width: 50%; float: right; }
+.dobovo .dobovo__right strong { padding-right: 5px; font-size: 16px; vertical-align: bottom; }
+.dobovo .dobovo__bottom, .dobovo .dobovo__top { font-size: 11px; }
 
 .rating { float: left; margin: 0 15px 15px; padding: 10px; background: #f7f7f7; -moz-border-radius: 5px !important; -webkit-border-radius: 5px; border-radius: 5px !important; *zoom: 1; }
 .rating:after { content: " "; display: table; clear: both; }
@@ -649,7 +657,8 @@ p:after { content: " "; display: table; clear: both; }
   .price__old, .price__time { height: auto; }
   .cont-top .cont-top__img { position: relative; right: auto; }
   .rating__date { float: left !important; }
-  .monthprices .monthprices__table td:first-child { width: 62%; } }
+  .monthprices .monthprices__table td:first-child { width: 62%; }
+  .review { display: none; } }
 @media (max-width: 431px) { .js-open-services, .js-close-services { position: absolute; top: 30px; right: 18px; }
   h1 { font-size: 24px; }
   .hesthaus .description__bottom .btn-u { font-size: 13px; } }

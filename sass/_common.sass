@@ -1201,12 +1201,37 @@ p
 
 //reviews
 .reviews
-	margin-top: 42px
+	.carousel.slide.testimonials.testimonials-v1
+		overflow: hidden
+.review
+	margin-left: 30px
+	width: 280px
+	float: right
 	padding: 10px 20px
 	background: #f5f5f5
 	+box
+//dobovo
+.dobovo
+	padding: 5px
+	width: 240px
+	height: 58px
+	color: #1E1E1E
+	font-size: 13px
+	background: #fff
+	+box
 	img
-		width: 100%
+		margin-right: 20px
+	.dobovo__left
+		float: left
+	.dobovo__right
+		width: 50%
+		float: right
+		strong
+			padding-right: 5px
+			font-size: 16px
+			vertical-align: bottom
+	.dobovo__bottom, .dobovo__top
+		font-size: 11px
 
 //rating
 .rating
@@ -1901,6 +1926,8 @@ p
 		float: left !important
 	.monthprices .monthprices__table td:first-child
 		width: 62%
+	.review
+		display: none
 @media (max-width: 431px)
 	.js-open-services, .js-close-services
 		position: absolute
