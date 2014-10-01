@@ -295,6 +295,8 @@ p:after { content: " "; display: table; clear: both; }
 
 .description { margin-left: -15px; padding-bottom: 15px; border: 1px solid #eeeeee; }
 .description .description__text { padding-left: 25px; font-size: 18px; }
+.description .description__text span { background: #ffffcc; display: inline-block; }
+.description .description__text li { margin-top: 2px; }
 .description.description__mod { border: none; }
 .description.description_borl { border: none; border-left: 1px solid #eeeeee; }
 
