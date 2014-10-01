@@ -105,6 +105,7 @@ p
 
 //footer
 .footer
+	background: #72c02c
 	h5
 		font-weight: bold
 	.footer__logo
@@ -381,10 +382,14 @@ p
 			display: none
 		.js-show-td
 			color: #3498db
-			text-decoration: underline
+			line-height: 20px
+			height: 20px
+			display: inline-block
+			text-decoration: none
 			cursor: pointer
+			border-bottom: 1px dashed #3498db
 			&:hover
-				text-decoration: none
+				border: none
 	.card__map
 		.google-map
 			padding: 0
@@ -441,7 +446,8 @@ p
 		cursor: pointer
 		width: 100%
 		height: 100%
-		background: #c6f1d9
+		color: #fff
+		background: #b50404
 		display: block
 	.calendar__popup
 		position: absolute
@@ -1435,7 +1441,7 @@ p
 	.sky-form
 		position: absolute
 		right: 0
-		left: 80px
+		left: 88px
 		top: 10px
 		border: none
 		display: inline-block
@@ -1761,13 +1767,16 @@ p
 		width: 60%
 	.monthprices .monthprices__table td:first-child
 		width: 63%
+	.booking-com__title, .guesthouse__title2
+		font-size: 13px
 @media (max-width: 992px)
 	.step
-		.step__performance
-			&.performance
-				background: none
-				&.is-active
-					background: none
+		display: none
+		// .step__performance
+		// 	&.performance
+		// 		background: none
+		// 		&.is-active
+		// 			background: none
 	.card
 		.card__slider
 			position: relative
@@ -1799,6 +1808,8 @@ p
 		padding-top: 15px
 		border-left: none
 		border-top: 1px solid #eeeeee
+	.booking-com__title, .guesthouse__title2
+		font-size: 16px
 @media (max-width: 768px)
 	body
 		font-size: 13px

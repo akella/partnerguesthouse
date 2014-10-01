@@ -46,6 +46,7 @@ p:after { content: " "; display: table; clear: both; }
 .collapse { *zoom: 1; }
 .collapse:after { content: " "; display: table; clear: both; }
 
+.footer { background: #72c02c; }
 .footer h5 { font-weight: bold; }
 .footer .footer__logo { display: inline-block; background: url('../img/icons-s900a0b249c.png') 0 -828px no-repeat; width: 127px; height: 52px; }
 .footer .footer__apart { font-style: italic; }
@@ -145,8 +146,8 @@ p:after { content: " "; display: table; clear: both; }
 .card .card__table tr.is-active .js-td-hidden { display: block; }
 .card .card__table td:first-child { font-weight: bold; }
 .card .card__table .js-td-hidden { display: none; }
-.card .card__table .js-show-td { color: #3498db; text-decoration: underline; cursor: pointer; }
-.card .card__table .js-show-td:hover { text-decoration: none; }
+.card .card__table .js-show-td { color: #3498db; line-height: 20px; height: 20px; display: inline-block; text-decoration: none; cursor: pointer; border-bottom: 1px dashed #3498db; }
+.card .card__table .js-show-td:hover { border: none; }
 .card .card__map .google-map { padding: 0; }
 .card .card__map .google-map .map { height: 445px; }
 .card .card__item { overflow: hidden; }
@@ -164,7 +165,7 @@ p:after { content: " "; display: table; clear: both; }
 .calendar .calendar__table th:first-letter { text-transform: uppercase; }
 .calendar .calendar__table td { position: relative; border: 1px solid #eeeeee; }
 .calendar .calendar__table td:nth-child(6), .calendar .calendar__table td:nth-child(7) { color: #b50404; }
-.calendar .calender__booking { cursor: pointer; width: 100%; height: 100%; background: #c6f1d9; display: block; }
+.calendar .calender__booking { cursor: pointer; width: 100%; height: 100%; color: white; background: #b50404; display: block; }
 .calendar .calendar__popup { position: absolute; top: 100%; left: -130px; margin-top: 6px; padding: 20px 45px 20px 20px; text-align: left; line-height: 1.4; width: 416px; background: white; cursor: default; z-index: 2; display: none; -moz-box-shadow: 0 0 6px rgba(10, 5, 6, 0.31); -webkit-box-shadow: 0 0 6px rgba(10, 5, 6, 0.31); box-shadow: 0 0 6px rgba(10, 5, 6, 0.31); -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .calendar .calendar__popup:before { position: absolute; content: ""; top: -21px; left: 148px; background: url('../img/icons-s900a0b249c.png') 0 0 no-repeat; width: 25px; height: 21px; }
 .calendar .calendar__popup.is-active { display: block; }
@@ -488,7 +489,7 @@ p:after { content: " "; display: table; clear: both; }
 .filter-rating:after { content: " "; display: table; clear: both; }
 .filter-rating .filter-rating__left { padding-top: 10px; }
 .filter-rating span { height: 34px; line-height: 34px; display: inline-block; }
-.filter-rating .sky-form { position: absolute; right: 0; left: 80px; top: 10px; border: none; display: inline-block; }
+.filter-rating .sky-form { position: absolute; right: 0; left: 88px; top: 10px; border: none; display: inline-block; }
 .filter-rating .sky-form fieldset { padding: 0 !important; }
 .filter-rating .sky-form section { margin-bottom: 0; }
 
@@ -601,9 +602,9 @@ p:after { content: " "; display: table; clear: both; }
   .footer .nav a { font-size: 13px; }
   .footer .nav .nav__item { padding: 0 0 0 10px; }
   .price__block .price__table td:first-child { width: 60%; }
-  .monthprices .monthprices__table td:first-child { width: 63%; } }
-@media (max-width: 992px) { .step .step__performance.performance { background: none; }
-  .step .step__performance.performance.is-active { background: none; }
+  .monthprices .monthprices__table td:first-child { width: 63%; }
+  .booking-com__title, .guesthouse__title2 { font-size: 13px; } }
+@media (max-width: 992px) { .step { display: none; }
   .card .card__slider { position: relative; left: 0; margin-bottom: 20px; padding: 0 15px; width: 100%; }
   .card .carousel img { height: auto; width: 100%; }
   .navbar-nav a { padding: 9px 25px 9px 20px !important; }
@@ -612,7 +613,8 @@ p:after { content: " "; display: table; clear: both; }
   .footer .nav li, .nav .nav li { float: none; display: inline-block; }
   .img-responsive_mob { display: none; }
   .btn-u_small { line-height: 1.4; font-size: 16px; }
-  .description.description_borl { padding-top: 15px; border-left: none; border-top: 1px solid #eeeeee; } }
+  .description.description_borl { padding-top: 15px; border-left: none; border-top: 1px solid #eeeeee; }
+  .booking-com__title, .guesthouse__title2 { font-size: 16px; } }
 @media (max-width: 768px) { body { font-size: 13px; }
   .offers .offers__right { float: left; }
   .carousel-inner > .item > img, .carousel-inner > .item > a > img { height: auto; }
