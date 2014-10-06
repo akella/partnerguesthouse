@@ -721,6 +721,7 @@ p
 	top: 0
 	left: 0
 	width: 100%
+	+g(rgba(#000, .4), rgba(#000, 0))
 	+box
 	&:hover
 		.item__list
@@ -780,7 +781,11 @@ p
 	float: left
 	h2
 		margin: 0
-
+		.item__link_red
+			background: none 
+			text-decoration: underline
+			font-size: 110% 
+			padding: 0 
 .item__right
 	float: right
 
@@ -801,6 +806,10 @@ p
 .item__link_grey
 	float: left
 	color: #CCCCCC
+	background: none 
+	padding: 0 
+	position: relative
+	top: -10px 
 	&:hover
 		color: #CCCCCC
 
@@ -809,6 +818,7 @@ p
 	padding: 15px 0
 	margin-bottom: 20px
 	border: 1px solid #eee
+	p
 	+clr
 	// &:last-child
 	// 	margin-bottom: 0
@@ -968,8 +978,9 @@ p
 		position: absolute
 		content: ''
 		top: 0
-		right: -18px
+		right: -17px
 		+arr(18, 52, #2ecc71, r)
+		background: #fff
 //price
 .price
 	position: relative
@@ -1328,7 +1339,9 @@ p
 			&:first-child
 				margin-left: 0
 
-
+.sky-form
+	.btn-u
+		font-size: 15px 
 //sky-form_booking
 .sky-form_booking
 	padding: 5px 15px

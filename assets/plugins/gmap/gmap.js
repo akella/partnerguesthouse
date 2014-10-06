@@ -90,7 +90,8 @@ if(window.google && window.google.maps){
       var map_base_options = {
         zoom: this.zoom,
         center: map_center,
-        mapTypeId: mapType
+        mapTypeId: mapType,
+        scrollwheel: false
       };
 
       var map_controls_options = {
