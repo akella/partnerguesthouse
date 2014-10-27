@@ -72,7 +72,10 @@ p
 .logo_mod
 	margin-top: 0
 .header
+	background: #faee38
 	+clr
+	.btn-default
+		background: #faee38
 .header__block
 	font-style: italic
 	font-size: 14px
@@ -84,8 +87,9 @@ p
 	margin-left: 160px
 	text-align: center 
 	cursor: pointer
-	color: #666666
+	color: #666
 	text-decoration: none
+	display: block
 	span
 		position: relative
 		padding-left: 25px
@@ -97,6 +101,7 @@ p
 			+s(u46)
 	&:hover
 		text-decoration: underline
+		color: #666
 
 //collapse 
 
@@ -105,7 +110,7 @@ p
 
 //footer
 .footer
-	background: #72c02c
+	background: #faee38
 	h5
 		font-weight: bold
 	.footer__logo
@@ -113,6 +118,7 @@ p
 		+s(footer-logo)
 	.footer__apart	
 		font-style: italic
+		color: #000
 	.collapse
 		padding-right: 0
 	.nav
@@ -123,7 +129,7 @@ p
 		a
 			padding: 0
 			font-size: 15px
-			color: #fff
+			color: #000
 			&:hover
 				background: none
 				text-decoration: underline
@@ -709,6 +715,23 @@ p
 	border: 1px solid #eeeeee
 	+clr
 // carousel
+.carousel
+	&:before
+		position: absolute
+		top: 0
+		left: 0
+		height: 100%
+		width: 100%
+		max-width: 100%
+		+rotate(0)
+		background: none
+		background: url('../img/u1176.png') no-repeat 0 0
+		background-size: cover
+		z-index: 1
+		+box-shadow(none)
+.carousel-control
+	.fa
+		z-index: 2
 .item
 	+clr
 .carousel_228
@@ -721,6 +744,7 @@ p
 	top: 0
 	left: 0
 	width: 100%
+	z-index: 2
 	+box
 	&:hover
 		.item__list
@@ -844,7 +868,10 @@ p
 	font-size: 25px
 	background: #f5f5f5
 	border-bottom: 2px solid #d9d9d9
+	display: block
 	+box
+	&:hover
+		text-decoration: none
 
 .description__top_mod
 	padding-top: 5px
@@ -968,7 +995,7 @@ p
 		position: absolute
 		content: ''
 		top: 0
-		right: -18px
+		right: -17.9px
 		+arr(18, 52, #2ecc71, r)
 //price
 .price
@@ -1106,10 +1133,11 @@ p
 .step
 	.step__item
 		position: relative
-		padding-bottom: 60px
+		padding-bottom: 45px
 		text-align: center
 		white-space: nowrap
 		overflow: hidden
+		z-index: 2
 		&.is-active
 			h3
 				color: #585f69
@@ -1118,7 +1146,28 @@ p
 				.performance__pic
 					+s(u957)
 					border: none
+			.step__performance_1,
+			.step__performance_2
+				&:before
+					+sr(image_u1396_green)
+			+ .is-active
+				left: -1px
+				margin-right: -1px
+		.color-green
+			margin: 0 
 	.step__performance
+		&.step__performance_1,
+		&.step__performance_2
+			&:before
+				position: absolute
+				content: ''
+				left: 370px
+				top: -11px
+				z-index: 0
+				+sr(image_u1396)
+		&.step__performance_1
+			&:before
+				left: 175px
 		&.performance
 			position: absolute
 			bottom: 30px
@@ -1355,8 +1404,15 @@ p
 		color: #fff
 
 .sky-form
+	border: 1px solid #000
+	fieldset
+		background: #faee38
 	.sky-form-footer
 		padding: 20px 15px 0
+	&.sky-form_white
+		border: 1px solid #eee
+		fieldset
+			background: #fff
 
 .monthprices
 	.monthprices__top
@@ -1671,8 +1727,10 @@ p
 .cont-top
 	position: relative
 	padding: 15px 15px 30px
-	background: url('http://lorempixel.com/1200/280/city') no-repeat 0 0
+	background: url('http://lorempixel.com/1200/280/city') no-repeat 50% 50%
 	background-size: cover
+	.container
+		position: relative
 	&.cont-top_mod
 		padding-bottom: 70px
 	&.cont-top_rel
@@ -1756,6 +1814,9 @@ p
 
 .is-bold
 	font-weight: bold
+
+.ui-datepicker
+	z-index: 2 !important
 
 @media (max-width: 1200px)
 	.description
