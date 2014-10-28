@@ -188,6 +188,10 @@ head.ready(function() {
 		$(".js-hint-info").fadeOut();
 	});
 	
+	$('.js-open-adrress-list').on('click', function(){
+		$('.js-adrress-list').slideToggle();
+	})
+	
 
 		// $(function(){
 		// 	window.prettyPrint && prettyPrint();

@@ -111,19 +111,40 @@ p
 //footer
 .footer
 	background: #faee38
+	font-size: 0
 	h5
 		font-weight: bold
+	.container
+		position: relative
+		padding-left: 180px
+	.footer__logo-wrap
+		position: absolute
+		top: -5px
+		left: 16px
+	.footer__item
+		padding-left: 3px
+		width: 25%
+		vertical-align: top
+		display: inline-block
+		+box
+		// &:first-child
+		// 	position: relative
+		// 	top: -40px
+		// 	padding-left: 0
+		// 	width: 14.5%
 	.footer__logo
 		display: inline-block 
 		+s(footer-logo)
 	.footer__apart	
 		font-style: italic
 		color: #000
+		font-size: 14px
 	.collapse
-		padding-right: 0
+		padding: 0
 	.nav
+		margin-bottom: 20px
 		.nav__item
-			padding: 0 0 0 16px
+			padding: 0 0 0 22px
 			&:first-child	
 				padding-left: 0
 		a
@@ -148,6 +169,7 @@ p
 	.list-unstyled_right
 		a
 			text-decoration: underline
+			letter-spacing: -0.1px
 			&:hover
 				text-decoration: none !important
 	.btn-group_mod
@@ -161,6 +183,8 @@ p
 			min-width: 210px
 			overflow-y: auto
 			max-height: 250px
+	.footer__btnwrap
+		text-align: right
 	.btn
 		border: none
 		background: none
@@ -1204,12 +1228,30 @@ p
 	+clr
 	+box
 	.guesthouse__title
-		padding: 0 0 0 15px
+		padding: 0 0 0 5px
 .guesthouse__item
+	padding-bottom: 8px
 	border: 1px solid #eeeeee
 	background: #fff
+	font-size: 14px
+	line-height: 1.3
+	vertical-align: top
 	img
 		width: 100%
+.guesthouse__link
+	margin-top: 10px
+	font-size: 13px
+	color: #4765a0
+.guesthouse__container
+	font-size: 0
+	text-align: center
+.guesthouse__col
+	margin-left: 1%
+	width: 19%
+	text-align: left
+	display: inline-block
+	&:first-child
+		margin-left: 0
 		
 //booking-com
 .booking-com, .guesthouse__top
@@ -1228,18 +1270,29 @@ p
 			color: #3498db
 		.booking-com__ico
 			left: 5px
-.booking-com__ico, .guesthouse__ico
+.booking-com__ico
 	position: absolute
 	top: 8px
 	left: 15px
 	display: inline-block
 	+sr(image_u584)
+.guesthouse__ico
+	float: left
+	width: 50%
+	img
+		display: block
+		width: 100%
 .booking-com__title, .guesthouse__title2
-	margin: 0
+	margin: 1px 0 0 0
 	padding: 0 
-	font-size: 16px
+	font-size: 14px
 	font-weight: bold
 	line-height: 1.2
+.guesthouse__title2
+	float: right
+	width: 50%
+.guesthouse__field
+	+clr 
 .booking-com__rating, .guesthouse__rating
 	font-size: 16px
 	line-height: 1
@@ -1732,7 +1785,7 @@ p
 	.container
 		position: relative
 	&.cont-top_mod
-		padding-bottom: 70px
+		padding: 0 0 70px 0
 	&.cont-top_rel
 		position: relative
 	.cont-top__text, h1, h2, h3
@@ -1818,6 +1871,32 @@ p
 .ui-datepicker
 	z-index: 2 !important
 
+.address-list
+	margin-top: 12px
+	padding: 30px 0 20px
+	background: #fff
+	font-size: 0
+	text-align: left
+	+box-shadow(0 0 7px rgba(0,0,0,0.41))
+	display: none
+	// .address-list__col
+
+	.address-list__item
+		margin-bottom: 10px
+		width: 20%
+		padding-right: 2%
+		font-size: 12px
+		color: #606569
+		vertical-align: top
+		display: inline-block
+	.address-list__id
+		margin-right: 5px
+		color: #4f81bd
+		font-size: 14px
+		font-weight: bold
+	.address-list__text
+		color: #1E1E1E
+
 @media (max-width: 1200px)
 	.description
 		.description__list.list .description__item
@@ -1850,6 +1929,8 @@ p
 	.topic .topic__quantity, .topic .btn-u
 		margin-top: 5px
 		width: 100%
+	.footer .nav
+		margin-left: 15px
 	.footer .nav a
 		font-size: 13px
 	.footer .nav .nav__item
@@ -1859,7 +1940,19 @@ p
 	.monthprices .monthprices__table td:first-child
 		width: 63%
 	.booking-com__title, .guesthouse__title2
-		font-size: 13px
+		font-size: 12px
+	.guesthouse__link
+		font-size: 11px
+	.guesthouse__item
+		font-size: 12px
+	.footer 
+		.footer__item
+			margin-bottom: 10px
+			padding-left: 16px
+			width: 45%
+		.footer__btnwrap
+			padding-left: 5px
+			text-align: left
 @media (max-width: 992px)
 	.step
 		display: none
@@ -1879,17 +1972,11 @@ p
 			img
 				height: auto
 				width: 100%
-	.navbar-nav
-		a
-			padding: 9px 25px 9px 20px !important
 	.description
 		margin-left: 0
-	.footer, .nav
-		text-align: center
+	.footer,
 		.nav
-			li
-				float: none
-				display: inline-block
+			display: none
 	.img-responsive_mob
 		display: none
 	.btn-u_small
@@ -1901,6 +1988,16 @@ p
 		border-top: 1px solid #eeeeee
 	.booking-com__title, .guesthouse__title2
 		font-size: 16px
+	.address-list__item
+		width: 25%
+		font-size: 13px
+	.guesthouse__col
+		margin-top: 10px
+		width: 32%
+	.guesthouse__title
+		margin-bottom: 0
+	.guesthouse__link
+		font-size: 13px
 @media (max-width: 768px)
 	body
 		font-size: 13px
@@ -1981,6 +2078,12 @@ p
 			position: relative
 			top: auto
 			right: auto
+	.guesthouse__container
+		text-align: left
+	.guesthouse__col
+		width: 49%
+		&:first-child
+			margin-left: 1%
 	.guesthouse__item	
 		margin-top: 15px
 	.price__old, .price__time
@@ -1994,6 +2097,22 @@ p
 		width: 62%
 	.review
 		display: none
+	.footer
+		text-align: center
+		.container
+			padding-left: 0
+			+box
+		.footer__logo-wrap
+			position: relative
+			display: inline-block
+		.footer__logo-wrap, .footer__item
+			width: 80%
+		.footer__btnwrap
+			text-align: center
+		.btn-group_mod
+			float: none
+	.address-list .address-list__item
+		width: 33%
 @media (max-width: 431px)
 	.js-open-services, .js-close-services
 		position: absolute
@@ -2004,3 +2123,8 @@ p
 	.hesthaus
 		.description__bottom .btn-u
 			font-size: 13px
+	.address-list .address-list__item
+		padding-left: 8px
+		width: 50%
+	.guesthouse__col
+		width: 100%
