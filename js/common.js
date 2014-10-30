@@ -191,6 +191,11 @@ head.ready(function() {
 	$('.js-open-adrress-list').on('click', function(){
 		$('.js-adrress-list').slideToggle();
 	})
+	$('.js-fiter-button').on('click', function(){
+		$(this).parent().toggleClass('is-open')
+		$(this).toggleClass('is-active');
+		$('.js-filter-block').slideToggle();
+	})
 	
 
 		// $(function(){

@@ -260,8 +260,12 @@
         </form> 
         <!-- END form -->
         <div class="row">
-            <div class="filter js-filter">
-                <div class="col-md-4">
+            <div class="filter filter_sel">
+                <button class="filter__button js-fiter-button">
+                    <span class="text-first">Вибрать количество комнат и удобства</span>
+                    <span class="text-open">Скрить</span>
+                </button>
+               <!--  <div class="col-md-4">
                     <div class="filter__select">
                         <button class="filter__btn js-filter-btn" type="button">Количество комнат</button>
                         <div class="filter__wrapper js-filter-list">
@@ -401,29 +405,135 @@
                                 <button class="filter__closebtn js-close-convenience" type="button"></button>
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-4 col-xs-6">
-                            <div class="filter__convenience js-convenience">
-                                Вседля готовки
-                                <button class="filter__closebtn js-close-convenience" type="button"></button>
+                    </div>
+                </div> -->
+                <div class="filter__block js-filter-block">
+                    <div class="filter__left">
+                        <h3 class="filter__title">Количество комнат:</h3>
+                        <div class="filter__field">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="radio" value="" checked="checked">
+                                    Любое
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="radio" value="">
+                                    Однокомнатная
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="radio" value="">
+                                    Двухкомнатная
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="radio" value="">
+                                    Трёхкомнатная
+                                </label>
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-4 col-xs-6">
-                            <div class="filter__convenience js-convenience">
-                                Вседля готовки
-                                <button class="filter__closebtn js-close-convenience" type="button"></button>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-4 col-xs-6">
-                            <div class="filter__convenience js-convenience">
-                                Вседля готовки
-                                <button class="filter__closebtn js-close-convenience" type="button"></button>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-4 col-xs-6">
-                            <div class="filter__convenience js-convenience">
-                                Вседля готовки
-                                <button class="filter__closebtn js-close-convenience" type="button"></button>
-                            </div>
+                    </div>
+                    <div class="filter__right">
+                        <h3 class="filter__title">Удобства в квартире:</h3>
+                        <div class="filter__field">
+                            <ul class="filter__ul">
+                                <li class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="" checked="checked">
+                                        Wi-Fi (10)
+                                   </label>
+                                </li>
+                                <li class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="" >
+                                        Духовка (43)
+                                   </label>
+                                </li>
+                                <li class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="" >
+                                        Лифт (11)
+                                   </label>
+                                </li>
+                            </ul>
+                            <ul class="filter__ul">
+                                <li class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="" >
+                                        Джакузи (11)
+                                   </label>
+                                </li>
+                                <li class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="" >
+                                        Плита (12)
+                                   </label>
+                                </li>
+                                <li class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="" >
+                                        Балкон (11)
+                                   </label>
+                                </li>
+                            </ul>
+                            <ul class="filter__ul">
+                                <li class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="" >
+                                        Душевая кабина (11)
+                                   </label>
+                                </li>
+                                <li class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="" >
+                                        Микроволновая печь (23)
+                                   </label>
+                                </li>
+                                <li class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="" >
+                                        Окна выходят во двор (34)
+                                   </label>
+                                </li>
+                            </ul>
+                            <ul class="filter__ul">
+                                <li class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="" >
+                                        Стиральная машина (45)
+                                   </label>
+                                </li>
+                                <li class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="" >
+                                        Кабельное ТВ (45)
+                                   </label>
+                                </li>
+                                <li class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="" >
+                                        Окна выходят на улицу (23)
+                                   </label>
+                                </li>
+                            </ul>
+                            <ul class="filter__ul">
+                                <li class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="" >
+                                        Кондиционер (4)
+                                   </label>
+                                </li>
+                                <li class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="" >
+                                        Плоский ТВ (44)
+                                   </label>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>

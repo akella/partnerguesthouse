@@ -1432,29 +1432,30 @@ p
 
 
 //sky-form_booking
-.sky-form_booking
-	padding: 5px 15px
-	background: #5cb0fb
-	fieldset
-		padding: 5px 0
-		background: none
-		color: #fff
-	.promocode__text, .promocode__discount
-		color: #fff
-		border-color: #fff
-	.promocode__input
-		width: 55%
-	.price
-		width: 100%
-		.price__old
-			color: #E4E4E4
-	.input, .btn-u
-		margin-top: 25px
-	.sky-title
-		margin: 20px 0 0 0 
-		font-size: 22px
-		font-weight: normal
-		color: #fff
+.sky-form
+	&.sky-form_booking
+		padding: 5px 15px
+		background: #5cb0fb
+		fieldset
+			padding: 5px 0
+			background: none
+			color: #fff
+		.promocode__text, .promocode__discount
+			color: #fff
+			border-color: #fff
+		.promocode__input
+			width: 55%
+		.price
+			width: 100%
+			.price__old
+				color: #E4E4E4
+		.input, .btn-u
+			margin-top: 25px
+		.sky-title
+			margin: 20px 0 0 0 
+			font-size: 22px
+			font-weight: normal
+			color: #fff
 
 .sky-form
 	border: 1px solid #000
@@ -1515,32 +1516,32 @@ p
 .more
 	padding: 20px 0
 	text-align: center
-	.more__btn
-		position: relative
-		padding: 15px 84px 15px 72px
-		height: 57px
-		font-size: 16px
-		border: 1px solid #e5e5e5
-		background-color: #fff
-		display: inline-block
-		+box-shadow(0 0 6px rgba(10,5,6,.08))
-		+box 
-		&:active
-			top: -1px
-		&:before
-			position: absolute
-			content: ''
-			top: 50%
-			margin-top: -4px
-			left: 21px
-			+arr(10, 8, #848484, b)
-		&:after
-			position: absolute
-			content: ''
-			top: 50%
-			margin-top: -4px
-			right: 24px
-			+arr(10, 8, #848484, b)
+.more__btn, .filter__button
+	position: relative
+	padding: 15px 84px 15px 72px
+	height: 57px
+	font-size: 16px
+	border: 1px solid #e5e5e5
+	background-color: #fff
+	display: inline-block
+	+box-shadow(0 0 6px rgba(10,5,6,.08))
+	+box 
+	&:active
+		top: -1px
+	&:before
+		position: absolute
+		content: ''
+		top: 50%
+		margin-top: -4px
+		left: 21px
+		+arr(10, 8, #848484, b)
+	&:after
+		position: absolute
+		content: ''
+		top: 50%
+		margin-top: -4px
+		right: 24px
+		+arr(10, 8, #848484, b)
 
 //showmore
 .showmore
@@ -1591,11 +1592,26 @@ p
 
 //filter
 .filter
+	position: relative
 	margin: 0 15px
-	padding: 18px 15px 3px
-	border: 1px solid #eeeeee
-	border-top: none
+	background: #faee38
 	+clr
+	&.is-open
+		padding: 10px 0
+		border: 1px solid #000
+		border-top: none
+		.filter__button
+			bottom: -41px
+			margin-left: -105px
+			&:before,
+			&:after
+				+rotate(180)
+		.text-first
+			display: none
+		.text-open
+			display: block
+	&.filter_sel
+		margin-bottom: 20px
 	&.filter_mod
 		border: none
 		.checkbox
@@ -1726,6 +1742,58 @@ p
 		top: 10px
 		right: 8px
 		+s(filter-closebtn)
+		display: none
+	.filter__left
+		position: relative
+		padding: 0 10px
+		width: 180px
+		&:before
+			position: absolute
+			content: ''
+			right: 0
+			top: 8px
+			bottom: 0
+			width: 1px
+			border-right: 1px dashed #000
+		+box
+		.checkbox
+			margin: 3px 0 0 0
+			padding: 0
+			&:first-child
+				margin-top: 0
+		input
+			margin: 0
+			vertical-align: middle
+	.filter__title
+		margin: 0
+		font-size: 16px
+	.filter__ul
+		padding-right: 40px
+	.filter__field
+		font-size: 0
+	.filter__right
+		padding: 0 10px
+		width: 950px
+	.checkbox
+		font-size: 13px
+	.filter__left, .filter__right, .filter__ul
+		vertical-align: top
+		display: inline-block
+	.filter__block
+		display: none
+	.filter__button
+		position: absolute
+		padding: 7px 84px 7px 72px
+		height: 40px
+		bottom: -40px
+		left: 50%
+		margin-left: -225px
+		background: #fff
+		z-index: 2
+		+border-radius(0 0 5px 5px !important)
+		&:active
+			top: auto
+	.text-open
 		display: none
 //banner
 .banner
@@ -1929,6 +1997,11 @@ p
 	.topic .topic__quantity, .topic .btn-u
 		margin-top: 5px
 		width: 100%
+	.filter
+		.filter__right
+			width: 60%
+		.filter__ul
+			width: 50%
 	.footer .nav
 		margin-left: 15px
 	.footer .nav a
@@ -2010,6 +2083,9 @@ p
 
 	.funny-boxes
 		img
+			width: 100%
+	.filter
+		.filter__ul
 			width: 100%
 	.step .step__item
 		white-space: inherit
@@ -2113,6 +2189,24 @@ p
 			float: none
 	.address-list .address-list__item
 		width: 33%
+@media (max-width: 510px)
+	.filter
+		.filter__button
+			padding: 7px 10px 7px 10px
+			margin-left: -121px
+			font-size: 12px
+		.filter__title
+			text-align: center
+		.filter__button,
+		.filter__left
+			&:before,
+			&:after
+				display: none
+		.filter__left,
+		.filter__right
+			width: 100%
+	.filter.is-open .filter__button
+		margin-left: -31px
 @media (max-width: 431px)
 	.js-open-services, .js-close-services
 		position: absolute

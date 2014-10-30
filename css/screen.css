@@ -490,14 +490,14 @@ p:after { content: " "; display: table; clear: both; }
 .placement.placement_mod .placement__item { margin-left: 10px; display: inline-block; }
 .placement.placement_mod .placement__item:first-child { margin-left: 0; }
 
-.sky-form_booking { padding: 5px 15px; background: #5cb0fb; }
-.sky-form_booking fieldset { padding: 5px 0; background: none; color: white; }
-.sky-form_booking .promocode__text, .sky-form_booking .promocode__discount { color: white; border-color: white; }
-.sky-form_booking .promocode__input { width: 55%; }
-.sky-form_booking .price { width: 100%; }
-.sky-form_booking .price .price__old { color: #e4e4e4; }
-.sky-form_booking .input, .sky-form_booking .btn-u { margin-top: 25px; }
-.sky-form_booking .sky-title { margin: 20px 0 0 0; font-size: 22px; font-weight: normal; color: white; }
+.sky-form.sky-form_booking { padding: 5px 15px; background: #5cb0fb; }
+.sky-form.sky-form_booking fieldset { padding: 5px 0; background: none; color: white; }
+.sky-form.sky-form_booking .promocode__text, .sky-form.sky-form_booking .promocode__discount { color: white; border-color: white; }
+.sky-form.sky-form_booking .promocode__input { width: 55%; }
+.sky-form.sky-form_booking .price { width: 100%; }
+.sky-form.sky-form_booking .price .price__old { color: #e4e4e4; }
+.sky-form.sky-form_booking .input, .sky-form.sky-form_booking .btn-u { margin-top: 25px; }
+.sky-form.sky-form_booking .sky-title { margin: 20px 0 0 0; font-size: 22px; font-weight: normal; color: white; }
 
 .sky-form { border: 1px solid black; }
 .sky-form fieldset { background: #faee38; }
@@ -520,10 +520,11 @@ p:after { content: " "; display: table; clear: both; }
 .monthprices .monthprices__table.monthprices__table_2 { display: none; }
 
 .more { padding: 20px 0; text-align: center; }
-.more .more__btn { position: relative; padding: 15px 84px 15px 72px; height: 57px; font-size: 16px; border: 1px solid #e5e5e5; background-color: white; display: inline-block; -moz-box-shadow: 0 0 6px rgba(10, 5, 6, 0.08); -webkit-box-shadow: 0 0 6px rgba(10, 5, 6, 0.08); box-shadow: 0 0 6px rgba(10, 5, 6, 0.08); -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-.more .more__btn:active { top: -1px; }
-.more .more__btn:before { position: absolute; content: ""; top: 50%; margin-top: -4px; left: 21px; width: 0px; height: 0px; border-style: solid; border-width: 8px 5px 0 5px; border-color: #848484 transparent transparent transparent; }
-.more .more__btn:after { position: absolute; content: ""; top: 50%; margin-top: -4px; right: 24px; width: 0px; height: 0px; border-style: solid; border-width: 8px 5px 0 5px; border-color: #848484 transparent transparent transparent; }
+
+.more__btn, .filter__button { position: relative; padding: 15px 84px 15px 72px; height: 57px; font-size: 16px; border: 1px solid #e5e5e5; background-color: white; display: inline-block; -moz-box-shadow: 0 0 6px rgba(10, 5, 6, 0.08); -webkit-box-shadow: 0 0 6px rgba(10, 5, 6, 0.08); box-shadow: 0 0 6px rgba(10, 5, 6, 0.08); -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.more__btn:active, .filter__button:active { top: -1px; }
+.more__btn:before, .filter__button:before { position: absolute; content: ""; top: 50%; margin-top: -4px; left: 21px; width: 0px; height: 0px; border-style: solid; border-width: 8px 5px 0 5px; border-color: #848484 transparent transparent transparent; }
+.more__btn:after, .filter__button:after { position: absolute; content: ""; top: 50%; margin-top: -4px; right: 24px; width: 0px; height: 0px; border-style: solid; border-width: 8px 5px 0 5px; border-color: #848484 transparent transparent transparent; }
 
 .showmore { padding: 20px 0 0; text-align: center; }
 .showmore .showmore__btn { position: relative; padding: 10px 60px 10px 45px; height: 50px; color: white; font-size: 16px; border: 1px solid #e5e5e5; background-color: #2fcb71; display: inline-block; -moz-box-shadow: 0 0 6px rgba(10, 5, 6, 0.08); -webkit-box-shadow: 0 0 6px rgba(10, 5, 6, 0.08); box-shadow: 0 0 6px rgba(10, 5, 6, 0.08); -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
@@ -538,8 +539,14 @@ p:after { content: " "; display: table; clear: both; }
 .filter-rating .sky-form fieldset { padding: 0 !important; }
 .filter-rating .sky-form section { margin-bottom: 0; }
 
-.filter { margin: 0 15px; padding: 18px 15px 3px; border: 1px solid #eeeeee; border-top: none; *zoom: 1; }
+.filter { position: relative; margin: 0 15px; background: #faee38; *zoom: 1; }
 .filter:after { content: " "; display: table; clear: both; }
+.filter.is-open { padding: 10px 0; border: 1px solid black; border-top: none; }
+.filter.is-open .filter__button { bottom: -41px; margin-left: -105px; }
+.filter.is-open .filter__button:before, .filter.is-open .filter__button:after { -ms-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+.filter.is-open .text-first { display: none; }
+.filter.is-open .text-open { display: block; }
+.filter.filter_sel { margin-bottom: 20px; }
 .filter.filter_mod { border: none; }
 .filter.filter_mod .checkbox { position: relative; }
 .filter.filter_mod .checkbox input { left: auto; top: 4px; }
@@ -573,6 +580,21 @@ p:after { content: " "; display: table; clear: both; }
 .filter .filter__convenience.is-active { color: #666666; background: #f4f4f4; }
 .filter .filter__convenience.is-active .filter__closebtn { display: block; }
 .filter .filter__closebtn { position: absolute; top: 10px; right: 8px; background: url('../img/icons-sd5e94516e9.png') 0 -807px no-repeat; width: 11px; height: 11px; display: none; }
+.filter .filter__left { position: relative; padding: 0 10px; width: 180px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.filter .filter__left:before { position: absolute; content: ""; right: 0; top: 8px; bottom: 0; width: 1px; border-right: 1px dashed black; }
+.filter .filter__left .checkbox { margin: 3px 0 0 0; padding: 0; }
+.filter .filter__left .checkbox:first-child { margin-top: 0; }
+.filter .filter__left input { margin: 0; vertical-align: middle; }
+.filter .filter__title { margin: 0; font-size: 16px; }
+.filter .filter__ul { padding-right: 40px; }
+.filter .filter__field { font-size: 0; }
+.filter .filter__right { padding: 0 10px; width: 950px; }
+.filter .checkbox { font-size: 13px; }
+.filter .filter__left, .filter .filter__right, .filter .filter__ul { vertical-align: top; display: inline-block; }
+.filter .filter__block { display: none; }
+.filter .filter__button { position: absolute; padding: 7px 84px 7px 72px; height: 40px; bottom: -40px; left: 50%; margin-left: -225px; background: white; z-index: 2; -moz-border-radius: 0 0 5px 5px !important; -webkit-border-radius: 0; border-radius: 0 0 5px 5px !important; }
+.filter .filter__button:active { top: auto; }
+.filter .text-open { display: none; }
 
 .banner { border: 1px solid #c9c9c9; vertical-align: top; display: inline-block; }
 
@@ -652,6 +674,8 @@ p:after { content: " "; display: table; clear: both; }
   .hesthaus .item__img, .hesthaus .item__info { width: 100%; height: auto; }
   .hesthaus .description__top { text-align: center; }
   .topic .topic__quantity, .topic .btn-u { margin-top: 5px; width: 100%; }
+  .filter .filter__right { width: 60%; }
+  .filter .filter__ul { width: 50%; }
   .footer .nav { margin-left: 15px; }
   .footer .nav a { font-size: 13px; }
   .footer .nav .nav__item { padding: 0 0 0 10px; }
@@ -679,6 +703,7 @@ p:after { content: " "; display: table; clear: both; }
   .offers .offers__right { float: left; }
   .carousel-inner > .item > img, .carousel-inner > .item > a > img { height: auto; }
   .funny-boxes img { width: 100%; }
+  .filter .filter__ul { width: 100%; }
   .step .step__item { white-space: inherit; }
   .border { display: block; }
   .btn-field .btn { margin-top: 15px; }
@@ -721,6 +746,11 @@ p:after { content: " "; display: table; clear: both; }
   .footer .footer__btnwrap { text-align: center; }
   .footer .btn-group_mod { float: none; }
   .address-list .address-list__item { width: 33%; } }
+@media (max-width: 510px) { .filter .filter__button { padding: 7px 10px 7px 10px; margin-left: -121px; font-size: 12px; }
+  .filter .filter__title { text-align: center; }
+  .filter .filter__button:before, .filter .filter__button:after, .filter .filter__left:before, .filter .filter__left:after { display: none; }
+  .filter .filter__left, .filter .filter__right { width: 100%; }
+  .filter.is-open .filter__button { margin-left: -31px; } }
 @media (max-width: 431px) { .js-open-services, .js-close-services { position: absolute; top: 30px; right: 18px; }
   h1 { font-size: 24px; }
   .hesthaus .description__bottom .btn-u { font-size: 13px; }
