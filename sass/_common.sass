@@ -427,6 +427,12 @@ p
 				height: 445px
 	.card__item
 		overflow: hidden
+		.btn-u
+			height: 30px
+			line-height: 18px
+			&:before
+				right: -8px
+				+arr(8, 30, #2ecc71, r)
 	.card__btn-graph
 		font-size: 18px
 		color: #666
@@ -1455,7 +1461,11 @@ p
 			margin: 20px 0 0 0 
 			font-size: 22px
 			font-weight: normal
+			text-decoration: underline
 			color: #fff
+		a
+			&:hover
+				color: #000
 
 .sky-form
 	border: 1px solid #000
@@ -1549,22 +1559,25 @@ p
 	text-align: center
 	.showmore__btn
 		position: relative
-		padding: 10px 60px 10px 45px
+		padding: 10px 60px
 		height: 50px
-		color: #fff
+		color: #000
 		font-size: 16px
 		border: 1px solid #e5e5e5
-		background-color: #2fcb71
+		background-color: #fff
 		display: inline-block
 		+box-shadow(0 0 6px rgba(10,5,6,.08))
 		+box
-		&:before
+		&:before,
+		&:after
 			position: absolute
 			content: ''
 			top: 50%
 			right: 22px
 			margin-top: -4px
-			+arr(10, 8, #fff, b)
+			+arr(10, 8, #000, b)
+		&:after
+			left: 22px
 		&:active
 			top: -1px
 
@@ -1986,6 +1999,8 @@ p
 		.item__img, .item__info
 			width: 100%
 			height: auto
+	.description__item
+		width: 50%
 	.headline
 		+clr
 	.hesthaus

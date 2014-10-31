@@ -157,6 +157,8 @@ p:after { content: " "; display: table; clear: both; }
 .card .card__map .google-map { padding: 0; }
 .card .card__map .google-map .map { height: 445px; }
 .card .card__item { overflow: hidden; }
+.card .card__item .btn-u { height: 30px; line-height: 18px; }
+.card .card__item .btn-u:before { right: -8px; width: 0px; height: 0px; border-style: solid; border-width: 15px 0 15px 8px; border-color: transparent transparent transparent #2ecc71; }
 .card .card__btn-graph { font-size: 18px; color: #666666; border-color: #666666; }
 .card .card__btn-graph:hover { text-decoration: none; }
 
@@ -497,7 +499,8 @@ p:after { content: " "; display: table; clear: both; }
 .sky-form.sky-form_booking .price { width: 100%; }
 .sky-form.sky-form_booking .price .price__old { color: #e4e4e4; }
 .sky-form.sky-form_booking .input, .sky-form.sky-form_booking .btn-u { margin-top: 25px; }
-.sky-form.sky-form_booking .sky-title { margin: 20px 0 0 0; font-size: 22px; font-weight: normal; color: white; }
+.sky-form.sky-form_booking .sky-title { margin: 20px 0 0 0; font-size: 22px; font-weight: normal; text-decoration: underline; color: white; }
+.sky-form.sky-form_booking a:hover { color: black; }
 
 .sky-form { border: 1px solid black; }
 .sky-form fieldset { background: #faee38; }
@@ -527,8 +530,9 @@ p:after { content: " "; display: table; clear: both; }
 .more__btn:after, .filter__button:after { position: absolute; content: ""; top: 50%; margin-top: -4px; right: 24px; width: 0px; height: 0px; border-style: solid; border-width: 8px 5px 0 5px; border-color: #848484 transparent transparent transparent; }
 
 .showmore { padding: 20px 0 0; text-align: center; }
-.showmore .showmore__btn { position: relative; padding: 10px 60px 10px 45px; height: 50px; color: white; font-size: 16px; border: 1px solid #e5e5e5; background-color: #2fcb71; display: inline-block; -moz-box-shadow: 0 0 6px rgba(10, 5, 6, 0.08); -webkit-box-shadow: 0 0 6px rgba(10, 5, 6, 0.08); box-shadow: 0 0 6px rgba(10, 5, 6, 0.08); -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-.showmore .showmore__btn:before { position: absolute; content: ""; top: 50%; right: 22px; margin-top: -4px; width: 0px; height: 0px; border-style: solid; border-width: 8px 5px 0 5px; border-color: white transparent transparent transparent; }
+.showmore .showmore__btn { position: relative; padding: 10px 60px; height: 50px; color: black; font-size: 16px; border: 1px solid #e5e5e5; background-color: white; display: inline-block; -moz-box-shadow: 0 0 6px rgba(10, 5, 6, 0.08); -webkit-box-shadow: 0 0 6px rgba(10, 5, 6, 0.08); box-shadow: 0 0 6px rgba(10, 5, 6, 0.08); -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.showmore .showmore__btn:before, .showmore .showmore__btn:after { position: absolute; content: ""; top: 50%; right: 22px; margin-top: -4px; width: 0px; height: 0px; border-style: solid; border-width: 8px 5px 0 5px; border-color: black transparent transparent transparent; }
+.showmore .showmore__btn:after { left: 22px; }
 .showmore .showmore__btn:active { top: -1px; }
 
 .filter-rating { padding-bottom: 15px; *zoom: 1; }
@@ -669,6 +673,7 @@ p:after { content: " "; display: table; clear: both; }
   .card .card__right .btn-u { font-size: 14px; }
   .card .card__right .booking .booking__text { font-size: 12px; text-align: left; }
   .card__item .item__img, .card__item .item__info { width: 100%; height: auto; }
+  .description__item { width: 50%; }
   .headline { *zoom: 1; }
   .headline:after { content: " "; display: table; clear: both; }
   .hesthaus .item__img, .hesthaus .item__info { width: 100%; height: auto; }
