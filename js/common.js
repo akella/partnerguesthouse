@@ -21,6 +21,7 @@ head.ready(function() {
 		$(".js-price-date").removeClass('is-active');
 		$(".js-hint-info").fadeOut(); 
 		$(".js-complete-description").removeClass('is-active');
+		$(".js-convenience-ico").removeClass("is-active");
 	});
 
 	$(".js-filter-select").click(function(){
@@ -69,7 +70,7 @@ head.ready(function() {
 	$(".js-price-close").click(function(){
 		$(".js-complete-description").removeClass("is-active");
 	});
-	$("body").on("click", ".js-price, .js-booking-text, .js-open-popupcal, .js-calendar-popup, .js-price-block, .js-price-date", function(event){
+	$("body").on("click", ".js-price, .js-booking-text, .js-open-popupcal, .js-calendar-popup, .js-price-block, .js-price-date, .js-convenience-ico", function(event){
 		event.stopPropagation();
 	});
 
@@ -197,6 +198,10 @@ head.ready(function() {
 		$('.js-filter-block').slideToggle();
 	})
 	
+	$(".js-convenience-ico").on("click", function(){
+		$(".js-convenience-ico").removeClass("is-active");
+		$(this).toggleClass("is-active");
+	});
 
 		// $(function(){
 		// 	window.prettyPrint && prettyPrint();
