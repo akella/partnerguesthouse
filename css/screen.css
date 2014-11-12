@@ -201,8 +201,8 @@ p:after { content: " "; display: table; clear: both; }
 .promocode .promocode__text, .promocode .promocode__discount { color: white; }
 .promocode .promocode__block, .promocode .promocode__discount { display: none; }
 .promocode .promocode__btn, .promocode .promocode__input { vertical-align: top; }
-.promocode .promocode__input { margin-right: 10px; display: inline-block; }
-.promocode .promocode__input input { padding: 0 5px; height: 30px; color: #666666; border: 1px solid #eeeeee; background: white; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.promocode .promocode__input { margin-right: 10px; width: 60px; display: inline-block; }
+.promocode .promocode__input input { padding: 0 5px; height: 30px; width: 100%; color: #666666; border: 1px solid #eeeeee; background: white; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .promocode .promocode__btn { width: 90px; height: 30px; text-align: center; color: black; border: 1px solid #eeeeee; background: white; }
 .promocode .promocode__discount { position: relative; padding-right: 15px; }
 .promocode .promocode__close { position: absolute; top: 0; right: 0; color: black; background: none; }
