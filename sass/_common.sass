@@ -939,6 +939,7 @@ p
 	+box
 	&:hover
 		text-decoration: none
+		color: #666666
 
 .description__top_mod
 	padding-top: 5px
@@ -2014,6 +2015,38 @@ p
 		font-weight: bold
 	.address-list__text
 		color: #1E1E1E
+
+.popup-map
+	position: relative
+	visibility: hidden
+	opacity: 0
+	.popup-map__wrap
+		position: absolute
+		right: -6px
+		top: 0
+		padding: 20px
+		z-index: 3
+		border: 1px solid #eee
+		background-color: #fff
+		+box
+	.popup-map__cloce
+		position: absolute
+		top: 22px
+		right: 10px
+		height: 19px
+		width: 19px
+		font-size: 22px
+		background: none
+		// +sr(close_popup_map)
+	.map
+		margin-top: 22px
+		width: 960px
+		height: 600px
+
+.is-popup-map
+	.popup-map
+		visibility: visible
+		opacity: 1
 
 @media (max-width: 1200px)
 	.description

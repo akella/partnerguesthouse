@@ -22,6 +22,7 @@ head.ready(function() {
 		$(".js-hint-info").fadeOut(); 
 		$(".js-complete-description").removeClass('is-active');
 		$(".js-convenience-ico").removeClass("is-active");
+		$(".js-popup-map").removeClass("is-popup-map");
 	});
 
 	$(".js-filter-select").click(function(){
@@ -70,7 +71,7 @@ head.ready(function() {
 	$(".js-price-close").click(function(){
 		$(".js-complete-description").removeClass("is-active");
 	});
-	$("body").on("click", ".js-price, .js-booking-text, .js-open-popupcal, .js-calendar-popup, .js-price-block, .js-price-date, .js-convenience-ico", function(event){
+	$("body").on("click", ".js-price, .js-booking-text, .js-open-popupcal, .js-calendar-popup, .js-price-block, .js-price-date, .js-convenience-ico, .map", function(event){
 		event.stopPropagation();
 	});
 
@@ -246,5 +247,23 @@ head.ready(function() {
 // })
 
 
+// function initialize() {     
+//     var myLatlng = new google.maps.LatLng(-34.397, 150.644);
+//     var myOptions = {
+//         zoom: 8,
+//         center: myLatlng,
+//         mapTypeId: google.maps.MapTypeId.ROADMAP
+//     }
+//     var map = new google.maps.Map(document.getElementById("map3"), myOptions); 
+// }
+
+
+	$(".js-open-popup-map").on("click", function(){
+		$(this).parent().addClass("is-popup-map");
+		return false;
+	});
+	$(".js-popup-map-close").on("click", function(){
+		$(".js-popup-map").removeClass("is-popup-map");
+	});
 });
 
