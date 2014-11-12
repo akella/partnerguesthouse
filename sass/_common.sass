@@ -2023,12 +2023,18 @@ p
 	.popup-map__wrap
 		position: absolute
 		right: -6px
-		top: 0
+		top: 20px
 		padding: 20px
 		z-index: 3
 		border: 1px solid #eee
 		background-color: #fff
 		+box
+		&:before
+			position: absolute
+			content: ''
+			top: -18px
+			right: 300px
+			+s(arr-top-price2)
 	.popup-map__cloce
 		position: absolute
 		top: 22px
@@ -2130,6 +2136,13 @@ p
 			img
 				height: auto
 				width: 100%
+	.popup-map
+		.popup-map__wrap
+			right: 0
+			width: 100%
+			max-width: 960px
+			overflow: auto
+			
 	.description
 		margin-left: 0
 	.footer,

@@ -204,6 +204,18 @@ head.ready(function() {
 		$(this).toggleClass("is-active");
 	});
 
+	$(".js-open-popup-map").on("click", function(){
+		$(this).parent().addClass("is-popup-map");
+
+		$('html, body').animate({
+			scrollTop: $('.is-popup-map').offset().top - 10
+		}, 600);
+		return false;
+	});
+	
+	$(".js-popup-map-close").on("click", function(){
+		$(".js-popup-map").removeClass("is-popup-map");
+	});
 		// $(function(){
 		// 	window.prettyPrint && prettyPrint();
 		// 	$('#dp1').datepicker();
@@ -258,12 +270,5 @@ head.ready(function() {
 // }
 
 
-	$(".js-open-popup-map").on("click", function(){
-		$(this).parent().addClass("is-popup-map");
-		return false;
-	});
-	$(".js-popup-map-close").on("click", function(){
-		$(".js-popup-map").removeClass("is-popup-map");
-	});
 });
 
