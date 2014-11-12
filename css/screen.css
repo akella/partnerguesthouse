@@ -160,7 +160,7 @@ p:after { content: " "; display: table; clear: both; }
 .card .card__item .btn-u { height: 30px; line-height: 18px; }
 .card .card__item .btn-u:before { right: -8px; width: 0px; height: 0px; border-style: solid; border-width: 15px 0 15px 8px; border-color: transparent transparent transparent #2ecc71; }
 .card .card__item .description__list { font-size: 0; }
-.card .card__item .description__list.list .description__item { padding-left: 0; width: 50%; font-size: 15px; text-align: left; display: inline-block; }
+.card .card__item .description__list.list .description__item { padding-left: 0; width: 25%; font-size: 15px; text-align: left; display: inline-block; }
 .card .card__item .description__list.list .description__item .list__ico { position: relative; }
 .card .card__btn-graph { font-size: 18px; color: #666666; border-color: #666666; }
 .card .card__btn-graph:hover { text-decoration: none; }
