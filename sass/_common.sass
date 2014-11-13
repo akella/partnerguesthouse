@@ -1363,6 +1363,16 @@ p
 	padding: 10px 20px
 	background: #f5f5f5
 	+box
+	&.review_dob
+		padding: 5px
+		img
+			margin: 0
+			display: block
+		.dobovo
+			padding: 0
+			height: auto
+			width: auto
+			border: 1px solid #eee
 //dobovo
 .dobovo
 	padding: 5px
@@ -1664,7 +1674,7 @@ p
 		.text-open
 			display: block
 	&.filter_sel
-		margin-bottom: 20px
+		margin-bottom: 40px
 	&.filter_mod
 		border: none
 		.checkbox
@@ -1841,7 +1851,7 @@ p
 		bottom: -40px
 		left: 50%
 		margin-left: -225px
-		background: #fff
+		background: #eee
 		z-index: 2
 		+border-radius(0 0 5px 5px !important)
 		&:active

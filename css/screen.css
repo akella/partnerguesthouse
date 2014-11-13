@@ -462,6 +462,9 @@ p:after { content: " "; display: table; clear: both; }
 .reviews .carousel.slide.testimonials.testimonials-v1 { overflow: hidden; }
 
 .review { margin-left: 30px; width: 280px; float: right; padding: 10px 20px; background: whitesmoke; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.review.review_dob { padding: 5px; }
+.review.review_dob img { margin: 0; display: block; }
+.review.review_dob .dobovo { padding: 0; height: auto; width: auto; border: 1px solid #eeeeee; }
 
 .dobovo { padding: 5px; width: 240px; height: 58px; color: #1e1e1e; font-size: 13px; background: white; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .dobovo img { margin-right: 20px; }
@@ -556,7 +559,7 @@ p:after { content: " "; display: table; clear: both; }
 .filter.is-open .filter__button:before, .filter.is-open .filter__button:after { -ms-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); }
 .filter.is-open .text-first { display: none; }
 .filter.is-open .text-open { display: block; }
-.filter.filter_sel { margin-bottom: 20px; }
+.filter.filter_sel { margin-bottom: 40px; }
 .filter.filter_mod { border: none; }
 .filter.filter_mod .checkbox { position: relative; }
 .filter.filter_mod .checkbox input { left: auto; top: 4px; }
@@ -602,7 +605,7 @@ p:after { content: " "; display: table; clear: both; }
 .filter .checkbox { font-size: 13px; }
 .filter .filter__left, .filter .filter__right, .filter .filter__ul { vertical-align: top; display: inline-block; }
 .filter .filter__block { display: none; }
-.filter .filter__button { position: absolute; padding: 7px 84px 7px 72px; height: 40px; bottom: -40px; left: 50%; margin-left: -225px; background: white; z-index: 2; -moz-border-radius: 0 0 5px 5px !important; -webkit-border-radius: 0; border-radius: 0 0 5px 5px !important; }
+.filter .filter__button { position: absolute; padding: 7px 84px 7px 72px; height: 40px; bottom: -40px; left: 50%; margin-left: -225px; background: #eeeeee; z-index: 2; -moz-border-radius: 0 0 5px 5px !important; -webkit-border-radius: 0; border-radius: 0 0 5px 5px !important; }
 .filter .filter__button:active { top: auto; }
 .filter .text-open { display: none; }
 
