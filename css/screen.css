@@ -266,6 +266,10 @@ p:after { content: " "; display: table; clear: both; }
 
 .carousel:before { position: absolute; top: 0; left: 0; height: 100%; width: 100%; max-width: 100%; -ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); transform: rotate(0deg); background: none; background: url("../img/u1176.png") no-repeat 0 0; background-size: cover; z-index: 1; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
 
+.carousel-slider { margin-bottom: 20px; }
+.carousel-slider .carousel { margin-right: -15px; }
+.carousel-slider .description__bottom { padding-top: 22px; }
+
 .carousel-control .fa { z-index: 2; }
 
 .item { *zoom: 1; }
@@ -324,7 +328,7 @@ p:after { content: " "; display: table; clear: both; }
 .description__top { margin-bottom: 10px; padding-left: 15px; color: #666666; line-height: 51px; font-size: 25px; background: whitesmoke; border-bottom: 2px solid #d9d9d9; display: block; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .description__top:hover { text-decoration: none; color: #666666; }
 
-.description__top_mod { padding-top: 5px; padding-bottom: 5px; font-size: 13px; line-height: 1.2; }
+.description__top_mod { padding-top: 3px; padding-bottom: 3px; font-size: 13px; line-height: 1.2; }
 .description__top_mod h1, .description__top_mod h2, .description__top_mod h3, .description__top_mod h4, .description__top_mod h5, .description__top_mod h6 { margin-top: 0; margin-bottom: 0; padding-top: 5px; }
 
 .description__wrap { padding: 0 5px 0 10px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
@@ -712,6 +716,7 @@ p:after { content: " "; display: table; clear: both; }
 @media (max-width: 992px) { .step { display: none; }
   .card .card__slider { position: relative; left: 0; margin-bottom: 20px; padding: 0 15px; width: 100%; }
   .card .carousel img { height: auto; width: 100%; }
+  .carousel-slider .carousel { margin-right: 0; }
   .popup-map .popup-map__wrap { right: 0; width: 100%; max-width: 960px; overflow: auto; }
   .description { margin-left: 0; }
   .footer .nav { display: none; }
