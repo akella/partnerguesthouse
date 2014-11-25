@@ -688,6 +688,9 @@ p:after { content: " "; display: table; clear: both; }
 
 .is-popup-map .popup-map { visibility: visible; opacity: 1; }
 
+.carousel_border { border: 1px solid #eeeeee; }
+.carousel_border .carousel-inner { padding: 10px 10px 0 10px; }
+
 @media (max-width: 1200px) { .description .description__list.list .description__item { font-size: 12px; }
   .description .description__bottom .price { margin-left: 0; width: 48%; }
   .description .price__item { font-size: 30px; }
