@@ -690,8 +690,8 @@ p:after { content: " "; display: table; clear: both; }
 
 .carousel_border { margin-left: 5px; border: 1px solid #eeeeee; background: whitesmoke; }
 .carousel_border .carousel-inner { padding: 10px 10px 0 10px; }
-.carousel_border .testimonials.testimonials-v1 p, .carousel_border .testimonials.testimonials-v2 p { background: white; }
-.carousel_border .testimonials.testimonials-v1 p:after, .carousel_border .testimonials.testimonials-v2 p:after { border-top-color: white; }
+.carousel_border.testimonials.testimonials-v1 p, .carousel_border.testimonials.testimonials-v2 p { background: white; }
+.carousel_border.testimonials.testimonials-v1 p:after, .carousel_border.testimonials.testimonials-v2 p:after { border-top-color: white; }
 
 @media (max-width: 1200px) { .description .description__list.list .description__item { font-size: 12px; }
   .description .description__bottom .price { margin-left: 0; width: 48%; }
