@@ -21,6 +21,7 @@ var Datepicker = function () {
 	            onClose: function( selectedDate )
 	            {
 	                $('#finish').focus();
+	                var getDate = $('#start').datepicker('getDate');
 	            }
 	        });
 	        $('#finish').datepicker({
@@ -35,7 +36,19 @@ var Datepicker = function () {
 	            // }
 	        });
 
+	   //      var dates = $( "#finish" ).datepicker({
+				// minDate: new Date(),
+				// onSelect: function( selectedDate ) {
+				// 	var option = this.id == "start" ? "minDate" : "maxDate",
+				// 		instance = $( this ).data( "datepicker" ),
+				// 		date = $.datepicker.parseDate(
+				// 			instance.settings.dateFormat ||
+				// 			$.datepicker._defaults.dateFormat,
+				// 			selectedDate, instance.settings );
+				// 	dates.not( this ).datepicker( "option", option, date );
+				// }
 
+	   //      });
 	        // Date range
 	        $('#start1').datepicker({
 	            dateFormat: 'MM d',

@@ -111,9 +111,10 @@ p:after { content: " "; display: table; clear: both; }
 .slider { position: relative; min-height: 100%; overflow: hidden; *zoom: 1; }
 .slider:after { content: " "; display: table; clear: both; }
 .slider .slick-slide img { width: 100%; }
+.slider .slider__for { position: absolute; top: 0; left: 0; width: 100%; bottom: 92px; overflow: hidden; }
 .slider .slider__for .slick-slide { padding: 0; }
 .slider .slider__for .slider__item { background-size: cover !important; }
-.slider .slider__for .slider__item img { height: 100%; width: auto; opacity: 0; }
+.slider .slider__for .slider__item img { height: 100%; opacity: 0; }
 .slider .slider__nav { vertical-align: middle; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .slider .slider__nav .slick-track { height: 92px; }
 .slider .slider__nav .slick-slide { cursor: pointer; height: 92px; line-height: 89px; }
@@ -263,6 +264,7 @@ p:after { content: " "; display: table; clear: both; }
 
 .hesthaus { padding: 15px 0; border: 1px solid #eeeeee; *zoom: 1; }
 .hesthaus:after { content: " "; display: table; clear: both; }
+.hesthaus .carousel:before { display: none; }
 
 .carousel:before { position: absolute; top: 0; left: 0; height: 100%; width: 100%; max-width: 100%; -ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); transform: rotate(0deg); background: none; background: url("../img/u1176.png") no-repeat 0 0; background-size: cover; z-index: 1; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
 
@@ -573,7 +575,7 @@ p:after { content: " "; display: table; clear: both; }
 .filter.filter_mod .select_filder { height: 34px; line-height: 34px; border: 1px solid #999999; }
 .filter.filter_mod .select_filder .icon-append { top: 0; }
 .filter.filter_mod .filter__select { display: block; }
-.filter.filter_mod .filter__wrap { padding: 20px 15px 5px; border: 1px solid #eeeeee; border-top: none; *zoom: 1; }
+.filter.filter_mod .filter__wrap { padding: 20px 15px 5px; border: 1px solid black; border-top: none; *zoom: 1; }
 .filter.filter_mod .filter__wrap:after { content: " "; display: table; clear: both; }
 .filter.is-active .filter__convenience { color: #666666; background: #f4f4f4; }
 .filter.is-active .filter__closebtn { display: block; }
@@ -693,6 +695,17 @@ p:after { content: " "; display: table; clear: both; }
 .carousel_border.testimonials.testimonials-v1 p, .carousel_border.testimonials.testimonials-v2 p { background: white; }
 .carousel_border.testimonials.testimonials-v1 p:after, .carousel_border.testimonials.testimonials-v2 p:after { border-top-color: white; }
 
+.sky-form .input input, .sky-form .select select { font-size: 15px; }
+
+.topbar ul.loginbar > li > a, .topbar ul.loginbar > li > a:hover, .btn-group_top .btn { font-size: 12px; }
+
+.btn-u.btn-u_mod.btn-u-green { -moz-transition: 0.1s all linear; -o-transition: 0.1s all linear; -webkit-transition: 0.1s all linear; transition: 0.1s all linear; }
+.btn-u.btn-u_mod.btn-u-green:hover { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); opacity: 0.8; }
+
+.sky-form .input, .sky-form .select, .sky-form .textarea, .sky-form .radio, .sky-form .checkbox, .sky-form .toggle, .sky-form .button { background: white; }
+
+.sky-form .input input, .sky-form .select select { position: relative; z-index: 2; background: none; }
+
 @media (max-width: 1200px) { .description .description__list.list .description__item { font-size: 12px; }
   .description .description__bottom .price { margin-left: 0; width: 48%; }
   .description .price__item { font-size: 30px; }
@@ -733,7 +746,8 @@ p:after { content: " "; display: table; clear: both; }
   .address-list__item { width: 25%; font-size: 13px; }
   .guesthouse__col { margin-top: 10px; width: 32%; }
   .guesthouse__title { margin-bottom: 0; }
-  .guesthouse__link { font-size: 13px; } }
+  .guesthouse__link { font-size: 13px; }
+  .header .navbar-default .navbar-nav > li > a { font-size: 12px; } }
 @media (max-width: 768px) { body { font-size: 13px; }
   .offers .offers__right { float: left; }
   .carousel-inner > .item > img, .carousel-inner > .item > a > img { height: auto; }

@@ -290,13 +290,18 @@ p
 		img
 			width: 100%
 	.slider__for
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		bottom: 92px
+		overflow: hidden
 		.slick-slide
 			padding: 0
 		.slider__item
 			background-size: cover !important
 			img
 				height: 100%
-				width: auto
 				opacity: 0
 	.slider__nav
 		vertical-align: middle
@@ -786,6 +791,9 @@ p
 	padding: 15px 0
 	border: 1px solid #eeeeee
 	+clr
+	.carousel
+		&:before
+			display: none
 // carousel
 .carousel
 	&:before
@@ -1712,7 +1720,7 @@ p
 			display: block
 		.filter__wrap
 			padding: 20px 15px 5px
-			border: 1px solid #eee
+			border: 1px solid #000
 			border-top: none
 			+clr
 	&.is-active
@@ -2086,6 +2094,32 @@ p
 		&:after
 			border-top-color: #fff
 
+.sky-form .input input,
+.sky-form .select select
+	font-size: 15px
+
+.topbar ul.loginbar > li > a,
+.topbar ul.loginbar > li > a:hover,
+.btn-group_top .btn
+	font-size: 12px
+.btn-u.btn-u_mod.btn-u-green
+	+transition(0.1s all linear)
+	&:hover
+		+opacity(0.8)
+.sky-form .input,
+.sky-form .select,
+.sky-form .textarea,
+.sky-form .radio,
+.sky-form .checkbox,
+.sky-form .toggle,
+.sky-form .button
+	background: #fff
+.sky-form .input input,
+.sky-form .select select
+	position: relative
+	z-index: 2
+	background: none
+
 @media (max-width: 1200px)
 	.description
 		.description__list.list .description__item
@@ -2206,6 +2240,8 @@ p
 		margin-bottom: 0
 	.guesthouse__link
 		font-size: 13px
+	.header .navbar-default .navbar-nav > li > a
+		font-size: 12px
 @media (max-width: 768px)
 	body
 		font-size: 13px
