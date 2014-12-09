@@ -11,67 +11,94 @@ var Datepicker = function () {
 	            nextText: '<i class="fa fa-angle-right"></i>'
 	        });
 	        
-	        // Date range
-	        $('#start').datepicker({
-	            dateFormat: 'MM d',
-	            prevText: '<i class="fa fa-angle-left"></i>',
-	            nextText: '<i class="fa fa-angle-right"></i>',
-	            firstDay: 1, 
-	            minDate: 0,
-	            onClose: function( selectedDate )
-	            {
-	                $('#finish').focus();
-	                var getDate = $('#start').datepicker('getDate');
-	            }
-	        });
-	        $('#finish').datepicker({
-	            dateFormat: 'MM d',
-	            prevText: '<i class="fa fa-angle-left"></i>',
-	            nextText: '<i class="fa fa-angle-right"></i>',
-	            firstDay: 1, 
-	            minDate: 0,
+			function showDatePicker() {
+				$("#sky-form").each(function(){
+					var date_from = $(this).find("#start");
+					var date_to = $(this).find("#finish");
+
+					if (date_from.length) {
+						date_from.datepicker({
+							dateFormat: 'MM d',
+							prevText: '<i class="fa fa-angle-left"></i>',
+							nextText: '<i class="fa fa-angle-right"></i>',
+							firstDay: 1,
+							minDate: 0,
+							onClose: function( selectedDate ) {
+								date_to.datepicker( "option", "minDate", selectedDate );
+								$('#finish').focus();
+							}
+						});
+					}
+					if (date_to.length) {
+						date_to.datepicker({
+							dateFormat: 'MM d',
+							prevText: '<i class="fa fa-angle-left"></i>',
+							nextText: '<i class="fa fa-angle-right"></i>',
+							firstDay: 1,
+							onClose : function( selectedDate ) {
+								date_from.datepicker( "option", "maxDate", selectedDate );
+							}
+						});
+					}
+				});
+			}
+			showDatePicker();
+
+			function showDatePicker_2() {
+				$("#sky-form1").each(function(){
+					var date_from = $(this).find("#start1");
+					var date_to = $(this).find("#finish1");
+
+					if (date_from.length) {
+						date_from.datepicker({
+							dateFormat: 'MM d',
+							prevText: '<i class="fa fa-angle-left"></i>',
+							nextText: '<i class="fa fa-angle-right"></i>',
+							firstDay: 1,
+							minDate: 0,
+							onClose: function( selectedDate ) {
+								date_to.datepicker( "option", "minDate", selectedDate );
+								$('#finish1').focus();
+							}
+						});
+					}
+					if (date_to.length) {
+						date_to.datepicker({
+							dateFormat: 'MM d',
+							prevText: '<i class="fa fa-angle-left"></i>',
+							nextText: '<i class="fa fa-angle-right"></i>',
+							firstDay: 1,
+							onClose : function( selectedDate ) {
+								date_from.datepicker( "option", "maxDate", selectedDate );
+							}
+						});
+					}
+				});
+			}
+			showDatePicker_2();
+	        // $('#start1').datepicker({
+	        //     dateFormat: 'MM d',
+	        //     prevText: '<i class="fa fa-angle-left"></i>',
+	        //     nextText: '<i class="fa fa-angle-right"></i>',
+	        //     firstDay: 1, 
+	        //     minDate: 0,
+	        //     onClose: function( selectedDate )
+	        //     {	
+	        			// $('#start1')datepicker( "option", "minDate", selectedDate );
+	        //      	$('#finish1').focus();
+	        //     }
+	        // });
+	        // $('#finish1').datepicker({
+	        //     dateFormat: 'MM d',
+	        //     prevText: '<i class="fa fa-angle-left"></i>',
+	        //     nextText: '<i class="fa fa-angle-right"></i>',
+	        //     firstDay: 1, 
+	        //     minDate: 0,
 	            // onClose: function( selectedDate )
 	            // {
 	            //     $('#start').focus();
 	            // }
-	        });
-
-	   //      var dates = $( "#finish" ).datepicker({
-				// minDate: new Date(),
-				// onSelect: function( selectedDate ) {
-				// 	var option = this.id == "start" ? "minDate" : "maxDate",
-				// 		instance = $( this ).data( "datepicker" ),
-				// 		date = $.datepicker.parseDate(
-				// 			instance.settings.dateFormat ||
-				// 			$.datepicker._defaults.dateFormat,
-				// 			selectedDate, instance.settings );
-				// 	dates.not( this ).datepicker( "option", option, date );
-				// }
-
-	   //      });
-	        // Date range
-	        $('#start1').datepicker({
-	            dateFormat: 'MM d',
-	            prevText: '<i class="fa fa-angle-left"></i>',
-	            nextText: '<i class="fa fa-angle-right"></i>',
-	            firstDay: 1, 
-	            minDate: 0,
-	            onClose: function( selectedDate )
-	            {
-	                $('#finish1').focus();
-	            }
-	        });
-	        $('#finish1').datepicker({
-	            dateFormat: 'MM d',
-	            prevText: '<i class="fa fa-angle-left"></i>',
-	            nextText: '<i class="fa fa-angle-right"></i>',
-	            firstDay: 1, 
-	            minDate: 0,
-	            // onClose: function( selectedDate )
-	            // {
-	            //     $('#start').focus();
-	            // }
-	        });
+	        // });
 
 	        // Inline datepicker
 	        $('#inline').datepicker({

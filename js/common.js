@@ -216,49 +216,88 @@ head.ready(function() {
 	$(".js-popup-map-close").on("click", function(){
 		$(".js-popup-map").removeClass("is-popup-map");
 	});
-		// $(function(){
-		// 	window.prettyPrint && prettyPrint();
-		// 	$('#dp1').datepicker();
-		// 	$('#dp2').datepicker();
-		// 	$('#dp3').datepicker();
-		// 	$('#dp4').datepicker();
-			
 
-  //       // disabling dates
-  //       var nowTemp = new Date(); 
-  //       var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+	$('td .ui-state-default').on('click', function() {
+		return false;
+	});
+	
+	$('#button').on('click', function() {
+		$('#content').addClass('is-active');
+	});
 
-  //       var checkin = $('#dpd1').datepicker({
-  //         onRender: function(date) {
-  //           return date.valueOf() < now.valueOf() ? 'disabled' : '';
-  //         }
-  //       }).on('changeDate', function(ev) {
-  //         if (ev.date.valueOf() > checkout.date.valueOf()) {
-  //           var newDate = new Date(ev.date)
-  //           newDate.setDate(newDate.getDate() + 1);
-  //           checkout.setValue(newDate);
-  //         }
-  //         checkin.hide();
-  //         $('#dpd3')[0].focus();
-  //       }).data('datepicker');
-  //       var checkout = $('#dpd3').datepicker({
-  //         onRender: function(date) {
-  //           return date.valueOf() <= checkin.date.valueOf() ? 'disabled' : '';
-  //         }
-  //       }).on('changeDate', function(ev) {
-  //         checkout.hide();
-  //       }).data('datepicker');
-		// });
+	function initialize() {
+		var myLatlng = new google.maps.LatLng(-25.363882,131.044922);
+		var myLatlng_2 = new google.maps.LatLng(-25.303882,131.034922);
+		var mapOptions = {
+			zoom: 10,
+			center: myLatlng
+		};
 
-	// $(".js-datepicker").focus(function(){
-	// 	$('.datepicker').slideTogle();
-	// });
+		var map = new google.maps.Map(document.getElementById('map10'), mapOptions);
 
-// $('#myModal').on('loaded.bs.modal', function (e) {
-//   alert();
-// })
+		var contentString = '<div id="content">'+
+				'<div id="content-popup-first">'+
+					'<a href="#" id="title">Шевченко 10, Киев</a>'+
+					'<div id="size">Двухкомнатная</div>'+
+					'<p><a href="#">Гестхаус "Шевченко"</a></p>'+
+					'<div id="content-row">'+
+						'<div id="content-price">От <span>300</span> грн/сутки</div>'+
+						'<button id="button" class="btn-u btn-u-xs btn-u-green">Узнай подробнее</button>'+
+					'</div>'+
+				'</div>'+
+			'</div>';
 
+		var contentString_2 = '<div id="content">'+
+				'<div id="content-popup-two">'+
+					'<div id="title">Шевченко 10, Киев</div>'+
+					'<p><a href="#">Гестхаус "Шевченко"</a></p>'+
+						'<ul id="content-list">'+
+							'<li>Двухкомнатная - ID234 - от 234 грн/сутки</li>'+
+							'<li>Двухкомнатная - ID234 - от 234 грн/сутки</li>'+
+							'<li>Двухкомнатная - ID234 - от 234 грн/сутки</li>'+
+							'<li>Двухкомнатная - ID234 - от 234 грн/сутки</li>'+
+							'<li>Двухкомнатная - ID234 - от 234 грн/сутки</li>'+
+							'<li>Двухкомнатная - ID234 - от 234 грн/сутки</li>'+
+							'<li>Двухкомнатная - ID234 - от 234 грн/сутки</li>'+
+							'<li>Двухкомнатная - ID234 - от 234 грн/сутки</li>'+
+							'<li>Двухкомнатная - ID234 - от 234 грн/сутки</li>'+
+							'<li>Двухкомнатная - ID234 - от 234 грн/сутки</li>'+
+							'<li>Двухкомнатная - ID234 - от 234 грн/сутки</li>'+
+							'<li>Двухкомнатная - ID234 - от 234 грн/сутки</li>'+
+						'</ul>'+
+				'</div>'+
+			'</div>';
+		var infowindow = new google.maps.InfoWindow({
+			content: contentString,
+			maxWidth: 250
+		});
 
+		var marker = new google.maps.Marker({
+			position: myLatlng,
+			map: map,
+			title: 'Шевченко 10, Киев'
+		});
+
+		var infowindow_2 = new google.maps.InfoWindow({
+			content: contentString_2,
+	        maxHeight: 300
+		});
+
+		var marker_2 = new google.maps.Marker({
+			position: myLatlng_2,
+			map: map,
+			title: 'Шевченко 10'
+		});
+		google.maps.event.addListener(marker, 'click', function() {
+			infowindow.open(map,marker);
+		});
+		google.maps.event.addListener(marker_2, 'click', function() {
+			infowindow_2.open(map,marker_2);
+		});
+	}
+	google.maps.event.addDomListener(window, 'load', initialize);
+
+	
 // function initialize() {     
 //     var myLatlng = new google.maps.LatLng(-34.397, 150.644);
 //     var myOptions = {
