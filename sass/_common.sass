@@ -1682,8 +1682,9 @@ p
 .filter
 	position: relative
 	margin: 0 15px
-	background: #faee38
 	+clr
+	h1, h2, h3, h4, h5, h6 
+		color: #faee38
 	&.is-open
 		padding: 10px 0
 		border: 1px solid #000
@@ -1850,7 +1851,7 @@ p
 			&:first-child
 				margin-top: 0
 		input
-			margin: 0
+			margin: 4px 4px 0 0
 			vertical-align: middle
 	.filter__title
 		margin: 0
@@ -1876,7 +1877,8 @@ p
 		bottom: -40px
 		left: 50%
 		margin-left: -225px
-		background: #eee
+		border-top: none
+		background: #faee38
 		z-index: 2
 		+border-radius(0 0 5px 5px !important)
 		&:active
@@ -2143,11 +2145,10 @@ p
 		visibility: visible
 		opacity: 1
 .carousel_border
-	margin-left: 5px
 	border: 1px solid #eeeeee
 	background: whitesmoke
 	.carousel-inner
-		padding: 10px 10px 0 10px
+		padding: 10px
 	&.testimonials.testimonials-v1 p,
 	&.testimonials.testimonials-v2 p
 		background: #fff
@@ -2179,6 +2180,27 @@ p
 	position: relative
 	z-index: 2
 	background: none
+
+.carousel-slider .carousel.testimonials.testimonials-v1
+	margin: 0 5px
+	a
+		color: #005599
+	p a
+		border-bottom: 1px dotted #005599
+		&:hover
+			text-decoration: none
+			border-color: #fff
+	.item__rew
+		padding: 10px 10px 0 10px
+		background: #fff
+		a
+			vertical-align: top
+			margin: 8px 0 0 5px
+			display: inline-block
+			font-size: 16px
+			border: none
+			
+
 
 @media (max-width: 1200px)
 	.description
@@ -2246,6 +2268,8 @@ p
 @media (max-width: 992px)
 	.carousel_border
 		margin-left: 0
+		.col-md-4
+			margin-bottom: 25px
 	.step
 		display: none
 		// .step__performance
