@@ -1035,28 +1035,31 @@ p
 			width: 50%
 			line-height: 1
 			font-size: 18px
+			vertical-align: top
 			display: inline-block
 		.list__ico
 			position: absolute
 			top: 0
 			left: 0
 			color: #72c02c
-		.list__ico_dg1
-			+s(arr1)
-		.list__ico_oll
-			+s(arr2)
-		.list__ico_con
-			+s(arr3)
-		.list__ico_tv1
-			+s(arr4)
-		.list__ico_dg2
-			+s(arr5)
-		.list__ico_sa
-			+s(arr6)
-		.list__ico_con2
-			+s(arr7)
-		.list__ico_tv2
-			+s(arr8)
+		.list__ico_jacuzzi
+			+sr(jacuzzi)
+		.list__ico_oven
+			+sr(oven)
+		.list__ico_w-machine
+			+sr(w-machine)
+		.list__ico_shower
+			+sr(shower)
+		.list__ico_wifi
+			+sr(wifi)
+		.list__ico_conditioner
+			+sr(conditioner)
+		.list__ico_tv
+			+sr(tv)
+		.list__ico_ktv
+			+sr(ktv)
+		.list__ico_cooker
+			+sr(cooker)
 	&.description__list_mod
 		.description__item_top
 			margin-bottom: 5px
@@ -1683,8 +1686,6 @@ p
 	position: relative
 	margin: 0 15px
 	+clr
-	h1, h2, h3, h4, h5, h6 
-		color: #faee38
 	&.is-open
 		padding: 10px 0
 		border: 1px solid #000
@@ -2300,6 +2301,8 @@ p
 
 	.description
 		margin-left: 0
+		.description__list.list .description__item
+			font-size: 18px
 	.footer,
 		.nav
 			display: none
@@ -2477,3 +2480,5 @@ p
 		width: 50%
 	.guesthouse__col
 		width: 100%
+	.description .description__list.list .description__item
+		font-size: 12px
