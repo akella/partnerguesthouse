@@ -470,6 +470,7 @@ p:after { content: " "; display: table; clear: both; }
 
 .booking-com__reviews, .guesthouse__reviews { font-size: 10px; color: #4765a0; line-height: 1; }
 
+.reviews .guesthouse__title { padding: 20px 0 0; margin: 0 7px 20px; border-top: 1px solid white; }
 .reviews .carousel.slide.testimonials.testimonials-v1 { overflow: hidden; }
 
 .review { margin-left: 30px; width: 280px; float: right; padding: 10px 20px; background: whitesmoke; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
@@ -604,15 +605,15 @@ p:after { content: " "; display: table; clear: both; }
 .filter .filter__convenience.is-active { color: #666666; background: #f4f4f4; }
 .filter .filter__convenience.is-active .filter__closebtn { display: block; }
 .filter .filter__closebtn { position: absolute; top: 10px; right: 8px; background: url('../img/icons-sbf0914841c.png') 0 -1057px no-repeat; width: 11px; height: 11px; display: none; }
-.filter .filter__left { position: relative; padding: 0 10px; width: 180px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-.filter .filter__left:before { position: absolute; content: ""; right: 0; top: 8px; bottom: 0; width: 1px; border-right: 1px dashed black; }
+.filter .filter__left { padding: 0 10px; width: 180px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .filter .filter__left .checkbox { margin: 3px 0 0 0; padding: 0; }
 .filter .filter__left .checkbox:first-child { margin-top: 0; }
 .filter .filter__left input { margin: 4px 4px 0 0; vertical-align: middle; }
 .filter .filter__title { margin: 0; font-size: 16px; }
 .filter .filter__ul { padding-right: 40px; }
 .filter .filter__field { font-size: 0; }
-.filter .filter__right { padding: 0 10px; width: 950px; }
+.filter .filter__right { position: relative; padding: 0 10px; width: 950px; }
+.filter .filter__right:before { position: absolute; content: ""; left: -4px; top: 8px; bottom: 0; width: 1px; border-right: 1px dashed black; }
 .filter .checkbox { font-size: 13px; }
 .filter .filter__left, .filter .filter__right, .filter .filter__ul { vertical-align: top; display: inline-block; }
 .filter .filter__block { display: none; }
@@ -829,6 +830,7 @@ p:after { content: " "; display: table; clear: both; }
   .filter .filter__title { text-align: center; }
   .filter .filter__button:before, .filter .filter__button:after, .filter .filter__left:before, .filter .filter__left:after { display: none; }
   .filter .filter__left, .filter .filter__right { width: 100%; }
+  .filter .filter__left:before, .filter .filter__left:after, .filter .filter__right:before, .filter .filter__right:after { display: none; }
   .filter.is-open .filter__button { margin-left: -31px; } }
 @media (max-width: 431px) { .js-open-services, .js-close-services { position: absolute; top: 30px; right: 18px; }
   h1 { font-size: 24px; }

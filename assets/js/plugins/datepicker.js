@@ -35,9 +35,9 @@ var Datepicker = function () {
 							prevText: '<i class="fa fa-angle-left"></i>',
 							nextText: '<i class="fa fa-angle-right"></i>',
 							firstDay: 1,
-							onClose : function( selectedDate ) {
-								date_from.datepicker( "option", "maxDate", selectedDate );
-							}
+							// onClose : function( selectedDate ) {
+							// 	date_from.datepicker( "option", "maxDate", selectedDate );
+							// }
 						});
 					}
 				});
