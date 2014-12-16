@@ -699,7 +699,7 @@ p:after { content: " "; display: table; clear: both; }
 
 .ui-datepicker { z-index: 2 !important; }
 
-.address-list { margin-top: 12px; padding: 30px 0 20px; background: white; font-size: 0; text-align: left; max-height: 400px; overflow-y: auto; -moz-box-shadow: 0 0 7px rgba(0, 0, 0, 0.41); -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.41); box-shadow: 0 0 7px rgba(0, 0, 0, 0.41); display: none; }
+.address-list { margin-top: 12px; padding: 30px 0 20px; background: white; font-size: 0; text-align: left; -moz-box-shadow: 0 0 7px rgba(0, 0, 0, 0.41); -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.41); box-shadow: 0 0 7px rgba(0, 0, 0, 0.41); display: none; }
 .address-list .address-list__item { margin-bottom: 10px; width: 20%; padding-right: 2%; font-size: 12px; color: #606569; vertical-align: top; display: inline-block; }
 .address-list .address-list__id { margin-right: 5px; color: #4f81bd; font-size: 14px; font-weight: bold; }
 .address-list .address-list__text { color: #1e1e1e; }
