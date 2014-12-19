@@ -719,7 +719,7 @@ p:after { content: " "; display: table; clear: both; }
 
 .sky-form .input input, .sky-form .select select { font-size: 15px; }
 
-.topbar ul.loginbar > li > a, .topbar ul.loginbar > li > a:hover, .btn-group_top .btn { font-size: 12px; }
+.topbar ul.loginbar > li > a, .topbar ul.loginbar > li > a:hover, .btn-group_top .btn { font-size: 12px; cursor: pointer; }
 
 .btn-u.btn-u_mod.btn-u-green { -moz-transition: 0.1s all linear; -o-transition: 0.1s all linear; -webkit-transition: 0.1s all linear; transition: 0.1s all linear; }
 .btn-u.btn-u_mod.btn-u-green:hover { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); opacity: 0.8; }
