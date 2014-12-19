@@ -2203,8 +2203,17 @@ p
 			display: inline-block
 			font-size: 16px
 			border: none
-			
-
+		
+.ie .sky-form .select
+	overflow: hidden
+	border: 1px solid #bbb
+	select
+		width: 112%
+		border: none
+.ie .sky-form .select.is-active
+	select
+		z-index: 0
+		width: 100%
 
 @media (max-width: 1200px)
 	.description

@@ -298,7 +298,6 @@ head.ready(function() {
 	}
 	google.maps.event.addDomListener(window, 'load', initialize);
 
-	
 // function initialize() {     
 //     var myLatlng = new google.maps.LatLng(-34.397, 150.644);
 //     var myOptions = {
