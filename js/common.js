@@ -270,7 +270,8 @@ head.ready(function() {
 			'</div>';
 		var infowindow = new google.maps.InfoWindow({
 			content: contentString,
-			maxWidth: 250
+			maxWidth: 250,
+			maxHeight: 300
 		});
 
 		var marker = new google.maps.Marker({
@@ -281,7 +282,8 @@ head.ready(function() {
 
 		var infowindow_2 = new google.maps.InfoWindow({
 			content: contentString_2,
-	        maxHeight: 300
+	        maxHeight: 300,
+	        maxWidth: 250
 		});
 
 		var marker_2 = new google.maps.Marker({

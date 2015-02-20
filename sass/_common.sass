@@ -1914,22 +1914,32 @@ p
 		height: 100% !important
 .map_835
 	height: 835px
+
 .gm-style .gm-style-iw > div,
 .gm-style .gm-style-iw > div > div
 	height: 100% !important
-	width: 100% !important
+	min-width: 100% !important
+	display: block !important
 .gm-style .gm-style-iw
 	top: 0 !important
 	left: 0 !important
 	width: 100% !important
-	height: 100% !important
 	&:before
 		position: absolute
 		content: ''
-		bottom: -23px
+		bottom: -40px
 		left: 50%
 		margin-left: -8px
 		+arr(19, 23, rgba(black, 0.7), b)
+	&:after
+		position: absolute
+		content: ''
+		bottom: -17px
+		left: 0
+		right: 0
+		height: 17px
+		background: black
+		background: rgba(black, 0.7)
 	#content, #content2
 		padding: 30px 20px 0
 		color: white
