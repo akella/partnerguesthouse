@@ -60,7 +60,7 @@ p:after { content: " "; display: table; clear: both; }
 .footer .nav .nav__item:first-child { padding-left: 0; }
 .footer .nav a { padding: 0; font-size: 15px; color: black; }
 .footer .nav a:hover { background: none; text-decoration: underline; }
-.footer .list-unstyled li:hover a { color: black; text-decoration: underline; }
+.footer .list-unstyled li:hover a { color: black; }
 .footer .list-unstyled a { color: black; }
 .footer .list-unstyled a i { color: black; }
 .footer .list-unstyled .fa-phone { color: #333333; }
@@ -235,8 +235,8 @@ p:after { content: " "; display: table; clear: both; }
 .convenience .convenience__ico.convenience__ico_5 { background: url('../img/icons-sbf0914841c.png') 0 -2191px no-repeat; background-position: 0 -1096px; width: 15.5px; height: 20px; -moz-background-size: 107px 1182px; -webkit-background-size: 107px 1182px; background-size: 107px 1182px; }
 .convenience .convenience__ico.convenience__ico_6 { background: url('../img/icons-sbf0914841c.png') 0 -984px no-repeat; background-position: 0 -492px; width: 21px; height: 10.5px; -moz-background-size: 107px 1182px; -webkit-background-size: 107px 1182px; background-size: 107px 1182px; }
 .convenience .convenience__ico.convenience__ico_7 { background: url('../img/icons-sbf0914841c.png') 0 -1583px no-repeat; background-position: 0 -792px; width: 19px; height: 21px; -moz-background-size: 107px 1182px; -webkit-background-size: 107px 1182px; background-size: 107px 1182px; }
-.convenience .convenience__ico.is-active .convenience__info { display: block; }
-.convenience .convenience__info { position: absolute; top: 100%; left: -50%; margin-left: -113px; margin-top: 20px; padding: 10px; width: 300px; line-height: 1.4; z-index: 25; border: 1px solid #eeeeee; -moz-box-shadow: 0 0 6px rgba(10, 5, 6, 0.08); -webkit-box-shadow: 0 0 6px rgba(10, 5, 6, 0.08); box-shadow: 0 0 6px rgba(10, 5, 6, 0.08); background: white; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; display: none; }
+.convenience .convenience__ico:hover .convenience__info { display: block; }
+.convenience .convenience__info { position: absolute; top: 100%; left: 50%; -moz-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); margin-top: 20px; padding: 10px; width: 300px; line-height: 1.4; z-index: 25; border: 1px solid #eeeeee; -moz-box-shadow: 0 0 6px rgba(10, 5, 6, 0.08); -webkit-box-shadow: 0 0 6px rgba(10, 5, 6, 0.08); box-shadow: 0 0 6px rgba(10, 5, 6, 0.08); background: white; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; display: none; }
 .convenience .convenience__info:before { position: absolute; content: ""; top: -18px; left: 50%; margin-left: -10px; background: url('../img/icons-sbf0914841c.png') 0 -93px no-repeat; width: 21px; height: 18px; }
 
 .alert { font-size: 0; }
