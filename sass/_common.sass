@@ -1322,6 +1322,7 @@ p
 	margin-left: 1%
 	width: 19%
 	text-align: left
+	vertical-align: top
 	display: inline-block
 	&:first-child
 		margin-left: 0
@@ -1582,23 +1583,32 @@ p
 			display: none
 	.monthprices__table
 		font-size: 16px
-		td
+		.monthprices__item
+			position: relative
+			overflow: hidden
+		.monthprices__left,
+		.monthprices__right
 			padding: 5px 0 5px 5px
+		.monthprices__left
+			position: relative
+			padding-left: 0
 			span
 				position: relative
-				&:before
-					position: absolute
-					content: ''
-					left: 100%
-					bottom: 2px
-					margin-left: 4px
-					height: 1px
-					width: 1000px
-					border-bottom: 1px dotted grey
-			&:first-child
-				padding-left: 0
-				width: 69%
-				overflow: hidden
+				padding-right: 2px
+				background: #fff
+			&:before
+				position: absolute
+				content: ''
+				left: 0
+				right: 0
+				bottom: 12px
+				height: 1px
+				border-bottom: 1px dotted grey
+		.monthprices__right
+			position: absolute
+			right: 0
+			top: 0
+			background: #fff
 		// .monthprices__table_1
 		&.monthprices__table_2
 			display: none

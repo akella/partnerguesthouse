@@ -444,7 +444,7 @@ p:after { content: " "; display: table; clear: both; }
 
 .guesthouse__container { font-size: 0; text-align: center; }
 
-.guesthouse__col { margin-left: 1%; width: 19%; text-align: left; display: inline-block; }
+.guesthouse__col { margin-left: 1%; width: 19%; text-align: left; vertical-align: top; display: inline-block; }
 .guesthouse__col:first-child { margin-left: 0; }
 
 .booking-com, .guesthouse__top { padding: 5px 15px; text-align: right; background: #fafafa; *zoom: 1; }
@@ -537,10 +537,12 @@ p:after { content: " "; display: table; clear: both; }
 .monthprices .monthprices__btn:hover { border: none; }
 .monthprices .monthprices__btn.monthprices__btn_2 { display: none; }
 .monthprices .monthprices__table { font-size: 16px; }
-.monthprices .monthprices__table td { padding: 5px 0 5px 5px; }
-.monthprices .monthprices__table td span { position: relative; }
-.monthprices .monthprices__table td span:before { position: absolute; content: ""; left: 100%; bottom: 2px; margin-left: 4px; height: 1px; width: 1000px; border-bottom: 1px dotted gray; }
-.monthprices .monthprices__table td:first-child { padding-left: 0; width: 69%; overflow: hidden; }
+.monthprices .monthprices__table .monthprices__item { position: relative; overflow: hidden; }
+.monthprices .monthprices__table .monthprices__left, .monthprices .monthprices__table .monthprices__right { padding: 5px 0 5px 5px; }
+.monthprices .monthprices__table .monthprices__left { position: relative; padding-left: 0; }
+.monthprices .monthprices__table .monthprices__left span { position: relative; padding-right: 2px; background: white; }
+.monthprices .monthprices__table .monthprices__left:before { position: absolute; content: ""; left: 0; right: 0; bottom: 12px; height: 1px; border-bottom: 1px dotted gray; }
+.monthprices .monthprices__table .monthprices__right { position: absolute; right: 0; top: 0; background: white; }
 .monthprices .monthprices__table.monthprices__table_2 { display: none; }
 
 .more { padding: 20px 0; text-align: center; }
