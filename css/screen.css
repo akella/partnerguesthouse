@@ -210,6 +210,7 @@ p:after { content: " "; display: table; clear: both; }
 .promocode .promocode__btn { width: 90px; height: 30px; text-align: center; color: black; border: 1px solid #eeeeee; background: white; }
 .promocode .promocode__discount { position: relative; padding-right: 15px; }
 .promocode .promocode__close { position: absolute; top: 0; right: 0; color: black; background: none; }
+.promocode .promocode__error-text { margin: 0 5px; display: inline-block; color: #ff3300; }
 
 .booking .booking__block { position: relative; }
 .booking .booking__text { height: 20px; line-height: 20px; border-bottom: 1px dotted white; background: none; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
@@ -485,7 +486,7 @@ p:after { content: " "; display: table; clear: both; }
 .dobovo .dobovo__right strong { padding-right: 5px; font-size: 16px; vertical-align: bottom; }
 .dobovo .dobovo__bottom, .dobovo .dobovo__top { font-size: 11px; }
 
-.rating { float: left; margin: 0 15px 15px; padding: 10px; background: #f7f7f7; -moz-border-radius: 5px !important; -webkit-border-radius: 5px; border-radius: 5px !important; *zoom: 1; }
+.rating { float: left; width: 100%; margin: 0 15px 15px; padding: 10px; background: #f7f7f7; -moz-border-radius: 5px !important; -webkit-border-radius: 5px; border-radius: 5px !important; *zoom: 1; }
 .rating:after { content: " "; display: table; clear: both; }
 .rating .rating__title, .rating .rating__date { padding: 0; margin: 0; line-height: 1.4; color: #585f69; font-weight: normal; font-size: 18px; font-family: "Open Sans", sans-serif; }
 .rating .rating__top { *zoom: 1; }
@@ -742,6 +743,15 @@ p:after { content: " "; display: table; clear: both; }
 .ie .sky-form .select select { width: 112%; border: none; }
 
 .ie .sky-form .select.is-active select { z-index: 0; width: 100%; }
+
+.error { padding: 10px; text-align: center; border: 4px solid #f64409; background: #fffebe; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.error .error__title { color: #ff6923; font-size: 18px; }
+.error .error__list { text-align: left; display: inline-block; }
+.error .error__phone, .error .error__mail { font-size: 18px; display: inline-block; }
+.error .error__phone .fa, .error .error__mail .fa { margin-right: 5px; }
+.error .error__phone { font-weight: bold; }
+.error .error__mail { margin-left: 30px; }
+.error .error__mail a { color: #005599; }
 
 @media (max-width: 1200px) { .description .description__list.list .description__item { font-size: 12px; }
   .description .description__bottom .price { margin-left: 0; width: 48%; }
