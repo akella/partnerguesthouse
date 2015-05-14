@@ -517,6 +517,7 @@ p:after { content: " "; display: table; clear: both; }
 .sky-form.sky-form_booking { padding: 5px 15px; background: #5cb0fb; }
 .sky-form.sky-form_booking fieldset { padding: 5px 0; background: none; color: white; }
 .sky-form.sky-form_booking .promocode__text, .sky-form.sky-form_booking .promocode__discount { color: white; border-color: white; }
+.sky-form.sky-form_booking .promocode__text.promocode__text_gray, .sky-form.sky-form_booking .promocode__discount.promocode__text_gray { color: #666666; border-color: #666666; }
 .sky-form.sky-form_booking .promocode__input { width: 55%; }
 .sky-form.sky-form_booking .price { width: 100%; }
 .sky-form.sky-form_booking .price .price__old { color: #e4e4e4; }
@@ -752,6 +753,8 @@ p:after { content: " "; display: table; clear: both; }
 .error .error__phone { font-weight: bold; }
 .error .error__mail { margin-left: 30px; }
 .error .error__mail a { color: #005599; }
+
+.text-error { font-size: 18px; text-align: center; color: #990000; }
 
 @media (max-width: 1200px) { .description .description__list.list .description__item { font-size: 12px; }
   .description .description__bottom .price { margin-left: 0; width: 48%; }
