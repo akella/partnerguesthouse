@@ -756,6 +756,22 @@ p:after { content: " "; display: table; clear: both; }
 
 .text-error { font-size: 18px; text-align: center; color: #990000; }
 
+.yellow { padding-top: 15px; margin-bottom: 20px; background: #fffecb; border: 1px solid #eeeeee; }
+.yellow .radio { background: none; }
+
+.clear { clear: both; }
+
+.paycheck { margin-bottom: 15px; }
+.paycheck .paycheck__but { text-align: right; }
+.paycheck .paycheck__button { margin-left: 10px; padding-bottom: 20px; font-size: 24px; color: black; }
+.paycheck .paycheck__button:hover { text-decoration: none; }
+.paycheck .paycheck__wrap { border: 1px solid #eeeeee; min-height: 520px; }
+
+.funny-boxes-img .item { margin-right: -15px; }
+.funny-boxes-img .item__img { width: 100%; height: auto; }
+
+.number-reservation { padding-top: 10px; border-top: 1px solid #eeeeee; }
+
 @media (max-width: 1200px) { .description .description__list.list .description__item { font-size: 12px; }
   .description .description__bottom .price { margin-left: 0; width: 48%; }
   .description .price__item { font-size: 30px; }
