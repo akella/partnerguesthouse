@@ -445,7 +445,7 @@ p:after { content: " "; display: table; clear: both; }
 
 .guesthouse__container { font-size: 0; text-align: center; }
 
-.guesthouse__col { margin-left: 1%; width: 19%; text-align: left; vertical-align: top; display: inline-block; }
+.guesthouse__col { margin-left: 1%; width: 19%; height: 331px; text-align: left; vertical-align: top; display: inline-block; }
 .guesthouse__col:first-child { margin-left: 0; }
 
 .booking-com, .guesthouse__top { padding: 5px 15px; text-align: right; background: #fafafa; *zoom: 1; }
