@@ -139,7 +139,7 @@ p:after { content: " "; display: table; clear: both; }
 .card .card__row { position: relative; *zoom: 1; }
 .card .card__row:after { content: " "; display: table; clear: both; }
 .card .card__slider { position: absolute; top: 0; bottom: 20px; left: 15px; width: 65%; }
-.card .card__right { padding: 15px; color: white; background: #5cb0fb; border: 1px solid #eeeeee; *zoom: 1; }
+.card .card__right { position: relative; padding: 15px; color: white; background: #5cb0fb; border: 1px solid #eeeeee; *zoom: 1; }
 .card .card__right:after { content: " "; display: table; clear: both; }
 .card .card__right .sky-form { border: none; color: white; }
 .card .card__right .sky-form fieldset { background: #5cb0fb; padding: 0; }
@@ -455,6 +455,8 @@ p:after { content: " "; display: table; clear: both; }
 
 .guesthouse__col { margin-left: 1%; width: 19%; height: 331px; text-align: left; vertical-align: top; display: inline-block; }
 .guesthouse__col:first-child { margin-left: 0; }
+
+.guesthouse__block { max-height: 162px; overflow: hidden; }
 
 .booking-com, .guesthouse__top { padding: 5px 15px; text-align: right; background: #fafafa; *zoom: 1; }
 .booking-com:after, .guesthouse__top:after { content: " "; display: table; clear: both; }
@@ -779,6 +781,9 @@ p:after { content: " "; display: table; clear: both; }
 .funny-boxes-img .item__img { width: 100%; height: auto; }
 
 .number-reservation { padding-top: 10px; border-top: 1px solid #eeeeee; }
+
+.loader { position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 3; background: rgba(0, 0, 0, 0.5); }
+.loader .loader__img { position: absolute; top: 50%; left: 50%; -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); width: 30px; height: 30px; }
 
 @media (max-width: 1200px) { .description .description__list.list .description__item { font-size: 12px; }
   .description .description__bottom .price { margin-left: 0; width: 48%; }

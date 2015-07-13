@@ -375,6 +375,7 @@ p
 		left: 15px
 		width: 65%
 	.card__right
+		position: relative
 		padding: 15px
 		color: #fff
 		background: #5cb0fb
@@ -1348,7 +1349,10 @@ p
 	display: inline-block
 	&:first-child
 		margin-left: 0
-		
+.guesthouse__block
+	max-height: 162px
+	overflow: hidden
+
 //booking-com
 .booking-com, .guesthouse__top
 	padding: 5px 15px
@@ -2331,6 +2335,22 @@ p
 .number-reservation
 	padding-top: 10px
 	border-top: 1px solid #eeeeee
+
+.loader
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	z-index: 3
+	background: rgba(#000, .5)
+	.loader__img
+		position: absolute
+		top: 50%
+		left: 50%
+		+translate(-50%, -50%)
+		width: 30px
+		height: 30px
 
 @media (max-width: 1200px)
 	.description
