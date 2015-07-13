@@ -657,18 +657,18 @@ p:after { content: " "; display: table; clear: both; }
 .gm-style .gm-style-iw { top: 0 !important; left: 0 !important; width: 100% !important; }
 .gm-style .gm-style-iw:before { position: absolute; content: ""; bottom: -40px; left: 50%; margin-left: -8px; width: 0px; height: 0px; border-style: solid; border-width: 23px 9.5px 0 9.5px; border-color: rgba(0, 0, 0, 0.7) transparent transparent transparent; }
 .gm-style .gm-style-iw:after { position: absolute; content: ""; bottom: -17px; left: 0; right: 0; height: 17px; background: black; background: rgba(0, 0, 0, 0.7); }
-.gm-style .gm-style-iw #content, .gm-style .gm-style-iw #content2 { padding: 30px 20px 0; color: white; font-size: 12px; height: 100%; background: black; background: rgba(0, 0, 0, 0.7); -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-.gm-style .gm-style-iw #content a, .gm-style .gm-style-iw #content2 a { color: white; text-decoration: underline; }
+.gm-style .gm-style-iw #content, .gm-style .gm-style-iw #content2 { padding: 30px 20px 0; color: black; font-size: 12px; height: 100%; background: white; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.gm-style .gm-style-iw #content a, .gm-style .gm-style-iw #content2 a { color: black; text-decoration: underline; }
 .gm-style .gm-style-iw #content a:hover, .gm-style .gm-style-iw #content2 a:hover { text-decoration: none; }
 .gm-style .gm-style-iw #title { font-size: 16px; font-weight: normal; }
-.gm-style .gm-style-iw #size { color: #eeeeee; }
+.gm-style .gm-style-iw #size { color: black; }
 .gm-style .gm-style-iw #content-row { margin-top: 30px; *zoom: 1; }
 .gm-style .gm-style-iw #content-row:after { content: " "; display: table; clear: both; }
 .gm-style .gm-style-iw #content-price { float: left; }
 .gm-style .gm-style-iw #content-price span { font-size: 16px; }
 .gm-style .gm-style-iw #button { float: right; }
 .gm-style .gm-style-iw #content-list { padding-left: 20px; display: inline-block; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-.gm-style .gm-style-iw #content-list li { color: white; }
+.gm-style .gm-style-iw #content-list li { color: black; }
 
 .border { border: 1px solid #eeeeee; *zoom: 1; }
 .border:after { content: " "; display: table; clear: both; }
