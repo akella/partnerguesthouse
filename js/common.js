@@ -61,6 +61,7 @@ head.ready(function() {
 	});
 
 	$(".js-open-popupcal").click(function() {
+		$(".js-calendar-popup").removeClass('is-active');
 		$(this).next(".js-calendar-popup").addClass('is-active');
 	});
 

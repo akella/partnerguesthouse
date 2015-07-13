@@ -505,8 +505,12 @@ p
 			&:nth-child(6),
 			&:nth-child(7)
 				color: #b50404
-	.calender__booking
+	span
 		cursor: pointer
+		height: 100%
+		display: block
+	.calender__booking
+		cursor: default
 		width: 100%
 		height: 100%
 		color: #fff
@@ -737,6 +741,10 @@ p
 			+sr(microwave)
 		&.convenience__cooker
 			+sr(cooker)
+		&.convenience__fridge
+			+s(fridge)
+		&.convenience__home-phone
+			+s(home-phone)
 		&:hover
 			.convenience__info
 				display: block
@@ -1551,6 +1559,10 @@ p
 
 //sky-form_booking
 .sky-form
+	&.is-active
+		position: relative
+		.loader
+			display: block
 	&.sky-form_booking
 		padding: 5px 15px
 		background: #5cb0fb
