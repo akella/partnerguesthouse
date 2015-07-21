@@ -105,7 +105,7 @@ p:after { content: " "; display: table; clear: both; }
 .funny-boxes_nhid { overflow: inherit; }
 
 .hint { position: relative; display: inline-block; }
-.hint .hint__info { position: absolute; top: 100%; left: 78%; margin-top: 20px; padding: 10px; color: black; width: 480px; z-index: 2; border: 1px solid #eeeeee; background: white; display: none; *zoom: 1; }
+.hint .hint__info { position: absolute; top: 100%; left: 78%; margin-top: 20px; padding: 10px; color: black; width: 480px; z-index: 4; border: 1px solid #eeeeee; background: white; display: none; *zoom: 1; }
 .hint .hint__info:after { content: " "; display: table; clear: both; }
 .hint .hint__info:before { position: absolute; content: ""; left: 56px; top: -18px; background: url('../img/icons-s431965c569.png') 0 -132px no-repeat; width: 21px; height: 18px; }
 .hint .hint__close { position: absolute; top: 15px; right: 15px; background: url('../img/icons-s431965c569.png') 0 -880px no-repeat; width: 13px; height: 13px; }
