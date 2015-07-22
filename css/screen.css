@@ -20,6 +20,25 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 p { *zoom: 1; }
 p:after { content: " "; display: table; clear: both; }
 
+.ico { display: inline-block; }
+.ico.ico_shower { background: url('../img/icons-s431965c569.png') 0 -1869px no-repeat; background-position: 0 -935px; width: 22px; height: 21px; -moz-background-size: 107px 1350px; -webkit-background-size: 107px 1350px; background-size: 107px 1350px; }
+.ico.ico_jacuzzi { background: url('../img/icons-s431965c569.png') 0 -1643px no-repeat; background-position: 0 -822px; width: 20px; height: 16px; -moz-background-size: 107px 1350px; -webkit-background-size: 107px 1350px; background-size: 107px 1350px; }
+.ico.ico_wifi { background: url('../img/icons-s431965c569.png') 0 -2475px no-repeat; background-position: 0 -1238px; width: 23.5px; height: 18px; -moz-background-size: 107px 1350px; -webkit-background-size: 107px 1350px; background-size: 107px 1350px; }
+.ico.ico_tv { background: url('../img/icons-s431965c569.png') 0 -2011px no-repeat; background-position: 0 -1006px; width: 21px; height: 14.5px; -moz-background-size: 107px 1350px; -webkit-background-size: 107px 1350px; background-size: 107px 1350px; }
+.ico.ico_w-machine { background: url('../img/icons-s431965c569.png') 0 -2425px no-repeat; background-position: 0 -1213px; width: 15.5px; height: 20px; -moz-background-size: 107px 1350px; -webkit-background-size: 107px 1350px; background-size: 107px 1350px; }
+.ico.ico_conditioner { background: url('../img/icons-s431965c569.png') 0 -1071px no-repeat; background-position: 0 -536px; width: 21px; height: 10.5px; -moz-background-size: 107px 1350px; -webkit-background-size: 107px 1350px; background-size: 107px 1350px; }
+.ico.ico_oven { background: url('../img/icons-s431965c569.png') 0 -1817px no-repeat; background-position: 0 -909px; width: 19px; height: 21px; -moz-background-size: 107px 1350px; -webkit-background-size: 107px 1350px; background-size: 107px 1350px; }
+.ico.ico_cable { background: url('../img/icons-s431965c569.png') 0 -832px no-repeat; background-position: 0 -416px; width: 19px; height: 19px; -moz-background-size: 107px 1350px; -webkit-background-size: 107px 1350px; background-size: 107px 1350px; }
+.ico.ico_elevator { background: url('../img/icons-s431965c569.png') 0 -1144px no-repeat; background-position: 0 -572px; width: 14px; height: 19px; -moz-background-size: 107px 1350px; -webkit-background-size: 107px 1350px; background-size: 107px 1350px; }
+.ico.ico_visa { background: url('../img/icons-s431965c569.png') 0 -2387px no-repeat; background-position: 0 -1194px; width: 19px; height: 14px; -moz-background-size: 107px 1350px; -webkit-background-size: 107px 1350px; background-size: 107px 1350px; }
+.ico.ico_balcony { background: url('../img/icons-s431965c569.png') 0 -793px no-repeat; background-position: 0 -397px; width: 22px; height: 14.5px; -moz-background-size: 107px 1350px; -webkit-background-size: 107px 1350px; background-size: 107px 1350px; }
+.ico.ico_windows-into { background: url('../img/icons-s431965c569.png') 0 -2557px no-repeat; background-position: 0 -1279px; width: 20px; height: 20.5px; -moz-background-size: 107px 1350px; -webkit-background-size: 107px 1350px; background-size: 107px 1350px; }
+.ico.ico_windows { background: url('../img/icons-s431965c569.png') 0 -2659px no-repeat; background-position: 0 -1330px; width: 20px; height: 20.5px; -moz-background-size: 107px 1350px; -webkit-background-size: 107px 1350px; background-size: 107px 1350px; }
+.ico.ico_microwave { background: url('../img/icons-s431965c569.png') 0 -1781px no-repeat; background-position: 0 -891px; width: 22px; height: 13px; -moz-background-size: 107px 1350px; -webkit-background-size: 107px 1350px; background-size: 107px 1350px; }
+.ico.ico_cooker { background: url('../img/icons-s431965c569.png') 0 -1102px no-repeat; background-position: 0 -551px; width: 21px; height: 16px; -moz-background-size: 107px 1350px; -webkit-background-size: 107px 1350px; background-size: 107px 1350px; }
+.ico.ico_fridge { background: url('../img/icons-s431965c569.png') 0 -1275px no-repeat; width: 29px; height: 43px; }
+.ico.ico_home-phone { background: url('../img/icons-s431965c569.png') 0 -1328px no-repeat; width: 36px; height: 36px; }
+
 .color-yellow { color: #faee38; }
 
 .wrapper_error { background: url(http://lorempixel.com/1920/1920/business) no-repeat 0 0; background-size: cover; }
